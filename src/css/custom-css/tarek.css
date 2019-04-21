@@ -1,0 +1,137 @@
+* {
+    font-family: 'Lato', sans-serif, 'Font Awesome 5 Free';
+    border: 0;
+    outline: 0
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+    overflow-x: hidden;
+    direction: ltr;
+    color: #444;
+    text-align: left;
+    background-color: #fff;
+}
+
+p {
+    color: #444;
+    margin: 0;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+*::placeholder {
+    color: #444;
+    transition: all .3s ease
+}
+
+form {
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+
+a {
+    color: blue;
+    text-decoration: none !important;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+button,
+input[type="submit"] {
+    cursor: pointer
+}
+
+button,
+li,
+a {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+input,
+button,
+select,
+select:focus,
+select:active,
+input:focus,
+button:focus,
+input:active,
+button:active {
+    border: 0;
+    outline: 0
+}
+
+/* Classes */
+
+.padding-0 {
+    padding: 0
+}
+
+.margin-0 {
+    margin: 0
+}
+
+.clear {
+    clear: both
+}
+
+/* start Classes */
+
+/*drop-down*/
+
+.drop-container {
+    position: relative;
+}
+
+.drop-container .drop-btn {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .02);
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 2px;
+    text-transform: uppercase
+}
+
+.drop-container .drop-btn::after {
+    content: "\f0dd";
+    font-weight: 900;
+    margin: 0 5px;
+}
+
+.drop-container .drop-menue {
+    position: absolute;
+    color: #000;
+    top: calc(100% + 1px);
+    left: 0;
+    font-size: 12px;
+    background-color: #fff;
+    padding: 15px 0 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*drop-down*/
+
+/* end Classes */
+
+/*==============================//  HOME PAGE   //===================================*/
+
