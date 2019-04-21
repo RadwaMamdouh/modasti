@@ -2,6 +2,12 @@
 
 @media(max-width: 992px) {
 
+/*    nav*/
+    
+    .main-nav
+    {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
