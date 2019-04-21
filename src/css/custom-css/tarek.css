@@ -1,10 +1,14 @@
 * {
-    font-family: 'Raleway', sans-serif, 'Font Awesome 5 Free';
+    font-family: 'raleway', sans-serif, 'Font Awesome 5 Free';
     border: 0;
     outline: 0
 }
 
-@import url('../fonts/Raleway-Regular.ttf');
+@font-face {
+    font-family: 'raleway';
+    src: url("../fonts/Raleway-Regular.ttf");
+}
+
 body {
     overflow-x: hidden;
     direction: ltr;
