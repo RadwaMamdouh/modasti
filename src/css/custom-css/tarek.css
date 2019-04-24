@@ -13,6 +13,10 @@
     font-family: 'raleway-m';
     src: url("../fonts/Raleway-Medium.ttf");
 }
+@font-face {
+    font-family: 'raleway-b';
+    src: url("../fonts/Raleway-Black.ttf");
+}
 
 body {
     overflow-x: hidden;
@@ -156,7 +160,7 @@ button:active {
 .header
 {
     position: relative;
-    padding: 50px 20px;
+    padding: 45px 50px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -165,6 +169,7 @@ button:active {
     -ms-align-items: center;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid rgba(112, 112, 112, .1);
 }
 .header .logo-side
 {
@@ -186,15 +191,16 @@ button:active {
 .main-nav
 {
     position: relative;
-    margin-left: 20px;
 }
+
 .nav-btn
 {
     display: block;
     height: 30px;
     width: 30px;
     position: relative;
-    margin: 0 25px
+    margin-right: 25px;
+    cursor: pointer;
 }
 .nav-btn span
 {
@@ -235,30 +241,1262 @@ button:active {
     left: 0;
     background-color: rgba(0,0,0,.5);
     transform: translateX(-100%);
-    transition: .5s ease;
+    transition: .3s;
     z-index: 9999999;
+    
 }
 .main-nav .nav-list
 {
     display: -ms-flexbox;
     display: flex;
+    justify-content: center; 
 }
 .main-nav .nav-list .mynav-link
 {
     color: #000;
-    margin: 0 10px;
+    margin: 0 20px; 
     font-size: 14px;
     transition: .5s ease;
+    font-family: 'raleway-m';
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #000000 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #000000 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+           -moz-background-clip: text;
+             -o-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+           -moz-text-fill-color: transparent;
+             -o-text-fill-color: transparent;
+                text-fill-color: transparent;
+    background-size: 250%;
+    text-transform: uppercase;
+    overflow: hidden; 
 }
 
 .main-nav .nav-list .mynav-link.active,
 .main-nav .nav-list .mynav-link:hover
 {
-    color: #CFBDA8;
+    background-position: 100% 0;
 }
 /*end nav*/
 
-/*==============================//  start end*/
+/*========================== start icons side*/
+.icons-side
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+.icons-side .ico-link img
+{
+    width: 30px;
+    margin: 0 25px;
+    cursor: pointer;
+}
+.icons-side > *:last-child img
+{
+    margin-right: 0;
+}
+.icons-side .ico-link
+{
+    position: relative;
+}
+.icons-side .ico-link::before
+{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #000;
+    opacity: .2;
+    transform: translateY(-50%)
+}
+.icons-side .log-link
+{
+    display: block;
+    margin: 0 25px;
+    font-family: 'raleway-m';
+    text-transform: uppercase;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #000000 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #000000 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+           -moz-background-clip: text;
+             -o-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+           -moz-text-fill-color: transparent;
+             -o-text-fill-color: transparent;
+                text-fill-color: transparent;
+    background-size: 250%;
+}
+.icons-side .log-link:hover
+{
+    background-position: 100% 0;
+}
+
+
+
+/*.drop-mnu*/
+
+.drop-container
+{
+    position: relative;
+}
+.drop-mnu
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #000;
+    transition: .5s ease;
+    transform: rotateX(-90deg) perspective(600px);
+    transform-origin: right top;
+}
+.drop-mnu.open
+{
+    transform: none
+}
+/*drop-mnu*/
+
+
+/*hover-mnu*/
+
+.sub-container
+{
+    position: relative;
+}
+.sub-container .sub-mnu
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #000;
+    transition: .5s ease;
+    transform: rotateX(-90deg) perspective(600px);
+    transform-origin: right top;
+}
+.sub-container:hover .sub-mnu
+{
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    z-index: 99;
+}
+
+/*hover-mnu*/
+
+
+
+/*location-drop*/
+
+.location-drop-btn
+{
+    position: relative;
+}
+.location-drop-btn::before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    border: 7px solid transparent;
+    border-bottom-color: #000;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.location-drop-btn::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    border: 7px solid transparent;
+    border-bottom-color: #fff;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.location-drop-btn.container-poend::before,
+.location-drop-btn.container-poend::after
+{
+    opacity: 1;
+    transform: translateX(-50%);
+    transition-delay: .5s;
+    visibility: visible;
+}
+
+.location-mnu
+{
+    padding: 20px;
+    right: -10px;
+    width: 215px;
+    top: calc(100% + 22px);
+}
+.location-mnu .tit
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'raleway-m';
+    margin-bottom: 20px;
+}
+
+
+
+.sub-container.sub-location
+{
+    margin-bottom: 27px;
+}
+.sub-container.sub-location:last-child
+{
+    margin-bottom: 0;
+}
+.sub-container.sub-location .sub-btn
+{
+    width: 100%;
+    text-align: inherit;
+    font-size: 14px;
+    font-family: 'raleway-m';
+    text-transform: uppercase;
+    border: 1px solid #000;
+    background-color: transparent;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.sub-container.sub-location .sub-btn .icon
+{
+    width: 10px;
+    transition: 0.3s
+}
+.sub-container.sub-location:hover .sub-btn .icon
+{
+    transform: rotate(180deg)
+}
+.sub-container.sub-location .sub-btn .flag
+{
+    width: 18px;
+    margin-right: 10px;
+}
+.sub-container.sub-location .sub-btn span
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+.sub-container.sub-location .sub-mnu
+{
+    width: 100%;
+    border-top: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.sub-container.sub-location .sub-mnu li
+{
+    cursor: pointer;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #000;
+    transition: .5s ease;
+}
+.sub-container.sub-location .sub-mnu li:last-child
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.sub-container.sub-location .sub-mnu li div
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+.sub-container.sub-location .sub-mnu li div img
+{
+    width: 18px;
+    margin-right: 10px;
+}
+.sub-container.sub-location .sub-mnu li span
+{
+    transition: .5s;
+    display: inline-block;
+}
+.sub-container.sub-location .sub-mnu li:hover span
+{
+    transform: translateX(5px)
+}
+
+/*location-drop*/
+
+
+/*search*/
+
+.search-link
+{
+    position: relative;
+}
+.search-link img
+{
+    transition: .3s;
+    width: 21px !important;
+}
+
+.search-link .srch-animate
+{
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.search-link .srch-animate span:first-child
+{
+    height: 0;
+    opacity: 0;
+    width: 1px;
+    background-color: #000;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    display: block;
+    transform-origin: bottom;
+    transform: rotate(-45deg);
+    transition: .3s ease
+}
+.search-link .srch-animate span:last-child
+{
+    height: 0;
+    opacity: 0;
+    width: 1px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    transform-origin: bottom;
+    transform: rotate(45deg);
+    transition: .3s ease
+} 
+.search-link.open .srch-animate span:first-child,
+.search-link.open .srch-animate span:last-child
+{
+    height: 30px;
+    opacity: 1;
+}
+.search-link.open img
+{
+    opacity: 0;
+}
+.search-link.open .srch-animate span:last-child
+{
+    transition-delay: .3s
+}
+
+.search-input
+{
+    padding: 0;
+    border-top: 1px solid transparent;
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+}
+.search-input.open
+{
+    height: 312px; 
+    padding: 75px 0;
+}
+.search-input .srch-input
+{
+    font-size: 72px;
+    font-family: 'raleway-b';
+    color: rgba(207, 189, 168, .2);
+    margin-bottom: 30px;
+    position: relative;
+    left: -50%;
+    opacity: 0;
+    transition: .5s ease;
+}
+.search-input.open .srch-input
+{
+    left: 0;
+    opacity: 1;
+    transition-delay: .3s
+}
+.search-input .srch-input::placeholder
+{
+    color: rgba(207, 189, 168, .2);
+    opacity: 1;
+}
+.search-input .info
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'raleway-m';
+    font-size: 14px;
+}
+.search-input .info span
+{
+    display: block;
+    width: 35px;
+    height: 1px;
+    background-color: #000;
+    margin: 0 10px;
+}
+
+/*search*/
+
+/*.sec-nav*/
+
+.sec-nav
+{
+    background-color: #000;
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    transition: .5s;
+}
+.sec-nav.open
+{
+    height: 68px;
+    padding: 22px;
+}
+.sec-nav ul
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.sec-nav ul a
+{
+    color: #fff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(left, #ffffff 51%, #cfbda8 54%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffffff 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffffff 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+           -moz-background-clip: text;
+             -o-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+           -moz-text-fill-color: transparent;
+             -o-text-fill-color: transparent;
+                text-fill-color: transparent;
+    background-size: 250%;
+    font-family: 'raleway-m';
+    font-weight: bold;
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+.sec-nav ul a:hover
+{
+    background-position: 100%
+}
+
+/*.sec-nav*/
+
+
+
+/*.user-mnu*/
+
+.user-btn.drpo-btn 
+{
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 0 30px;
+}
+.user-btn.drpo-btn img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.drop-mnu.user-mnu
+{
+    top: calc(100% + 22px);
+    right: -10px;
+    width: 214px;
+}
+.drop-mnu.user-mnu .up
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 18px 10px 10px;
+    border-bottom: 1px solid rgba(112, 112, 112, .1);
+}
+.drop-mnu.user-mnu .up .img
+{
+    display: block;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.drop-mnu.user-mnu .up .img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.drop-mnu.user-mnu .up a
+{
+    display: block;
+}
+.drop-mnu.user-mnu .up .tit
+{
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: capitalize;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
+    background: #000; /* Old browsers */
+    background: -moz-linear-gradient(left, #000 51%, #cfbda8 54%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #000 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #000 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+           -moz-background-clip: text;
+             -o-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+           -moz-text-fill-color: transparent;
+             -o-text-fill-color: transparent;
+                text-fill-color: transparent;
+    background-size: 250%;
+}
+.drop-mnu.user-mnu .up .mail
+{
+    font-size: 12px;
+    color: rgba(0,0,0,.3);
+}
+.drop-mnu.user-mnu .center
+{
+    padding: 15px 10px 12px;
+    border-bottom: 1px solid rgba(112, 112, 112, .1);
+}
+.drop-mnu.user-mnu .link
+{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
+    background: #000; /* Old browsers */
+    background: -moz-linear-gradient(left, #000 51%, #cfbda8 54%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #000 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #000 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+           -moz-background-clip: text;
+             -o-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+           -moz-text-fill-color: transparent;
+             -o-text-fill-color: transparent;
+                text-fill-color: transparent;
+    background-size: 250%;
+}
+.drop-mnu.user-mnu .tit:hover,
+.drop-mnu.user-mnu .link:hover
+{
+    background-position: 100%;
+}
+.drop-mnu.user-mnu .link:last-child
+{
+    margin-bottom: 0;
+}
+.drop-mnu.user-mnu .down
+{
+    padding: 18px 10px;
+}
+
+/*.user-mnu*/
+
+
+
+/*.notification-mnu*/
+
+.drop-mnu.notifi-mnu
+{
+    top: calc(100% + 22px);
+    right: -10px;
+    width: 214px;
+}
+.drpo-btn.notifi-btn img
+{
+    width: 21px;
+    transform-origin: top center;
+    transform: none;
+}
+.drpo-btn.notifi-btn.open img
+{
+    animation: bell 1s 1 forwards ease-out;
+}
+@keyframes bell {
+    0% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(-10px);
+    }
+    20% {
+        transform: translateY(-10px) rotate(15deg);
+    }
+    40% {
+        transform: translateY(-10px) rotate(-15deg);
+    }
+    60% {
+        transform: translateY(-10px) rotate(15deg);
+    }
+    80% {
+        transform: translateY(-10px) rotate(-15deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+.drop-mnu.notifi-mnu .up
+{
+    padding: 20px 25px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+.drop-mnu.notifi-mnu .up .tit
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.switch
+{
+    width: 42px;
+    height: 24px;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.switch .line
+{
+    width: 26px;
+    height: 1px;
+    background-color: #000;
+}
+.switch .off
+{
+    display: none;
+}
+.switch .mode-btn
+{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    transition: .3s;
+    z-index: 9;
+}
+.switch .mode-btn span
+{
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'raleway-m'; 
+}
+.switch .dot
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #000;
+    transition: .3s;
+}
+.switch.off .dot
+{
+    left: calc(100% - 10px);
+}
+.switch.off .mode-btn
+{
+    right: calc(100% - 24px);
+}
+.switch.off .mode-btn .on
+{
+    display: none;
+}
+.switch.off .mode-btn .off
+{
+    display: block;
+}
+
+.drop-mnu.notifi-mnu .center li
+{
+    padding: 30px 24px;
+    border-bottom: 1px solid #000;
+}
+.drop-mnu.notifi-mnu .center .tit
+{
+    font-size: 15px; 
+    display: block;
+}
+.drop-mnu.notifi-mnu .center .date
+{
+    font-size: 12px;
+    display: block;
+}
+.drop-mnu.notifi-mnu .down
+{
+    display: block;
+    width: 100%;
+    padding: 12px 24px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: 'raleway-m'; 
+}
+.drop-mnu.notifi-mnu .down img
+{
+    width: 35px;
+}
+.ico-link.cs-link img
+{
+    width: 18px;
+}
+ 
+/*.notification-mnu*/
+
+
+/*========================== end icons side*/
+
+/*==============================// end header */
+
+
+
+/*==============================// start mobile-header */
+.header-container-m
+{
+    display: none;
+}
+.header-m.header
+{
+    padding: 30px 11px 30px 36px;
+    z-index: 9;
+    position: relative;
+}
+.header-m .icons-side .ico-link.drpo-btn::before
+{
+    display: none;
+}
+.header-m.header .logo
+{
+    height: 26px;
+    width: auto;
+}
+.header-m.header .nav-btn
+{
+    margin-right: 10px;
+}
+.header-m.header .location-btn img
+{
+    width: 28px;
+}
+.header-m.header .icons-side .ico-link img
+{
+    margin: 0 25px;
+}
+
+.header-m.header .nav-btn-m
+{
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.header-m.header .nav-btn-m span
+{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    transition: .3s ease;
+    transform-origin: center
+}
+.header-m.header .nav-btn-m span:first-child
+{
+    top: 10px;
+}
+.header-m.header .nav-btn-m span:last-child
+{
+    top: 20px;
+}
+.header-m.header .nav-btn-m.active span:first-child
+{
+    transform: rotate(-45deg);
+    top: 50%;
+}
+.header-m.header .nav-btn-m.active span:last-child
+{
+    transform: rotate(225deg);
+    top: 50%;
+}
+
+/*========================== start collapse nav*/
+
+.collapse-nav
+{
+    background-color: #000; 
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+.collapse-nav.open
+{
+    padding-bottom: 50px;
+    height: 100vh;
+    overflow: auto
+}
+.collapse-nav .icons-head
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.collapse-nav .icons-head .user-btn.drpo-btn
+{
+    margin: 0;
+}
+.collapse-nav .icons-head .drop-mnu.user-mnu
+{
+    left: 0;
+    right: auto;
+}
+.collapse-nav .collapse-list
+{
+    padding: 50px 30px 0;
+    color: #FFF;
+}
+.collapse-nav .collapse-list a,
+.collapse-nav .collapse-list .sub-collapse-btn
+{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'raleway-m';
+    display: block;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+.collapse-nav .collapse-list .sub-collapse a
+{
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'raleway-m';
+    text-transform: uppercase;
+}
+.collapse-nav .collapse-list .sub-collapse
+{
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s ease-out;
+}
+.collapse-nav .collapse-list .sub-collapse.open
+{
+    max-height: 500px;
+}
+.collapse-nav .m-log-links
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 0 30px;
+}
+.collapse-nav .m-log-links .m-log-link
+{
+    color: #fff;
+    font-size: 12px;
+    font-family: 'raleway-m';
+    display: block;
+    margin-right: 35px;
+    text-transform: uppercase;
+}
+
+
+
+/*========================== end collapse nav*/
+
+
+
+/*==============================// end mobile-header */
+
+
+
+/*==============================// start footer */
+
+/*============= start footer-head*/
+
+.footer .footer-head .container
+{
+    background-color: #000;
+    position: relative;
+    padding: 30px 15px;
+}
+.footer .footer-head .container::before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: calc(100% - 2px);
+    width: 1000px;
+    height: 100%;
+    background-color: #000;
+}
+.footer .row
+{
+    -ms-align-items: center;
+    align-items: center;
+}
+.footer .footer-head .container .info-content
+{
+    color: #fff;
+    font-size: 16px;
+    width: 190px;
+    max-width: 100%;
+}
+.footer .footer-head .container .info-content.confirms
+{
+    width: 106px;
+    max-width: 100%;
+}
+
+.news-form
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 260px;
+    max-width: 100%;
+    margin: inherit;
+    border: 1px solid rgba(236,236,236,.24);
+    padding: 0 24px 0 24px;
+}
+.news-form .news-submit
+{
+    padding: 23px;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: transparent;
+}
+.news-form .news-submit img
+{
+    width: 35px;
+}
+.news-form .news-input
+{
+    background-color: transparent;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'raleway-m';
+    color: #fff;
+}
+.news-form .news-input::placeholder
+{
+    color: #fff;
+    opacity: 1;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'raleway-m';
+}
+
+/*============= end footer-head*/
+
+
+
+/*============= start foot-content*/
+
+.footer
+{
+    overflow: hidden
+}
+.footer .foot-content .container
+{
+    padding: 100px 15px;
+    background-color: #ECECEC;
+    position: relative;
+}
+.footer .foot-content .container::before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: calc(100% - 2px);
+    width: 1000px;
+    height: 100%;
+    background-color: #000;  
+}
+.footer .foot-content .container::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 2px);
+    width: 1000px;
+    height: 100%;
+    background-color: #ECECEC;  
+}
+
+.footer .foot-content .foot-logo
+{
+    width: 90px;
+    max-width: 95%;
+    display: block;
+    margin: auto;
+}
+.foot-tit
+{
+    font-size: 30px;
+    font-family: 'raleway-m';
+    margin-bottom: 50px;
+}
+.foot-tit.social-tit
+{
+    margin-bottom: 30px;
+}
+.foot-link
+{
+    font-size: 14px;
+    font-family: 'raleway-m';
+    margin-bottom: 30px;
+    display: block;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
+  background: #000000; /* Old browsers */
+  background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #000000 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #000000 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
+      -webkit-background-clip: text;
+         -moz-background-clip: text;
+           -o-background-clip: text;
+              background-clip: text;
+      -webkit-text-fill-color: transparent;
+         -moz-text-fill-color: transparent;
+           -o-text-fill-color: transparent;
+              text-fill-color: transparent;
+  background-size: 250%;
+}
+.foot-link:hover
+{
+    background-position: 100%
+}
+.foot-tit.social-tit
+{
+    margin-top: 20px;
+}
+.foot-link.foot-data-feed
+{
+    letter-spacing: .5px;
+}
+.footer .social ul
+{
+   margin-bottom: 0;
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.social ul li a:hover {
+   background: #000;
+}
+
+.social ul li a {
+   color: #000;
+   display: block;
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.social ul li {
+   margin-right: 30px;
+}
+.footer .social ul li
+{
+    margin-right: 26px;
+}
+.social ul li:last-child
+{
+    margin-right: 0;
+}
+
+.social ul li i {
+   font-size: 30px;
+   transition: all .5s ease-in-out;
+   -webkit-transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -ms-transition: all .5s ease-in-out;
+   -o-transition: all .5s ease-in-out;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
+  background: #000000; /* Old browsers */
+  background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #000000 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #000000 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
+      -webkit-background-clip: text;
+         -moz-background-clip: text;
+           -o-background-clip: text;
+              background-clip: text;
+      -webkit-text-fill-color: transparent;
+         -moz-text-fill-color: transparent;
+           -o-text-fill-color: transparent;
+              text-fill-color: transparent;
+  background-size: 250%;
+}
+
+.social ul li a:hover i {
+   background-position: 100% 0;
+   font-size: 16px
+}
+/*============= end foot-content*/
+
+
+/*==============================// end footer */
 
 
 
