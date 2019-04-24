@@ -1,17 +1,171 @@
 /*===========================================// Media //=============================*/
 
-@media(max-width: 992px) {
-
-/*    nav*/
+@media(max-width: 1380px) {
     
-    .main-nav
+/*    header*/
+    
+    .header .logo-side .logo {
+        max-width: 150px;
+    }
+    .main-nav .nav-list .mynav-link,
+    .icons-side .log-link
+    {
+        font-size: 12px;
+    }
+    .main-nav .nav-list .mynav-link,
+    .icons-side .log-link,
+    .user-btn.drpo-btn,
+    .icons-side .ico-link img
+    {
+        margin: 0 15px;
+    }
+    .icons-side .log-link:last-of-type
+    {
+        margin-right: 20px;
+    }
+    .icons-side .ico-link img
+    {
+        width: 20px;
+    }
+    .icons-side .ico-link::before
+    {
+        height: 12px;
+    }
+    .nav-btn
+    {
+        width: 20px;
+        margin-right: 20px;
+    }
+    
+    .search-input.open
+    {
+        padding: 30px 0;
+        height: 141px;
+    }
+    .search-input .srch-input
+    {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .search-input .info
+    {
+        font-size: 12px;
+    }
+
+
+/*    header*/
+}
+
+@media (max-width: 1085px) {
+    
+/*    header*/
+    
+    .main-header
     {
         display: none;
     }
+    .header-container-m
+    {
+        display: block;
+    }
+    
+/*    header*/
 }
-
 @media (max-width: 768px) {
-
+    
+/*    header*/
+    
+    .header-m.header .icons-side .ico-link img
+    {
+        margin: 0 15px;
+    }
+    .header .logo-side .logo
+    {
+        height: 24px;
+    }
+    .header-m.header .nav-btn-m
+    {
+        margin-right: 15px;
+    }
+    .header-m.header
+    {
+        padding: 30px 11px 30px 26px;
+    }
+    
+/*    header*/
+    
+/*    footer*/
+    
+    .footer .foot-content .row
+    {
+        -ms-align-items: flex-start;
+        align-items: flex-start;
+    }
+    .foot-tit
+    {
+        font-size: 24px;
+        margin-bottom: 30px;
+        width: 76px;
+        font-weight: bold;
+    }
+    .footer .footer-head .container .info-content
+    {
+        margin-bottom: 15px;
+        font-size: 14px;
+        width: 223px;
+    }
+    .footer .footer-head .container .info-content.confirms
+    {
+        width: auto;
+    }
+    .foot-link
+    {
+        font-size: 12px;
+    }
+    .footer .foot-content .foot-logo
+    {
+        width: 75px;
+    }
+    .foot-tit.social-tit
+    {
+        font-weight: bold;
+        width: auto;
+        margin-top: 0;
+    }
+    .footer .col-md-4 .foot-tit.social-tit
+    {
+        margin-top: 30px;
+    }
+    .footer .social ul li
+    {
+        margin-right: 5px;
+    }
+    .footer .social ul li i
+    {
+        font-size: 22px
+    }
+    .footer .foot-content .container::before
+    {
+        right: calc(100% - 30px);
+    }
+    .footer .footer-head .container
+    {
+        padding-left: 30px;
+        margin-right: auto;
+        width: 91%;
+        margin-left: 0;
+    }
+    .news-form
+    { 
+        width: 100%;
+    }
+    .footer .social ul li a
+    {
+        width: 30px;
+        height: 30px;
+    }
+    
+/*    footer*/
 }
 
 @media (max-width: 575px) {
