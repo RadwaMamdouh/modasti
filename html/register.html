@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../dist/img/min-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../dist/css/style.min.css">
+    <title>Register</title>
+</head>
+<body>
+    <section class="content">
+        <div class="log-forms register">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-5 side-info left">
+                        <div class="log-info">
+                            <div class="big-title">WELCOME BACK!</div>
+                            <div class="personal">
+                                <div class="personal-details">To keep connected with us Please login with your personal data</div>
+                                <a href="login.html" class="log-btn">
+                                    <span class="tit">LOGIN</span>
+                                    <img src="../dist/img/right-arrow.png" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="log-form">
+                            <div class="title">
+                                <img src="../dist/img/title-sign.png" class="img-fluid">
+                                <div>SIGN UP</div>
+                            </div>
+                            <div class="m-b-user">
+                                <div class="tabs">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label class="custom-radio m-user">
+                                                <input type="radio" name="userType" checked>
+                                                <i class="fas fa-square"></i>
+                                                <span class="tit">MODASTI USER</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="custom-radio b-user">
+                                                <input type="radio" name="userType">
+                                                <i class="fas fa-square"></i>
+                                                <span class="tit">BUSINESS USER</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modasti User -->
+                                <div class="m-form" id="modastiUser">
+                                    <form action="home.html">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="input" placeholder="FIRST NAME">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="input" placeholder="SECOND NAME">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" class="input" placeholder="EMAIL OR PHONE NUMBER">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" class="input" placeholder="BRAND NAME - COMPANY">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" class="input" placeholder="WEBSITE">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="password" class="input" placeholder="PASSWORD">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="password" class="input" placeholder="REPEAT PASSWORD">
+                                            </div>
+                                        </div>
+                                        <div class="sign-me">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox">
+                                                <i class="fas fa-square"></i>
+                                                <span>Yes, sign me up for emails about the latest looks, sales, events and more.</span>
+                                            </label>
+                                        </div>
+                                        <div class="upload-submit">
+                                            <div class="upload-img">
+                                                <label class="uploading" id="img-preview">
+                                                    <input type="file" id="upload-file">
+                                                    <img src="../dist/img/upload.png" class="img-fluid add-icon">
+                                                </label>
+                                                <div class="add-img">
+                                                    <div class="tit">ADD LOGO</div>
+                                                    <div class="tit type">Upload file, follow PNG, JPEG, SVG</div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="log-btn">
+                                                <span class="tit">REGISTER</span>
+                                                <img src="../dist/img/right-arrow.png" class="img-fluid">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Business User -->
+                                <div class="b-form" id="businessUser">
+                                    <form action="home.html">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="input" placeholder="FIRST NAME">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="input" placeholder="SECOND NAME">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" class="input" placeholder="EMAIL OR PHONE NUMBER">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" class="input" placeholder="BRAND NAME - COMPANY">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" class="input" placeholder="WEBSITE">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="password" class="input" placeholder="PASSWORD">
+                                            </div>
+                                        </div>
+                                        <div class="sign-me">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox">
+                                                <i class="fas fa-square"></i>
+                                                <span>Yes, sign me up for emails about the latest looks, sales, events and more.</span>
+                                            </label>
+                                        </div>
+                                        <div class="signing-up">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 col-lg-6">
+                                                    <button type="submit" class="log-btn modal-btn" data-target="#modal">
+                                                        <span class="tit">REGISTER</span>
+                                                        <img src="../dist/img/right-arrow.png" class="img-fluid">
+                                                    </button>
+                                                </div>
+                                                <div class="col-8 col-lg-6">
+                                                    <div class="signing-text tit">By signing up, you agree to our <a href="#">Terms of Use</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="log-footer">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="title">
+                                                    <img src="../dist/img/title-sign.png" class="img-fluid">
+                                                    <div>LOGIN WITH</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                                                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                                                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-phone"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Business User submit Modal -->
+            <div class="custom-modal" id="modal">
+                <div class="overlay"></div>
+                <div class="modal-card">
+                    <div class="card-head">
+                        <img src="../dist/img/close.png" class="img-fluid close-img">
+                    </div>
+                    <div class="card-content">
+                        <div class="tit joining">THANKS FOR JOINING MODASTI</div>
+                        <p>Please complete your profile data.</p>
+                        <button type="button" class="log-btn" id="skip">
+                            <span class="tit">SKIP</span>
+                            <img src="../dist/img/right-arrow.png" class="img-fluid">
+                        </button>
+                        <button type="button" class="log-btn" id="guide-me">
+                            <span class="tit">GUIDE ME</span>
+                            <img src="../dist/img/guide.png" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Business User submit Modal -->
+        </div>
+    </section>
+</body>
+<script src="../dist/js/jquery-3.2.1.min.js"></script>
+<script src="../dist/js/main.js"></script>
+</html>

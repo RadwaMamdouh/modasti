@@ -1,0 +1,811 @@
+label {
+    margin-bottom: 0;
+}
+
+
+/*********************** login.html *********************/
+.log-forms {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.title img {
+    width: 100%;
+    max-width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.title div {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.tit {
+    font-size: 14px;
+    font-family: 'raleway-m';
+}
+
+
+
+.email {
+    position: relative;
+    margin-bottom: 29px;
+}
+
+.email .wrong {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.email .wrong img {
+    width: 100%;
+    max-width: 12px;
+    height: 12px;
+    margin-right: 12px;
+}
+
+.email .wrong span {
+    color: #CFBDA8;
+}
+
+.input {
+    border-bottom: 1px solid #ECECEC;
+    width: 100%;
+    max-width: 100%;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.input::placeholder {
+    color: #000;
+    opacity: 0.3;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.input:hover {
+    border-bottom: 1px solid #CFBDA8;
+}
+
+.remeber-me {
+    margin-bottom: 29px;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox input[type='checkbox'] {
+    display: none;
+}
+
+.custom-checkbox i {
+    border: 3px solid #000;
+    overflow: hidden;
+    padding: 3px;
+    padding: 3px;
+    width: 100%;
+    max-width: 12px;
+    height: 12px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.custom-checkbox i::before {
+    color: #fff;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.custom-checkbox input:checked + i::before {
+    color: #000;
+}
+
+.remeber-me .remeber span {
+    margin-left: 15px;
+}
+
+.forgot-pass a {
+    color: #000;
+    position: relative;
+}
+
+.forgot-pass a:hover {
+    color: #000;
+}
+
+.forgot-pass a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.forgot-pass a:hover:before {
+    visibility: visible;
+    background-color: #000;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.log-btn {
+    padding: 22px 24px;
+    width: 262px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    position: relative;
+    transition: 0s;
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -ms-transition: 0s;
+    -o-transition: 0s;
+    overflow: hidden;
+}
+
+.log-btn::before {
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform-origin: left;
+
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+
+.log-btn:hover::before {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transition:  0.5s ease;
+    -webkit-transition:  0.5s ease;
+    -moz-transition:  0.5s ease;
+    -ms-transition:  0.5s ease;
+    -o-transition:  0.5s ease;
+}
+
+.log-btn:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,.2)
+}
+
+.log-btn span {
+    color: #fff;
+}
+
+.log-btn:hover span {
+    color: #000;
+    position: relative;
+    z-index: 99;
+}
+
+.log-btn img {
+    width: 35px;
+}
+
+.log-btn:hover img {
+    z-index: 99;
+    position: relative;
+}
+
+.log-footer {
+    margin-top: 52px;
+}
+
+/* .log-footer .title {
+    margin-bottom: 0;
+} */
+
+/* Social Medai */
+.social ul {
+    margin-bottom: 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.social ul li a:hover {
+    background: #000;
+}
+
+.social ul li a {
+    color: #000;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social ul li {
+    margin-right: 30px;
+}
+
+.social ul li:last-child {
+    margin-right: 0;
+}
+
+.social ul li i {
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
+   background: #000000; /* Old browsers */
+   background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, #000000 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, #000000 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
+       -webkit-background-clip: text;
+          -moz-background-clip: text;
+            -o-background-clip: text;
+               background-clip: text;
+       -webkit-text-fill-color: transparent;
+          -moz-text-fill-color: transparent;
+            -o-text-fill-color: transparent;
+               text-fill-color: transparent;
+   background-size: 250%;
+}
+
+.social ul li a:hover i {
+    background-position: 100% 0;
+    font-size: 16px
+}
+
+.social ul li i.fa-phone {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+/* Start Side info */
+.side-info {
+    background-color: #000;
+}
+
+.side-info::before {
+    content: '';
+    width: 1000px;
+    position: absolute;
+    height: 100%;
+    background-color: #000;
+    z-index: 9999999999999999;
+    overflow: visible;
+    top: 0;
+}
+
+.side-info.right::before {
+    left: calc(100% - 1px);
+}
+
+.side-info.left::before {
+    right: calc(100% - 1px);
+}
+
+.log-info {
+    margin: 246px 0 246px 195px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.big-title {
+    width: 100%;
+    max-width: 253px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.log-info .personal-details {
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    max-width: 198px;
+    margin-top: 27px;
+    margin-bottom: 30px;
+}
+
+.log-info .log-btn {
+    background-color: #fff;
+    border: 1px solid #CFBDA8;
+    display: flex;
+    align-items: center;
+}
+
+.log-info .log-btn::before {
+    background-color: #000;
+}
+
+.log-info .log-btn:hover {
+    box-shadow: 0 0 5px rgba(255,255,255,.9)
+}
+
+.log-info .log-btn span {
+    color: #000;
+    /* padding: 0 137px 0 0; */
+}
+
+.log-info .log-btn:hover span {
+    color: #fff;
+    z-index: 99;
+}
+
+.log-info .log-btn:hover img {
+    z-index: 99;
+}
+
+/* Start Business User submit Modal */
+.custom-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.custom-modal.show {
+    z-index: 999999991050;
+    visibility: visible;
+    opacity: 1;
+}
+
+.custom-modal .overlay {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .9);
+    z-index: 9999999999999999;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-modal.show .overlay {
+    animation: over 1s 1 forwards linear;
+    -webkit-animation: over 1s 1 forwards linear;
+}
+
+@keyframes over {
+    0% {
+        width: 0;
+        height: 3px;
+    }
+
+    50% {
+        width: 100%;
+        height: 3px;
+    }
+    
+    70% {
+        width: 100%;
+        height: 3px;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.custom-modal .modal-card {
+    width: 90%;
+    max-width: 360px;
+    position: absolute;
+    z-index: 99999999999;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%) scale(0);
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -moz-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    -o-transform: translate(-50%, -50%) scale(0);
+    border: 1px solid #ECECEC;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.custom-modal.show .modal-card {
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition-delay: 1.2s;
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-modal .modal-card .card-head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.custom-modal .modal-card .card-head img.close-img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.custom-modal .modal-card .card-content {
+    padding: 10px 49px 50px;
+}
+
+.custom-modal .modal-card .card-content .joining {
+    font-size: 30px;
+    width: 262px;
+    margin: 0 auto 30px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 100%;
+}
+
+.custom-modal .modal-card .card-content p {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.custom-modal .modal-card .card-content button#skip {
+    margin-bottom: 20px;
+}
+
+.custom-modal .modal-card .card-content button#guide-me img {
+    width: 18px;
+    height: 19px;
+}
+/* End Business User submit Modal */
+
+
+
+
+/*********************************************** register.html **********************************************/
+.register .log-info {
+    margin: 249px 194px 240px 0;
+}
+
+.register .log-info .personal-details {
+    max-width: 253px;
+}
+
+.custom-radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.custom-radio input {
+    display: none;
+}
+
+.custom-radio i {
+    border: 3px solid #000;
+    overflow: hidden;
+    padding: 3px;
+    padding: 3px;
+    width: 100%;
+    max-width: 12px;
+    height: 12px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.custom-radio i::before {
+    color: #fff;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.custom-radio input:checked + i::before {
+    color: #000;
+}
+
+.register .tabs {
+    margin-bottom: 50px;
+}
+
+.register .tabs span,
+.register .tabs span {
+    margin-left: 15px;
+}
+
+.register form input {
+    margin-bottom: 30px;
+}
+
+.sign-me {
+    margin-bottom: 31px;
+}
+
+.sign-me span {
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+/* Uploadin Photo */
+.upload-img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.uploading {
+    position: relative;
+    background-color: #000;
+    width: 114px;
+    height: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0s;
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -ms-transition: 0s;
+    -o-transition: 0s;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.uploading::before {
+    position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+.uploading:hover::before {
+    -webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+.uploading:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,.2)
+}
+
+.uploading input[type='file'] {
+    display: none;
+}
+
+.uploading img {
+    width: 100%;
+    max-width: 17px;
+    height: 17px;;
+}
+
+.upload-img .add-img .type {
+    opacity: 0.3;
+}
+
+/* Business User Form */
+.b-form {
+    display: none;
+}
+
+.signing-up .signing-text a {
+    text-decoration: underline !important;
+    color: #000;
+    display: inline-block;
+}
+
+#img-preview img:not(.add-icon) {
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.b-form .log-footer {
+    margin-top: 32px;
+}
+
+
+
+/********************************************** reset-password.html **********************************/
+.reset-password .title {
+    align-items: baseline;
+}
+
+.reset-password .title div {
+    width: 168px;
+}
+
+.log-btn img.cancel {
+    width: 17px;
+}
+
+.reset-password .email {
+    margin-bottom: 51px;
+}
+
+.back-login {
+    margin-bottom: 22px;
+}
+
+.back-login a {
+    text-transform: uppercase;
+    color: #000;
+    position: relative;
+}
+
+.back-login a:hover {
+    color: #000;
+}
+
+.back-login a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.back-login a:hover:before {
+    visibility: visible;
+    background-color: #000;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.reset-password .form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/********************************************** confirmation-message.html **********************************/
+/* check Your Email */
+.confirm-message .check-email {
+    font-size: 30px;
+    width: 181px;
+    max-width: 100%;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.confirm-message .chck-email p {
+    width: 219px;
+}
+
+.confirm-message .chck-email p:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+/* Didn't Recieve The Email */
+.confirm-message .recieve-email .check-email {
+    width: 229px;
+}
+
+.confirm-message .recieve-email p.spam {
+    margin-bottom: 30px;
+}
+
+.confirm-message .recieve-email div.or {
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.confirm-message .recieve-email .log-btn img.cancel {
+    width: 28px;
+}
+
+
+
+/********************************************** new-password.html **********************************/
+.new-pass .form-group {
+    margin-bottom: 30px;
+}
+
+.new-pass p.reset-pass-request {
+    width: 163px;
+}
+
