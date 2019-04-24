@@ -35,9 +35,6 @@ p {
     font-size: 16px
 }
 
-input:focus::placeholder {
-    color: transparent;
-}
 
 *::placeholder {
     color: #000;
@@ -77,18 +74,7 @@ a {
     transition: all 0.5s ease;
 }
 
-input,
-button,
-select,
-select:focus,
-select:active,
-input:focus,
-button:focus,
-input:active,
-button:active {
-    border: 0;
-    outline: 0
-}
+
 
 /* Classes */
 
@@ -153,8 +139,12 @@ button:active {
 
 /*==============================//  HOME PAGE   //===================================*/
 
-
-
+.main-header,
+.header-container.header-container-m
+{
+    z-index: 999;
+    position: relative; 
+}
 /*==============================//  start header*/
 
 .header
@@ -365,12 +355,24 @@ button:active {
     background-color: #fff;
     border: 1px solid #000;
     transition: .5s ease;
-    transform: rotateX(-90deg) perspective(600px);
     transform-origin: right top;
+    transform: rotate(-45deg) rotateY(-45deg) perspective(600px);
+    -webkit-transform: rotate(-45deg) rotateY(-45deg) perspective(600px);
+    -moz-transform: rotate(-45deg) rotateY(-45deg) perspective(600px);
+    -ms-transform: rotate(-45deg) rotateY(-45deg) perspective(600px);
+    -o-transform: rotate(-45deg) rotateY(-45deg) perspective(600px);
+    opacity: 0;
+    visibility: hidden;
 }
 .drop-mnu.open
 {
-    transform: none
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    opacity: 1;
+    visibility: visible;
 }
 /*drop-mnu*/
 
