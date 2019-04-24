@@ -91,6 +91,8 @@ $(document).ready(function () {
         if($(this).is(':checked')) { 
             $('#modastiUser').css('display', 'block');
             $('#businessUser').css('display', 'none');
+            $('.log-forms.register').children('.container').children('.row').addClass('a-start')
+            $('.log-forms.register').children('.container').children('.row').removeClass('a-center')
         }
     });
 
@@ -98,6 +100,8 @@ $(document).ready(function () {
         if($(this).is(':checked')) { 
             $('#businessUser').css('display', 'block');
             $('#modastiUser').css('display', 'none');
+            $('.log-forms.register').children('.container').children('.row').addClass('a-center')
+            $('.log-forms.register').children('.container').children('.row').removeClass('a-start')
         }
     });
 
