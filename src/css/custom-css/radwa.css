@@ -2,6 +2,9 @@ label {
     margin: 0;
 }
 
+.content {
+    min-height: calc(100vh - 822px);
+}
 
 /*********************** login.html *********************/
 .log-forms {
