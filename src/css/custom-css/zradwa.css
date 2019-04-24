@@ -1,0 +1,239 @@
+@media (max-width: 922px) {
+    /********** login.html ************/
+    .log-forms {
+        padding: 50px 0;
+    }
+
+    .log-form {
+        padding: 0 21px;
+    }
+
+    .title img {
+        max-width: 17px;
+        height: 17px;
+    }
+    
+    .title div {
+        font-size: 24px;
+    }
+
+    .tit {
+        font-size: 12px;
+    }
+
+    .remeber-me .col-6:nth-child(2) {
+        padding-right: 0;
+    }
+
+    .log-btn {
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .log-btn span {
+        display: none;
+    }
+
+    .social {
+        margin: 0 0 50px;
+    }
+
+    .custom-checkbox i {
+        top: 2px;
+    }
+
+    /* side-info */
+    .side-info::after {
+        content: '';
+        width: 1000px;
+        position: absolute;
+        height: 100%;
+        background-color: #000;
+        z-index: 9999999999999999;
+        overflow: visible;
+        top: 0;
+        right: 100%;
+    }
+    
+    .side-info.right::after {
+        right: calc(100% - 1px);
+    }
+
+    .log-info {
+        margin: 50px 36px;
+        align-items: flex-start
+    }
+
+    .personal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .log-info .personal-details {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .big-title {
+        margin-bottom: 32px;
+        font-size: 30px;
+    }
+
+    .log-btn img {
+        width: 17px;
+    }
+
+    /*********** register.html *********/
+    .register .col-lg-6 {
+        order: -1;
+    }
+
+    .side-info.left::after {
+        left: calc(100% - 1px);
+    }
+
+    .register .log-info {
+        margin: 50px 21px;
+        align-items: flex-start
+    }
+
+    .register .log-info .personal-details {
+        width: 221px;
+    }
+
+    .register .big-title {
+        font-size: 24px;
+        width: 100%;
+        max-width: 122px;
+        margin-bottom: 39px;
+    }
+
+    .upload-submit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .uploading {
+        width: 84px;
+        height: 84px;
+    }
+
+    .upload-img .add-img .type {
+        width: 116px;
+    }
+
+    .signing-up .col-2 {
+        padding: 0;
+    }
+
+    .custom-radio i {
+        top: 2px;
+    }
+
+    /* Start Business User submit Modal */
+    .custom-modal .modal-card .card-content button {
+        width: 262px;
+        height: 65px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 24px;
+    }
+
+    .custom-modal .modal-card .card-content button span {
+        display: block;
+    }
+    /* End Business User submit Modal */
+
+    /*************** reset-password.html **********/
+    .reset-password .form-btn {
+        margin-bottom: 50px;
+        width: 100%;
+        max-width: 100px;
+    }
+
+    .reset-password .email {
+        margin-bottom: 30px;
+    }
+
+    .back-login {
+        margin-bottom: 30px;
+    }
+
+    /*********** confirmation-message.html *********/
+    .confirm-message .check-email {
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .confirm-message .chck-email p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .confirm-message .chck-email p:nth-child(2) {
+        margin-bottom: 5px;
+    }
+
+    .confirm-message .chck-email p:nth-child(3) {
+        margin-bottom: 30px;
+    }
+
+    .confirm-message .recieve-email p.spam {
+        font-size: 14px;
+    }
+
+    .confirm-message .recieve-email div.or {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .confirm-message .recieve-email .log-btn {
+        margin-bottom: 50px;
+    }
+
+    .confirm-message .recieve-email .log-btn img.cancel {
+        width: 20px;
+    }
+
+    /*********** new-password.html *********/
+    .new-pass p.reset-pass-request {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .new-pass .log-btn {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 575px) {
+
+}
+
+
+
+@media (min-width: 993px) and (max-width: 1024px) {
+    /*************** reset-password.html **********/
+    .reset-password .form-btn button[type='reset'] {
+        margin-right: 15px;
+    }
+
+    .reset-password .form-btn button[type='submit'] {
+        margin-left: 15px;
+    }
+}
