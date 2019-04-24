@@ -153,8 +153,12 @@ button:active {
 
 /*==============================//  HOME PAGE   //===================================*/
 
-
-
+.main-header,
+.header-container.header-container-m
+{
+    z-index: 999;
+    position: relative; 
+}
 /*==============================//  start header*/
 
 .header
