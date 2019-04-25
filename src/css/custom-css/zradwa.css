@@ -215,6 +215,28 @@
     .new-pass .log-btn {
         margin-bottom: 50px;
     }
+
+    /********** myProfile-wins.html ************/
+    .wins-content {
+        padding: 50px 0;
+    }
+
+    .profile-details .user-data {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .profile-details .user-data .user-img {
+        margin-right: 20px;
+        width: 84px;
+        height: 84px;
+        margin-bottom: 29px;
+    }
+
+    .profile-details .user-data .user-name {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 768px) {
