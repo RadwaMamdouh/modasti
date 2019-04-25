@@ -2,6 +2,9 @@ label {
     margin: 0;
 }
 
+.content {
+    min-height: calc(100vh - 822px);
+}
 
 /*********************** login.html *********************/
 .log-forms {
@@ -831,4 +834,98 @@ label {
 /********************************************** new-password.html **********************************/
 .new-pass p.reset-pass-request {
     width: 163px;
+}
+
+
+
+/******************************************** myProfile-wins.html **********************************/
+.myProfile-tabs {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(112,112,112,.1);
+}
+
+.myProfile-tabs .prof-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.myProfile-tabs .prof-tabs li .tabs-links {
+    margin-right: 30px;
+    color: #000;
+    font-size: 12px;
+    transition: .5s ease;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #000000 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #000000 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+           -moz-background-clip: text;
+             -o-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+           -moz-text-fill-color: transparent;
+             -o-text-fill-color: transparent;
+                text-fill-color: transparent;
+    background-size: 250%;
+    text-transform: uppercase;
+    overflow: hidden; 
+}
+
+.myProfile-tabs .prof-tabs li:last-child .tabs-links {
+    margin-right: 0;
+}
+
+.myProfile-tabs .prof-tabs li .tabs-links.active,
+.myProfile-tabs .prof-tabs li .tabs-links:hover
+{
+    background-position: 100% 0;
+}
+
+/* Start Wins Content */
+.wins-content {
+    padding: 100px 0;
+}
+
+.profile-details .user-data .user-img {
+    width: 122px;
+    height: 122px;
+    margin-bottom: 20px;
+}
+
+.profile-details .user-data .user-img img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.profile-details .user-data .user-name {
+    font-size: 30px;
+    margin-bottom: 19px;
+    text-transform: capitalize;
+}
+
+.profile-details .info-row {
+    margin-bottom: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-details .info-row span.tit {
+    text-transform: uppercase;
+}
+
+.profile-details .info-row span.num {
+    font-size: 14px;
+}
+
+.profile-details .user-info {
+    margin-top: 11px;
+}
+
+.profile-details .user-info .bio {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
