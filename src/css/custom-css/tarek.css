@@ -356,11 +356,11 @@ a {
     border: 1px solid #000;
     transition: .5s ease;
     transform-origin: right top;
-    transform: rotate(-45deg) rotateY(-45deg) perspective(600px);
-    -webkit-transform: rotate(-45deg) rotateY(-45deg) perspective(600px);
-    -moz-transform: rotate(-45deg) rotateY(-45deg) perspective(600px);
-    -ms-transform: rotate(-45deg) rotateY(-45deg) perspective(600px);
-    -o-transform: rotate(-45deg) rotateY(-45deg) perspective(600px);
+    transform: rotateX(-90deg) rotateY(10deg) perspective(600px);
+    -webkit-transform: rotateX(-90deg) rotateY(10deg) perspective(600px);
+    -moz-transform: rotateX(-90deg) rotateY(10deg) perspective(600px);
+    -ms-transform: rotateX(-90deg) rotateY(10deg) perspective(600px);
+    -o-transform: rotateX(-90deg) rotateY(10deg) perspective(600px);
     opacity: 0;
     visibility: hidden;
 }
@@ -372,7 +372,7 @@ a {
     -ms-transform: none;
     -o-transform: none;
     opacity: 1;
-    visibility: visible;    
+    visibility: visible;
 }
 /*drop-mnu*/
 
