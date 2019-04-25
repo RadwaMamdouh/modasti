@@ -123,6 +123,12 @@ $(document).ready(function () {
             $('#modal').removeClass('show');
         }
     });
+
+    // Help Collapsing
+    $('.collapse-btn').on('click', function () {
+        $(this).parents('.collapse-box').siblings().removeClass('active');
+        $(this).parents('.collapse-box').toggleClass('active');
+    });
 });
 
 // Uploading image
@@ -145,3 +151,4 @@ function readURL(input) {
 $("#upload-file").change(function(){
     readURL(this);
 });
+
