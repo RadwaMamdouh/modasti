@@ -842,15 +842,17 @@ label {
 .myProfile-tabs {
     padding: 20px 0;
     border-bottom: 1px solid rgba(112,112,112,.1);
+    font-size: 0;
 }
 
 .myProfile-tabs .prof-tabs {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 .myProfile-tabs .prof-tabs li .tabs-links {
-    margin-right: 30px;
+    margin: 0 15px;
     color: #000;
     font-size: 12px;
     transition: .5s ease;
@@ -871,10 +873,8 @@ label {
     background-size: 250%;
     text-transform: uppercase;
     overflow: hidden; 
-}
-
-.myProfile-tabs .prof-tabs li:last-child .tabs-links {
-    margin-right: 0;
+    display: block;
+    line-height: 14px;
 }
 
 .myProfile-tabs .prof-tabs li .tabs-links.active,
@@ -919,6 +919,7 @@ label {
 
 .profile-details .info-row span.num {
     font-size: 14px;
+    font-family: 'sans-m';
 }
 
 .profile-details .user-info {

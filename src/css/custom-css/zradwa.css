@@ -237,6 +237,44 @@
     .profile-details .user-data .user-name {
         font-size: 16px;
     }
+
+    .profile-details .info-row span.num {
+        font-size: 12px;
+        font-family: 'sans';
+    }
+
+    .profile-details .user-info {
+        margin-bottom: 50px;
+    }
+
+    .profile-details .user-info .bio {
+        font-size: 16px;
+    }
+
+    .profile-details .user-info p {
+        font-size: 14px;
+    }
+
+    .box .box-img {
+        height: 325px;
+    }
+
+    .box .wins-cup {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .box .wins-cup .cup-img {
+        width: 71px;
+        height: 62px;
+        margin-bottom: 20px;
+    }
+
+    .box .icon-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 768px) {
