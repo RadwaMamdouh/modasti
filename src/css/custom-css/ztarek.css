@@ -54,9 +54,7 @@
 
 
 /*    header*/
-}
-
-@media (max-width: 1085px) {
+    
     
 /*    header*/
     
@@ -70,6 +68,84 @@
     }
     
 /*    header*/
+    
+/*    brands*/
+    
+    .myProfile-tabs
+    {
+        display: none;
+    }
+    
+/*    brands*/
+}
+
+@media (max-width: 1085px) {
+    .weird-header
+    {
+        padding: 50px 0;
+    }
+    .weird-header .main-tit
+    {
+        font-size: 45px;
+        padding: 0;
+        margin: 0 0 30px;
+        line-height: 54px;
+        background-color: transparent;
+        width: 313px;
+        max-width: 100%;
+        margin-top: -30px;
+    }
+     .weird-header .weird-shape
+    {
+        position: relative;
+        width: 100%;
+        height: 177px;
+        writing-mode: inherit;
+        border-width: 5px;
+    }
+     .weird-header .weird-shape::before
+    {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 40px;
+        bottom: -5px;
+        left: -5px;
+        background-color: #fff;
+        min-width: 200px;
+    }
+     .weird-header .weird-shape p
+    {
+        transform: none;
+    }
+    .weird-header .info .info-row
+    {
+        justify-content: space-between;
+    }
+    .weird-header .info .info-row .info-content
+    {
+        font-size: 12px;
+        width: 60%; 
+    }
+    .weird-header .info .info-row a
+    {
+        font-size: 12px;
+        width: auto;
+    }
+     .weird-header .weird-shape img
+    {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+    .weird-header .info .info-content
+    {
+        font-size: 14px;
+    }
+    .weird-header .info .tit
+    {
+        font-size: 24px;
+    }
 }
 @media (max-width: 768px) {
     
