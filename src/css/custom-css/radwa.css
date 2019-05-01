@@ -1183,3 +1183,23 @@ label {
 .terms-content p:last-child {
     margin-bottom: 0;
 }
+
+
+
+/******************************* data-feed.html **************************/
+.data-feed-head {
+    padding: 100px 0;
+    background-color: #000;
+}
+
+.data-feed-head .tite {
+    margin-bottom: 0;
+}
+
+.data-feed-content {
+    padding: 100px 0 110px;
+}
+
+.data-feed-content .tite div {
+    color: #000;
+}
