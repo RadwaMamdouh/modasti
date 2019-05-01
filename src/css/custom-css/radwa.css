@@ -842,15 +842,17 @@ label {
 .myProfile-tabs {
     padding: 20px 0;
     border-bottom: 1px solid rgba(112,112,112,.1);
+    font-size: 0;
 }
 
 .myProfile-tabs .prof-tabs {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 .myProfile-tabs .prof-tabs li .tabs-links {
-    margin-right: 30px;
+    margin: 0 15px;
     color: #000;
     font-size: 12px;
     transition: .5s ease;
@@ -871,10 +873,8 @@ label {
     background-size: 250%;
     text-transform: uppercase;
     overflow: hidden; 
-}
-
-.myProfile-tabs .prof-tabs li:last-child .tabs-links {
-    margin-right: 0;
+    display: block;
+    line-height: 14px;
 }
 
 .myProfile-tabs .prof-tabs li .tabs-links.active,
@@ -919,6 +919,7 @@ label {
 
 .profile-details .info-row span.num {
     font-size: 14px;
+    font-family: 'sans-m';
 }
 
 .profile-details .user-info {
@@ -940,6 +941,7 @@ label {
     max-width: 100%;
     height: 468px;
     border-bottom: 1px solid #ECECEC;
+    overflow: hidden;
 }
 
 .box .box-img img {
@@ -1001,4 +1003,203 @@ label {
     width: 25px;
     height: 22px;
     max-width: 100%;
+}
+
+
+
+/******************************************** myProfile-following.html **********************************/
+.following-content {
+    padding: 100px 0;
+}
+
+
+/******************************************** help.html **********************************/
+.help-head {
+    padding: 100px 0;
+    background-color: #000;
+    font-size: 0;
+    line-height: 16px;
+    overflow: hidden;
+}
+
+.help-head .left {
+    max-width: 100%;
+}
+
+.tite {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    font-size: 0;
+    line-height: 29px;
+}
+
+.tite img {
+    width: 17px;
+    height: 17px;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+.tite div {
+    font-size: 24px;
+    font-family: 'raleway-b';
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.help-head .left .behind-u {
+    font-size: 102px;
+    font-family: 'raleway-b';
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 120px;
+}
+
+.faqs .tit {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.faqs .tit:last-child {
+    margin-bottom: 0;
+    line-height: 16px;
+}
+
+/* Start Collapsing */
+.collapseing {
+    padding: 100px 0;
+}
+
+.collapse-box {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    margin-bottom: 30px;
+}
+
+.collapse-box:last-child {
+    margin-bottom: 0;
+}
+
+.collapse-box .collapse-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.collapse-box .collapse-btn .btn-txt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.collapse-box .collapse-btn .btn-txt img {
+    width: 17px;
+    height: 17px;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+.collapse-box .collapse-btn .btn-txt span {
+    font-size: 24px;
+    font-family: 'raleway-b';
+    text-transform: uppercase;
+    line-height: 29px;
+}
+
+.collapse-box .collapse-btn .collape-icon {
+    width: 12px;
+    height: 12px;
+    max-width: 100%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.collapse-box .collapse-btn .collape-icon img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.collapse-box .collapse-content {
+    font-size: 16px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.collapse-box.active .collapse-content {
+    max-height: 200px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.collapse-box.active .collapse-btn .collape-icon {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+
+/******************************* terms-of-services.html **************************/
+.terms-head {
+    padding: 100px 0;
+    background-color: #000;
+}
+
+.terms-head .tite {
+    margin-bottom: 0;
+}
+
+.terms-content {
+    padding: 108px 0 100px;
+}
+
+.terms-content p {
+    margin-bottom: 30px;
+    line-height: 26px;
+}
+
+.terms-content p.t-title {
+    font-size: 24px;
+    font-family: "raleway-b";
+    text-transform: uppercase;
+    line-height: 29px;
+}
+
+.terms-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/******************************* data-feed.html **************************/
+.data-feed-head {
+    padding: 100px 0;
+    background-color: #000;
+}
+
+.data-feed-head .tite {
+    margin-bottom: 0;
+}
+
+.data-feed-content {
+    padding: 100px 0 110px;
+}
+
+.data-feed-content .tite div {
+    color: #000;
 }
