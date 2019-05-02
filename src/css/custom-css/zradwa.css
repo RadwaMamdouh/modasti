@@ -217,25 +217,35 @@
     }
 
     /********** myProfile-wins.html ************/
+    .myProfile-tabs {
+        overflow: scroll;
+    }
+
+    .myProfile-tabs .prof-tabs {
+        justify-content: flex-start;
+    }
+
     .wins-content {
-        padding: 50px 0;
+        padding: 50px 0 20px;
     }
 
     .profile-details .user-data {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        margin-bottom: 29px;
     }
 
     .profile-details .user-data .user-img {
         margin-right: 20px;
         width: 84px;
         height: 84px;
-        margin-bottom: 29px;
+        margin-bottom: 0;
     }
 
     .profile-details .user-data .user-name {
         font-size: 16px;
+        margin-bottom: 0;
     }
 
     .profile-details .info-row span.num {
@@ -256,12 +266,16 @@
     }
 
     .box .box-img {
-        height: 325px;
+        width: 164px;
+        height: 298px;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .box .wins-cup {
         flex-direction: column;
         align-items: flex-start;
+        padding: 20px 0;
     }
 
     .box .wins-cup .cup-img {
@@ -274,6 +288,28 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    /********** myProfile-following.html ************/
+    .following-content {
+        padding: 50px 0 20px;
+    }
+
+    .user-box .user-img {
+        width: 66px;
+        height: 66px;
+        margin-bottom: 10px;
+    }
+
+    .user-box .user-name {
+        font-size: 12px;
+        margin-bottom: 10px;
+        line-height: 14px;
+    }
+
+    .user-box .user-box-btn span {
+        font-size: 12px;
+        line-height: 14px;
     }
 
     /********** help.html ************/
@@ -299,6 +335,10 @@
     }
 
     /*********** terms-of-services ********/
+    .terms-head {
+        padding: 50px 0;
+    }
+
     .terms-content {
         padding: 53px 0 50px;
     }
@@ -311,6 +351,23 @@
     .terms-content p.t-title {
         margin-bottom: 30px;
         width: 194px;
+    }
+
+    /*********** data-feed ********/
+    .data-feed-head {
+        padding: 50px 0;
+    }
+
+    .data-feed-content .feed-table {
+        overflow: auto;
+    }
+
+    .data-feed-head .tite div {
+        width: 275px;
+    }
+
+    .data-feed-content {
+        padding: 50px 0;
     }
 }
 

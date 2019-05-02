@@ -875,6 +875,7 @@ label {
     overflow: hidden; 
     display: block;
     line-height: 14px;
+    white-space: nowrap;
 }
 
 .myProfile-tabs .prof-tabs li .tabs-links.active,
@@ -885,7 +886,7 @@ label {
 
 /* Start Wins Content */
 .wins-content {
-    padding: 100px 0;
+    padding: 60px 0 30px;;
 }
 
 .profile-details .user-data .user-img {
@@ -929,6 +930,7 @@ label {
 .profile-details .user-info .bio {
     font-size: 24px;
     margin-bottom: 20px;
+    margin-top: 12px;
 }
 
 .box {
@@ -942,13 +944,16 @@ label {
     height: 468px;
     border-bottom: 1px solid #ECECEC;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box .box-img img {
     width: 100%;
     max-width: 100%;
     height: 100%;
-    object-fit: cover;
+    max-height: 100%;
 }
 
 .box .wins-cup {
@@ -1009,9 +1014,75 @@ label {
 
 /******************************************** myProfile-following.html **********************************/
 .following-content {
-    padding: 100px 0;
+    padding: 60px 0 30px;
 }
 
+.user-blocks {
+    text-align: center;
+}
+
+.user-box {
+    /* border: 1px solid #ECECEC; */
+    border: 1px solid transparent;
+    padding: 30px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
+
+.user-box .user-img {
+    width: 122px;
+    height: 122px;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.user-box .user-img img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.user-box .user-name {
+    font-size: 24px;
+    margin-bottom: 14px;
+    text-transform: capitalize;
+    line-height: 44px;
+}
+
+.user-box .user-box-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    outline: 0;
+}
+
+.user-box .user-box-btn img {
+    width: 7px;
+    height: 5px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 3px;
+}
+
+.user-box .user-box-btn .follow {
+    display: none;
+}
+
+.user-box .user-box-btn span {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
 
 /******************************************** help.html **********************************/
 .help-head {
@@ -1197,9 +1268,75 @@ label {
 }
 
 .data-feed-content {
-    padding: 100px 0 110px;
+    padding: 60px 0;
+}
+
+.data-feed-content .feed-table {
+    max-width: 100%;
+}
+
+.data-feed-content table {
+    width: 100%;
+    max-width: 100%;
+    overflow: scroll;
+}
+
+.data-feed-content table thead th {
+    padding: 0 95px 0 30px;
+}
+
+.data-feed-content .tite {
+    margin-bottom: 0;
 }
 
 .data-feed-content .tite div {
+    color: #000;
+}
+
+.data-feed-content table tbody tr {
+    border-bottom: 1px solid rgba(0, 0, 0, .10);
+}
+
+.data-feed-content table tbody tr:last-child {
+    border-bottom: 0;
+}
+
+.data-feed-content table tbody td {
+    padding: 30px 95px 46px 30px;
+    vertical-align: top;
+}
+
+.data-feed-content table tbody tr:first-child td {
+    border-top: 0;
+}
+
+.data-feed-content table tbody td .t-tit {
+    font-size: 24px;
+    line-height: 44px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.data-feed-content table tbody td .required {
+    line-height: 16px;
+}
+
+.data-feed-content table tbody td p {
+    line-height: 26px;
+    width: 555px;
+    max-width: 100%;
+}
+
+.data-feed-content table tbody td p.ex {
+    width: 255px;
+}
+
+.data-feed-content table tbody td p.ex a {
+    color: #000;
+    max-width: 100%;
+    word-break: break-word;
+}
+
+.data-feed-content table tbody td p.ex a:hover {
     color: #000;
 }
