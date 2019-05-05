@@ -242,6 +242,82 @@
     }
     
 /*    footer*/
+    
+/*    .about-us */
+    .weird-header .main-tit.about
+    {
+        margin-bottom: 0;
+    }
+    .weird-header .info.about
+    {
+        margin-top: 0;
+    }
+    .weird-shape.about::before
+    {
+        width: 85%;
+    }
+    .weird-header .main-tit.about
+    {
+        padding-left: 0;
+    }
+    .socialize
+    {
+        padding-bottom: 0;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+    .socialize .container
+    {
+        padding: 0 35px;
+    }
+    .socialize .relative::before
+    {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 50%;
+        width: 1000px;
+        height: 50%;
+        background-color: #fff;
+        transform: translateX(-50%)
+    }
+    .socialize .relative .row
+    {
+        position: static;
+        transform: none;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .socialize .relative .row .col-6:first-child
+    {
+        padding-left: 0;
+        padding-right: 6px;
+    }
+    .socialize .relative .row .col-6:last-child
+    {
+        padding-right: 0;
+        padding-left: 6px;
+    }
+    .inspire .container,
+    .the-name .container
+    {
+        padding: 0 35px;
+    }
+    .inspire
+    {
+        margin-bottom: 30px;
+    }
+    .inspire .col-12:last-child
+    {
+        order: -1
+    } .the-name
+    {
+        margin-bottom: 50px;
+    }
+/*    .about-us */
 }
 
 @media (max-width: 575px) {
