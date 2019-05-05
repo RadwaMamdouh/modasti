@@ -129,6 +129,19 @@ $(document).ready(function () {
         $(this).parents('.collapse-box').siblings().removeClass('active');
         $(this).parents('.collapse-box').toggleClass('active');
     });
+
+    // Follow And Unfollow
+    $('.user-box-btn').on('click', function() {
+        if($(this).attr('data-click-state') == 1) {
+            $(this).attr('data-click-state', 0);
+            $(this).find('.plus').css('display', 'block');
+            $(this).find('.follow').css('display', 'none');
+        } else {
+            $(this).attr('data-click-state', 1);
+            $(this).find('.follow').css('display', 'block');
+            $(this).find('.plus').css('display', 'none');
+        }
+    });
 });
 
 // Uploading image
