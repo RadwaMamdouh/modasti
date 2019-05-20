@@ -8,7 +8,7 @@ label {
 
 /*********************** login.html *********************/
 .log-forms {
-    padding: 100px 0;
+    padding: 60px 0;
     overflow: hidden;
 }
 
@@ -21,16 +21,17 @@ label {
 
 .title img {
     width: 100%;
-    max-width: 35px;
-    height: 35px;
+    max-width: 17px;
+    height: 17px;
     margin-right: 10px;
 }
 
 .title div {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 24px;
     color: #000;
     text-transform: uppercase;
+    font-family: 'raleway-b';
+    line-height: 29px;
 }
 
 .tit {
@@ -63,21 +64,35 @@ label {
 
 .email .wrong span {
     color: #CFBDA8;
+    line-height: 16px;
+}
+
+.correct {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.correct img {
+    width: 100%;
+    max-width: 17px;
+    height: 11px;
 }
 
 .input {
     border-bottom: 1px solid #ECECEC;
     width: 100%;
     max-width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 19px;
 }
 
 .input::placeholder {
     color: #000;
     opacity: 0.3;
     font-size: 14px;
-    font-weight: 500;
+    font-family: 'raleway-m';
     text-transform: uppercase;
+    line-height: 16px;
 }
 
 .form-group {
@@ -131,12 +146,12 @@ label {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 4px;
+    top: 1px;
     left: 0;
 }
 
 .custom-checkbox i::before {
-    color: #fff;
+    color: #000;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -145,16 +160,18 @@ label {
 }
 
 .custom-checkbox input:checked + i::before {
-    color: #000;
+    color: #fff;
 }
 
 .remeber-me .remeber span {
     margin-left: 15px;
+    line-height: 16px;
 }
 
 .forgot-pass a {
     color: #000;
     position: relative;
+    line-height: 16px;
 }
 
 .forgot-pass a:hover {
@@ -184,7 +201,7 @@ label {
 
 .log-btn {
     padding: 22px 24px;
-    width: 262px;
+    width: 255px;
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -197,6 +214,11 @@ label {
     -ms-transition: 0s;
     -o-transition: 0s;
     overflow: hidden;
+    text-transform: uppercase;
+}
+
+.log-btn:focus {
+    outline: 0;
 }
 
 .log-btn::before {
@@ -239,6 +261,7 @@ label {
 
 .log-btn span {
     color: #fff;
+    line-height: 16px;
 }
 
 .log-btn:hover span {
@@ -249,15 +272,18 @@ label {
 
 .log-btn img {
     width: 35px;
+    filter: grayscale(100%);
 }
 
 .log-btn:hover img {
     z-index: 99;
     position: relative;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
 }
 
 .log-footer {
-    margin-top: 52px;
+    margin-top: 30px;
 }
 
 /* .log-footer .title {
@@ -356,7 +382,7 @@ label {
 }
 
 .log-info {
-    margin: 246px 0 246px 195px;
+    margin: 190px 0 190px 190px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -367,8 +393,10 @@ label {
     width: 100%;
     max-width: 253px;
     color: #fff;
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 36px;
+    font-family: 'raleway-b';
+    line-height: 42px;
+    text-transform: uppercase;
 }
 
 .log-info .personal-details {
@@ -376,8 +404,9 @@ label {
     color: #fff;
     width: 100%;
     max-width: 198px;
-    margin-top: 27px;
+    margin-top: 30px;
     margin-bottom: 30px;
+    line-height: 26px;
 }
 
 .log-info .log-btn {
@@ -402,12 +431,18 @@ label {
 
 .log-info .log-btn span {
     color: #000;
+    line-height: 16px;
     /* padding: 0 137px 0 0; */
 }
 
 .log-info .log-btn:hover span {
     color: #fff;
     z-index: 99;
+}
+
+.log-info .log-btn img {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
 }
 
 .log-info .log-btn:hover img {
@@ -531,25 +566,49 @@ label {
 }
 
 .custom-modal .modal-card .card-content {
-    padding: 10px 49px 50px;
+    padding: 10px 47px 50px;
 }
 
 .custom-modal .modal-card .card-content .joining {
-    font-size: 30px;
-    width: 262px;
+    font-size: 24px;
+    width: 210px;
     margin: 0 auto 30px;
     text-align: center;
     text-transform: uppercase;
     max-width: 100%;
+    line-height: 36px;
 }
 
 .custom-modal .modal-card .card-content p {
     margin-bottom: 30px;
     text-align: center;
+    line-height: 26px;
 }
 
 .custom-modal .modal-card .card-content button#skip {
     margin-bottom: 20px;
+}
+
+.custom-modal .modal-card .card-content button#skip:hover {
+    background-color: #fff;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.custom-modal .modal-card .card-content button#guide-me {
+    height: 60px;
+}
+
+.custom-modal .modal-card .card-content button#guide-me:hover {
+    background-color: #fff;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
 }
 
 .custom-modal .modal-card .card-content button#guide-me img {
@@ -563,7 +622,7 @@ label {
 
 /*********************************************** register.html **********************************************/
 .register .log-info {
-    margin: 249px 194px 240px 0;
+    margin: 190px 190px 190px 0;
 }
 
 .register .log-info .personal-details {
@@ -598,7 +657,7 @@ label {
 }
 
 .custom-radio i::before {
-    color: #fff;
+    color: #000;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -607,7 +666,7 @@ label {
 }
 
 .custom-radio input:checked + i::before {
-    color: #000;
+    color: #fff;
 }
 
 .register .tabs {
@@ -625,7 +684,60 @@ label {
 
 .sign-me span {
     margin-left: 15px;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.register .drop-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.register .drop-container .drpo-btn {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+}
+
+.register .drop-container .drpo-btn:hover {
+    color: #000;
+}
+
+.register .drop-container .drpo-btn img {
+    width: 10px;
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+.register .drop-container .drop-mnu {
+    z-index: 1;
+    padding: 5px;
+}
+
+.register .drop-container .drop-mnu ul li a {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    white-space: nowrap;
+    color: #000;
+}
+
+.register .drop-container .drop-mnu ul li a:hover {
+    color: #000;
+}
+
+.register .location-drop-btn::before {
+    bottom: 0;
+}
+
+.register .location-drop-btn::after {
+    bottom: 0;
+}
+
+.m-form .log-footer .title {
+    margin-bottom: 0;
 }
 
 /* Uploadin Photo */
@@ -651,7 +763,7 @@ label {
     -ms-transition: 0s;
     -o-transition: 0s;
     overflow: hidden;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 .uploading::before {
@@ -703,15 +815,25 @@ label {
     opacity: 0.3;
 }
 
+.signing-up {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.signing-up .signing-text {
+    margin-left: 30px;
+}
+
 /* Business User Form */
-.b-form {
+.m-form {
     display: none;
 }
 
 .signing-up .signing-text a {
     text-decoration: underline !important;
     color: #000;
-    display: inline-block;
+    display: block;
 }
 
 #img-preview img:not(.add-icon) {
@@ -723,6 +845,10 @@ label {
 
 .b-form .log-footer {
     margin-top: 32px;
+}
+
+.b-form .log-footer .title {
+    margin-bottom: 0;
 }
 
 .a-start {
@@ -740,7 +866,13 @@ label {
 }
 
 .reset-password .title div {
-    width: 168px;
+    width: 135px;
+    max-width: 100%;
+}
+
+.resetPass-head p {
+    line-height: 26px;
+    margin-bottom: 30px;
 }
 
 .log-btn img.cancel {
@@ -748,11 +880,11 @@ label {
 }
 
 .reset-password .email {
-    margin-bottom: 51px;
+    margin-bottom: 30px;
 }
 
 .back-login {
-    margin-bottom: 22px;
+    margin-bottom: 30px;
 }
 
 .back-login a {
@@ -794,35 +926,75 @@ label {
 
 
 /********************************************** confirmation-message.html **********************************/
-/* check Your Email */
-.confirm-message .check-email {
-    font-size: 30px;
-    width: 181px;
-    max-width: 100%;
-    margin-bottom: 15px;
+.confirm-msg .log-info {
+    margin: 190px 190px 190px 0;
+}
+
+.confirm-msg .big-title {
+    width: 100%;
+    max-width: 183px;
+    color: #fff;
+    font-size: 36px;
+    font-family: raleway-b;
+    line-height: 42px;
+    margin-right: auto;
     text-transform: uppercase;
 }
 
-.confirm-message .chck-email p {
-    width: 219px;
+.confirm-msg .log-info .personal-details {
+    max-width: 253px;
 }
 
-.confirm-message .chck-email p:nth-child(2) {
+/* check Your Email */
+.confirm-message .check-email {
+    font-size: 24px;
+    width: 145px;
+    max-width: 100%;
     margin-bottom: 30px;
+    text-transform: uppercase;
+    line-height: 44px;
+}
+
+.confirm-message .chck-email p {
+    line-height: 26px;
 }
 
 /* Didn't Recieve The Email */
-.confirm-message .recieve-email .check-email {
-    width: 229px;
+.confirm-message .not-recieve {
+    font-size: 24px;
+    line-height: 44px;
+    width: 100%;
+    max-width: 183px;
+    margin-bottom: 30px;
 }
 
-.confirm-message .recieve-email p.spam {
+.confirm-message .recieve-email p {
+    font-family: 'raleway-m';
+    line-height: 26px;
     margin-bottom: 30px;
 }
 
 .confirm-message .recieve-email div.or {
     text-transform: uppercase;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
+    line-height: 16px;
+}
+
+.confirm-message .recieve-email .log-btn.resend {
+    background-color: #fff;
+    border: 1px solid #CFBDA8;
+}
+
+.confirm-message .recieve-email .log-btn.resend::before {
+    background-color: #000;
+}
+
+.confirm-message .recieve-email .log-btn.resend span {
+    color: #000;
+}
+
+.confirm-message .recieve-email .log-btn.resend:hover span {
+    color: #fff;
 }
 
 .confirm-message .recieve-email .log-btn img.cancel {
@@ -833,7 +1005,7 @@ label {
 
 /********************************************** new-password.html **********************************/
 .new-pass p.reset-pass-request {
-    width: 163px;
+    line-height: 26px;
 }
 
 
@@ -930,7 +1102,16 @@ label {
 .profile-details .user-info .bio {
     font-size: 24px;
     margin-bottom: 20px;
-    margin-top: 12px;
+}
+
+.profile-details .create-set {
+    margin-top: 30px;
+}
+
+.profile-details .create-set .log-btn img {
+    width: 17px;
+    height: 17px;
+    max-width: 100%;
 }
 
 .box {
@@ -1023,14 +1204,14 @@ label {
 
 .user-box {
     /* border: 1px solid #ECECEC; */
-    border: 1px solid transparent;
+    border: 1px solid #ECECEC;
     padding: 30px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 30px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, .1); */
 }
 
 .user-box .user-img {
@@ -1042,6 +1223,11 @@ label {
     align-items: center;
     justify-content: center;
     margin-bottom: 14px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
 .user-box .user-img img {
@@ -1083,6 +1269,168 @@ label {
     line-height: 16px;
     text-transform: uppercase;
 }
+
+
+
+/******************************************** myProfile-following.html **********************************/
+.collections-content {
+    padding: 60px 0 30px;
+}
+
+.collections-blocks {
+    text-align: center;
+}
+
+.collec-btn {
+    width: 255px;
+    height: 209px;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+    background-color: #ECECEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    outline: 0;
+}
+
+.collec-btn:focus {
+    outline: 0;
+}
+
+.collec-btn img {
+    width: 26px;
+    height: 26px;
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+
+.collec-btn .tit {
+    width: 78px;
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.collections-content .custom-modal .modal-card {
+    max-width: 730px;
+}
+
+.collections-content .custom-modal .modal-card .card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px 30px 95px;
+}
+
+.collections-content .custom-modal .modal-card .card-head .tit {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+.collections-content .custom-modal .modal-card .card-content {
+    padding: 0 95px 30px;
+}
+
+.collections-content .custom-modal .modal-card .card-content .form-group {
+    margin-bottom: 30px;
+}
+
+.collections-content .custom-modal .modal-card .card-content .form-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collections-content .log-btn {
+    width: 255px;
+    height: 60px;
+    max-height: 100%;
+}
+
+.collections-content .log-btn span {
+    line-height: 16px;
+}
+
+.collections-content .log-btn[type='reset'] {
+    background-color: #fff;
+    border: 1px solid #CFBDA8;
+    display: flex;
+    align-items: center;
+}
+
+.collections-content .log-btn[type='reset']::before {
+    background-color: #000;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.collections-content .log-btn[type='reset']:hover {
+    box-shadow: 0 0 5px rgba(255,255,255,.9)
+}
+
+.collections-content .log-btn[type='reset'] span {
+    color: #000;
+    /* padding: 0 137px 0 0; */
+}
+
+.collections-content .log-btn[type='reset']:hover span {
+    color: #fff;
+    z-index: 99;
+}
+
+.collections-content .log-btn[type='reset']:hover img {
+    z-index: 99;
+}
+
+.collections-content .log-btn[type='reset'] img {
+    width: 17px;
+    justify-items: 17px;
+    max-width: 100%;
+}
+
+.collec-box .box-title {
+    text-align: left;
+    font-size: 24px;
+    line-height: 44px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.collec-box {
+    margin-bottom: 30px;
+}
+
+.collec-box a img {
+    object-fit: cover;
+}
+
+
+
+/******************************************** myProfile-my-sets.html **********************************/
+.box .box-tit {
+    font-family: 'raleway-m';
+    font-size: 24px;
+    line-height: 36px;
+    margin: 30px 0 10px;
+    width: 185px;
+    max-width: 100%;
+}
+
+.box .box-p {
+    font-family: 'raleway';
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+
+
 
 /******************************************** help.html **********************************/
 .help-head {

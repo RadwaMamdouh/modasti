@@ -272,7 +272,7 @@
     <section class="content">
         <div class="log-forms register">
             <div class="container">
-                <div class="row justify-content-between">
+                <div class="row justify-content-between align-items-start">
                     <div class="col-lg-5 side-info left">
                         <div class="log-info">
                             <div class="big-title">WELCOME BACK!</div>
@@ -310,6 +310,95 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Business User -->
+                                <div class="b-form" id="businessUser">
+                                    <form action="home.html">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="input" placeholder="FIRST NAME">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="input" placeholder="SECOND NAME">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group email">
+                                                    <input type="text" class="input" placeholder="EMAIL">
+                                                    <span></span>
+                                                    <div class="wrong">
+                                                        <img src="../dist/img/wrong.png" class="img-fluid">
+                                                        <span class="tit">WRONG EMAIL!</span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="input" placeholder="PHONE NUMBER">
+                                                    <span></span>
+                                                    <div class="drop-container location-drop-btn">
+                                                        <a href="" class="drpo-btn">
+                                                            +20 (EG)
+                                                            <img src="../dist/img/currency.png" class="img-fluid">
+                                                        </a>
+                                        
+                                                        <div class="drop-mnu">
+                                                            <ul>
+                                                                <li><a href="">+20 (EG)</a></li>
+                                                                <li><a href="">+971 (AE)</a></li>
+                                                                <li><a href="">+966 (SA)</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <input type="password" class="input" placeholder="PASSWORD">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sign-me">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" checked>
+                                                <i class="fas fa-square"></i>
+                                                <span>Yes, sign me up for emails about the latest looks, sales, events and more.</span>
+                                            </label>
+                                        </div>
+                                        <div class="signing-up">
+                                            <button type="submit" class="log-btn modal-btn" data-target="#modal">
+                                                <span class="tit">SIGN UP</span>
+                                                <img src="../dist/img/right-arrow.png" class="img-fluid">
+                                            </button>
+                                            <div class="signing-text tit">By signing up, you agree to our <a href="#">Terms of Use</a></div>
+                                        </div>
+                                    </form>
+                                    <div class="log-footer">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="title">
+                                                    <img src="../dist/img/title-sign.png" class="img-fluid">
+                                                    <div>LOGIN WITH</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                                                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                                                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-phone"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!-- Modasti User -->
                                 <div class="m-form" id="modastiUser">
                                     <form action="home.html">
@@ -327,9 +416,33 @@
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="input" placeholder="EMAIL OR PHONE NUMBER">
+                                                <div class="form-group email">
+                                                    <input type="text" class="input" placeholder="EMAIL">
                                                     <span></span>
+                                                    <div class="wrong">
+                                                        <img src="../dist/img/wrong.png" class="img-fluid">
+                                                        <span class="tit">WRONG EMAIL!</span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="input" placeholder="PHONE NUMBER">
+                                                    <span></span>
+                                                    <div class="drop-container location-drop-btn">
+                                                        <a href="" class="drpo-btn">
+                                                            +20 (EG)
+                                                            <img src="../dist/img/currency.png" class="img-fluid">
+                                                        </a>
+                                        
+                                                        <div class="drop-mnu">
+                                                            <ul>
+                                                                <li><a href="">+20 (EG)</a></li>
+                                                                <li><a href="">+971 (AE)</a></li>
+                                                                <li><a href="">+966 (SA)</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-12">
@@ -359,7 +472,7 @@
                                         </div>
                                         <div class="sign-me">
                                             <label class="custom-checkbox">
-                                                <input type="checkbox">
+                                                <input type="checkbox" checked>
                                                 <i class="fas fa-square"></i>
                                                 <span>Yes, sign me up for emails about the latest looks, sales, events and more.</span>
                                             </label>
@@ -375,73 +488,13 @@
                                                     <div class="tit type">Upload file, follow PNG, JPEG, SVG</div>
                                                 </div>
                                             </div>
-                                            <button type="submit" class="log-btn">
-                                                <span class="tit">REGISTER</span>
-                                                <img src="../dist/img/right-arrow.png" class="img-fluid">
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- Business User -->
-                                <div class="b-form" id="businessUser">
-                                    <form action="home.html">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="input" placeholder="FIRST NAME">
-                                                    <span></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="input" placeholder="SECOND NAME">
-                                                    <span></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="input" placeholder="EMAIL OR PHONE NUMBER">
-                                                    <span></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="input" placeholder="BRAND NAME - COMPANY">
-                                                    <span></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="input" placeholder="WEBSITE">
-                                                    <span></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <input type="password" class="input" placeholder="PASSWORD">
-                                                    <span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="sign-me">
-                                            <label class="custom-checkbox">
-                                                <input type="checkbox">
-                                                <i class="fas fa-square"></i>
-                                                <span>Yes, sign me up for emails about the latest looks, sales, events and more.</span>
-                                            </label>
                                         </div>
                                         <div class="signing-up">
-                                            <div class="row align-items-center">
-                                                <div class="col-2 col-lg-6">
-                                                    <button type="submit" class="log-btn modal-btn" data-target="#modal">
-                                                        <span class="tit">REGISTER</span>
-                                                        <img src="../dist/img/right-arrow.png" class="img-fluid">
-                                                    </button>
-                                                </div>
-                                                <div class="col-8 col-lg-6">
-                                                    <div class="signing-text tit">By signing up, you agree to our <a href="#">Terms of Use</a></div>
-                                                </div>
-                                            </div>
+                                            <button type="submit" class="log-btn modal-btn" data-target="#modal">
+                                                <span class="tit">SIGN UP</span>
+                                                <img src="../dist/img/right-arrow.png" class="img-fluid">
+                                            </button>
+                                            <div class="signing-text tit">By signing up, you agree to our <a href="#">Terms of Use</a></div>
                                         </div>
                                     </form>
                                     <div class="log-footer">
