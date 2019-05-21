@@ -110,19 +110,21 @@ $(document).ready(function () {
         e.preventDefault();
         var openModalBtn = $(this).data('target');
         $(openModalBtn).toggleClass('show');
+        $('body').css('overflow-y', 'hidden');
     });
 
-    $('.card-head .close-img').on('click', function() {
-        if ($('#modal').hasClass('show')) {
-            $('#modal').removeClass('show');
+    $('.card-head .close-img , .custom-modal .overlay').on('click', function() {
+        if ($('.custom-modal').hasClass('show')) {
+            $('.custom-modal').removeClass('show');
+            $('body').css('overflow-y', 'auto');
         }
     });
 
-    $('.custom-modal .overlay').on('click', function() {
-        if ($('#modal').hasClass('show')) {
-            $('#modal').removeClass('show');
-        }
-    });
+    // $('.custom-modal .overlay').on('click', function() {
+    //     if ($('.custom-modal').hasClass('show')) {
+    //         $('.custom-modal').removeClass('show');
+    //     }
+    // });
 
     // Help Collapsing
     $('.collapse-btn').on('click', function () {

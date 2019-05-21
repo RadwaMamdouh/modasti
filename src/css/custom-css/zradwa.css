@@ -259,7 +259,7 @@
 
     /********** myProfile-wins.html ************/
     .myProfile-tabs {
-        overflow: scroll;
+        overflow-x: auto;
     }
 
     .myProfile-tabs .prof-tabs {
@@ -415,6 +415,207 @@
 
     .collections-content .custom-modal .modal-card .card-content {
         padding: 0px 50px 30px;
+    }
+
+    /********** myProfile-my-sets.html ************/
+    .profile-details .create-set {
+        margin-bottom: 30px;
+    }
+
+    .box .box-tit {
+        font-size: 16px;
+        line-height: 24px;
+        width: 123px;
+        max-width: 100%;
+        margin: 20px 0 10px;
+    }
+
+    .box .box-p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .box .btns {
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        margin: 30px 0;
+        left: 0;
+    }
+
+    .box:hover .btns {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+}
+
+    .box .btns .log-btn.edit {
+        width: 40px;
+        height: 40px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-right: 19px;
+    }
+
+    .box .btns .log-btn.edit img {
+        width: 11px;
+        height: 11px;
+    }
+
+    .box .btns .log-btn.delete {
+        width: 40px;
+        height: 40px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ECECEC;
+    }
+
+    .box .btns .log-btn.delete img {
+        width: 17px;
+        height: 15px;
+    }
+
+    .box .box-btns {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .box .btns .log-btn.view-contest {
+        display: none;
+    }
+
+    .box .price-cup {
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+
+    .box .price-cup img {
+        width: 25px;
+        height: 22px;
+    }
+
+    /********** myProfile-my-sets-details.html ************/
+    .sets-details {
+        padding: 30px 0;
+    }
+
+    .set-view {
+        margin-bottom: 30px;
+    }
+
+    .sets-details .set-img {
+        /* width: 342px; */
+        height: 623px;
+        max-width: 100%;
+        margin-bottom: 29px;
+    }
+
+    .sets-details .set-title {
+        font-family: 'raleway-m';
+        font-size: 16px;
+        line-height: 24px;
+        width: 123px;
+        max-width: 100%;
+    }
+
+    .sets-details .set-desc {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .sets-details .set-data .btns .log-btn {
+        width: 163px;
+        height: 50px;
+        max-width: 100%;
+        padding: 19px 20px; 
+    }
+
+    .sets-details .set-data .btns .log-btn span {
+        display: block;
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .edit-del-btns {
+        justify-content: flex-start;
+    }
+
+    .sets-details .set-data .btns .log-btn.edit {
+        margin-right: 19px;
+    }
+
+    .sets-details .set-data .btns .log-btn.delete,
+    .sets-details .set-data .btns .log-btn.edit {
+        width: 40px;
+        height: 40px;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .sets-details .set-data .btns .log-btn.delete span,
+    .sets-details .set-data .btns .log-btn.edit span {
+        display: none;
+    }
+
+    /* Start Comments */
+    .comments {
+        padding: 30px 0;
+    }
+
+    .comments .comment-area .user-img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .comments .comment-area .write-comment textarea::placeholder {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .comments .user-comments {
+        margin-bottom: 30px;
+    }
+
+    .comments .user-comments .comment-details .user-info .user-name {
+        font-family: 'raleway-m';
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .comments .user-comments .comment-details .user-info .date {
+        font-family: 'sans';
+        font-size: 12px;
+    }
+
+    .comments .user-comments .comment-details .user-comment {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /* start Items Used */
+    .items-used {
+        padding-bottom: 0;
+    }
+
+    .items-used .box .btns {
+        display: none;
+    }
+
+    .items-used .box .box-btn {
+        display: none;
     }
 
     /********** help.html ************/
