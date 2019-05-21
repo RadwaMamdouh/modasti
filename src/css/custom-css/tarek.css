@@ -4,6 +4,7 @@
     outline: 0;
     box-sizing: border-box;
 }
+/*
 @font-face {
     font-family: 'raleway-bo';
     src: url("../fonts/Raleway-Bold.ttf");
@@ -13,7 +14,7 @@
     font-family: 'raleway';
     src: url("../fonts/Raleway-Regular.ttf");
 }
-@font-face {
+@font-face { 
     font-family: 'raleway-m';
     src: url("../fonts/Raleway-Medium.ttf");
 }
@@ -34,6 +35,11 @@
 @font-face {
     font-family: 'sans-b';
     src: url("../fonts/ProductSans-Bold.ttf");
+}
+*/
+.owl-carousel .owl-item .item img
+{
+    width: auto;
 }
 ul
 {
@@ -1955,8 +1961,8 @@ a {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    -ms-align-items: center;
-    align-items: center;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
@@ -1965,6 +1971,7 @@ a {
 {
     width: 17px;
     margin-right: 10px;
+    margin-top: 10px;
 }
 .title-container .more
 {
@@ -2078,7 +2085,7 @@ a {
     font-size: 18px;
     margin-bottom: 30px;
 }
-.news-box .icons
+.icons
 {
     display: -webkit-flex;
     display: -moz-flex;
@@ -2088,7 +2095,7 @@ a {
     -ms-align-items: center;
     align-items: center;
 }
-.news-box .icons .icon
+.icons .icon
 {
     display: -webkit-flex;
     display: -moz-flex;
@@ -2101,7 +2108,7 @@ a {
     font-size: 12px;
     position: relative;
 }
-.news-box .icons .icon::before
+.icons .icon::before
 {
     content: '';
     display: block;
@@ -2112,11 +2119,11 @@ a {
     height: 100%;
     background-color: #000;
 }
-.news-box .icons .icon:last-child::before
+.icons .icon:last-child::before
 {
-    display: none;
+    display: none  !important;
 }
-.news-box .icons .icon img
+.icons .icon img
 {
     height: 22px;
     margin-right: 5px;
@@ -2124,15 +2131,15 @@ a {
 }
 .heart .checked-img
 {
-    display: none;
+    display: none !important;
 }
 .heart.checked img
 {
-    display: none;
+    display: none !important;
 }
 .heart.checked .checked-img
 {
-    display: block;
+    display: block !important;
 }
 
 /**********  end news feed */
@@ -2341,6 +2348,172 @@ a {
 /**********  end create-set-section */
 
 /*==============================// end home page */
+
+
+
+/*==============================// start newsfeed page */
+
+.newsfeed
+{
+    padding: 60px 0;
+}
+.newsfeed .main-title
+{
+    margin-bottom: 30px;
+}
+.newsfeed .owl-contest
+{
+    margin-bottom: 30px;
+}
+.newsfeed .owl-contest .item
+{
+    height: 195px;
+    position: relative;
+}
+.newsfeed .owl-contest .item::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+1,000000+100&0.6+0,0+100 */
+    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 1%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 1%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 1%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99000000', endColorstr='#00000000', GradientType=1);
+}
+.newsfeed .owl-contest .item img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.newsfeed .owl-sets .owl-dots,
+.newsfeed .owl-contest .owl-dots
+{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.newsfeed .owl-sets .owl-dots
+{
+    bottom: 110px;
+}
+.newsfeed .owl-sets .owl-dot,
+.newsfeed .owl-contest .owl-dot
+{
+    display: block;
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+    background-color: #CFBDA8;
+    border-radius: 50%;
+    opacity: .3
+}
+.newsfeed .owl-sets .owl-dot.active,
+.newsfeed .owl-contest .owl-dot.active
+{
+    opacity: 1
+}
+.newsfeed .contest-side .log-btn
+{
+    margin-bottom: 30px;
+}
+.newsfeed .contest-side .icons
+{
+    margin-top: 30px;
+    justify-content: space-between;
+    direction: ltr
+}
+.newsfeed .contest-side .icons .icon:last-child
+{
+    margin-right: 0;
+}
+.folow-row
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ECECEC
+}
+.folow-row:last-child
+{
+    border-bottom: 0;
+}
+.folow-row .tit
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+.folow-row .tit .img
+{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 7px;
+}
+.folow-row .tit .img img
+{
+    width: 100%;
+    height: 100%;
+}
+.folow-row .tit .name
+{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.folow-row .side-folow-btn
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12;
+    font-family: 'raleway-m';
+}
+.folow-row .side-folow-btn img
+{
+    height: 10px;
+    margin-right: 5px;
+}
+.folow-row .side-folow-btn img:first-of-type
+{
+    display: block;
+}
+.folow-row .side-folow-btn img:last-of-type
+{
+    display: none;
+}
+
+/*==============================// end newsfeed page */
 
 
 
