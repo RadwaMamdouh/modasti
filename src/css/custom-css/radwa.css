@@ -1560,6 +1560,7 @@ label {
 
 .sets-details .set-data .btns .log-btn.delete,
 .sets-details .set-data .btns .log-btn.edit {
+
     justify-content: space-between;
     height: 60px;
 }
@@ -1574,6 +1575,7 @@ label {
     width: 29px;
     height: 26px;
     max-width: 100%;
+    
 }
 
 
