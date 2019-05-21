@@ -2353,9 +2353,11 @@ a {
 
 /*==============================// start newsfeed page */
 
+
 .newsfeed
 {
     padding: 60px 0;
+    overflow: hidden;
 }
 .newsfeed .main-title
 {
@@ -2433,7 +2435,6 @@ a {
 .newsfeed .contest-side .icons
 {
     margin-top: 30px;
-    justify-content: space-between;
     direction: ltr
 }
 .newsfeed .contest-side .icons .icon:last-child
@@ -2511,6 +2512,89 @@ a {
 .folow-row .side-folow-btn img:last-of-type
 {
     display: none;
+}
+.newsfeed .owl-carousel .owl-stage-outer .box .box-img
+{
+    width: 100%;
+    height: 470px;
+}
+.newsfeed .owl-carousel .owl-stage-outer .box .box-img img
+{
+    width: 100%;
+    object-fit: cover
+}
+
+
+.news-box.newsfeed-box .tit
+{
+    justify-content: space-between;
+}
+.news-box.newsfeed-box .tit > *
+{
+    width: auto;
+}
+.news-box.newsfeed-box .drop-mnu
+{
+    top: 25px;
+    min-width: 160px;
+}
+.news-box.newsfeed-box .report .drop-mnu
+{
+    text-align: center;
+}
+.news-box.newsfeed-box .report .drop-mnu .modal-btn
+{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 14px
+}
+.custom-modal .modal-card.report-catd
+{
+    max-width: 70%;
+}
+.custom-modal .modal-card.report-catd .card-content .joining
+{
+    width: auto;
+}
+.custom-checkbox i
+{
+    position: static;
+    margin-right: 7px;
+}
+.custom-modal .modal-card.report-catd .card-head
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.custom-modal .modal-card.report-catd .card-content
+{
+    padding: 30px 100px;
+}
+.custom-modal .modal-card.report-catd .custom-checkbox
+{
+    margin-bottom: 30px;
+}
+.custom-modal .modal-card.report-catd .btns
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: stretch;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.textarea
+{
+    width: 100%;
+    height: 115px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 /*==============================// end newsfeed page */

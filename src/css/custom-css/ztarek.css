@@ -73,7 +73,7 @@
     
     .myProfile-tabs
     {
-        display: none;
+        display: block;
     }
     
 /*    brands*/
@@ -145,6 +145,30 @@
     .weird-header .info .tit
     {
         font-size: 24px;
+    }
+}
+@media (max-width: 992px) {
+    .newsfeed > .container > .row > .col-12:nth-child(1)
+    {
+        order: 1
+    }
+    .newsfeed > .container > .row > .col-12:nth-child(2)
+    {
+        order: 3
+    }
+    .newsfeed > .container > .row > .col-12:nth-child(3)
+    {
+        order: 2
+    }
+    
+    .newsfeed .owl-contest .item
+    {
+        height: 255px;
+    }
+    .myProfile-tabs
+    {
+        overflow: hidden;
+        overflow-x: auto;
     }
 }
 @media (max-width: 768px) {
@@ -453,8 +477,52 @@
     }
 /*    .business-section*/
     
+    
+    
+/*    .news-feed page*/
+    
+    .newsfeed .owl-contest .item
+    {
+        height: 365px;
+    }
+    .newsfeed .owl-carousel .owl-stage-outer
+    {
+        overflow: visible;
+    }
+    .newsfeed .owl-carousel .owl-stage-outer .box .box-img
+    {
+        width: 100%;
+        height: 630px;
+    }
+    .newsfeed .owl-carousel .owl-stage-outer .box .box-img img
+    {
+        width: 100%;
+    }
+    .newsfeed .contest-side .log-btn
+    {
+        margin: auto;
+        top: -52px;
+        position: relative;
+        z-index: 9;
+    }
+    .newsfeed .owl-sets .owl-dots, .newsfeed .owl-contest .owl-dots
+    {
+        display: none;
+    }
+    .folow-row
+    {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    
 }
 
+@media (max-width: 525px) {
+    .newsfeed .owl-contest .item
+    {
+        height: 265px;
+    }
+}
 @media (max-width: 375px) {
     .title-container .main-title
     {
