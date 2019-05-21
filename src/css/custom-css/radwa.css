@@ -272,14 +272,14 @@ label {
 
 .log-btn img {
     width: 35px;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
 }
 
 .log-btn:hover img {
     z-index: 99;
     position: relative;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
+    /* filter: grayscale(0);
+    -webkit-filter: grayscale(0); */
 }
 
 .log-footer {
@@ -1117,6 +1117,7 @@ label {
 .box {
     background-color: #fff;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .box .box-img {
@@ -1128,6 +1129,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .box .box-img img {
@@ -1422,12 +1424,157 @@ label {
     max-width: 100%;
 }
 
+.box .box-tit a {
+    color: #000;
+}
+
+.box .box-tit a:hover {
+    color: #000;
+}
+
 .box .box-p {
     font-family: 'raleway';
     font-size: 16px;
     line-height: 26px;
 }
 
+.box .btns {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease .3s;
+    transform-origin: bottom;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.box:hover .btns {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -100%);
+    -webkit-transform: translate(-50%, -100%);
+    -moz-transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -100%);
+    -o-transform: translate(-50%, -100%);
+}
+
+.box .btns .log-btn {
+    width: 160px;
+}
+
+.box .btns .log-btn.edit {
+    margin-bottom: 30px;
+}
+
+.box .btns .log-btn.edit img {
+    width: 19px;
+    height: 19px;
+    max-width: 100%;
+    filter: grayscale(0);
+}
+
+.box .btns .log-btn.delete img {
+    width: 29px;
+    height: 26px;
+    max-width: 100%;
+    filter: grayscale(0);
+}
+
+.box .price-cup {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: #000;
+    width: 65px;
+    height: 65px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .price-cup img {
+    width: 31px;
+    height: 27px;
+    max-width: 100%;
+}
+
+
+
+/******************************************** myProfile-my-sets-details.html **********************************/
+.sets-details {
+    padding: 60px 0 30px;
+}
+
+.sets-details .set-img {
+    width: 444px;
+    height: 816px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sets-details .set-img img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.sets-details .set-title {
+    font-family: 'raleway-b';
+    font-size: 24px;
+    line-height: 26px;
+    width: 184px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.sets-details .set-desc {
+    font-family: 'raleway';
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.sets-details .set-data .btns .log-btn {
+    margin-bottom: 30px;
+    justify-content: center;
+    padding: 22px 24px;
+}
+
+.sets-details .set-data .btns .log-btn span {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.sets-details .set-data .btns .log-btn.delete,
+.sets-details .set-data .btns .log-btn.edit {
+    justify-content: space-between;
+    height: 60px;
+}
+
+.sets-details .set-data .btns .log-btn.edit img {
+    width: 19px;
+    height: 19px;
+    max-width: 100%;
+}
+
+.sets-details .set-data .btns .log-btn.delete img {
+    width: 29px;
+    height: 26px;
+    max-width: 100%;
+}
 
 
 
