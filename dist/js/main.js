@@ -110,11 +110,13 @@ $(document).ready(function () {
         e.preventDefault();
         var openModalBtn = $(this).data('target');
         $(openModalBtn).toggleClass('show');
+        $('body').css('overflow-y', 'hidden');
     });
 
     $('.card-head .close-img , .custom-modal .overlay').on('click', function() {
         if ($('.custom-modal').hasClass('show')) {
             $('.custom-modal').removeClass('show');
+            $('body').css('overflow-y', 'auto');
         }
     });
 
