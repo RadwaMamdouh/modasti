@@ -514,7 +514,59 @@
         padding-bottom: 30px;
         margin-bottom: 30px;
     }
+    .newsfeed .container
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .newsfeed > .container > .row 
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .newsfeed > .container > .row > .col-12
+    {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+    .custom-modal .modal-card.report-catd .card-content
+    {
+        padding: 20px;
+    }
     
+    .save-to-dropdown .drop-mnu
+    {
+        width: 85vw;
+    }
+    .custom-modal.galler-modal.show .modal-card.report-catd .gallery-content
+    {
+        height: 50vh;
+    }
+    .log-btn span
+    {
+        display: none !important;
+    }
+    .save-to-dropdown .new-collection-box .new-collection-form .form-group
+    {
+        margin-bottom: 10px;
+    }
+    .custom-modal .modal-card.report-catd .btns
+    {
+        justify-content: flex-start;
+    }
+    .custom-modal .modal-card .card-content button
+    {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .custom-modal .modal-card .card-content button:first-child
+    {
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 525px) {

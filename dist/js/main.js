@@ -41,13 +41,14 @@ $(document).ready(function () {
     })
     
 //    drop-mnu function
-    
+//    .news-box.top-z
     $(document).click(function(){
         $('.drop-mnu').removeClass('open');
         $('.drop-container').removeClass('container-poend');
         $(this).removeClass('open');
+        $('.news-box').removeClass('top-z');
     });
-    $('.drpo-btn , .drop-mnu').click(function(e){
+    $('.drpo-btn , .drop-mnu , .news-box').click(function(e){
         e.stopPropagation();
     });
     
@@ -60,8 +61,10 @@ $(document).ready(function () {
             $(this).siblings('.drop-mnu').removeClass('open');
             $(this).removeClass('open');
             $(this).parent().removeClass('container-poend');
+        $('.news-box').removeClass('top-z');
             console.log('has')
         } else {
+            $(this).parents('.news-box').addClass('top-z');
             $('.drop-mnu').removeClass('open');
             $(this).siblings('.drop-mnu').addClass('open');
             $('.drpo-btn').removeClass('open');
@@ -70,7 +73,7 @@ $(document).ready(function () {
             $(this).parent().addClass('container-poend');
             console.log('n-has')
         }
-    })
+    }) 
     
     
 //    sub nav collapse in mobile
@@ -82,7 +85,26 @@ $(document).ready(function () {
             $(this).siblings('.sub-collapse').addClass('open');
         }
     });
-
+    
+    
+    
+//    save to collections functions
+    $('.save-to-dropdown .drop-mnu .save-collection').click(function() {
+        $('.save-to-dropdown .drop-mnu .active').removeClass('active')
+        $('.save-to-dropdown .drop-mnu .item-added').addClass('active')
+    })
+    $('.save-to-dropdown .save-collection-box .sc-head img').click(function() {
+        $('.save-to-dropdown .drop-mnu .active').removeClass('active')
+        $('.save-to-dropdown .new-collection-box').addClass('active')
+    })
+    $('.save-to-dropdown .new-collection-box .sc-head img').click(function() {
+        $('.save-to-dropdown .drop-mnu .active').removeClass('active')
+        $('.save-to-dropdown .save-collection-box').addClass('active')
+    })
+    
+    $('.save-to-dropdown .drpo-btn').click(function(){
+        $(this).find('.heart').toggleClass('checked')
+    })
 
     // radwa
 
@@ -112,7 +134,7 @@ $(document).ready(function () {
         $(openModalBtn).toggleClass('show');
         $('body').css('overflow-y', 'hidden');
     });
-
+    
     $('.card-head .close-img , .custom-modal .overlay').on('click', function() {
         if ($('.custom-modal').hasClass('show')) {
             $('.custom-modal').removeClass('show');
@@ -120,6 +142,7 @@ $(document).ready(function () {
         }
     });
 
+    
     // $('.custom-modal .overlay').on('click', function() {
     //     if ($('.custom-modal').hasClass('show')) {
     //         $('.custom-modal').removeClass('show');
