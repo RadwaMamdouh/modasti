@@ -166,7 +166,7 @@ label {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 1px;
+    top: 0;
     left: 0;
 }
 
@@ -184,7 +184,7 @@ label {
 }
 
 .remeber-me .remeber span {
-    margin-left: 15px;
+    /* margin-left: 15px; */
     line-height: 16px;
 }
 
@@ -669,8 +669,8 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 4px;
+    /* position: absolute; */
+    top: 0;
     left: 0;
 }
 
@@ -693,7 +693,7 @@ label {
 
 .register .tabs span,
 .register .tabs span {
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 .sign-me {
@@ -701,7 +701,7 @@ label {
 }
 
 .sign-me span {
-    margin-left: 15px;
+    /* margin-left: 15px; */
     font-size: 14px;
     line-height: 16px;
 }
@@ -1719,7 +1719,7 @@ label {
 }
 
 .items-used .box .btns {
-    top: 40%;
+    top: 37%;
 }
 
 .items-used .box .box-tit {
@@ -1733,20 +1733,20 @@ label {
 }
 
 /* Start quick-view Modal */
-.sets-details .custom-modal.show .modal-card {
+.quickView-modal .modal-card {
     max-width: 1110px;
     margin-bottom: 60px;
 }
 
-.sets-details .custom-modal.show .modal-card .quick-view {
+.quickView-modal .quick-view {
     display: flex;
 }
 
-.sets-details .custom-modal.show .modal-card .quick-view .sub-view {
+.quickView-modal .quick-view .sub-view {
     padding: 42px 63px;
 }
 
-.sets-details .custom-modal.show .modal-card .quick-view .sub-view img {
+.quickView-modal .quick-view .sub-view img {
     width: 159px;
     height: 159px;
     display: block;
@@ -1754,11 +1754,11 @@ label {
     cursor: pointer;
 }
 
-.sets-details .custom-modal.show .modal-card .quick-view .sub-view img:last-child {
+.quickView-modal .quick-view .sub-view img:last-child {
     margin-bottom: 0;
 }
 
-.sets-details .custom-modal.show .modal-card .quick-view .main-view {
+.quickView-modal .quick-view .main-view {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1766,16 +1766,16 @@ label {
     height: 817px;
 }
 
-.sets-details .custom-modal.show .modal-card .quick-view .main-view img {
+.quickView-modal .quick-view .main-view img {
     width: 100%;
     height: 100%;
 }
 
-.sets-details .custom-modal.show .modal-card .quick-view-details .details {
+.quickView-modal .quick-view-details .details {
     padding: 0 60px 60px 30px;
 }
 
-.sets-details .custom-modal.show .modal-card .quick-view-details .details .item-name {
+.quickView-modal .quick-view-details .details .item-name {
     font-family: 'raleway-m';
     font-size: 24px;
     line-height: 26px;
@@ -1785,21 +1785,21 @@ label {
     text-transform: uppercase;
 }
 
-.sets-details .custom-modal.show .modal-card .quick-view-details .details .size-guid .size {
+.quickView-modal .quick-view-details .details .size-guid .size {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
-.sets-details .custom-modal.show .modal-card .quick-view-details .details .size-guid .size span {
+.quickView-modal .quick-view-details .details .size-guid .size span {
     font-family: 'raleway-m';
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
 }
 
-.sets-details .custom-modal.show .modal-card .quick-view-details .details .size-guid .size a {
+.quickView-modal .quick-view-details .details .size-guid .size a {
     font-family: 'raleway-m';
     font-size: 14px;
     line-height: 16px;
@@ -1808,7 +1808,7 @@ label {
     text-transform: uppercase;
 }
 
-.sets-details .custom-modal.show .modal-card .quick-view-details .details .size-guid .size a:hover {
+.quickView-modal .quick-view-details .details .size-guid .size a:hover {
     color: #000;
 }
 
@@ -1917,6 +1917,71 @@ label {
 }
 
 
+/* Start Quid Size Modal */
+.sizeQuid-modal .card-head {
+    padding: 20px 20px 0 0;
+}
+
+.custom-modal.sizeQuid-modal .card-content {
+    padding: 0 95px 0;
+    overflow: auto;
+}
+
+.sizeQuid-modal .modal-card {
+    max-width: 920px;
+}
+
+.sizeQuid-modal .guid-title {
+    font-family: 'raleway-m';
+    font-size: 24px;
+    line-height: 44px;
+    margin-bottom: 29px;
+    text-transform: uppercase;
+}
+
+.sizeQuid-modal .tabs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.sizeQuid-modal .tabs .cm {
+    margin-right: 57px;
+}
+
+.sizeQuid-modal .custom-radio i {
+    margin-right: 6px;
+}
+
+.sizeQuid-modal .custom-radio {
+    line-height: 16px;
+}
+
+.sizeQuid-modal .guid-sizes table {
+    width: 100%;
+    max-width: 100%;
+}
+
+.sizeQuid-modal .guid-sizes table thead tr th {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sizeQuid-modal .guid-sizes table tbody tr td {
+    padding-bottom: 30px;
+}
+
+.sizeQuid-modal .guid-sizes table tbody .size-box {
+    margin: 0 auto;
+}
+
+.inch-tab-content {
+    display: none;
+}
 
 
 
