@@ -130,6 +130,10 @@ $(document).ready(function () {
     // Business User Modal
     $('.modal-btn').on('click', function(e) {
         e.preventDefault();
+        if ($('.custom-modal').hasClass('show')) {
+            $('.custom-modal').removeClass('show');
+            $('body').css('overflow-y', 'auto');
+        }
         var openModalBtn = $(this).data('target');
         $(openModalBtn).toggleClass('show');
         $('body').css('overflow-y', 'hidden');
@@ -174,13 +178,6 @@ $(document).ready(function () {
         console.log(thisSrc);
         $('.quickView-modal .quick-view .main-view img').remove();
         $('.quickView-modal .quick-view .main-view').append(`<img src="${thisSrc}" class="img-fluid">`);
-    });
-
-    // Size Quid Modal
-    $('.quickView-modal .quick-view-details .details .size-guid .size a').on('click', function(e) {
-        e.preventDefault();
-        $('.quickView-modal').removeClass('show');
-        $('.sizeQuid-modal').addClass('show');
     });
 
     // Size Quid Tabs
