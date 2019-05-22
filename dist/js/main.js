@@ -144,6 +144,36 @@ $(document).ready(function () {
             $(this).find('.plus').css('display', 'none');
         }
     });
+
+    // Quick View Modal
+    $('.quickView-modal .quick-view .sub-view img').on('click', function() {
+        let thisSrc = $(this).attr('src');
+        console.log(thisSrc);
+        $('.quickView-modal .quick-view .main-view img').remove();
+        $('.quickView-modal .quick-view .main-view').append(`<img src="${thisSrc}" class="img-fluid">`);
+    });
+
+    // Size Quid Modal
+    $('.quickView-modal .quick-view-details .details .size-guid .size a').on('click', function(e) {
+        e.preventDefault();
+        $('.quickView-modal').removeClass('show');
+        $('.sizeQuid-modal').addClass('show');
+    });
+
+    // Size Quid Tabs
+    $('.cm input').click(function() {
+        if($(this).is(':checked')) { 
+            $('#cm-tab').css('display', 'block');
+            $('#inch-tab').css('display', 'none');
+        }
+    });
+
+    $('.inch input').click(function() {
+        if($(this).is(':checked')) { 
+            $('#inch-tab').css('display', 'block');
+            $('#cm-tab').css('display', 'none');
+        }
+    });
 });
 
 // Uploading image

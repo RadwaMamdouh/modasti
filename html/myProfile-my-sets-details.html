@@ -611,10 +611,10 @@
                             <div class="col-6 col-lg-3">
                                 <div class="box">
                                     <div class="box-img">
-                                        <a href="#"><img src="../dist/img/pic9.png" class="img-fluid"></a>
+                                        <a href="items-details.html"><img src="../dist/img/pic9.png" class="img-fluid"></a>
                                     </div>
                                     <div class="box-tit">
-                                        <a href="#">BUTTONED FAUX FUR COAT</a>
+                                        <a href="items-details.html">BUTTONED FAUX FUR COAT</a>
                                     </div>
                                     <div class="box-price">
                                         250$
@@ -625,7 +625,7 @@
                                         </button>
                                     </div>
                                     <div class="box-btn">
-                                        <a href="#" class="log-btn">
+                                        <a href="items-details.html" class="log-btn">
                                             <span>GET ITEM</span>
                                             <img src="../dist/img/right-arrow.png" class="img-fluid">
                                         </a>
@@ -635,21 +635,21 @@
                             <div class="col-6 col-lg-3">
                                 <div class="box">
                                     <div class="box-img">
-                                        <a href="#"><img src="../dist/img/pic10.png" class="img-fluid"></a>
+                                        <a href="items-details.html"><img src="../dist/img/pic10.png" class="img-fluid"></a>
                                     </div>
                                     <div class="box-tit">
-                                        <a href="#">BUTTONED FAUX FUR COAT</a>
+                                        <a href="items-details.html">BUTTONED FAUX FUR COAT</a>
                                     </div>
                                     <div class="box-price">
                                         250$
                                     </div>
                                     <div class="btns">
-                                        <button type="button" class="log-btn view">
+                                        <button type="button" class="log-btn modal-btn view" data-target="#modal">
                                             <span class="tit">QUICK VIEW</span>
                                         </button>
                                     </div>
                                     <div class="box-btn">
-                                        <a href="#" class="log-btn">
+                                        <a href="items-details.html" class="log-btn">
                                             <span>GET ITEM</span>
                                             <img src="../dist/img/right-arrow.png" class="img-fluid">
                                         </a>
@@ -659,21 +659,21 @@
                             <div class="col-6 col-lg-3">
                                 <div class="box">
                                     <div class="box-img">
-                                        <a href="#"><img src="../dist/img/pic11.png" class="img-fluid"></a>
+                                        <a href="items-details.html"><img src="../dist/img/pic11.png" class="img-fluid"></a>
                                     </div>
                                     <div class="box-tit">
-                                        <a href="#">BUTTONED FAUX FUR COAT</a>
+                                        <a href="items-details.html">BUTTONED FAUX FUR COAT</a>
                                     </div>
                                     <div class="box-price">
                                         250$
                                     </div>
                                     <div class="btns">
-                                        <button type="button" class="log-btn view">
+                                        <button type="button" class="log-btn modal-btn view" data-target="#modal">
                                             <span class="tit">QUICK VIEW</span>
                                         </button>
                                     </div>
                                     <div class="box-btn">
-                                        <a href="#" class="log-btn">
+                                        <a href="items-details.html" class="log-btn">
                                             <span>GET ITEM</span>
                                             <img src="../dist/img/right-arrow.png" class="img-fluid">
                                         </a>
@@ -683,21 +683,21 @@
                             <div class="col-6 col-lg-3">
                                 <div class="box">
                                     <div class="box-img">
-                                        <a href="#"><img src="../dist/img/pic11.png" class="img-fluid"></a>
+                                        <a href="items-details.html"><img src="../dist/img/pic11.png" class="img-fluid"></a>
                                     </div>
                                     <div class="box-tit">
-                                        <a href="#">BUTTONED FAUX FUR COAT</a>
+                                        <a href="items-details.html">BUTTONED FAUX FUR COAT</a>
                                     </div>
                                     <div class="box-price">
                                         250$
                                     </div>
                                     <div class="btns">
-                                        <button type="button" class="log-btn view">
+                                        <button type="button" class="log-btn modal-btn view" data-target="#modal">
                                             <span class="tit">QUICK VIEW</span>
                                         </button>
                                     </div>
                                     <div class="box-btn">
-                                        <a href="#" class="log-btn">
+                                        <a href="items-details.html" class="log-btn">
                                             <span>GET ITEM</span>
                                             <img src="../dist/img/right-arrow.png" class="img-fluid">
                                         </a>
@@ -711,7 +711,7 @@
             <!-- End Items Used -->
 
             <!-- Start Quick View Modal -->
-            <div class="custom-modal" id="modal">
+            <div class="custom-modal quickView-modal" id="modal">
                 <div class="overlay"></div>
                 <div class="modal-card">
                     <div class="row">
@@ -786,6 +786,492 @@
                 </div>
             </div>
             <!-- End Quick View Modal -->
+
+            <!-- Start Size Quid Modal -->
+            <div class="custom-modal sizeQuid-modal" id="modal">
+                <div class="overlay"></div>
+                <div class="modal-card">
+                    <div class="card-head">
+                        <img src="../dist/img/close.png" class="img-fluid close-img">
+                    </div>
+                    <div class="card-content">
+                        <div class="guid-title">SIZE GUIDE</div>
+                        <div class="tabs">
+                            <label class="custom-radio cm">
+                                <input type="radio" name="userType" checked>
+                                <i class="fas fa-square"></i>
+                                <span class="tit">CM</span>
+                            </label>
+                            <label class="custom-radio inch">
+                                <input type="radio" name="userType">
+                                <i class="fas fa-square"></i>
+                                <span class="tit">INCH</span>
+                            </label>
+                        </div>
+                        <div class="cm-tab-content" id="cm-tab">
+                            <div class="guid-sizes">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>SIZE</th>
+                                            <th>USA</th>
+                                            <th>UK</th>
+                                            <th>EUR</th>
+                                            <th>FA</th>
+                                            <th>IT</th>
+                                            <th>AU</th>
+                                            <th>AU</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="size-box">
+                                                    XS
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="size-box">
+                                                    S
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="size-box">
+                                                    M
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="size-box">
+                                                    L
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="size-box">
+                                                    XL
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="inch-tab-content" id="inch-tab">
+                            <div class="guid-sizes">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>SIZE</th>
+                                            <th>USA</th>
+                                            <th>UK</th>
+                                            <th>EUR</th>
+                                            <th>FA</th>
+                                            <th>IT</th>
+                                            <th>AU</th>
+                                            <th>AU</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="size-box">
+                                                    XS
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    0-2
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="size-box">
+                                                    S
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    4-6
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="size-box">
+                                                    M
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    6-8
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="size-box">
+                                                    L
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    10-12
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="size-box">
+                                                    XL
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="size-box">
+                                                    12-14
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Size Quid Modal -->
         </div>
         <!-- End Sets Details -->
     </section>
