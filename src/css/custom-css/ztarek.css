@@ -567,6 +567,18 @@
     {
         margin-right: 20px;
     }
+    .sent-modal.custom-modal .modal-card .card-content
+    {
+        text-align: center;
+    }
+    .sent-modal.custom-modal .modal-card .card-content .log-btn
+    {
+        display: inline-block;
+    }
+    .sent-modal.custom-modal .modal-card .card-content .log-btn:nth-of-type(2)
+    {
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 525px) {

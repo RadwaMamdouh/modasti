@@ -37,8 +37,8 @@
     font-family: 'sans-b';
     src: url("../fonts/ProductSans-Bold.ttf");
 } 
- 
 */
+  
 .content
 {
     position: relative;
@@ -2874,6 +2874,8 @@ height: auto !important;
 .custom-modal.galler-modal.show .modal-card.report-catd .gallery-content img
 {
     max-width: 100%;
+    object-fit: contain;
+    max-height: 100%;
 }
 .custom-modal.galler-modal.show .modal-card.report-catd .gallery-content .next
 {
@@ -2919,7 +2921,88 @@ height: auto !important;
     justify-content: center;
     cursor: pointer;
 }
+.sent-modal .info-content
+{
+    max-width: 202px;
+    margin: auto;
+    text-align: center;
+    font-size: 16px
+}
+.sent-modal.custom-modal .modal-card
+{
+    position: relative;
+}
+.sent-modal.custom-modal .modal-card .card-head
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sent-modal.custom-modal .modal-card .card-content
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.sent-modal.custom-modal .modal-card .card-content .log-btn:nth-of-type(2)
+{
+    margin-top: 30px;
+}
+
 /*==============================// end newsfeed page */
+
+
+
+/*==============================// start my-profile */
+
+.profile-details .user-data .user-img.with-update
+{
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-details .user-data .user-img.with-update .update-photo
+{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: .5s ease;
+}
+.profile-details .user-data .user-img.with-update:hover .update-photo
+{
+    opacity: 1;
+}
+.profile-details .user-data .user-img.with-update .update-photo span
+{
+    transition: .5s;
+    position: relative;
+    display: block;
+    top: 100%;
+    opacity: 0;
+}
+.profile-details .user-data .user-img.with-update:hover .update-photo span
+{
+    transition-delay: .4s;
+    top: 0;
+    opacity: 1;
+}
+
+/*==============================// end my-profile */
 
 
 
