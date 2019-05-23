@@ -1099,7 +1099,7 @@ label {
 }
 
 .profile-details .user-data .user-name {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 19px;
     text-transform: capitalize;
 }
@@ -1438,6 +1438,9 @@ label {
 .collec-box a img {
     object-fit: cover;
 }
+
+
+
 
 
 
@@ -1987,6 +1990,14 @@ label {
 
 .inch-tab-content {
     display: none;
+}
+
+
+
+
+/******************************************** items-details.html **********************************/
+.items-details {
+    padding: 60px 0 30px;
 }
 
 
