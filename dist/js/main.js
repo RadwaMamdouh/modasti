@@ -180,13 +180,6 @@ $(document).ready(function () {
         $('.quickView-modal .quick-view .main-view').append(`<img src="${thisSrc}" class="img-fluid">`);
     });
 
-    // Size Quid Modal
-    $('.quickView-modal .quick-view-details .details .size-guid .size a').on('click', function(e) {
-        e.preventDefault();
-        $('.quickView-modal').removeClass('show');
-        $('.sizeQuid-modal').addClass('show');
-    });
-
     // Size Quid Tabs
     $('.cm input').click(function() {
         if($(this).is(':checked')) { 

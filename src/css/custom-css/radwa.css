@@ -1083,16 +1083,23 @@ label {
     width: 122px;
     height: 122px;
     margin-bottom: 20px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    overflow: hidden;
 }
 
 .profile-details .user-data .user-img img {
     width: 100%;
     height: 100%;
     max-width: 100%;
+    object-fit: cover;
 }
 
 .profile-details .user-data .user-name {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 19px;
     text-transform: capitalize;
 }
@@ -1434,6 +1441,9 @@ label {
 
 
 
+
+
+
 /******************************************** myProfile-my-sets.html **********************************/
 .box .box-tit {
     font-family: 'raleway-m';
@@ -1738,37 +1748,36 @@ label {
     margin-bottom: 60px;
 }
 
-.quickView-modal .quick-view {
+.quickView-modal .quick-view .owl-guide {
     display: flex;
+    width: calc(100% - 286px);
+    margin-left: auto;
 }
 
-.quickView-modal .quick-view .sub-view {
-    padding: 42px 63px;
-}
-
-.quickView-modal .quick-view .sub-view img {
-    width: 159px;
-    height: 159px;
-    display: block;
-    margin-bottom: 30px;
-    cursor: pointer;
-}
-
-.quickView-modal .quick-view .sub-view img:last-child {
-    margin-bottom: 0;
-}
-
-.quickView-modal .quick-view .main-view {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 445px;
+.quickView-modal .quick-view .owl-guide .item {
     height: 817px;
 }
 
-.quickView-modal .quick-view .main-view img {
+.quickView-modal .quick-view .owl-guide .item img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+}
+
+.quickView-modal .quick-view .owl-dots {
+    padding: 42px 63px;
+    position: absolute;
+    left: -286px;
+    top: 0;
+    height: calc(100% - 63px);
+    overflow-y: auto;
+}
+
+.quickView-modal .quick-view .owl-dots .owl-dot {
+    width: 159px;
+    height: 159px;
+    border: 1px solid #000;
+    margin-bottom: 30px;
 }
 
 .quickView-modal .quick-view-details .details {
@@ -1981,6 +1990,14 @@ label {
 
 .inch-tab-content {
     display: none;
+}
+
+
+
+
+/******************************************** items-details.html **********************************/
+.items-details {
+    padding: 60px 0 30px;
 }
 
 
