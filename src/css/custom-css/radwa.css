@@ -1728,7 +1728,11 @@ label {
     padding: 60px 0 30px;
 }
 
-.items-used .box .btns {
+.items-used .box .box-img {
+    border: none;
+}
+
+.box .btns.center-top {
     top: 37%;
 }
 
@@ -1925,6 +1929,11 @@ label {
     text-transform: uppercase;
 }
 
+.full-details a,
+.full-details a:hover {
+    color: #000;
+}
+
 
 /* Start Quid Size Modal */
 .sizeQuid-modal .card-head {
@@ -2000,6 +2009,127 @@ label {
     padding: 60px 0 30px;
 }
 
+.items-details .quick-view .owl-guide {
+    display: flex;
+    width: calc(100% - 286px);
+    margin-left: auto;
+}
+
+.items-details .quick-view .owl-guide .item {
+    height: 817px;
+}
+
+.items-details .quick-view .owl-guide .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.items-details .quick-view .owl-dots {
+    padding: 42px 63px;
+    position: absolute;
+    left: -286px;
+    top: 0;
+    height: calc(100% - 63px);
+    overflow-y: auto;
+}
+
+.items-details .quick-view .owl-dots .owl-dot {
+    width: 159px;
+    height: 159px;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+}
+
+.items-details .quick-view-details .details {
+    padding: 0 60px 60px 30px;
+}
+
+.items-details .quick-view-details .details .item-name {
+    font-family: 'raleway-m';
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.items-details .quick-view-details .details .size-guid .size {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.items-details .quick-view-details .details .size-guid .size span {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-right: 145px;
+}
+
+.items-details .quick-view-details .details .size-guid .size a {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    text-decoration: underline !important;
+    text-transform: uppercase;
+}
+
+.items-details .quick-view-details .details .size-guid .size a:hover {
+    color: #000;
+}
+
+.items-details .quid-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.items-details .size-box {
+    width: 65px;
+    height: 65px;
+    max-width: 100%;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto-m';
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.items-details .size-box:last-child {
+    margin-right: 0;
+}
+
+.items-details .item-description .desc-info p {
+    font-family: 'raleway-b';
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.items-details .item-description .desc-info span {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.items-details .item-description .desc-p {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 30px;
+}
+
+.items-details .price-getItem {
+    margin-bottom: 30px;
+}
 
 
 /******************************************** help.html **********************************/
@@ -2257,4 +2387,10 @@ label {
 
 .data-feed-content table tbody td p.ex a:hover {
     color: #000;
+}
+.owl-dot img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
