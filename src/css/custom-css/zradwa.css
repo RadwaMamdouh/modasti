@@ -618,6 +618,112 @@
         display: none;
     }
 
+    /********** items-details.html ************/
+    .items-details {
+        overflow: hidden;
+    }
+
+    .items-details .quick-view {
+        margin-bottom: 20px;
+    }
+
+    .items-details .quick-view .owl-guide {
+        width: 100%;
+    }
+
+    .items-details .quick-view .owl-dots {
+        display: none;
+    }
+
+    .items-details .quick-view .owl-guide .item {
+        height: 496px;
+    }
+
+    .items-details .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+
+    .items-details .quick-view-details .details .item-name {
+        font-size: 16px;
+    }
+
+    .items-details .quick-view-details .details .size-guid .size {
+        margin-bottom: 20px;
+    }
+
+    .items-details .quick-view-details .details .size-guid .size span,
+    .items-details .quick-view-details .details .size-guid .size a {
+        font-size: 12px;
+    }
+
+    .items-details .quick-view-details .details .size-guid .size span {
+        margin-right: 111px;
+    }
+
+    .items-details .quid-box {
+        margin-bottom: 20px;
+    }
+
+    .items-details .size-box {
+        width: 53px;
+        height: 36px;
+        margin-right: 20px;
+    }
+
+    .item-description .description-tit {
+        margin-bottom: 24px;
+        font-family: 'raleway-b';
+        font-size: 14px;
+        line-height: 24px;    
+    }
+
+    .items-details .item-description .desc-info p {
+        font-family: 'raleway-m';
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 10px;
+    }
+
+    .items-details .item-description .desc-p,
+    .items-details .item-description .desc-info span {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .items-details .item-price {
+        margin-bottom: 0;
+        margin-right: 113px;
+    }
+
+    .items-details .price-getItem {
+        display: flex;
+        align-items: center;
+    }
+
+    .items-used.related-items .box-btn {
+        display: block;
+    }
+
+    .items-used.related-items .box .box-tit {
+        margin: 22px 0 9px;
+    }
+
+    .items-used.related-items .box .box-price {
+        margin-bottom: 20px;
+    }
+
+    .items-used.related-items {
+        padding-top: 0;
+    }
+
+    .items-details .quick-view-details .details {
+        padding: 0;
+    }
+
+    .items-details .full-details a {
+        display: none;
+    }
+
 
     /********** help.html ************/
     .help-head .left {

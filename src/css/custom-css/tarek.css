@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/*
+
 @font-face {
     font-family: 'raleway-bo';
     src: url("../fonts/Raleway-Bold.ttf");
@@ -37,8 +37,8 @@
     font-family: 'sans-b';
     src: url("../fonts/ProductSans-Bold.ttf");
 } 
-*/
-  
+ 
+
 .content
 {
     position: relative;
