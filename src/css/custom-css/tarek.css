@@ -23,20 +23,6 @@
     font-family: 'raleway-b';
     src: url("../fonts/Raleway-Black.ttf");
 }
-
-
-@font-face {
-    font-family: 'sans';
-    src: url("../fonts/ProductSans-Regular.ttf");
-}
-@font-face {
-    font-family: 'sans-m';
-    src: url("../fonts/ProductSans-Medium.ttf");
-}
-@font-face {
-    font-family: 'sans-b';
-    src: url("../fonts/ProductSans-Bold.ttf");
-} 
  
 
 .content
