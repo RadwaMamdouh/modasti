@@ -26,6 +26,19 @@ label {
     src: url("../fonts/Roboto-Black.ttf");
 }
 
+@font-face {
+    font-family: 'sans';
+    src: url("../fonts/GoogleSans-Regular.ttf");
+}
+@font-face {
+    font-family: 'sans-m';
+    src: url("../fonts/GoogleSans-Medium.ttf");
+}
+@font-face {
+    font-family: 'sans-b';
+    src: url("../fonts/GoogleSans-Bold.ttf");
+} 
+
 /*********************** login.html *********************/
 .log-forms {
     padding: 60px 0;
@@ -1343,31 +1356,31 @@ label {
     text-transform: uppercase;
 }
 
-.collections-content .custom-modal .modal-card {
+.collections-content.custom-modal .modal-card {
     max-width: 730px;
 }
 
-.collections-content .custom-modal .modal-card .card-head {
+.collections-content.custom-modal .modal-card .card-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 20px 30px 95px;
 }
 
-.collections-content .custom-modal .modal-card .card-head .tit {
+.collections-content.custom-modal .modal-card .card-head .tit {
     font-size: 24px;
     line-height: 44px;
 }
 
-.collections-content .custom-modal .modal-card .card-content {
+.collections-content.custom-modal .modal-card .card-content {
     padding: 0 95px 30px;
 }
 
-.collections-content .custom-modal .modal-card .card-content .form-group {
+.collections-content.custom-modal .modal-card .card-content .form-group {
     margin-bottom: 30px;
 }
 
-.collections-content .custom-modal .modal-card .card-content .form-btns {
+.collections-content.custom-modal .modal-card .card-content .form-btns {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2130,6 +2143,205 @@ label {
 .items-details .price-getItem {
     margin-bottom: 30px;
 }
+
+
+
+/******************************************** myProfile-my-likes.html **********************************/
+.profile-details .sort-by {
+    margin-top: 30px;
+}
+
+.profile-details .sort-by .tit {
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.profile-details .sort-by .drpo-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0 24px;
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.profile-details .sort-by .drpo-btn:hover {
+    color: #000;
+}
+
+.profile-details .sort-by .drpo-btn img {
+    width: 10px;
+}
+
+.profile-details .location-drop-btn::before {
+    bottom: -15px;
+    left: 90%;
+}
+
+.profile-details .location-drop-btn::after {
+    bottom: -16px;
+    left: 90%;
+}
+
+.profile-details .sort-by .drop-mnu {
+    width: 100%;
+    top: 75px;
+    padding: 22px 24px;
+    z-index: 1;
+}
+
+.profile-details .sort-by .drop-mnu a {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.profile-details .sort-by input {
+    width: 100%;
+    border: 1px solid #000;
+    height: 60px;
+    padding: 0 24px;
+    margin: 30px 0;
+}
+
+.profile-details .sort-by input::placeholder {
+    color: #000;
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.myLikes .items-used {
+    padding: 0;
+}
+
+.myLikes .items-used .box .box-tit {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.myLikes .items-used .box .box-tit a {
+    width: 185px;
+}
+
+.myLikes .items-used .box .btns {
+    top: 40%;
+}
+
+.myLikes .items-used .save-to-dropdown .drop-mnu {
+    z-index: 1;
+}
+
+.myLikes .items-used .box .box-price {
+    border-bottom: 1px solid #ECECEC;
+    padding-bottom: 30px;
+}
+
+
+
+/******************************************** collection-details.html **********************************/
+.profile-details .collection-name {
+    font-family: 'raleway-m';
+    font-size: 24px;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.profile-details .collection-maker {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 19px;
+}
+
+.profile-details .collection-date {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 30px;
+}
+
+.profile-details .collection-date span {
+    font-family: 'sans-m';
+    font-size: 14px;
+}
+
+.profile-details .btns a {
+    margin-bottom: 30px;
+    height: 60px;
+}
+
+.profile-details .btns a img {
+    width: 19px;
+}
+
+.profile-details .btns button {
+    height: 60px;
+}
+
+.profile-details .btns button img {
+    width: 29px;
+}
+
+.collection-details .items-used {
+    padding: 0;
+}
+
+
+
+/******************************************** collection-details-edit.html **********************************/
+.profile-details .btns button[type='submit'] {
+    margin-bottom: 22px;
+}
+
+.profile-details .collection-name .input {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 26px;
+    opacity: .30;
+}
+
+.collection-details-edit .items-used .box .box-img {
+    position: relative;
+}
+
+.collection-details-edit .items-used .box .box-img .log-btn {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection-details-edit .items-used .box .box-img .log-btn img {
+    width: 31px;
+    max-width: none;
+    object-fit: contain;
+}
+
+.collection-details-edit .profile-details .collection-name {
+    margin-bottom: 0;
+}
+
+.collection-details-edit .profile-details .collection-name .form-group {
+    margin-bottom: 20px;
+}
+
+
 
 
 /******************************************** help.html **********************************/

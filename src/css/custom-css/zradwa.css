@@ -149,7 +149,7 @@
     }
 
     /* Start Business User submit Modal */
-    .custom-modal .modal-card .card-content button {
+    .register.custom-modal .modal-card .card-content button {
         width: 262px;
         height: 65px;
         max-width: 100%;
@@ -159,8 +159,8 @@
         padding: 20px 24px;
     }
 
-    .custom-modal .modal-card .card-content button span {
-        display: block;
+    .register.custom-modal .modal-card .card-content button span {
+        display: block !important;
     }
     /* End Business User submit Modal */
 
@@ -385,11 +385,11 @@
     }
 
     /* Modal */
-    .collections-content .custom-modal .modal-card .card-content .form-btns {
+    .collections-content.custom-modal .modal-card .card-content .form-btns {
         justify-content: flex-start;
     }
 
-    .collections-content .custom-modal .modal-card .card-content .form-btns .log-btn {
+    .collections-content.custom-modal .modal-card .card-content .form-btns .log-btn {
         width: 40px;
         height: 40px;
         max-width: 100%;
@@ -397,23 +397,23 @@
         justify-content: center;
     }
 
-    .collections-content .custom-modal .modal-card .card-content .form-btns .log-btn[type='reset'] {
+    .collections-content.custom-modal .modal-card .card-content .form-btns .log-btn[type='reset'] {
         margin-right: 20px;
     }
 
-    .collections-content .custom-modal .modal-card .card-content .form-btns .log-btn span {
+    .collections-content.custom-modal .modal-card .card-content .form-btns .log-btn span {
         display: none;
     }
 
-    .collections-content .custom-modal .modal-card .card-head {
+    .collections-content.custom-modal .modal-card .card-head {
         padding: 30px 20px 30px 50px;
     }
 
-    .collections-content .custom-modal .modal-card .card-head .tit {
+    .collections-content.custom-modal .modal-card .card-head .tit {
         line-height: 29px;
     }
 
-    .collections-content .custom-modal .modal-card .card-content {
+    .collections-content.custom-modal .modal-card .card-content {
         padding: 0px 50px 30px;
     }
 
@@ -544,13 +544,17 @@
     }
 
     .sets-details .set-data .btns .log-btn span {
-        display: block;
+        display: block !important;
         font-size: 12px;
         line-height: 24px;
     }
 
     .edit-del-btns {
         justify-content: flex-start;
+    }
+
+    .sets-details .set-data .edit-del-btns .log-btn span {
+        display: none !important;
     }
 
     .sets-details .set-data .btns .log-btn.edit {
@@ -725,6 +729,129 @@
     }
 
 
+    /********** myProfile-my-likes.html ************/
+    .myLikes {
+        padding: 30px 0 0;
+    }
+
+    .myLikes .profile-details .user-info {
+        margin-bottom: 0;
+    }
+
+    .profile-details .sort-by {
+        margin-bottom: 30px;
+    }
+
+    .profile-details .sort-by .tit {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .profile-details .sort-by .drpo-btn {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .myLikes .items-used .box .box-tit a {
+        width: 123px;
+    }
+
+    .myLikes .items-used .box .box-price {
+        font-family: 'sans';
+        font-size: 12px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    /********** collection-details.html ************/
+    .collection-details .profile-details .user-data {
+        margin-bottom: 14px;
+    }
+
+    .profile-details .collection-name {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .profile-details .collection-maker {
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 9px;
+    }
+
+    .profile-details .collection-date {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .profile-details .collection-date span {
+        font-size: 12px;
+    }
+
+    .profile-details .btns {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .profile-details .btns a {
+        margin-right: 19px;
+        height: 40px;
+        margin-bottom: 0;
+    }
+
+    .profile-details .btns a img {
+        width: 11px;
+    }
+
+    .profile-details .btns button {
+        height: 40px;
+    }
+
+    .profile-details .btns button img {
+        width: 17px;
+    }
+
+    .collection-details {
+        padding: 30px 0 0;
+    }
+
+    .box .box-price {
+        font-family: 'sans';
+        font-size: 12px;
+    }
+
+    .items-used .box .box-tit {
+        margin: 20px 0 9px;
+    }
+
+
+    /********** collection-details-edit.html ************/
+    .profile-details .btns button[type=submit] {
+        margin-bottom: 0;
+        margin-right: 19px;
+    }
+
+    .profile-details .collection-name .input {
+        padding-bottom: 9px;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 1;
+    }
+
+    .collection-details-edit .items-used .box .box-img .log-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .collection-details-edit .items-used .box .box-img .log-btn img {
+        width: 17px;
+    }
+
+
     /********** help.html ************/
     .help-head .left {
         display: flex;
@@ -784,8 +911,11 @@
     }
 }
 
-@media (max-width: 768px) {
-
+@media (min-width: 576px) and (max-width: 768px) {
+    .sets-details .set-img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media (max-width: 575px) {
@@ -816,5 +946,14 @@
 
     .help-head .left .behind-u {
         width: 50%;
+    }
+
+    /********* my-sets-details **********/
+    .sets-details .set-data .btns .log-btn.edit {
+        margin-right: 15px;
+    }
+
+    .sets-details .set-data .btns .log-btn.delete {
+        margin-left: 15px;
     }
 }
