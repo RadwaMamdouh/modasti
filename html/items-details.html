@@ -625,7 +625,7 @@
                                     <img src="../dist/img/main-view.png" class="img-fluid">
                                 </div>
                                 <div class="item">
-                                    <img src="../dist/img/collection3.png" class="img-fluid">
+                                    <img src="../dist/img/sub-view.png" class="img-fluid">
                                 </div>
                                 <div class="item">
                                     <img src="../dist/img/sub-view2.png" class="img-fluid">
@@ -1280,7 +1280,7 @@
 <script src="../dist/js/main.js"></script>
 <script>
     $('.owl-guide').owlCarousel({
-        loop: false,
+        loop: true,
         autoplay: false,
         margin: 20,
         nav: false,
@@ -1317,11 +1317,11 @@
             $(this).find('.item img').each(function(){
             imgs.push( $(this).attr("src"));
         });
-            console.log(imgs)
+            console.log(imgs);
         dotss.each(function(){
             i ++;
             $(this).html('<img src="' + imgs[i - 1] + '">')
-        })
+        });
     })
 
 </script>

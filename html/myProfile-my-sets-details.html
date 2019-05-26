@@ -1379,8 +1379,6 @@
 <script src="../dist/js/owl.carousel.min.js"></script>
 <script src="../dist/js/main.js"></script>
 <script>
-    new WOW().init();
-
     $('.owl-guide').owlCarousel({
         loop: true,
         autoplay: false,
@@ -1410,5 +1408,21 @@
             }
         }
     });
+    $('.owl-guide').each(function(){
+
+        var dotss = $(this).find('.owl-dot'),
+            i = 0 ;
+
+            var imgs = [];
+            $(this).find('.item img').each(function(){
+            imgs.push( $(this).attr("src"));
+        });
+            console.log(imgs);
+        dotss.each(function(){
+            i ++;
+            $(this).html('<img src="' + imgs[i - 1] + '">')
+        });
+    })
+
 </script>
 </html>

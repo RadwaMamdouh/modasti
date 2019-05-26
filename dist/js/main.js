@@ -139,7 +139,7 @@ $(document).ready(function () {
         $('body').css('overflow-y', 'hidden');
     });
     
-    $('.card-head .close-img , .custom-modal .overlay').on('click', function() {
+    $('.custom-modal .close-img , .custom-modal .overlay').on('click', function() {
         if ($('.custom-modal').hasClass('show')) {
             $('.custom-modal').removeClass('show');
             $('body').css('overflow-y', 'auto');
