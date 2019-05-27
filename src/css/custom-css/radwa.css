@@ -5,6 +5,7 @@ label {
 .content {
     min-height: calc(100vh - 822px);
 }
+/*
 
 @font-face { 
     font-family: 'roboto';
@@ -38,6 +39,7 @@ label {
     font-family: 'sans-b';
     src: url("../fonts/GoogleSans-Bold.ttf");
 } 
+*/
 
 /*********************** login.html *********************/
 .log-forms {
