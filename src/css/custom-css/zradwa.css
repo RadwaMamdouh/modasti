@@ -909,6 +909,87 @@
     .data-feed-content {
         padding: 50px 0;
     }
+
+    /********** myProfile-wins-empty.html ************/
+    .empty-content {
+        padding: 30px 0;
+    }
+
+    .empty-content .profile-details .user-info {
+        margin-bottom: 30px;
+    }
+
+    .empty-content .empty-container .empty-img {
+        width: 163px;
+        height: 143px;
+    }
+
+    .empty-content .empty-container .empty-txt {
+        font-size: 24px;
+    }
+
+    .empty-content .empty-container .empty-btn .log-btn {
+        padding: 0;
+    }
+
+    /********** myProfile-following-empty.html ************/
+    .empty-following {
+        padding: 30px 0 0;
+    }
+
+    /********** myProfile-followers-empty.html ************/
+    .followers-empty .empty-container .empty-img {
+        width: 122px;
+        height: 143px;
+    }
+
+    .followers-empty .empty-container .empty-txt {
+        line-height: 34px;
+    }
+
+    /********** myProfile-group-empty.html ************/
+    .empty-group .empty-container .empty-img {
+        width: 248px;
+        height: 138px;
+    }
+
+    /********** myProfile-collections-empty.html ************/
+    .collections-empty .empty-container .empty-img {
+        width: 138px;
+        height: 138px;
+    }
+
+    .collections-empty .empty-container .empty-txt {
+        line-height: 34px;
+        width: 218px;
+        text-align: center;
+    }
+
+    /********** myProfile-sets-empty.html ************/
+    .sets-empty .empty-container .empty-txt {
+        line-height: 26px;
+        width: 100%;
+    }
+
+    /********** myProfile-likes-empty.html ************/
+    .likes-empty .empty-container .empty-img {
+        width: 162px;
+        height: 143px;
+    }
+
+    .likes-empty .empty-container .empty-txt {
+        line-height: 34px;
+    }
+
+    /********** myProfile-blocking-empty.html ************/
+    .blocking-empty .empty-container .empty-img {
+        width: 122px;
+        height: 148px;
+    }
+
+    .blocking-empty .empty-container .empty-txt {
+        line-height: 34px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
