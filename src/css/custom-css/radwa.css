@@ -1302,9 +1302,9 @@ label {
     margin-right: 3px;
 }
 
-.user-box .user-box-btn .follow {
+/* .user-box .user-box-btn .follow {
     display: none;
-}
+} */
 
 .user-box .user-box-btn span {
     font-size: 14px;
@@ -2605,4 +2605,115 @@ label {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+
+
+/******************************************** myProfile-wins-empty.html **********************************/
+.empty-content {
+    padding: 60px 0;
+}
+
+.empty-content .empty-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.empty-content .empty-container .empty-img {
+    width: 202px;
+    height: 178px;
+    margin-bottom: 30px;
+}
+
+.empty-content .empty-container .empty-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.empty-content .empty-container .empty-txt {
+    font-family: 'raleway-m';
+    font-size: 30px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.empty-content .empty-container .empty-btn .log-btn {
+    padding: 22px 24px;
+}
+
+
+/******************************************** myProfile-followers-empty.html **********************************/
+.followers-empty .empty-container .empty-img {
+    width: 152px;
+    height: 179px;
+}
+
+.followers-empty .empty-container .empty-txt {
+    line-height: 44px;
+    margin-bottom: 0;
+    width: 320px;
+    text-align: center;
+}
+
+
+/******************************************** myProfile-group-empty.html **********************************/
+.empty-group .empty-container .empty-img {
+    width: 322px;
+    height: 179px;
+}
+
+.empty-group .empty-container .empty-btn .log-btn img {
+    width: 17px;
+    height: 17px;
+}
+
+
+/******************************************** myProfile-collections-empty.html **********************************/
+.collections-empty .empty-container .empty-img {
+    width: 180px;
+    height: 180px;
+}
+
+.collections-empty .empty-container .empty-btn .log-btn img {
+    width: 17px;
+    height: 17px;
+}
+
+/******************************************** myProfile-likes-empty.html **********************************/
+.likes-empty .empty-container .empty-img {
+    width: 203px;
+    height: 179px;
+}
+
+.likes-empty .empty-container .empty-txt {
+    width: 240px;
+    text-align: center;
+    line-height: 44px;
+    margin-bottom: 0;
+}
+
+
+/******************************************** myProfile-blocking-empty.html **********************************/
+.blocking-empty .empty-container .empty-img {
+    width: 152px;
+    height: 190px;
+}
+
+.blocking-empty  .empty-container .empty-txt {
+    width: 277px;
+    text-align: center;
+    line-height: 44px;
+    margin-bottom: 0;
+}
+
+
+/******************************************** new-contests.html **********************************/
+.contest-tabs .prof-tabs li .tabs-links {
+    margin: 0 20px;
 }

@@ -160,17 +160,17 @@ $(document).ready(function () {
     });
 
     // Follow And Unfollow
-    $('.user-box-btn').on('click', function() {
-        if($(this).attr('data-click-state') == 1) {
-            $(this).attr('data-click-state', 0);
-            $(this).find('.plus').css('display', 'block');
-            $(this).find('.follow').css('display', 'none');
-        } else {
-            $(this).attr('data-click-state', 1);
-            $(this).find('.follow').css('display', 'block');
-            $(this).find('.plus').css('display', 'none');
-        }
-    });
+    // $('.user-box-btn').on('click', function() {
+    //     if($(this).attr('data-click-state') == 1) {
+    //         $(this).attr('data-click-state', 0);
+    //         $(this).find('.plus').css('display', 'block');
+    //         $(this).find('.follow').css('display', 'none');
+    //     } else {
+    //         $(this).attr('data-click-state', 1);
+    //         $(this).find('.follow').css('display', 'block');
+    //         $(this).find('.plus').css('display', 'none');
+    //     }
+    // });
 
     // Quick View Modal
     $('.quickView-modal .quick-view .sub-view img').on('click', function() {
