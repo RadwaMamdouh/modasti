@@ -420,7 +420,7 @@
                 <ul class="prof-tabs">
                     <li><a class="tabs-links tit" href="myProfile-my-sets.html">SETS</a></li>
                     <li><a class="tabs-links tit active" href="myProfile-collections.html">COLLECTIONS</a></li>
-                    <li><a class="tabs-links tit" href="#">LIKES</a></li>
+                    <li><a class="tabs-links tit" href="myProfile-my-likes.html">LIKES</a></li>
                     <li><a class="tabs-links tit" href="myProfile-following.html">FOLLOWING</a></li>
                     <li><a class="tabs-links tit" href="myProfile-followers.html">FOLLOWERS</a></li>
                     <li><a class="tabs-links tit" href="myProfile-wins.html">MY WINS</a></li>
@@ -475,7 +475,7 @@
                                 </div>
                                 <div class="col-6 col-md-4">
                                     <div class="collec-box">
-                                        <a href="#">
+                                        <a href="collection-details.html">
                                             <img src="../dist/img/collection1.png" class="img-fluid">
                                         </a>
                                         <div class="tit box-title">GENERAL</div>
@@ -483,7 +483,7 @@
                                 </div>
                                 <div class="col-6 col-md-4">
                                     <div class="collec-box">
-                                        <a href="#">
+                                        <a href="collection-details.html">
                                             <img src="../dist/img/collection2.png" class="img-fluid">
                                         </a>
                                         <div class="tit box-title">SUMMER</div>
@@ -491,7 +491,7 @@
                                 </div>
                                 <div class="col-6 col-md-4">
                                     <div class="collec-box">
-                                        <a href="#">
+                                        <a href="collection-details.html">
                                             <img src="../dist/img/collection3.png" class="img-fluid">
                                         </a>
                                         <div class="tit box-title">MODERN</div>
@@ -499,7 +499,7 @@
                                 </div>
                                 <div class="col-6 col-md-4">
                                     <div class="collec-box">
-                                        <a href="#">
+                                        <a href="collection-details.html">
                                             <img src="../dist/img/collection4.png" class="img-fluid">
                                         </a>
                                         <div class="tit box-title">CLASSIC</div>
@@ -507,7 +507,7 @@
                                 </div>
                                 <div class="col-6 col-md-4">
                                     <div class="collec-box">
-                                        <a href="#">
+                                        <a href="collection-details.html">
                                             <img src="../dist/img/collection5.png" class="img-fluid">
                                         </a>
                                         <div class="tit box-title">JACKETS</div>
@@ -518,35 +518,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Start Create New Collections Modal -->
-            <div class="custom-modal" id="modal">
-                <div class="overlay"></div>
-                <div class="modal-card">
-                    <div class="card-head">
-                        <div class="tit">CREATE NEW COLLECTION</div>
-                        <img src="../dist/img/close.png" class="img-fluid close-img">
-                    </div>
-                    <div class="card-content">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" class="input" placeholder="NAME">
-                                <span></span>
-                            </div>
-                            <div class="form-btns">
-                                <button type="reset" class="log-btn">
-                                    <span class="tit">CANCEL</span>
-                                    <img src="../dist/img/wrong.png" class="img-fluid">
-                                </button>
-                                <button type="submit" class="log-btn">
-                                    <span class="tit">CREATE</span>
-                                    <img src="../dist/img/right-arrow.png" class="img-fluid">
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- End Create New Collections Modal -->
         </div>
         <!-- End Collections Content -->
     </section>
@@ -638,6 +609,36 @@
     </footer>
     
     <!-- end footer -->
+
+    <!-- Start Create New Collections Modal -->
+    <div class="custom-modal collections-content" id="modal">
+        <div class="overlay"></div>
+        <div class="modal-card">
+            <div class="card-head">
+                <div class="tit">CREATE NEW COLLECTION</div>
+                <img src="../dist/img/close.png" class="img-fluid close-img">
+            </div>
+            <div class="card-content">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="input" placeholder="NAME">
+                        <span></span>
+                    </div>
+                    <div class="form-btns">
+                        <button type="reset" class="log-btn">
+                            <span class="tit">CANCEL</span>
+                            <img src="../dist/img/wrong.png" class="img-fluid">
+                        </button>
+                        <button type="submit" class="log-btn">
+                            <span class="tit">CREATE</span>
+                            <img src="../dist/img/right-arrow.png" class="img-fluid">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Create New Collections Modal -->
 </body>
 <script src="../dist/js/jquery-3.2.1.min.js"></script>
 <script src="../dist/js/main.js"></script>

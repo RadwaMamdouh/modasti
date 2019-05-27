@@ -5,7 +5,6 @@
 	box-sizing: border-box;
 }
 
-/*
 
 @font-face {
     font-family: 'raleway-bo';
@@ -24,25 +23,12 @@
     font-family: 'raleway-b';
     src: url("../fonts/Raleway-Black.ttf");
 }
+ 
 
-
-@font-face {
-    font-family: 'sans';
-    src: url("../fonts/ProductSans-Regular.ttf");
-}
-@font-face {
-    font-family: 'sans-m';
-    src: url("../fonts/ProductSans-Medium.ttf");
-}
-@font-face {
-    font-family: 'sans-b';
-    src: url("../fonts/ProductSans-Bold.ttf");
-} 
-*/
-
-.content {
-	position: relative;
-	z-index: 9;
+.content
+{
+    position: relative;
+    z-index: 9;
 }
 
 .footer {
