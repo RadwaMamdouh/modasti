@@ -1220,6 +1220,53 @@
     .draggable-items .set-item .item-img {
         height: 298px;
     }
+
+    /********** create-set-publish.html ************/
+    .join-contest.set-publish {
+        padding: 30px 0;
+    }
+
+    .set-publish .droppable-area {
+        margin-bottom: 30px;
+    }
+
+    .set-publish .set-form .set-titles {
+        font-family: 'raleway-b';
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .set-publish .set-form .hashtags .log-white {
+        margin-bottom: 20px;
+        width: 137px;
+        height: 50px;
+    }
+
+    .set-publish .set-form .hashtags .log-white.log-btn span {
+        display: block !important;
+    }
+
+    .set-publish .set-form .hashtags {
+        margin-bottom: 10px;
+    }
+
+    .set-publish .set-form .set-titles.share {
+        margin-bottom: 30px;
+    }
+
+    .set-publish .set-form .set-form-btns {
+        justify-content: flex-start;
+    }
+
+    .set-publish .set-form .set-form-btns .log-btn {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+
+    .set-publish .set-form .set-form-btns .log-btn:nth-child(1) {
+        margin-right: 20px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -1282,5 +1329,14 @@
 
     .sets-details .set-data .btns .log-btn.delete {
         margin-left: 15px;
+    }
+
+    /********** create-set-publish.html ************/
+    .set-publish .set-form .set-form-btns .log-btn:nth-child(1) {
+        margin-right: 10px;
+    }
+
+    .set-publish .set-form .set-form-btns .log-btn:nth-child(2) {
+        margin-left: 10px;
     }
 }

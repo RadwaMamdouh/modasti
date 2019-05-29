@@ -3177,3 +3177,69 @@ label {
     width: 123px;
     max-width: 100%;
 }
+
+/******************************************** create-set-publish.html **********************************/
+.set-publish .droppable-area {
+    margin-bottom: 0;
+}
+
+.set-publish .set-form .form-group textarea {
+    position: relative;
+    border-bottom: 1px solid #ECECEC;
+    width: 100%;
+    padding-bottom: 100px;
+    resize: none;
+}
+
+.set-publish .set-form .form-group textarea::placeholder {
+    color: #000;
+    opacity: 0.3;
+    font-size: 14px;
+    font-family: 'raleway-m';
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+.set-publish .set-form .form-group textarea:focus + span {
+    width: 100%;
+}
+
+.set-publish .set-form .set-titles {
+    font-family: 'raleway-m';
+    font-size: 24px;
+    line-height: 44px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.set-publish .set-form .hashtags .log-white {
+    margin-bottom: 30px;
+}
+
+.set-publish .set-form .hashtags .log-white.log-btn span {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.set-publish .set-form .set-titles.share {
+    margin-bottom: 20px;
+}
+
+.set-publish .set-form .share-social {
+    margin-bottom: 30px;
+}
+
+.set-publish .set-form .set-form-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.set-publish .set-form .set-form-btns .log-btn {
+    padding: 22px 24px;
+}
+
+.set-publish .set-form .set-form-btns .log-btn:nth-child(2) img {
+    width: 17px;
+    height: 17px;
+}
