@@ -211,11 +211,6 @@ $(document).ready(function () {
 			$('#cm-tab').css('display', 'none');
 		}
 	});
-
-	// Join Contest Responsive Collapsing
-	$('.contest-bar .collapse-btn').on('click', function () {
-		$(this).parents('.contest-bar').toggleClass('active');
-	});
 });
 
 // Uploading image

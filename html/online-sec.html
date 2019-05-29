@@ -7,11 +7,8 @@
 	<title>Modasti</title>
 	<link rel="icon" href="../dist/img/min-logo.png" type="image/x-icon" />
 	<link rel="stylesheet" href="../dist/css/style.min.css">
-	<link rel="stylesheet" href="../src/css/custom-css/radwa.css">
-	<link rel="stylesheet" href="../src/css/custom-css/zradwa.css">
 	<link rel="stylesheet" href="../src/css/custom-css/tarek.css">
 	<link rel="stylesheet" href="../src/css/custom-css/ztarek.css">
-	<link rel="stylesheet" href="../src/css/assets/owl.carousel.min.css">
 </head>
 
 <body>
@@ -151,48 +148,23 @@
 						</div>
 						<ul class="center">
 							<li>
-								<a href="" class="n-link">
-									<div class="n-user">
-										<img src="../dist/img/news-feed2.png" alt="">
-									</div>
-									<div>
-										<span class="tit">User X like on your set</span>
-										<span class="date">5 MINUTES AGO</span>
-									</div>
-									<div class="n-img">
-										<img src="../dist/img/news-feed.png" alt="">
-									</div>
+								<a href="">
+									<span class="tit">User X like on your set</span>
+									<span class="date">5 MINUTES AGO</span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="n-link">
-									<div class="n-user">
-										<img src="../dist/img/news-feed2.png" alt="">
-									</div>
-									<div>
-										<span class="tit">User X like on your set</span>
-										<span class="date">5 MINUTES AGO</span>
-									</div>
-									<div class="n-img">
-										<img src="../dist/img/news-feed.png" alt="">
-									</div>
+								<a href="">
+									<span class="tit">User X like on your set</span>
+									<span class="date">5 MINUTES AGO</span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="n-link">
-									<div class="n-user">
-										<img src="../dist/img/news-feed2.png" alt="">
-									</div>
-									<div>
-										<span class="tit">User X like on your set</span>
-										<span class="date">5 MINUTES AGO</span>
-									</div>
-									<div class="n-img">
-										<img src="../dist/img/news-feed.png" alt="">
-									</div>
+								<a href="">
+									<span class="tit">User X like on your set</span>
+									<span class="date">5 MINUTES AGO</span>
 								</a>
 							</li>
-
 						</ul>
 						<a href="" class="down">
 							see all
@@ -365,9 +337,49 @@
 					<img src="../dist/img/create-set.png" alt="">
 				</a>
 				<!-- notification dropdown -->
-				<a href="" class="ico-link  notifi-btn">
-					<img src="../dist/img/bell-b.png" alt="">
-				</a>
+				<div class="drop-container location-drop-btn">
+					<a href="" class="ico-link drpo-btn notifi-btn">
+						<img src="../dist/img/bell-b.png" alt="">
+					</a>
+
+					<div class="drop-mnu notifi-mnu">
+						<div class="up">
+							<p class="tit">notfication</p>
+							<div class="switch">
+								<span class="mode-btn">
+									<span class="on">on</span>
+									<span class="off">off</span>
+								</span>
+								<span class="line"></span>
+								<span class="dot"></span>
+							</div>
+						</div>
+						<ul class="center">
+							<li>
+								<a href="">
+									<span class="tit">User X like on your set</span>
+									<span class="date">5 MINUTES AGO</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="tit">User X like on your set</span>
+									<span class="date">5 MINUTES AGO</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="tit">User X like on your set</span>
+									<span class="date">5 MINUTES AGO</span>
+								</a>
+							</li>
+						</ul>
+						<a href="" class="down">
+							see all
+							<img src="../dist/img/right-arrow.png" alt="">
+						</a>
+					</div>
+				</div>
 				<!-- messages link -->
 				<a href="" class="ico-link cs-link">
 					<img src="../dist/img/msg-b.png" alt="">
@@ -404,265 +416,170 @@
 
 	</section>
 
-
-	<!-- start content -->
-
 	<section class="content">
 
-		<div class="myProfile-tabs black res-collapse">
-			<button class="col-btn">
-				all
-				<img src="../dist/img/down-white.png" alt="">
-			</button>
-			<div class="container">
-				<ul class="prof-tabs">
-					<li><a class="tabs-links tit active" href="">all</a></li>
-					<li><a class="tabs-links tit" href="">users</a></li>
-					<li><a class="tabs-links tit" href="">sets</a></li>
-					<li><a class="tabs-links tit" href="">items</a></li>
-					<li><a class="tabs-links tit" href="">contests</a></li>
-					<li><a class="tabs-links tit" href="">posts</a></li>
-				</ul>
-			</div>
-		</div>
+    <!-- Start My Profile - blocking -->
+    <section class="content">
+        <div class="myProfile-tabs">
+            <div class="container">
+                <ul class="prof-tabs">
+                    <li><a class="tabs-links tit" href="myProfile-my-sets.html">SETS</a></li>
+                    <li><a class="tabs-links tit" href="myProfile-collections.html">COLLECTIONS</a></li>
+                    <li><a class="tabs-links tit" href="myProfile-my-likes.html">LIKES</a></li>
+                    <li><a class="tabs-links tit" href="myProfile-following.html">FOLLOWING</a></li>
+                    <li><a class="tabs-links tit" href="myProfile-followers.html">FOLLOWERS</a></li>
+                    <li><a class="tabs-links tit" href="myProfile-wins.html">MY WINS</a></li>
+                    <li><a class="tabs-links tit active" href="myProfile-blocking.html">BLOCKED</a></li>
+                    <li><a class="tabs-links tit" href="myProfile-group.html">GROUPS</a></li>
+                </ul>
+            </div>
+        </div>
 
-		<!-- start filter -->
+		<!-- start msgs -->
 
-		<section class="filter">
+		<div class="messages">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-lg-3 filter-col">
-						<button class="close-filter">
-							<img src="../dist/img/wrong.png" alt="">
-						</button>
+					<div class="col-12 col-md-3">
 
-						<form action="" class="filter-form">
-
-							<p class="main-title">
-								<img src="../dist/img/title-sign.png" class="img">
-								<span>
-									filter
-								</span>
-							</p>
-							<p class="tit">MUTUAL FRIENDS</p>
-							<div class="drop-container location-drop-btn select-c">
-								<a href="" class="drpo-btn">
-									select
-									<img src="../dist/img/down.png" alt="">
-								</a>
-
-								<div class="drop-mnu other-options sort-by">
-									<a href="">select</a>
-									<a href="">select</a>
-								</div>
-							</div>
-							<p class="tit">STYLE</p>
-							<div class="drop-container location-drop-btn select-c">
-								<a href="" class="drpo-btn">
-									select
-									<img src="../dist/img/down.png" alt="">
-								</a>
-
-								<div class="drop-mnu other-options sort-by">
-									<a href="">select</a>
-									<a href="">select</a>
-								</div>
-							</div>
-
-							<p class="tit">CITY</p>
-							<div class="drop-container location-drop-btn select-c">
-								<a href="" class="drpo-btn">
-									select
-									<img src="../dist/img/down.png" alt="">
-								</a>
-
-								<div class="drop-mnu other-options sort-by">
-									<a href="">select</a>
-									<a href="">select</a>
-								</div>
-							</div>
-							<div class="btns">
-								<button type="submit" class="log-btn">
-									<span class="tit">filter</span>
-									<img src="../dist/img/right-arrow.png" class="img-fluid">
-								</button>
-								<button type="reset" class="log-btn log-white reset">
-									<span class="tit">reset</span>
-									<img src="../dist/img/resend.png" class="img-fluid">
-								</button>
-							</div>
-
-						</form>
-					</div>
-					<div class="col-12 col-md-9 result-col open">
-						<div class="items-head  head-items-bet">
-							<p class="main-title">
-								<img src="../dist/img/title-sign.png" class="img">
-								<span>
-									items
-								</span>
-							</p>
-							<div>
-								<div class="open-filter">
-									<img src="../dist/img/filter.png" alt="">
-								</div>
-								<span class="tit d-none d-md-block">sort by</span>
-								<div class="drop-container location-drop-btn select-c">
-									<a href="" class="drpo-btn">
-										<span class="d-none d-md-block">most viewed</span>
-										<img src="../dist/img/down.png" alt="" class="d-none d-md-block">
-										<img src="../dist/img/sort.png" alt="" class="d-block d-md-none">
-									</a>
-
-									<div class="drop-mnu other-options sort-by">
-										<a href="">MOST VIEWD</a>
-										<a href="">PROCE HIGH TO LOW</a>
-										<a href="">PRICE LOW TO HIGH</a>
+						<div class="online">
+							<!-- online body -->
+							<div class="online-body">
+								<!-- online box -->
+								<div class="online-box">
+									<div class="up">
+										<div class="img">
+											<img src="../dist/img/user.png" alt="">
+											<span class="online-circle"></span>
+										</div>
+										<div class="info">
+											<div class="name">
+												<h6 class="name cheque">YOSRA AHMED</h6>
+												<span class="date">02:00</span>
+											</div>
+											<p class="last-msg">Hey, I love your new set</p>
+										</div>
 									</div>
 								</div>
+								<div class="online-box active">
+									<div class="up">
+										<div class="img">
+											<img src="../dist/img/user.png" alt="">
+											<span class="online-circle"></span>
+										</div>
+										<div class="info">
+											<div class="name">
+												<h6 class="name cheque">YOSRA AHMED</h6>
+												<span class="date">02:00</span>
+											</div>
+											<p class="last-msg">Hey, I love your new set</p>
+										</div>
+									</div>
+								</div>
+								<div class="online-box active">
+									<div class="up">
+										<div class="img">
+											<img src="../dist/img/user.png" alt="">
+											<span class="online-circle"></span>
+										</div>
+										<div class="info">
+											<div class="name">
+												<h6 class="name cheque">YOSRA AHMED</h6>
+												<span class="date">02:00</span>
+											</div>
+											<p class="last-msg">Hey, I love your new set</p>
+										</div>
+									</div>
+								</div>
+								<div class="online-box active">
+									<div class="up">
+										<div class="img">
+											<img src="../dist/img/user.png" alt="">
+											<span class="online-circle"></span>
+										</div>
+										<div class="info">
+											<div class="name">
+												<h6 class="name cheque">YOSRA AHMED</h6>
+												<span class="date">02:00</span>
+											</div>
+											<p class="last-msg">Hey, I love your new set</p>
+										</div>
+									</div>
+								</div>
+								<div class="online-box active">
+									<div class="up">
+										<div class="img">
+											<img src="../dist/img/user.png" alt="">
+											<span class="online-circle"></span>
+										</div>
+										<div class="info">
+											<div class="name">
+												<h6 class="name cheque">YOSRA AHMED</h6>
+												<span class="date">02:00</span>
+											</div>
+											<p class="last-msg">Hey, I love your new set</p>
+										</div>
+									</div>
+								</div>
+								<div class="online-box active">
+									<div class="up">
+										<div class="img">
+											<img src="../dist/img/user.png" alt="">
+											<span class="online-circle"></span>
+										</div>
+										<div class="info">
+											<div class="name">
+												<h6 class="name cheque">YOSRA AHMED</h6>
+												<span class="date">02:00</span>
+											</div>
+											<p class="last-msg">Hey, I love your new set</p>
+										</div>
+									</div>
+								</div>
+								<div class="online-box active">
+									<div class="up">
+										<div class="img">
+											<img src="../dist/img/user.png" alt="">
+											<span class="online-circle"></span>
+										</div>
+										<div class="info">
+											<div class="name">
+												<h6 class="name cheque">YOSRA AHMED</h6>
+												<span class="date">02:00</span>
+											</div>
+											<p class="last-msg">Hey, I love your new set</p>
+										</div>
+									</div>
+								</div>
+								<div class="online-box active">
+									<div class="up">
+										<div class="img">
+											<img src="../dist/img/user.png" alt="">
+											<span class="online-circle"></span>
+										</div>
+										<div class="info">
+											<div class="name">
+												<h6 class="name cheque">YOSRA AHMED</h6>
+												<span class="date">02:00</span>
+											</div>
+											<p class="last-msg">Hey, I love your new set</p>
+										</div>
+									</div>
+								</div>
+								
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-6 col-sm-6 col-md-4">
-								<div class="box search-item-box">
-									<div class="box-img">
-										<a href="items-details.html"><img src="../dist/img/pic11.png" class="img-fluid"></a>
-									</div>
-									<div class="down">
-										<div class="box-tit">
-											<a href="items-details.html">BUTTONED BLOUSE-STYLE DRESS</a>
-										</div>
-										<div class="box-price">
-											250$
-										</div>
-										<div class="btns">
-											<button type="button" class="log-btn modal-btn view" data-target="#modal">
-												<span class="tit">QUICK VIEW</span>
-											</button>
-										</div>
 
-									</div>
-								</div>
-							</div>
-							<div class="col-6 col-sm-6 col-md-4">
-								<div class="box search-item-box">
-									<div class="box-img">
-										<a href="items-details.html"><img src="../dist/img/pic9.png" class="img-fluid"></a>
-									</div>
-									<div class="down">
-										<div class="box-tit">
-											<a href="items-details.html">BUTTONED BLOUSE-STYLE DRESS</a>
-										</div>
-										<div class="box-price">
-											250$
-										</div>
-										<div class="btns">
-											<button type="button" class="log-btn modal-btn view" data-target="#modal">
-												<span class="tit">QUICK VIEW</span>
-											</button>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<div class="col-6 col-sm-6 col-md-4">
-								<div class="box search-item-box">
-									<div class="box-img">
-										<a href="items-details.html"><img src="../dist/img/pic10.png" class="img-fluid"></a>
-									</div>
-									<div class="down">
-										<div class="box-tit">
-											<a href="items-details.html">BUTTONED BLOUSE-STYLE DRESS</a>
-										</div>
-										<div class="box-price">
-											250$
-										</div>
-										<div class="btns">
-											<button type="button" class="log-btn modal-btn view" data-target="#modal">
-												<span class="tit">QUICK VIEW</span>
-											</button>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<div class="col-6 col-sm-6 col-md-4">
-								<div class="box search-item-box">
-									<div class="box-img">
-										<a href="items-details.html"><img src="../dist/img/pic11.png" class="img-fluid"></a>
-									</div>
-									<div class="down">
-										<div class="box-tit">
-											<a href="items-details.html">BUTTONED BLOUSE-STYLE DRESS</a>
-										</div>
-										<div class="box-price">
-											250$
-										</div>
-										<div class="btns">
-											<button type="button" class="log-btn modal-btn view" data-target="#modal">
-												<span class="tit">QUICK VIEW</span>
-											</button>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<div class="col-6 col-sm-6 col-md-4">
-								<div class="box search-item-box">
-									<div class="box-img">
-										<a href="items-details.html"><img src="../dist/img/pic9.png" class="img-fluid"></a>
-									</div>
-									<div class="down">
-										<div class="box-tit">
-											<a href="items-details.html">BUTTONED BLOUSE-STYLE DRESS</a>
-										</div>
-										<div class="box-price">
-											250$
-										</div>
-										<div class="btns">
-											<button type="button" class="log-btn modal-btn view" data-target="#modal">
-												<span class="tit">QUICK VIEW</span>
-											</button>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<div class="col-6 col-sm-6 col-md-4">
-								<div class="box search-item-box">
-									<div class="box-img">
-										<a href="items-details.html"><img src="../dist/img/pic10.png" class="img-fluid"></a>
-									</div>
-									<div class="down">
-										<div class="box-tit">
-											<a href="items-details.html">BUTTONED BLOUSE-STYLE DRESS</a>
-										</div>
-										<div class="box-price">
-											250$
-										</div>
-										<div class="btns">
-											<button type="button" class="log-btn modal-btn view" data-target="#modal">
-												<span class="tit">QUICK VIEW</span>
-											</button>
-										</div>
-
-									</div>
-								</div>
-							</div>
-
-
-						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<!-- end filter-->
+		<!-- end msgs -->
+
+
 
 	</section>
-
-	<!-- end content -->
-
 
 	<!-- start footer -->
 
@@ -750,16 +667,6 @@
 	</footer>
 
 	<!-- end footer -->
-
-
-
-	<script src="../dist/js/jquery-3.2.1.min.js"></script>
-	<script src="../dist/js/wow.min.js"></script>
-	<script src="../dist/js/owl.carousel.min.js"></script>
-	<script src="../dist/js/jquery-ui.min.js"></script>
-	<script src="../dist/js/jquery.ui.touch-punch.min.js"></script>
-	<script src="../dist/js/main.js"></script>
-	<script>
-		new WOW().init();
-	</script>
-</body></html>
+</body>
+<script src="../dist/js/jquery-3.2.1.min.js"></script>
+<script src="../dist/js/main.js"></script></html>
