@@ -50,6 +50,28 @@
 	.search-input .info {
 		font-size: 12px;
 	}
+	
+	.brand-box .info
+	{
+		transform: none;
+		position: static;
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	.brand-box .info .tit-content
+	{
+		font-size: 24px
+	}
+	.brand-box .info .info-content
+	{
+		font-size: 14px
+	}
+	.brand-box .info .side-folow-btn
+	{
+		position: static;
+		color: #fff;
+		font-size: 12px;
+	}
 
 
 	/*    header*/
@@ -818,6 +840,128 @@
 		height: 260px;
 	}
 	/*    filter page*/
+	
+/*	brands*/
+	.brand-box .img
+	{
+		height: 230px;
+	}
+	.brand-box.brand-box-head .container::before
+	{
+		transform: none;
+		right: calc(100% - 36px);
+	}
+	.brand-box.brand-box-head .active-row .active-details
+	{
+		width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.brand-box.brand-box-head .info
+	{
+		margin-bottom: 0;
+		margin-top: -70px;
+		padding: 30px;
+		padding-left: 0;
+	}
+	.brand-box.brand-box-head .info .tit
+	{
+		margin-bottom: 30px;
+	}
+	.brand-box.brand-box-head .active-row .active-details p
+	{
+		width: 50%;
+		font-size: 12px;
+	}
+	.brand-box.brand-box-head .active-row.code-details .active-details
+	{
+		text-align: center;
+		background-color: #fff;
+		padding: 20px 10px;
+		margin-bottom: 30px;
+		margin-top: 15px;
+	}
+	.brand-box.brand-box-head .active-row.code-details .active-details p
+	{
+		color: #000;
+		margin-bottom: 0;
+	}
+	.brand-box.brand-box-head .img
+	{
+		height: 300px;
+	}
+	
+/*	brands*/
+	
+	
+	
+/*	messages*/
+	.online
+	{
+/*		display: none;*/
+	}
+	.msg-box .msg-content
+	{
+		max-width: 80%
+	}
+	.message-content
+	{
+		padding: 0;
+	}
+	.messages .msgs-side-container
+	{
+		padding: 0;
+		border: 0;
+/*		display: none;*/
+	}
+	.messages
+	{
+		padding-top: 30px;
+	}
+	.messages > .container
+	{
+		padding: 0;
+	}
+	.messages .message-content
+	{
+		padding: 0 35px;
+	}
+	.messages .mob-msg-head
+	{
+		padding: 0 35px 30px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+	.messages .msg-form-bar
+	{
+		padding: 0 35px;
+	}
+	.messages .online
+	{
+		padding: 0 35px;
+		height: auto;
+	}
+	.messages .close-msg
+	{
+		width: 40px;
+		height: 40px;
+		background-color: #000;
+		cursor: pointer;
+	}
+	.messages .close-msg img
+	{
+		width: 17px;
+	}
+	
+/*	messages*/
 }
 
 @media (max-width: 525px) {

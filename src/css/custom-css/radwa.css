@@ -5,41 +5,7 @@ label {
 .content {
     min-height: calc(100vh - 822px);
 }
-/*
 
-@font-face { 
-    font-family: 'roboto';
-    src: url("../fonts/Roboto-Regular.ttf");
-}
-
-@font-face { 
-    font-family: 'roboto-m';
-    src: url("../fonts/Roboto-Medium.ttf");
-}
-
-@font-face { 
-    font-family: 'roboto-b';
-    src: url("../fonts/Roboto-Bold.ttf");
-}
-
-@font-face { 
-    font-family: 'roboto-black';
-    src: url("../fonts/Roboto-Black.ttf");
-}
-
-@font-face {
-    font-family: 'sans';
-    src: url("../fonts/GoogleSans-Regular.ttf");
-}
-@font-face {
-    font-family: 'sans-m';
-    src: url("../fonts/GoogleSans-Medium.ttf");
-}
-@font-face {
-    font-family: 'sans-b';
-    src: url("../fonts/GoogleSans-Bold.ttf");
-} 
-*/
 
 /*********************** login.html *********************/
 .log-forms {
