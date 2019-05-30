@@ -1593,6 +1593,7 @@ label {
 .sets-details .set-data .btns .log-btn.edit {
     justify-content: space-between;
     height: 60px;
+    padding: 0 24px;
 }
 
 .sets-details .set-data .btns .log-btn.edit img {
