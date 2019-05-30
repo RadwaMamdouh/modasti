@@ -1459,7 +1459,7 @@ label {
     opacity: 0;
     transition: all ease .3s;
     transform-origin: bottom;
-    top: 50%;
+    top: 37%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transition: all ease .3s;
@@ -1470,6 +1470,10 @@ label {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+}
+
+.box .btns.middle-btn {
+    top: 50%;
 }
 
 .box:hover .btns {
@@ -1719,9 +1723,9 @@ label {
     border: none;
 }
 
-.box .btns.center-top {
+/* .box .btns.center-top {
     top: 37%;
-}
+} */
 
 .items-used .box .box-tit {
     margin: 30px 0 7px;
@@ -3208,4 +3212,496 @@ label {
 .set-publish .set-form .set-form-btns .log-btn:nth-child(2) img {
     width: 17px;
     height: 17px;
+}
+
+
+
+/******************************************** business-help.html **********************************/
+.business-img {
+    width: 100%;
+    height: 476px;
+    position: relative;
+}
+
+.business-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.business-img .b-search {
+    position: relative;
+    bottom: 0;
+    transform: translate(0, -50%);
+    background-color: #000;
+    padding: 45px 43px 45px 2px;
+}
+
+.business-img .b-search::before {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    display: block;
+    width: 100%;
+    right: calc(100% - 2px);
+    top: 0;
+    z-index: 1;
+    height: 100%;
+}
+
+.business-img .b-search form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.business-img .b-search form input {
+    width: 990px;
+    max-width: 80%;
+    background-color: transparent;
+    border-left: 1px solid rgba(255, 255, 255, .30);
+    color: #fff;
+    padding: 5px;
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.business-img .b-search form input::placeholder {
+    color: #ddd;
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.business-img .b-search form button {
+    background-color: transparent;
+    outline: 0 none;
+}
+
+.business-img .b-search form button img {
+    width: 21px;
+    height: 19px;
+}
+
+.business-help {
+    padding: 113px 0 60px;
+}
+
+.business-help .help-txt .txt-row {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ECECEC;
+    margin-bottom: 30px;
+}
+
+.business-help .help-txt .txt-row .help-title {
+    font-family: 'raleway-m';
+    font-size: 24px;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+
+.business-help .help-txt .txt-row p {
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.business-help .help-txt .txt-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.business-help .help-faqs .faqs p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+.business-help .help-faqs .faqs p:last-child {
+    margin-bottom: 0;
+}
+
+
+/******************************************** business-edit-account.html **********************************/
+.b-edit-account .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.update-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.update-img input[type='file'] {
+    display: none;
+}
+
+.update-img img {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 11px;
+}
+
+.update-img span {
+    color: #fff;
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.pull-bear {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pull-bear .uploading {
+    width: 67px;
+    height: 67px;
+    margin-right: 6px;
+}
+
+.pull-bear .uploading > img {
+    width: 100%;
+    max-width: 67px;
+    height: 100%;
+}
+
+.pull-bear .uploading .overlay img {
+    width: 18px;
+    height: 18px;
+}
+
+.pull-bear span {
+    color: #fff;
+    font-family: 'raleway-m';
+    font-size: 30px;
+}
+
+.b-edit-account .b-search {
+    padding: 60px 0 60px 2px;
+}
+
+.b-edit-account .b-search .count {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.b-edit-account .b-search .count span {
+    color: #fff;
+    font-family: 'sans-m';
+    font-size: 14px;
+}
+
+.b-edit-account .b-search .count span:first-child {
+    margin-right: 40px;
+}
+
+.b-edit-form {
+    padding: 160px 0 60px;
+}
+
+.b-edit-form .profile-data {
+    margin-bottom: 0;
+}
+
+.b-edit-form .profile-data .form-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.b-edit-form .profile-data .form-btns .log-btn {
+    height: 60px;
+    padding: 0 24px;
+}
+
+
+
+/******************************************** business-user.html **********************************/
+.business-user .power-modasti {
+    padding: 60px 0;
+    background-color: #000;
+}
+
+.business-user .power-modasti .title {
+    align-items: baseline;
+    margin-bottom: 0;
+}
+
+.business-user .power-modasti .title div {
+    color: #fff;
+    width: 146px;
+}
+
+.business-user .power-modasti .power-modasti-txt {
+    color: #fff;
+    font-family: 'raleway';
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.business-user .weird-header .info.about .info-content {
+    margin-bottom: 40px;
+}
+
+.business-user .weird-header .info.about .info-content:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.business-user .weird-header {
+    padding: 60px 0;
+}
+
+.business-user .weird-header .main-tit {
+    margin: auto auto 65px;
+}
+
+.business-user .business-img {
+    width: 1231px;
+    max-width: 91%;
+    height: 344px;
+    margin-bottom: -60px;
+}
+
+.business-user .business-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.business-user .business-us {
+    background-color: #000;
+    padding: 120px 0 60px;
+    margin-bottom: 60px;
+}
+
+.business-user .business-us .title {
+    align-items: baseline;
+}
+
+.business-user .business-us .title div {
+    color: #fff;
+    width: 118px;
+}
+
+.business-user .business-us .register-now {
+    color: #fff;
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+}
+
+.business-user .business-us .business-us-txt p:first-child {
+    margin-bottom: 35px;
+}
+
+.business-user .business-us .business-us-txt p {
+    color: #fff;
+    font-family: 'raleway';
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/******************************************** coupon.html **********************************/
+.coupon .b-search .coupon-title {
+    color: #fff;
+    font-family: 'raleway-m';
+    font-size: 24px;
+    line-height: 36px;
+    width: 114px;
+    max-width: 100%;
+}
+
+.coupon .b-search .coupon-code {
+    color: #fff;
+    font-family: 'sans-m';
+    font-size: 14px;
+}
+
+.coupon .b-search .coupon-date p {
+    color: #fff;
+    font-family: 'raleway-m';
+    font-size: 14px;
+}
+
+.coupon .b-search .coupon-date p:nth-child(1) {
+    margin-bottom: 14px;
+}
+
+.coupon .b-search .log-btn img {
+    width: 16px;
+    height: 20px;
+}
+
+.coupon-table {
+    padding: 153px 0 60px;
+}
+
+.table {
+    margin-bottom: 0 !important;
+}
+
+.table-bordered {
+    border: 1px solid #ECECEC !important;
+}
+
+.table-bordered thead th {
+    border-bottom-width: 0 !important;
+}
+
+.coupon-table {
+    overflow-x: auto; 
+}
+
+.coupon-table table thead tr th {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    vertical-align: middle;
+    padding: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.coupon-table table thead tr th img {
+    height: 9px;
+    margin-left: 10px;
+}
+
+.coupon-table table tbody tr td {
+    vertical-align: middle;
+    padding: 30px 20px;
+}
+
+.coupon-table table tbody tr td:first-child {
+    text-align: center;
+    width: 133px;
+}
+
+.coupon-table table tbody tr td img {
+    width: 93px;
+    height: 71px;
+}
+
+.coupon-table table tbody tr td p {
+    font-family: 'sans-m';
+    font-size: 14px;
+}
+
+.coupon-table table tbody tr td p.status {
+    font-family: 'raleway-m';
+}
+
+/******************************************** new-coupon.html **********************************/
+.coupon-image {
+    background-color: #ECECEC;
+    height: 476px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coupon-image .coupon-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.coupon-image .coupon-img input[type='file'] {
+    display: none;
+}
+
+.coupon-image .coupon-img img.upload {
+    width: 17px;
+    height: 17px;
+    margin-bottom: 27px;
+}
+
+.coupon-image .coupon-img p {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.coupon-image .coupon-img .img-type {
+    font-family: 'raleway-m';
+    font-size: 14px;
+    line-height: 16px;
+    opacity: .30;
+}
+
+.coupon-form  .coupon-f {
+    position: relative;
+    bottom: 0;
+    background-color: #000;
+    padding: 60px 190px 60px 2px;
+    margin-top: -60px;
+}
+
+.coupon-form  .coupon-f::before {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    display: block;
+    width: 100%;
+    right: calc(100% - 2px);
+    top: 0;
+    z-index: 1;
+    height: 100%;
+}
+
+.coupon-form .new-coupon-title {
+    color: #fff;
+    font-family: 'raleway-m';
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 43px;
+    width: 104px;
+    max-width: 100%;
+}
+
+.coupon-form .profile-data {
+    margin-bottom: 0;
+}
+
+.coupon-form .profile-data .form-group .tit {
+    color: #fff;
+}
+
+.coupon-form .profile-data .input {
+    border-bottom-color: #6f6f6f;
+    border-left: 0;
+    color: #fff !important;
+    opacity: .30;
+}
+
+.coupon-form .add-coupon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.new-coupon-table {
+    padding: 60px 0 60px;
 }
