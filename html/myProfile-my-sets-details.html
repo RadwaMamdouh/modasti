@@ -486,7 +486,7 @@
                                                     <span>EDIT</span>
                                                     <img src="../dist/img/edit.png" class="img-fluid">
                                                 </a>
-                                                <button class="log-btn log-white delete modal-btn" data-target="#delete-modal">
+                                                <a href="#" class="log-btn log-white delete modal-btn" data-target="#cancel-modal">
                                                     <span>DELETE</span>
                                                     <img src="../dist/img/delete.png" class="img">
                                                 </button>
@@ -1373,32 +1373,32 @@
         </div>
     </div>
     <!-- End Size Quid Modal -->
-
-    <!-- modal -->
-
-	<!-- delete-account -->
-	<div class="custom-modal sent-modal" id="delete-modal">
-		<div class="overlay"></div>
-		<div class="modal-card">
-			<div class="card-head">
-				<img src="../dist/img/close.png" class="img-fluid close-img">
-			</div>
-			<div class="card-content">
-				<p class="info-content">
-					Are you sure you want to delete your account?
-				</p>
-
-				<button type="button" class="log-btn modal-btn" data-target="#sent-modal">
-					<span class="tit">yes</span>
-					<img src="../dist/img/right-arrow.png" class="img-fluid">
-				</button>
-				<button type="button" class="log-btn log-white modal-btn" data-target="#report-modal">
-					<span class="tit">no</span>
-					<img src="../dist/img/left-arrow2.png" class="img-fluid">
-				</button>
-			</div>
-		</div>
-	</div>
+    
+    <!-- delete-report -->
+    <div class="custom-modal sent-modal" id="cancel-modal">
+       <div class="overlay"></div>
+       <div class="modal-card">
+           <div class="card-head">
+               <img src="../dist/img/close.png" class="img-fluid close-img">
+           </div>
+           <div class="card-content">
+               <p class="info-content">
+                    Are you sure you want to delete this set? 
+               </p>
+               
+               <button type="button" class="log-btn modal-btn" data-target="#sent-modal">
+                   <span class="tit">yes</span>
+                   <img src="../dist/img/right-arrow.png" class="img-fluid">
+               </button>
+               <button type="button" class="log-btn log-white modal-btn" data-target="#report-modal">
+                   <span class="tit">back</span>
+                   <img src="../dist/img/left-arrow2.png" class="img-fluid">
+               </button>
+           </div>
+       </div>
+   </div>
+    
+    
 </body>
 <script src="../dist/js/jquery-3.2.1.min.js"></script>
 <script src="../dist/js/wow.min.js"></script>

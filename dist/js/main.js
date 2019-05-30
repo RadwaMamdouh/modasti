@@ -1,6 +1,7 @@
 /*global $ , document , window*/
 $(document).ready(function () {
 	'use strict';
+	// new WOW().init();
 
 	//    nav open
 	//    $('.tog-btn').on('click', function () {
@@ -13,6 +14,33 @@ $(document).ready(function () {
 	//    })
 
 
+	
+	
+//	business user profile grid && list 
+//	$('.b-profile-head .grid-controll .grid').click(function() {
+//		$('.profile-table .container > div').removeClass('table');
+//		$('.profile-table .tbody').addClass('row'); 
+//		$('.profile-table .thead .td:first-child').addClass('grid-head');
+//		$('.profile-table .thead .td:first-child ~ .td').slideUp(0);
+//		$('.profile-table .tbody .tr').addClass('col-12 col-sm-6 col-md-4 col-lg-3');
+//		$('.profile-table .container').removeClass('in-list');
+//		$('.b-profile-head .grid-controll > *').removeClass('active')
+//		$(this).addClass('active');
+//	})
+//	
+//	$('.b-profile-head .grid-controll .list').click(function() {
+//		$('.profile-table .container > div').addClass('table');
+//		$('.profile-table .tbody').removeClass('row');
+//		$('.profile-table .thead .td:first-child').removeClass('grid-head');
+//		$('.profile-table .thead .td:first-child ~ .td').slideDown(0);
+//		$('.profile-table .tbody .tr').removeClass('col-12 col-sm-6 col-md-4 col-lg-3');
+//		$('.profile-table .container').addClass('in-list');
+//		$('.b-profile-head .grid-controll > *').removeClass('active')
+//		$(this).addClass('active');
+//	})
+	
+	
+	
 	//    sec-nav function
 
 	$('.nav-btn').on('click', function () {

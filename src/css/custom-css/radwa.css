@@ -3434,6 +3434,11 @@ label {
     padding: 0 24px;
 }
 
+.b-edit-form .profile-data .form-btns .log-btn.modal-btn img {
+    width: 29px;
+    height: 26px;
+}
+
 
 
 /******************************************** business-user.html **********************************/

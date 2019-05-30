@@ -789,6 +789,10 @@ a {
 	display: block;
 	border-bottom: 1px solid #000;
 }
+.search-input .hints li:last-child a
+{
+	border: 0;
+}
 
 /*search*/
 
@@ -2468,6 +2472,15 @@ a {
 	-ms-transition: .3s;
 	-o-transition: .3s;
 }
+.log-btn.log-trans
+{
+	background-color: transparent;
+	box-shadow: 0 0 1px rgba(0,0,0,.3)
+}
+.log-btn.log-trans span
+{
+	color: #000;
+}
 
 .hashtags .log-white.log-btn span {
 	display: block;
@@ -3234,6 +3247,7 @@ a {
 	align-items: center;
 	justify-content: center;
 	font-weight: bold;
+	z-index: 9;
 }
 
 .filter .main-title {
@@ -3561,6 +3575,18 @@ a {
 
 .box .log-btn span {
 	font-size: 14px;
+}
+.box .box-img
+{
+	overflow: hidden;
+}
+.box .box-img img
+{
+	transition: .5s;
+}
+.box:hover .box-img img
+{
+	transform: scale(1.05) rotate(2deg);
 }
 
 .search-result .box .box-img {
@@ -3982,7 +4008,7 @@ a {
 	padding: 20px;
 	border: 1px solid #ECECEC
 }
-.messages .msg-form-bar
+.messages .msg-form-bar 
 {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -4220,6 +4246,390 @@ a {
 	text-transform: capitalize;
 }
 
+
+
+/*===========================  start business user profile =====================*/
+
+.b-profile-head
+{
+	padding: 60px 0;
+	margin-bottom: 60px;
+	background-color: #ECECEC;
+}
+.b-profile-head .cho-file
+{
+	width: 100%;
+	justify-content: space-between;
+}
+.b-profile-head .main-title
+{
+	margin-bottom: 30px;
+}
+.b-profile-head .cho-file span
+{
+	display: block !important;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.b-profile-head .cho-file img
+{
+	width: 18px;
+}
+.b-profile-head .up-btn
+{
+	margin-bottom: 20px;
+}
+.b-profile-head .up-btn img
+{
+	width: 20px;
+}
+.b-profile-head .up-btn + a
+{
+	font-size: 14px;
+	text-decoration: underline !important;
+	font-family: 'raleway-m';
+}
+.b-profile-head .grid-controll
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.b-profile-head .grid-controll img
+{
+	height: 27px;
+	cursor: pointer;
+}
+.b-profile-head .grid-controll .grid
+{
+	padding-left: 27px;
+}
+.b-profile-head .grid-controll .list
+{
+	padding-right: 27px;
+	position: relative;
+}
+.b-profile-head .grid-controll .list::before
+{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 1px;
+	height: 16px;
+	background-color: #CFBDA8;
+	transform: translateY(-50%);
+}
+.b-profile-head .grid-controll *
+{
+	filter: grayscale(100%);
+}
+.b-profile-head .grid-controll .list img:first-child,
+.b-profile-head .grid-controll .grid img:first-child
+{
+	display: none;
+}
+.b-profile-head .grid-controll .list img:last-child,
+.b-profile-head .grid-controll .grid img:last-child
+{
+	display: block;
+}
+.b-profile-head .grid-controll .list.active img:first-child,
+.b-profile-head .grid-controll .grid.active img:first-child
+{
+	display: block;
+}
+.b-profile-head .grid-controll .list.active img:last-child,
+.b-profile-head .grid-controll .grid.active img:last-child
+{
+	display: none;
+}
+
+ 
+.table
+{
+	display: table;
+	border: 1px solid #ECECEC;
+}
+.table .thead
+{
+	display: table-header-group; 
+}
+.table .tbody
+{
+	display: table-row-group;
+}
+.table .tr
+{
+	display: table-row;
+}
+
+.table .tr .td
+{
+	display: table-cell;
+	border-right: 1px solid #ECECEC;
+	padding: 30px;
+	vertical-align: middle;
+	border-bottom: 1px solid #ECECEC;
+}
+.table  .tr .td:last-child
+{
+	border-right: 0;
+}
+.table .tbody .tr:last-child .td
+{
+	border-bottom: 0;
+}
+.profile-table .table .td:first-child
+{
+	width: 6%;
+	padding: 10px;
+}
+
+.profile-table .custom-radio 
+{
+	justify-content: center;
+}
+.profile-table .general
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	max-width: 160px
+}
+.profile-table .general .options *
+{
+	display: block;
+	margin-bottom: 10px;
+	color: #000;
+	text-transform: capitalize;
+	font-size: 14px;
+	font-family: 'raleway-m';
+}
+.profile-table .general .options *:last-child
+{
+	margin-bottom: 0;
+}
+.profile-table .general .img
+{
+	width: 93px;
+	height: 71px; 
+	overflow: hidden;
+	margin-right: 30px;
+}
+.profile-table .general .img img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.profile-table .table .info-content
+{
+	max-width: 155px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'raleway-m';
+}
+.profile-table .table .c-width
+{
+	width: 20%; 
+}
+.profile-table .table .info span
+{
+	display: none;
+}
+.profile-table .table .thead
+{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'raleway-m';
+}
+.profile-table .table .thead .tead-content
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.profile-table .table .thead .thead-content.active img
+{
+	transform: rotate(180deg);
+}
+.profile-table .table .thead img
+{
+	width: 10px;
+	margin-left: 10px;
+	transition: .5s;
+}
+
+
+.profile-table .row .general
+{
+	display: block;
+	position: relative;
+	max-width: 100%;
+}
+.profile-table .row .general .img
+{
+	width: 100%;
+	height: 194px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+.profile-table .row .general .options
+{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.profile-table .row .general .options *
+{
+	margin-bottom: 0;
+	margin-right: 10px;
+}
+.profile-table .row .general .options *:last-child
+{
+	margin-right: 0;
+}
+.profile-table .row .g-box
+{
+	position: relative;
+	border: 1px solid #ECECEC;
+	padding: 0;
+	margin-right: 15px;
+	margin-bottom: 30px;
+}
+.profile-table .row .g-box .td:first-child
+{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: 9;
+	padding: 20px;
+}
+.profile-table .row .g-box .tit
+{
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.profile-table .row .g-box > *
+{
+	padding: 0 20px;
+	border-bottom: 1px solid #ECECEC;
+	margin-bottom: 20px;
+}
+.profile-table .row .g-box > *:last-child,
+.profile-table .row .g-box > .c-width
+{
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+.profile-table .row .g-box .info
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	font-size: 14px;
+	
+}
+.profile-table .row .g-box .info span
+{
+	font-weight: bold;
+	font-size: 14px;
+	font-family: 'raleway-m';
+}
+.profile-table .first-sort
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+.drop-mnu.table-dropdown
+{
+	top: 27px;
+	min-width: 175px;
+	right: auto;
+	left: -30px;
+	padding: 20px;
+	padding-bottom: 0;
+	white-space: nowrap;
+	z-index: 99;
+}
+.drop-mnu.table-dropdown a
+{
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.profile-table .location-drop-btn.container-poend::after,
+.profile-table .location-drop-btn.container-poend::before
+{
+	z-index: 9;
+}
+.drop-mnu.table-dropdown a:hover
+{
+	color: #CFBDA8;
+}
+.profile-table .grid-head .first-sort
+{
+	justify-content: flex-start;
+}
+.profile-table .grid-head
+{
+	margin-bottom: 30px;
+}
+.profile-table .grid-head .first-sort img
+{
+	margin-left: 10px;
+	width: 10px;
+}
+
+.profile-table .form-row
+{
+	position: relative;
+}
+.profile-table .form-row .td div
+{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/*===========================  end business user profile =====================*/
 
 
 
