@@ -477,7 +477,7 @@
                                     <div class="box">
                                         <div class="box-img">
                                             <a href="items-details.html"><img src="../dist/img/pic9.png" class="img-fluid"></a>
-                                            <button type="button" class="log-btn">
+                                            <button type="button" class="log-btn modal-btn" data-target="#cancel-modal">
                                                 <img src="../dist/img/delete.png" class="img-fluid">
                                             </button>
                                         </div>
@@ -499,7 +499,7 @@
                                     <div class="box">
                                         <div class="box-img">
                                             <a href="items-details.html"><img src="../dist/img/pic10.png" class="img-fluid"></a>
-                                            <button type="button" class="log-btn">
+                                            <button type="button" class="log-btn modal-btn" data-target="#cancel-modal">
                                                 <img src="../dist/img/delete.png" class="img-fluid">
                                             </button>
                                         </div>
@@ -521,7 +521,7 @@
                                     <div class="box">
                                         <div class="box-img">
                                             <a href="items-details.html"><img src="../dist/img/pic11.png" class="img-fluid"></a>
-                                            <button type="button" class="log-btn">
+                                            <button type="button" class="log-btn modal-btn" data-target="#cancel-modal">
                                                 <img src="../dist/img/delete.png" class="img-fluid">
                                             </button>
                                         </div>
@@ -543,7 +543,7 @@
                                     <div class="box">
                                         <div class="box-img">
                                             <a href="items-details.html"><img src="../dist/img/pic9.png" class="img-fluid"></a>
-                                            <button type="button" class="log-btn">
+                                            <button type="button" class="log-btn modal-btn" data-target="#cancel-modal">
                                                 <img src="../dist/img/delete.png" class="img-fluid">
                                             </button>
                                         </div>
@@ -565,7 +565,7 @@
                                     <div class="box">
                                         <div class="box-img">
                                             <a href="items-details.html"><img src="../dist/img/pic10.png" class="img-fluid"></a>
-                                            <button type="button" class="log-btn">
+                                            <button type="button" class="log-btn modal-btn" data-target="#cancel-modal">
                                                 <img src="../dist/img/delete.png" class="img-fluid">
                                             </button>
                                         </div>
@@ -587,7 +587,7 @@
                                     <div class="box">
                                         <div class="box-img">
                                             <a href="items-details.html"><img src="../dist/img/pic11.png" class="img-fluid"></a>
-                                            <button type="button" class="log-btn">
+                                            <button type="button" class="log-btn modal-btn" data-target="#cancel-modal">
                                                 <img src="../dist/img/delete.png" class="img-fluid">
                                             </button>
                                         </div>
@@ -701,7 +701,35 @@
     </footer>
     
     <!-- end footer -->
+    
+    <!-- delete-report -->
+    <div class="custom-modal sent-modal" id="cancel-modal">
+       <div class="overlay"></div>
+       <div class="modal-card">
+           <div class="card-head">
+               <img src="../dist/img/close.png" class="img-fluid close-img">
+           </div>
+           <div class="card-content">
+               <p class="info-content">
+                    Are you sure you want to delete this item? 
+               </p>
+               
+               <button type="button" class="log-btn modal-btn" data-target="#sent-modal">
+                   <span class="tit">yes</span>
+                   <img src="../dist/img/right-arrow.png" class="img-fluid">
+               </button>
+               <button type="button" class="log-btn log-white modal-btn" data-target="#report-modal">
+                   <span class="tit">back</span>
+                   <img src="../dist/img/left-arrow2.png" class="img-fluid">
+               </button>
+           </div>
+       </div>
+   </div>
+    
+    
+    
 </body>
 <script src="../dist/js/jquery-3.2.1.min.js"></script>
+<script src="../dist/js/wow.min.js"></script>
 <script src="../dist/js/main.js"></script>
 </html>
