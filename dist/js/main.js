@@ -211,6 +211,11 @@ $(document).ready(function () {
 			$('#cm-tab').css('display', 'none');
 		}
 	});
+
+	// Join Contest Responsive Collapsing
+	$('.contest-bar .collapse-btn').on('click', function () {
+		$(this).parents('.contest-bar').toggleClass('active');
+	});
 });
 
 // Uploading image
@@ -220,8 +225,8 @@ function readURL(input) {
 		reader.onload = function (e) {
 			var imgPre = $('.uploading input[type="file"]').val();
 			console.log(imgPre);
-			$('#img-preview img').remove();
-			$('#img-preview').append(`<img src="${imgPre, e.target.result}" class="img-fluid">`);
+			$('.img-preview img').remove();
+			$('.img-preview').append(`<img src="${imgPre, e.target.result}" class="img-fluid">`);
 			$('.uploading .add-icon').css('display', 'none');
 
 		}
@@ -230,6 +235,6 @@ function readURL(input) {
 	}
 }
 
-$("#upload-file").change(function () {
+$(".upload-file").change(function () {
 	readURL(this);
 });
