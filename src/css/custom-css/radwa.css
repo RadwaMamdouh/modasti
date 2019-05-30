@@ -1593,6 +1593,7 @@ label {
 .sets-details .set-data .btns .log-btn.edit {
     justify-content: space-between;
     height: 60px;
+    padding: 0 24px;
 }
 
 .sets-details .set-data .btns .log-btn.edit img {
@@ -3431,6 +3432,11 @@ label {
 .b-edit-form .profile-data .form-btns .log-btn {
     height: 60px;
     padding: 0 24px;
+}
+
+.b-edit-form .profile-data .form-btns .log-btn.modal-btn img {
+    width: 29px;
+    height: 26px;
 }
 
 

@@ -1,7 +1,7 @@
 /*global $ , document , window*/
 $(document).ready(function () {
 	'use strict';
-	new WOW().init();
+	// new WOW().init();
 
 	//    nav open
 	//    $('.tog-btn').on('click', function () {
