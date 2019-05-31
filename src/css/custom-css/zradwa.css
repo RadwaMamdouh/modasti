@@ -502,6 +502,10 @@
         height: 40px;
     }
 
+    .box .btns.middle-btn .log-btn {
+        margin-top: 0;
+    }
+
     .box .price-cup img {
         width: 25px;
         height: 22px;
@@ -1267,6 +1271,196 @@
     .set-publish .set-form .set-form-btns .log-btn:nth-child(1) {
         margin-right: 20px;
     }
+
+    /********** business-help.html ************/
+    .business-img {
+        height: 297px;
+    }
+
+    .business-img .b-search {
+        padding: 22px 29px 22px 2px;
+    }
+
+    .business-help {
+        padding: 60px 0 50px;
+    }
+
+    .business-help .col-lg-3 {
+        order: -1;
+    }
+
+    .business-help .help-faqs .faqs {
+        margin-bottom: 61px;
+    }
+
+    .business-help .help-txt .txt-row .help-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .business-help .help-txt .txt-row p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /********** business-edit-account.html ************/
+    .b-edit-account .b-search {
+        padding: 30px 0;
+    }
+
+    .pull-bear {
+        margin-bottom: 30px;
+    }
+
+    .b-edit-account .b-search .count span {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .b-edit-account .b-search .count span:first-child {
+        margin-right: 20px;
+    }
+
+    .b-edit-form {
+        padding: 144px 0 30px;
+    }
+
+    .b-edit-form .profile-data .form-btns {
+        justify-content: flex-start;
+    }
+
+    .b-edit-form .profile-data .form-btns .log-btn {
+        height: 40px;
+        padding: 0;
+    }
+
+    .b-edit-form .profile-data .form-btns .log-btn:nth-child(1) {
+        margin-right: 10px;
+    }
+
+    .b-edit-form .profile-data .form-btns .log-btn:nth-child(2) {
+        margin-left: 10px;
+    }
+
+    /********** business-user.html ************/
+    .business-user .power-modasti .title div {
+        width: 100%;
+    }
+
+    .business-user .power-modasti .power-modasti-txt {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .business-user .weird-header .weird-shape::before {
+        bottom: -6px;
+        left: -6px;
+    }
+
+    .business-user .weird-header .main-tit.about {
+        margin-top: -20px;
+    }
+
+    .business-user .weird-header {
+        padding: 30px 0;
+    }
+
+    .business-user .business-img {
+        height: 294px;;
+    }
+
+    .business-user .business-us {
+        padding: 88px 0 30px;
+    }
+
+    .business-user .business-us .title div {
+        width: 100%;
+    }
+
+    .business-user .business-us .register-now {
+        margin-bottom: 30px;
+    }
+
+    /********** coupon.html ************/
+    .coupon .b-search .coupon-title {
+        font-family: 'raleway-b';
+        line-height: 29px;
+        margin-bottom: 29px;
+    }
+
+    .coupon .coupon-date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .coupon .b-search .coupon-date p:nth-child(1) {
+        margin-bottom: 0;
+    }
+
+    .coupon .b-search .log-btn {
+        width: 100%;
+        height: 60px;
+        margin-top: 31px;
+        justify-content: space-between;
+        padding: 0 24px;
+    }
+
+    .coupon .b-search .log-btn span {
+        display: block !important;
+    }
+
+    .table {
+        border: 0 !important;
+    }
+
+    .coupon-table table thead tr th {
+        font-size: 12px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #ECECEC !important;
+    }
+
+    .coupon-table table tbody tr td {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .coupon-table table tbody tr td p {
+        font-size: 12px;
+    }
+
+    /********** new-coupon.html ************/
+    .coupon-image {
+        height: 297px;
+    }
+
+    .coupon-image .coupon-img img.upload {
+        margin-bottom: 9px;
+    }
+
+    .coupon-image .coupon-img p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .coupon-image .coupon-img .img-type {
+        font-size: 12px;
+    }
+
+    .coupon-form .coupon-f {
+        padding: 30px 35px 30px 2px;
+    }
+
+    .coupon-form .new-coupon-title {
+        margin-bottom: 30px;
+    }
+
+    .coupon-form .add-coupon {
+        justify-content: flex-start;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -1337,6 +1531,15 @@
     }
 
     .set-publish .set-form .set-form-btns .log-btn:nth-child(2) {
+        margin-left: 10px;
+    }
+
+    /********** business-edit-account.html ************/
+    .b-edit-form .profile-data .form-btns .log-btn:nth-child(1) {
+        margin-right: 10px;
+    }
+
+    .b-edit-form .profile-data .form-btns .log-btn:nth-child(2) {
         margin-left: 10px;
     }
 }
