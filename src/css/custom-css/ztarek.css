@@ -244,7 +244,21 @@
 	.main-img .log-btn {
 		right: 35px;
 	}
-
+	
+	.log-btn
+	{
+		padding: 0 !important;
+		width: 40px;
+		height: 40px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		justify-content: center;
+	}
 	/*    header*/
 
 	/*    footer*/
@@ -638,6 +652,7 @@
 		-ms-align-items: center;
 		align-items: center;
 		justify-content: center;
+		max-width: none;
 	}
 
 	.newsfeed .other-side .log-btn {
@@ -1116,6 +1131,10 @@
 	{
 		margin-bottom: 10px;
 	}
+	.notification-p .notifi-mnu .n-img
+	{
+		display: none;
+	}
 }
 
 @media (max-width: 375px) {
@@ -1131,6 +1150,22 @@
 		padding-right: 15px;
 		padding-left: 15px;
 	}
-	
+	.comments .user-comments .comment-details,
+	.comments .comment-area .write-comment
+	{
+		max-width: 75%
+	}
+	.footer .foot-content .foot-logo
+	{
+		max-width: 60%;
+	}
+	.help-head .left .behind-u
+	{
+		font-size: 30px
+	}
+	.correct, .email .wrong
+	{
+		top: -15px;
+	}
 
 }
