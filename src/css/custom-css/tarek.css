@@ -7,6 +7,7 @@
 
 
 
+
 @font-face {
     font-family: 'raleway-bo';
     src: url("../fonts/Raleway-Bold.ttf");
@@ -40,7 +41,7 @@
     font-family: 'roboto-b';
     src: url("../fonts/Roboto-Bold.ttf");
 }
-
+ 
 @font-face { 
     font-family: 'roboto-black';
     src: url("../fonts/Roboto-Black.ttf");
@@ -58,6 +59,7 @@
     font-family: 'sans-b';
     src: url("../fonts/GoogleSans-Bold.ttf");
 } 
+
 
  
 
@@ -2233,6 +2235,7 @@ a {
 	-ms-align-items: center;
 	align-items: center;
 	font-family: 'raleway-m';
+	color: #000;
 }
 
 .news-box .tit .name .name-txt {
@@ -2280,6 +2283,53 @@ a {
 	margin-right: 40px;
 	font-size: 12px;
 	position: relative;
+}
+.icons .share-icons
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 0;
+	overflow: hidden;
+}
+.icons .share-icons.active
+{
+	width: auto;
+}
+.icons .share-icons a
+{
+	display: block;
+	transform: translate(-100%, -100%) rotate(-15deg);
+	margin-right: 20px;
+	opacity: 0;
+}
+.icons .share-icons.active a
+{
+	transform: none;
+	opacity: 1;
+	transition: .3s
+}
+.icons .share-icons.active a:nth-child(4)
+{
+	transition-delay: .6s
+}
+.icons .share-icons.active a:nth-child(3)
+{
+	transition-delay: .4s
+}
+.icons .share-icons.active a:nth-child(2)
+{
+	transition-delay:  .2s
+}
+.icons .share-icons a:hover
+{
+	opacity: .2
+}
+.icons .share-icons a img
+{
+	height: 15px;
 }
 
 .icons .icon::before {
@@ -2483,7 +2533,7 @@ a {
 }
 
 .hashtags .log-white.log-btn span {
-	display: block;
+	display: block !important;
 }
 
 .log-white.log-btn span {
@@ -2662,6 +2712,7 @@ a {
 .folow-row .tit .name {
 	font-size: 14px;
 	text-transform: capitalize;
+	color: #000;
 }
 
 .side-folow-btn {
@@ -2755,6 +2806,9 @@ a {
 .custom-checkbox i {
 	position: static;
 	margin-right: 7px;
+	margin-top: 2px;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
 }
 
 .custom-modal .modal-card.report-catd .card-head {
@@ -3541,7 +3595,10 @@ a {
 .search-result > .container > div.contests-row {
 	margin-bottom: 0;
 }
-
+.user-box
+{
+	text-align: center;
+}
 .user-box.user-box-s {
 	padding: 25px 17px;
 }
@@ -3708,7 +3765,8 @@ a {
 	height: 300px;
 	overflow: hidden;
 	background-size: cover;
-	background-position: center10%
+	background-position: center 10%;
+	color: #000;
 }
 .brand-box .info
 {
@@ -3774,6 +3832,7 @@ a {
 	position: absolute;
 	bottom: 0;
 	right: -18%;
+	color: #000;
 }
 .brand-box.brand-box-head .info
 {
@@ -4626,6 +4685,11 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+.share-control::before
+{
+	display: none !important;
+	margin-right: 15px !important;
 }
 
 

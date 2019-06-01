@@ -39,7 +39,9 @@ $(document).ready(function () {
 //		$(this).addClass('active');
 //	})
 	
-	
+	$('.share-control').click(function() {
+		$(this).siblings('.share-icons').toggleClass('active')
+	})
 	
 	//    sec-nav function
 
