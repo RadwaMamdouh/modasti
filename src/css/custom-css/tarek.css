@@ -4018,7 +4018,7 @@ a {
     background-color: #fff;
     overflow: hidden;
 }
-.comnts-form
+.t-comnts-form
 {
     display: -webkit-flex;
     display: -moz-flex;
@@ -4030,7 +4030,7 @@ a {
     margin: 0 50px;
 	border: 1px solid #ECECEC;
 }
-.comnts-form .comnt-input
+.t-comnts-form .t-comnt-input
 {
     width: 100%;
     background-color: transparent;
@@ -4041,7 +4041,7 @@ a {
 	font-size: 14px;
 	overflow: hidden;
 }
-.comnts-form .comnt-submit
+.t-comnts-form .t-comnt-submit
 {
     background-color: transparent;
 	display: -webkit-flex;
@@ -4055,7 +4055,7 @@ a {
 	font-size: 14px;
 	font-family: 'raleway-m';
 }
-.comnts-form .comnt-submit img
+.t-comnts-form .t-comnt-submit img
 {
     width: 35px;
 	margin-left: 10px;
@@ -4095,7 +4095,7 @@ a {
 	height: 100%;
 	object-fit: cover;
 }
-.messages .comnts-form
+.messages .t-comnts-form
 {
     margin: 0;
     padding: 20px;
