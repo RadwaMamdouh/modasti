@@ -3,6 +3,25 @@ $(document).ready(function () {
 	'use strict';
 	// new WOW().init();
 
+	var countVal = 0;
+	
+	var myVar = setInterval(function() {
+		
+		countVal = countVal + 1;
+		
+		$('.loader .loader-content .persent .num').html(countVal);
+		$('.loader .loader-content .bar-fill').css({
+			width: countVal + '%'
+		})
+		if(countVal == 100) {
+			clearInterval(myVar);
+			$('.loader').fadeOut();
+			$('body').addClass('over-y')
+		}
+		
+	}, 3000/100)
+	
+	
 	//    nav open
 	//    $('.tog-btn').on('click', function () {
 	//        $('.main-nav').toggleClass('show-nav');
