@@ -735,8 +735,7 @@ a {
 .search-input.open .srch-input {
 	left: 0;
 	opacity: 1;
-	transition-delay: .3s;
-	width: 100%;
+	transition-delay: .3s
 }
 
 .search-input.open .srch-input:focus ~ .hints {
@@ -3962,7 +3961,7 @@ a {
 {
 	font-size: 14px;
 	font-family: 'raleway-m';
-	
+
 }
 
 /*==============================// end notification-p */
@@ -4012,9 +4011,9 @@ a {
 /*==============================// end 404 */
 
 /*===========================================// messages //=============================*/
-  
 
-.t-comments .container
+
+.comments .container
 {
     background-color: #fff;
     overflow: hidden;
