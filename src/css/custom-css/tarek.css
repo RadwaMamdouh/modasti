@@ -735,7 +735,8 @@ a {
 .search-input.open .srch-input {
 	left: 0;
 	opacity: 1;
-	transition-delay: .3s
+	transition-delay: .3s;
+	width: 100%;
 }
 
 .search-input.open .srch-input:focus ~ .hints {
@@ -4011,9 +4012,9 @@ a {
 /*==============================// end 404 */
 
 /*===========================================// messages //=============================*/
+  
 
-
-.comments .container
+.t-comments .container
 {
     background-color: #fff;
     overflow: hidden;
