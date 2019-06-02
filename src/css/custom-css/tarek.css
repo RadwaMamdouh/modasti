@@ -2808,13 +2808,14 @@ a {
 .custom-modal .modal-card.report-catd .card-content .joining {
 	width: auto;
 }
-
+.custom-checkbox
+{
+	align-items: flex-start;
+}
 .custom-checkbox i {
 	position: static;
 	margin-right: 7px;
-	margin-top: 2px;
-	-ms-align-items: flex-start;
-	align-items: flex-start;
+	margin-top: 2px; 
 }
 
 .custom-modal .modal-card.report-catd .card-head {
