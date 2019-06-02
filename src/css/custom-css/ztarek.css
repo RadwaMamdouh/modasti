@@ -76,15 +76,15 @@
 
 	/*    header*/
 
-
+ 
 	/*    header*/
 
 	.main-header {
 		display: none;
-	}
+	} 
 
 	.header-container-m {
-		display: block;
+		display: block !important;
 	}
 
 	/*    header*/
