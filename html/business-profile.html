@@ -28,9 +28,6 @@
 					<li><a class="mynav-link active" href="index.html">home</a></li>
 					<li><a class="mynav-link" href="">what's new</a></li>
 					<li><a class="mynav-link" href="">EXCLUSIVE</a></li>
-					<li><a class="mynav-link" href="">DISCOUNTS</a></li>
-					<li><a class="mynav-link" href="">BRANDS</a></li>
-					<li><a class="mynav-link" href="">CONTEST</a></li>
 				</ul>
 			</div>
 
@@ -205,6 +202,16 @@
 				</li>
 				<li>
 					<a href="">SHOES</a>
+				</li>
+				
+				<li>
+					<a href="exclusive-discount.html">DISCOUNTS</a>
+				</li>
+				<li>
+					<a href="brands.html">BRANDS</a>
+				</li>
+				<li>
+					<a href="new-contests.html">CONTEST</a>
 				</li>
 			</ul>
 		</div>
@@ -505,7 +512,7 @@
 											</a>
 
 											<div class="drop-mnu table-dropdown">
-												<a href="">APPLY DISCOUNT</a>
+												<a href="" class="modal-btn" data-target="#apply-modal">APPLY DISCOUNT</a>
 												<a href="">REMOVE DISCOUNT</a>
 												<a href="">DELETE ITEMS</a>
 											</div>
@@ -622,7 +629,7 @@
 											</a>
 
 											<div class="drop-mnu table-dropdown">
-												<a href="">APPLY DISCOUNT</a>
+												<a href="" class="modal-btn" data-target="#apply-modal">APPLY DISCOUNT</a>
 												<a href="">REMOVE DISCOUNT</a>
 												<a href="">DELETE ITEMS</a>
 											</div>
@@ -790,25 +797,25 @@
 						<p class="foot-tit">QUICK LINKS</p>
 						<div class="row">
 							<div class="col-12 col-md-6 col-lg-3">
-								<a href="" class="foot-link">PRIVACY POLICY</a>
+								<a href="privacy-policy.html" class="foot-link">PRIVACY POLICY</a>
 							</div>
 							<div class="col-12 col-md-6 col-lg-3">
-								<a href="" class="foot-link">TERMS OF SERVICES</a>
+								<a href="terms-of-services.html" class="foot-link">TERMS OF SERVICES</a>
 							</div>
 							<div class="col-12 col-md-6 col-lg-3">
-								<a href="" class="foot-link">ABOUT MODASTI</a>
+								<a href="about-us.html" class="foot-link">ABOUT MODASTI</a>
 							</div>
 							<div class="col-12 col-md-6 col-lg-3">
-								<a href="" class="foot-link">CONTACT US</a>
+								<a href="contact-us.html" class="foot-link">CONTACT US</a>
 							</div>
 							<div class="col-12 col-md-6 col-lg-3">
 								<a href="" class="foot-link">BUSINESS WITH US</a>
 							</div>
 							<div class="col-12 col-md-6 col-lg-6">
-								<a href="" class="foot-link foot-data-feed">DATA FEED GUIDELINES AND SPECIFICATIONS</a>
+								<a href="data-feed.html" class="foot-link foot-data-feed">DATA FEED GUIDELINES AND SPECIFICATIONS</a>
 							</div>
 							<div class="col-12 col-md-6 col-lg-3">
-								<a href="" class="foot-link">HELP</a>
+								<a href="help.html" class="foot-link">HELP</a>
 							</div>
 							<div class="col-12 col-md-8">
 								<p class="foot-tit social-tit">FIND US ON</p>
@@ -839,6 +846,40 @@
 	</footer>
 
 	<!-- end footer -->
+
+    <div class="custom-modal sent-modal" id="apply-modal">
+			<div class="overlay"></div>
+			<div class="modal-card">
+				<div class="card-head">
+					<img src="../dist/img/close.png" class="img-fluid close-img">
+				</div>
+				<form action="" class="card-content">
+					<p class="tit-discount">
+							APPLY <br>
+							DISCOUNT
+					</p>
+					<p class="info-content">
+						 Are you sure you want to delete this set? 
+					</p>
+
+					<p>
+							DISCOUNT %
+					</p>
+					
+					<input type="number" class="dis-input">
+					
+					<button type="submit" class="log-btn modal-btn" data-target="#sent-modal">
+						<span class="tit">yes</span>
+						<img src="../dist/img/right-arrow.png" class="img-fluid">
+					</button>
+					<button type="button" class="log-btn log-white modal-btn" data-target="#report-modal">
+						<span class="tit">back</span>
+						<img src="../dist/img/left-arrow2.png" class="img-fluid">
+					</button>
+				</form>
+			</div>
+		</div>
+
 	<script src="../dist/js/jquery-3.2.1.min.js"></script>
 	<script src="../dist/js/main.js"></script>
 </body>

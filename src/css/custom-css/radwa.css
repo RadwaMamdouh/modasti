@@ -923,6 +923,15 @@ label {
     justify-content: space-between;
 }
 
+.reset-password .form-btn .log-btn[type='reset'] {
+    padding: 22px 24px;
+}
+
+.reset-password .form-btn .log-btn[type='submit'] img {
+    width: 28px;
+    height: 23px;
+}
+
 
 /********************************************** confirmation-message.html **********************************/
 .confirm-msg .log-info {
