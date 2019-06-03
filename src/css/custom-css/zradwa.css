@@ -1,3 +1,9 @@
+@media (max-width: 1200px) {
+    .data-feed-content .feed-table {
+        overflow: auto;
+    }
+}
+
 @media (max-width: 922px) {
     /********** login.html ************/
     .log-forms {
@@ -877,7 +883,7 @@
     }
 
     .collapse-box .collapse-btn .btn-txt {
-        max-width: 294px;
+        /* max-width: 294px; */
         width: 100%;
         overflow: hidden;
     }
@@ -1484,10 +1490,20 @@
     .draggable-items .set-item .item-img {
         height: 568px;
     }
+
+    .collapse-box .collapse-btn .btn-txt {
+        max-width: none;
+    }
 }
 
 @media (max-width: 575px) {
 
+}
+
+@media (max-width: 768px) {
+    .collapse-box .collapse-btn .btn-txt {
+        max-width: 294px;
+    }
 }
 
 
@@ -1541,5 +1557,11 @@
 
     .b-edit-form .profile-data .form-btns .log-btn:nth-child(2) {
         margin-left: 10px;
+    }
+}
+
+@media (max-width: 922px) {
+    .reset-password .form-btn .log-btn[type='reset'] {
+        padding: 0;
     }
 }

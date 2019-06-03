@@ -2537,7 +2537,6 @@ label {
 .data-feed-content table {
     width: 100%;
     max-width: 100%;
-    overflow: auto;
 }
 
 .data-feed-content table thead th {

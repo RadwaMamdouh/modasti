@@ -53,7 +53,7 @@
 	
 	.brand-box .info
 	{
-		transform: none;
+		/* transform: none; */
 		position: static;
 		margin-bottom: 30px;
 		width: 100%;
@@ -196,6 +196,10 @@
 	.weird-header .info .tit {
 		font-size: 24px;
 	}
+
+	.weird-header .justify-content-end {
+		justify-content: flex-start !important;
+	}
 }
 
 @media (max-width: 992px) {
@@ -218,6 +222,10 @@
 	.myProfile-tabs {
 		overflow: hidden;
 		overflow-x: auto;
+	}
+
+	.filter .box .btns {
+		display: none;
 	}
 }
 
@@ -577,20 +585,20 @@
 		margin-bottom: 30px;
 	}
 
-	.newsfeed .container {
+	/* .newsfeed .container {
 		padding-right: 0;
 		padding-left: 0;
-	}
+	} */
 
-	.newsfeed > .container > .row {
+	/* .newsfeed > .container > .row {
 		margin-right: 0;
 		margin-left: 0;
-	}
+	} */
 
-	.newsfeed > .container > .row > .col-12 {
+	/* .newsfeed > .container > .row > .col-12 {
 		padding-right: 35px;
 		padding-left: 35px;
-	}
+	} */
 
 	.custom-modal .modal-card.report-catd .card-content {
 		padding: 20px;
@@ -653,6 +661,7 @@
 		align-items: center;
 		justify-content: center;
 		max-width: none;
+		height: 40px;
 	}
 
 	.newsfeed .other-side .log-btn {
@@ -1120,6 +1129,14 @@
 	}
 	
 /*	business user profile*/
+
+	.brand-box .info {
+		transform: none;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+	}
 	
 }
 
@@ -1134,6 +1151,11 @@
 	.notification-p .notifi-mnu .n-img
 	{
 		display: none;
+	}
+
+	.filter .box .box-img {
+		width: 100%;
+		height: 468px;
 	}
 }
 
@@ -1168,4 +1190,11 @@
 		top: -15px;
 	}
 
+}
+
+@media (max-width: 922px) {
+	.filter .box .box-img {
+		width: 100%;
+		height: 468px;
+	}
 }
