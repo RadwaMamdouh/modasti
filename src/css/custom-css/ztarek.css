@@ -227,6 +227,10 @@
 	.filter .box .btns {
 		display: none;
 	}
+
+	.rate .log-btn {
+		margin-left: 0;
+	}
 }
 
 @media (max-width: 768px) {
