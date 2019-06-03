@@ -923,6 +923,15 @@ label {
     justify-content: space-between;
 }
 
+.reset-password .form-btn .log-btn[type='reset'] {
+    padding: 22px 24px;
+}
+
+.reset-password .form-btn .log-btn[type='submit'] img {
+    width: 28px;
+    height: 23px;
+}
+
 
 /********************************************** confirmation-message.html **********************************/
 .confirm-msg .log-info {
@@ -2009,7 +2018,8 @@ label {
 }
 
 .items-details .quick-view .owl-guide .item {
-    height: 817px;
+    max-height: 817px;
+    overflow: hidden;
 }
 
 .items-details .quick-view .owl-guide .item img {
@@ -2030,7 +2040,6 @@ label {
 .items-details .quick-view .owl-dots .owl-dot {
     width: 159px;
     height: 159px;
-    border: 1px solid #000;
     margin-bottom: 30px;
 }
 
@@ -2522,16 +2531,16 @@ label {
 
 .data-feed-content .feed-table {
     max-width: 100%;
+    overflow: hidden;
 }
 
 .data-feed-content table {
     width: 100%;
     max-width: 100%;
-    overflow: scroll;
 }
 
 .data-feed-content table thead th {
-    padding: 0 95px 0 30px;
+    padding: 0 30px;
 }
 
 .data-feed-content .tite {
@@ -2551,7 +2560,7 @@ label {
 }
 
 .data-feed-content table tbody td {
-    padding: 30px 95px 46px 30px;
+    padding: 30px 30px 46px 30px;
     vertical-align: top;
 }
 
@@ -2866,6 +2875,7 @@ label {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 11px;
+    text-align: left;
 }
 
 .people-applied .user-box .user-box-btn {
@@ -3046,6 +3056,7 @@ label {
 .contest-bar .tabs-form form  button img {
     width: 21px;
     height: 19px;
+    max-width: none;
 }
 
 .contest-bar .collapse-btn {
