@@ -4592,6 +4592,7 @@ a {
 	left: 15px;
 	z-index: 9;
 	padding: 20px;
+	border-bottom: none;
 }
 .profile-table .row .g-box .tit
 {
