@@ -2593,7 +2593,7 @@ a {
 }
 
 .newsfeed .main-title {
-	margin-bottom: 30px;
+	margin-bottom: 0;
 }
 
 .newsfeed .owl-contest {
@@ -3277,6 +3277,16 @@ a {
 .profile-data .input:disabled {
 	background-color: transparent;
 	color: rgba(0, 0, 0, .3);
+}
+
+.profile-data .log-btn.log-white img {
+	width: 29px;
+	height: 26px;
+}
+
+.profile-data .log-btn {
+	height: 60px;
+	padding: 0 24px;
 }
 
 /*==============================// end profile-data */
