@@ -7,26 +7,45 @@
 	<title>Modasti</title>
 	<link rel="icon" href="../dist/img/min-logo.png" type="image/x-icon" />
 	<link rel="stylesheet" href="../dist/css/style.min.css">
-	<link rel="stylesheet" href="../src/css/custom-css/radwa.css">
-	<link rel="stylesheet" href="../src/css/custom-css/zradwa.css">
-	<link rel="stylesheet" href="../src/css/custom-css/tarek.css">
-	<link rel="stylesheet" href="../src/css/custom-css/ztarek.css">
-	<link rel="stylesheet" href="../src/css/assets/owl.carousel.min.css">
+	
 </head>
 
 <body>
-	<!-- desctop header -->
+
+
+	<!-- loader -->
+	
+	<div class="loader">
+		<div class="loader-content">
+			<div class="imgs">
+				<img src="../dist/img/plus-load.png" alt="">
+				<img src="../dist/img/plus-load.png" alt="">
+			</div>
+			<div class="bar">
+				<div class="bar-fill"></div>
+			</div>
+			<div class="persent">
+				<span class="num"></span>%
+			</div>
+		</div>
+	</div>
+	
+	<!-- loader -->
+	
+	
+	
+	
 	<header class="main-header">
 		<section class="header">
 			<div class="logo-side">
-				<!-- open sec nav btn -->
 				<div class="nav-btn">
+					<!-- active class "active" -->
 					<span></span>
 					<span></span>
 				</div>
-				<a href="home.html"><img src="../dist/img/logo.png" alt="" class="logo"></a>
+				<a href="index.html"><img src="../dist/img/logo.png" alt="" class="logo"></a>
 			</div>
-			<!-- navbar list -->
+
 			<div class="main-nav">
 				<div class="overlay"></div>
 				<ul class="nav-list">
@@ -37,32 +56,10 @@
 			</div>
 
 			<div class="icons-side">
-				<!-- user dropdown -->
-				<div class="drop-container location-drop-btn">
-					<a href="" class="user-btn drpo-btn ">
-						<img src="../dist/img/user.png" alt="">
-					</a>
-
-					<div class="drop-mnu user-mnu">
-						<div class="up">
-							<a href="" class="img"><img src="../dist/img/user.png" alt=""></a>
-							<a href="" class="tit">Yosra Fahmy</a>
-							<p class="mail">Yosrafahmy@gmail.com</p>
-						</div>
-						<div class="center">
-							<a href="" class="link">Edit profile </a>
-							<a href="" class="link">Settings</a>
-						</div>
-						<div class="down">
-							<a href="index.html" class="link">Logout</a>
-						</div>
-					</div>
-				</div>
-				<!-- create set link -->
-				<a href="" class="ico-link cs-link">
-					<img src="../dist/img/grid-plus.png" alt="">
-				</a>
-				<!-- currency and location dropdown -->
+				<!-- login and signup links -->
+				<a href="register.html" class="log-link">sign up</a>
+				<a href="login.html" class="log-link">sign in</a>
+				<!-- location and currency dropdown -->
 				<div class="drop-container location-drop-btn">
 					<a href="" class="ico-link drpo-btn ">
 						<img src="../dist/img/reload-circle.png" alt="">
@@ -128,55 +125,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- notification dropdown -->
-				<div class="drop-container location-drop-btn">
-					<a href="" class="ico-link drpo-btn notifi-btn">
-						<img src="../dist/img/bell.png" alt="">
-					</a>
-
-					<div class="drop-mnu notifi-mnu">
-						<div class="up">
-							<p class="tit">notfication</p>
-							<div class="switch">
-								<span class="mode-btn">
-									<span class="on">on</span>
-									<span class="off">off</span>
-								</span>
-								<span class="line"></span>
-								<span class="dot"></span>
-							</div>
-						</div>
-						<ul class="center">
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
-						</ul>
-						<a href="" class="down">
-							see all
-							<img src="../dist/img/right-arrow.png" alt="">
-						</a>
-					</div>
-				</div>
-				<!-- msgs link -->
-				<a href="" class="ico-link cs-link">
-					<img src="../dist/img/msg.png" alt="">
-				</a>
-				<!-- open search btn -->
+				<!-- search form btn -->
 				<a href="" class="ico-link search-link">
 					<img src="../dist/img/search.png" alt="">
 					<span class="srch-animate">
@@ -187,10 +136,16 @@
 			</div>
 		</section>
 		<!-- search form -->
-		<form action="" class="search-input">
+		<form action="search-result.html" class="search-input">
 			<div class="container">
 				<input type="text" class="srch-input" placeholder="search">
 				<p class="info">result <span></span> 100</p>
+				<ul class="hints">
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+				</ul>
 			</div>
 		</form>
 		<!-- sec nav list -->
@@ -232,7 +187,7 @@
 					<span></span>
 					<span></span>
 				</div>
-				<a href="home.html"><img src="../dist/img/logo.png" alt="" class="logo"></a>
+				<a href="index.html"><img src="../dist/img/logo.png" alt="" class="logo"></a>
 			</div>
 			<div class="icons-side">
 
@@ -320,87 +275,12 @@
 			</div>
 		</form>
 		<div class="collapse-nav">
-			<div class="icons-head">
-				<!-- user dropdown -->
-				<div class="drop-container location-drop-btn">
-					<a href="" class="user-btn drpo-btn ">
-						<img src="../dist/img/user.png" alt="">
-					</a>
-
-					<div class="drop-mnu user-mnu">
-						<div class="up">
-							<a href="" class="img"><img src="../dist/img/user.png" alt=""></a>
-							<a href="" class="tit">Yosra Fahmy</a>
-							<p class="mail">Yosrafahmy@gmail.com</p>
-						</div>
-						<div class="center">
-							<a href="" class="link">Edit profile </a>
-							<a href="" class="link">Settings</a>
-						</div>
-						<div class="down">
-							<a href="index.html" class="link">Logout</a>
-						</div>
-					</div>
-				</div>
-				<!-- create set link -->
-				<a href="" class="ico-link cs-link">
-					<img src="../dist/img/create-set.png" alt="">
-				</a>
-				<!-- notification dropdown -->
-				<div class="drop-container location-drop-btn">
-					<a href="" class="ico-link drpo-btn notifi-btn">
-						<img src="../dist/img/bell-b.png" alt="">
-					</a>
-
-					<div class="drop-mnu notifi-mnu">
-						<div class="up">
-							<p class="tit">notfication</p>
-							<div class="switch">
-								<span class="mode-btn">
-									<span class="on">on</span>
-									<span class="off">off</span>
-								</span>
-								<span class="line"></span>
-								<span class="dot"></span>
-							</div>
-						</div>
-						<ul class="center">
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
-						</ul>
-						<a href="" class="down">
-							see all
-							<img src="../dist/img/right-arrow.png" alt="">
-						</a>
-					</div>
-				</div>
-				<!-- messages link -->
-				<a href="" class="ico-link cs-link">
-					<img src="../dist/img/msg-b.png" alt="">
-				</a>
-			</div>
 			<ul class="collapse-list">
-				<li><a href="">HOME</a></li>
-				<li><a href="">NEWSFEED</a></li>
-				<li><a href="">WHAT’S NEW</a></li>
-				<li><a href="">EXCLUSIVE</a></li>
-				<li><a href="">DISCOUNTS</a></li>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="newsfeed.html">NEWSFEED</a></li>
+				<li><a href="whats-new.html">WHAT’S NEW</a></li>
+				<li><a href="exclusive-instock.html">EXCLUSIVE</a></li>
+				<li><a href="exclusive-discount.html">DISCOUNTS</a></li>
 				<li>
 					<button class="sub-collapse-btn">
 						BRANDS
@@ -413,21 +293,22 @@
 						<li><a href="">COMING SOON</a></li>
 					</ul>
 				</li>
-				<li><a href="">CONTEST</a></li>
+				<li><a href="new-contests.html">CONTEST</a></li>
 				<li><a href="">CLOTHES</a></li>
 				<li><a href="">ACCESSROIES</a></li>
 				<li><a href="">BEATUY</a></li>
 				<li><a href="">SHOES</a></li>
 			</ul>
 			<div class="m-log-links">
-				<a href="" class="m-log-link">SIGN OUT</a>
+				<a href="login.html" class="m-log-link">sign in</a>
+				<a href="register.html" class="m-log-link">sign up</a>
 			</div>
 		</div>
 
 	</section>
 
+	<!-- start footer -->
 
-	<!-- start content -->
 
 	<section class="content">
 
@@ -457,7 +338,7 @@
 							WHAT’S NEW
 						</span>
 					</p>
-					<a href="" class="more">EXPLORE ALL</a>
+					<a href="whats-new.html" class="more">EXPLORE ALL</a>
 				</div>
 				<div class="row">
 					<div class="col-6 col-md-3">
@@ -522,7 +403,7 @@
 							newsfeed
 						</span>
 					</p>
-					<a href="" class="more">EXPLORE ALL</a>
+					<a href="newsfeed.html" class="more">EXPLORE ALL</a>
 				</div>
 
 				<div class="row">
@@ -728,7 +609,7 @@
 					<a href="exclusive-instock.html" class="more">EXPLORE ALL</a>
 				</div>
 			</div>
-			<a href="" class="d-block">
+			<a href="exclusive-instock.html" class="d-block">
 				<img src="../dist/img/young&fresh.png" alt="" class="w-100">
 			</a>
 		</section>
@@ -803,7 +684,7 @@
 										to say who you are.
 									</p>
 								</div>
-								<div class="col-3 col-md-4 overflow">
+								<div class="col-3 col-md-4">
 									<a href="register.html" class="log-btn">
 										<span class="tit">join modasti</span>
 										<img src="../dist/img/right-arrow.png" class="img-fluid">
@@ -836,7 +717,7 @@
 						<div class="col-9 col-md-5">
 							<span class="center">BE THE WINNER</span>
 						</div>
-						<div class="col-3 col-md-4 overflow">
+						<div class="col-3 col-md-4">
 							<a href="create-set.html" class="log-btn log-white">
 								<span class="tit">join CONTEST</span>
 								<img src="../dist/img/right-arrow.png" class="img-fluid">
@@ -859,7 +740,7 @@
 		<section class="create-set-section">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-12 col-md-4 overflow">
+					<div class="col-12 col-md-4">
 						<p class="main-title">
 							<img src="../dist/img/title-sign.png" class="img">
 							<span>
@@ -901,22 +782,22 @@
 				</div>
 				<div class="row">
 					<div class="col-6 col-md-3">
-						<a href="" class="log-btn log-white justify-content-center">
+						<a href="login.html" class="log-btn log-white justify-content-center">
 							<span class="tit d-block">New Year Dress</span>
 						</a>
 					</div>
 					<div class="col-6 col-md-3">
-						<a href="" class="log-btn log-white justify-content-center">
+						<a href="login.html" class="log-btn log-white justify-content-center">
 							<span class="tit d-block">New Year Dress</span>
 						</a>
 					</div>
 					<div class="col-6 col-md-3">
-						<a href="" class="log-btn log-white justify-content-center">
+						<a href="login.html" class="log-btn log-white justify-content-center">
 							<span class="tit d-block">New Year Dress</span>
 						</a>
 					</div>
 					<div class="col-6 col-md-3">
-						<a href="" class="log-btn log-white justify-content-center">
+						<a href="login.html" class="log-btn log-white justify-content-center">
 							<span class="tit d-block">New Year Dress</span>
 						</a>
 					</div>
@@ -930,26 +811,23 @@
 
 	</section>
 
-	<!-- end content -->
 
-
-	<!-- start footer -->
 
 	<footer class="footer">
 		<div class="footer-head">
 			<div class="container">
 				<div class="row">
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content">
 							Studiestræde 19, 4th floor DK-1455 Copenhagen
 						</p>
 					</div>
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content confirms">
 							Konform A/S CVR: 11794343
 						</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-md-6 overflow">
 						<form action="" class="news-form">
 							<input type="text" class="news-input" placeholder="email address">
 							<button class="news-submit" type="submit">
@@ -963,10 +841,10 @@
 		<div class="foot-content">
 			<div class="container">
 				<div class="row">
-					<div class="col-5 col-md-3">
+					<div class="col-6 col-md-3">
 						<img src="../dist/img/footer-logo.png" alt="" class="foot-logo">
 					</div>
-					<div class="col-7 col-md-9">
+					<div class="col-6 col-md-9">
 						<p class="foot-tit">QUICK LINKS</p>
 						<div class="row">
 							<div class="col-12 col-md-6 col-lg-3">
@@ -994,11 +872,11 @@
 								<p class="foot-tit social-tit">FIND US ON</p>
 								<div class="social">
 									<ul>
-										<li><a href="https://www.facebook.com/"><img src="../dist/img/face.png" alt=""><img src="../dist/img/face-c.png" alt=""></a></li>
-										<li><a href="https://twitter.com/"><img src="../dist/img/twit.png" alt=""><img src="../dist/img/twit-c.png" alt=""></a></li>
-										<li><a href="https://www.instagram.com/"><img src="../dist/img/inst.png" alt=""><img src="../dist/img/inst-c.png" alt=""></a></li>
-										<li><a href="https://www.pinterest.com/"><img src="../dist/img/pi.png" alt=""><img src="../dist/img/pi-c.png" alt=""></a></li>
-										<li><a href="#"><img src="../dist/img/youtube.png" alt=""><img src="../dist/img/youtube-c.png" alt=""></a></li>
+										<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+										<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+										<li><a href="#"><i class="fab fa-youtube"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -1020,5 +898,7 @@
 
 	<!-- end footer -->
 	<script src="../dist/js/jquery-3.2.1.min.js"></script>
+	<script src="../dist/js/wow.min.js"></script>
 	<script src="../dist/js/main.js"></script>
-</body></html>
+</body>
+</html>
