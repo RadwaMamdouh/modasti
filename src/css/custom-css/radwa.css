@@ -1486,6 +1486,10 @@ label {
     top: 50%;
 }
 
+.box .btns.middle-btn .log-btn {
+    justify-content: space-between;
+}
+
 .box:hover .btns {
     visibility: visible;
     opacity: 1;
@@ -1498,6 +1502,9 @@ label {
 
 .box .btns .log-btn {
     width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box .btns .log-btn.edit {
@@ -3727,4 +3734,92 @@ label {
 
 .new-coupon-table {
     padding: 60px 0 60px;
+}
+
+
+
+
+
+/****************************************************** newsfeed.html ***************************/
+.news-box {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ececec;
+}
+
+.news-box .img {
+    text-align: center;
+    border: 1px solid #ECECEC;
+}
+
+.news-box .img img {
+    width: auto !important;
+    max-width: 100%;
+    object-fit: inherit !important;
+    border: 1px solid #ECECEC;
+}
+
+.news-box .item-description {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.news-box .item-description .item-title {
+    margin-bottom: 20px;
+    font-family: 'raleway-m';
+    font-size: 24px;
+}
+
+.news-box .item-description p {
+    font-family: 'raleway';
+}
+
+.news-box.shared-box {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.news-box.shared-box .shared-tit {
+    margin-bottom: 0;
+}
+
+.news-box.shared-box .shared-tit .date {
+    width: 50%;
+}
+
+.news-box.shared-box .shared-b {
+    padding: 30px;
+    border: 1px solid #ececec;
+    margin-bottom: 30px;
+}
+
+.news-box .item-price {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-box .item-price .item-title {
+    font-family: 'raleway-m';
+    font-size: 16px;
+}
+
+.news-box .item-price .price {
+    font-family: 'sans-m';
+    font-size: 16px;
+}
+
+.news-box.shared-box .item-price {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.news-box.shared-box .item-description {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-top: 30px;
 }

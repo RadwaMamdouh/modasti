@@ -231,6 +231,29 @@
 	.rate .log-btn {
 		margin-left: 0;
 	}
+
+	.myProfile-tabs.brands-tabs {
+		display: none;
+	}
+
+	.box .box-price.with-sale span {
+		font-family: 'sans';
+	}
+
+	.box .box-price.with-sale .befor {
+		font-size: 12px;
+	}
+	
+	.box .box-price.with-sale .aftr {
+		font-size: 8px;
+	}
+
+	.box .sale-pers {
+		width: 40px;
+		height: 40px;
+		font-size: 12px;
+		font-family: 'roboto';
+	}
 }
 
 @media (max-width: 768px) {
