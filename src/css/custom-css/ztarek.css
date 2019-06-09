@@ -1,5 +1,11 @@
 /*===========================================// Media //=============================*/
 
+@media(max-width: 1200px) {
+	.colors-container
+	{
+		grid-template-columns: repeat(8, 1fr);
+	}
+}
 @media(max-width: 1170px) {
 
 	/*    header*/
@@ -255,7 +261,7 @@
 	
 	.log-btn
 	{
-		padding: 0 !important;
+		padding: 0 5px !important;
 		width: 40px;
 		height: 40px;
 		display: -webkit-flex;
@@ -1137,7 +1143,29 @@
 		-ms-transform: none;
 		-o-transform: none;
 	}
-	
+	.custom-checkbox
+	{
+		width: 30%;
+		margin-bottom: 10px;
+	}
+	.drop-mnu.size-mnu
+	{
+		justify-content: flex-start;
+		padding-bottom: 10px;
+	}
+	.edite-item .form-btns
+	{
+		justify-content: flex-start;
+	}
+	.edite-item .form-btns .log-btn
+	{
+		width: 40px;
+		height: 40px;
+	}
+	.edite-item .form-btns .log-btn:first-child
+	{
+		margin-right: 20px;
+	}
 }
 
 @media (max-width: 525px) {

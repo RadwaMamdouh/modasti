@@ -58,6 +58,18 @@ $(document).ready(function () {
 //		$(this).addClass('active');
 //	})
 	
+	
+    // Viewing the uploaded file in a file input
+    $(document).on("change", ".uploade-area input", function () {
+        let input = $(this),
+            fileName = input.siblings(".up-val");
+        if (input.val() === "") {
+            fileName.empty();
+        } else {
+            fileName.text(input.val().replace("C:\\fakepath\\", ""));
+        }
+    });
+	
 	$('.share-control').click(function() {
 		$(this).siblings('.share-icons').toggleClass('active')
 	})
@@ -94,7 +106,7 @@ $(document).ready(function () {
 	$(document).click(function () {
 		$('.drop-mnu').removeClass('open');
 		$('.drop-container').removeClass('container-poend');
-		$(this).removeClass('open');
+		$('.drpo-btn').removeClass('open');
 		$('.news-box').removeClass('top-z');
 	});
 	$('.drpo-btn , .drop-mnu , .news-box').click(function (e) {

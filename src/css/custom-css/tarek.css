@@ -84,8 +84,8 @@ ul {
 
 body {
 	overflow-x: hidden;
-	overflow-y: hidden;
-	direction: ltr;
+	overflow-y: scroll ;
+	direction: ltr; 
 	color: #000;
 	text-align: left;
 	background-color: #fff;
@@ -1598,7 +1598,7 @@ a {
 }
 
 .social ul li a:hover {
-	background: #000;
+	background: transparent;
 }
 
 .social ul li a {
@@ -1653,9 +1653,42 @@ a {
 	background-size: 250%;
 }
 
+/*
 .social ul li a:hover i {
 	background-position: 100% 0;
 	font-size: 16px
+}
+*/
+.social ul li a
+{
+	position: relative;
+	height: 28px;
+	width: 28px;
+	border-radius: 0;
+}
+.social ul li img
+{
+	height: 28px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .3s;
+	transform-origin: top;
+}
+.social ul li img:nth-child(2)
+{
+	top: 100%;
+	transform: rotateX(-90deg) perspective(600px);
+}
+.social ul li:hover img:nth-child(1)
+{
+	top: -100%;
+	transform: rotateX(90deg) perspective(600px);
+}
+.social ul li:hover img:nth-child(2)
+{
+	top: 0;
+	transform: none;
 }
 
 /*============= end foot-content*/
@@ -4429,25 +4462,25 @@ a {
 }
 
  
-.table
+.profile-table .table
 {
 	display: table;
-	border: 1px solid #ECECEC;
+	border: 1px solid #ECECEC !important;
 }
-.table .thead
+.profile-table .table .thead
 {
 	display: table-header-group; 
 }
-.table .tbody
+.profile-table .table .tbody
 {
 	display: table-row-group;
 }
-.table .tr
+.profile-table .table .tr
 {
 	display: table-row;
 }
 
-.table .tr .td
+.profile-table .table .tr .td
 {
 	display: table-cell;
 	border-right: 1px solid #ECECEC;
@@ -4455,13 +4488,17 @@ a {
 	vertical-align: middle;
 	border-bottom: 1px solid #ECECEC;
 }
-.table  .tr .td:last-child
+.profile-table .table  .tr .td:last-child
 {
 	border-right: 0;
 }
-.table .tbody .tr:last-child .td
+.profile-table .table .tbody .tr:last-child .td
 {
 	border-bottom: 0;
+}
+.profile-table
+{
+	margin-bottom: 60px; 
 }
 .profile-table .table .td:first-child
 {
@@ -4592,7 +4629,6 @@ a {
 	position: relative;
 	border: 1px solid #ECECEC;
 	padding: 0;
-	margin-right: 15px;
 	margin-bottom: 30px;
 }
 .profile-table .row .g-box .td:first-child
@@ -4609,6 +4645,7 @@ a {
 	font-weight: bold;
 	font-size: 16px;
 	margin-bottom: 20px;
+	max-width: 160px 
 }
 .profile-table .row .g-box > *
 {
@@ -4712,6 +4749,218 @@ a {
 
 
 /*===========================  end business user profile =====================*/
+
+
+
+/*===========================  start edite-item =====================*/
+
+.edite-item
+{
+	overflow: hidden;
+	padding: 60px 0;
+}
+.edite-item .main-title
+{
+	margin-bottom: 30px;
+}
+
+.label
+{
+	margin-bottom: 30px;
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.label .hint
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 14px;
+	color: #CFBDA8;
+	font-family: 'raleway-m';
+}
+.label .label-tit
+{
+	font-size: 14px;
+	color: #000;
+	font-family: 'raleway-m';
+	display: block;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.label .edite-input
+{
+	display: block;
+	width: 100%;
+	padding: 21px 24px;
+	border: 1px solid #ECECEC;
+	font-size: 14px;
+	font-family: 'raleway-m';
+	line-height: 16px;
+}
+.label textarea.edite-input
+{
+	height: 200px;
+	resize: none;
+}
+.label .drop-container .edite-input
+{
+	color: rgba(112, 112, 112, .5);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+}
+.label .drop-container .edite-input img
+{
+	width: 10px;
+}
+.label .uploade-area
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #ECECEC;
+	font-size: 14px;
+	font-family: 'raleway-m';
+	line-height: 16px;
+	padding: 19px 25px;
+	cursor: pointer;
+}
+.label .uploade-area .up-val
+{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: rgba(112, 112, 112, .5);
+}
+.label .uploade-area img
+{
+	width: 20px;
+}
+
+.colors-container
+{
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	grid-gap: 10px;
+}
+.color-check .color
+{
+	display: block;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	transition: .3s
+}
+.color-check input:checked + .color
+{
+	transform: scale(.7);
+	box-shadow: 0 0 4px rgba(0,0,0,.3)
+}
+
+
+.label .location-drop-btn.container-poend::after, 
+.label .location-drop-btn.container-poend::before {
+    left: 90%;
+}
+
+.label .location-drop-btn.container-poend::after {
+    bottom: -17px;
+}
+.label .location-drop-btn.container-poend::before {
+    bottom: -16px;
+}
+.drop-mnu.other-options.edite-drop a
+{
+	text-align: left;
+	margin: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(112, 112, 112, .2);
+}
+.drop-mnu.other-options.edite-drop a:last-child
+{
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.size-container::before,
+.size-container::after
+{
+	display: none;
+}
+.drop-mnu.size-mnu
+{
+	width: 100%;
+	line-height: 17px;
+	padding: 20px 25px;
+	border-top: 0;
+	border-color: #ECECEC;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	white-space: nowrap;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.label .drop-container
+{
+	text-transform: uppercase;
+}
+.label .drop-container .open.edite-input
+{
+	border-bottom-color: transparent;
+	position: relative;
+}
+.label .drop-container .open.edite-input::before
+{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 95%;
+	height: 1px;
+	background-color: #ECECEC;
+}
+
+.edite-item .form-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edite-item .form-btns .log-btn {
+    height: 60px;
+    padding: 0 24px;
+}
+
+.edite-item .form-btns .log-btn.modal-btn img {
+    width: 17px;
+}
+
+
+
+/*===========================  end edite-item =====================*/
 
 
 
