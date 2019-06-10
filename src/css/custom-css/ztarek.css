@@ -345,7 +345,8 @@
 	}
 
 	.footer .social ul li {
-		margin-right: 5px;
+		margin-right: 15px;
+		margin-bottom: 15px; 
 	}
 
 	.footer .social ul li i {

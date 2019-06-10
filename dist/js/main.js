@@ -3,6 +3,7 @@ $(document).ready(function () {
 	'use strict';
 	// new WOW().init();
 
+	
 	var countVal = 0;
 	
 	var myVar = setInterval(function() {
