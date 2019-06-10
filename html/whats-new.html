@@ -7,11 +7,7 @@
 	<title>Modasti</title>
 	<link rel="icon" href="../dist/img/min-logo.png" type="image/x-icon" />
 	<link rel="stylesheet" href="../dist/css/style.min.css">
-	
-	
-	
-	
-	<link rel="stylesheet" href="../src/css/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="../src/css/custom-css/tarek.css">
 </head>
 
 <body>
@@ -460,8 +456,14 @@
 						</p>
 						<form action="" class="filter-form">
 							<div class="range-slider-holder">
-								<input type="text" class="out from">
-								<input type="text" class="out to">
+								<div class="range-input">
+									<p class="tit text-left">from</p>
+									<input type="text" class="out from">
+								</div>
+								<div class="range-input">
+									<p class="tit text-left">to</p>
+									<input type="text" class="out to">
+								</div>
 								<div class="range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="0" data-max="3000" data-value1="80" data-value2="2900">
 									<div class="ui-slider-range ui-corner-all ui-widget-header"></div>
 									<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
@@ -2604,9 +2606,9 @@
 		// activating the range slider
 		$(".range-slider").each(function() {
 			var rangeSlider = $(this),
-				from = rangeSlider.siblings(".from"),
-				to = rangeSlider.siblings(".to"),
-				fromTo = rangeSlider.siblings(".from, .to")
+				from = $(".from"),
+				to = $(".to"),
+				fromTo = $(".from, .to")
 			rangeSlider.slider({
 				isRTL: false,
 				range: true,
