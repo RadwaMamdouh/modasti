@@ -317,25 +317,7 @@ a {
 	font-size: 14px;
 	transition: .5s ease;
 	font-family: 'raleway-m';
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
-	background: #000000;
-	/* Old browsers */
-	background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000000 51%, #cfbda8 54%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000000 51%, #cfbda8 54%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#cfbda8', GradientType=1);
-	/* IE6-9 */
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-o-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	-o-text-fill-color: transparent;
-	text-fill-color: transparent;
+	color: #000;
 	background-size: 250%;
 	text-transform: uppercase;
 	overflow: hidden;
@@ -343,7 +325,7 @@ a {
 
 .main-nav .nav-list .mynav-link.active,
 .main-nav .nav-list .mynav-link:hover {
-	background-position: 100% 0;
+	color: #cfbda8; 
 }
 
 /*end nav*/
@@ -391,30 +373,12 @@ a {
 	margin: 0 25px;
 	font-family: 'raleway-m';
 	text-transform: uppercase;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
-	background: #000000;
-	/* Old browsers */
-	background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000000 51%, #cfbda8 54%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000000 51%, #cfbda8 54%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#cfbda8', GradientType=1);
-	/* IE6-9 */
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-o-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	-o-text-fill-color: transparent;
-	text-fill-color: transparent;
+	color: #000;
 	background-size: 250%;
 }
 
 .icons-side .log-link:hover {
-	background-position: 100% 0;
+	color: #cfbda8;
 }
 
 
@@ -833,25 +797,6 @@ a {
 
 .sec-nav ul a {
 	color: #fff;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
-	background: #ffffff;
-	/* Old browsers */
-	background: -moz-linear-gradient(left, #ffffff 51%, #cfbda8 54%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #ffffff 51%, #cfbda8 54%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #ffffff 51%, #cfbda8 54%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cfbda8', GradientType=1);
-	/* IE6-9 */
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-o-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	-o-text-fill-color: transparent;
-	text-fill-color: transparent;
 	background-size: 250%;
 	font-family: 'raleway-m';
 	font-weight: bold;
@@ -860,7 +805,7 @@ a {
 }
 
 .sec-nav ul a:hover {
-	background-position: 100%
+	color: #cfbda8;
 }
 
 /*.sec-nav*/
@@ -929,25 +874,7 @@ a {
 	font-weight: bold;
 	font-size: 14px;
 	text-transform: capitalize;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
-	background: #000;
-	/* Old browsers */
-	background: -moz-linear-gradient(left, #000 51%, #cfbda8 54%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000 51%, #cfbda8 54%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000 51%, #cfbda8 54%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000', endColorstr='#cfbda8', GradientType=1);
-	/* IE6-9 */
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-o-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	-o-text-fill-color: transparent;
-	text-fill-color: transparent;
+	/color: #000;
 	background-size: 250%;
 }
 
@@ -965,32 +892,13 @@ a {
 	font-size: 14px;
 	display: block;
 	margin-bottom: 15px;
-	text-align: center;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
-	background: #000;
-	/* Old browsers */
-	background: -moz-linear-gradient(left, #000 51%, #cfbda8 54%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000 51%, #cfbda8 54%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000 51%, #cfbda8 54%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000', endColorstr='#cfbda8', GradientType=1);
-	/* IE6-9 */
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-o-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	-o-text-fill-color: transparent;
-	text-fill-color: transparent;
+	color: #000;
 	background-size: 250%;
 }
 
 .drop-mnu.user-mnu .tit:hover,
 .drop-mnu.user-mnu .link:hover {
-	background-position: 100%;
+	color: #cfbda8;
 }
 
 .drop-mnu.user-mnu .link:last-child {
@@ -1549,30 +1457,12 @@ a {
 	font-family: 'raleway-m';
 	margin-bottom: 30px;
 	display: block;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
-	background: #000000;
-	/* Old browsers */
-	background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000000 51%, #cfbda8 54%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000000 51%, #cfbda8 54%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#cfbda8', GradientType=1);
-	/* IE6-9 */
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-o-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	-o-text-fill-color: transparent;
-	text-fill-color: transparent;
+	color: #000;
 	background-size: 250%;
 }
 
 .foot-link:hover {
-	background-position: 100%
+	color: #cfbda8;
 }
 
 .foot-tit.social-tit {
@@ -1627,29 +1517,7 @@ a {
 .social ul li i {
 	font-size: 30px;
 	transition: all .5s ease-in-out;
-	-webkit-transition: all .5s ease-in-out;
-	-moz-transition: all .5s ease-in-out;
-	-ms-transition: all .5s ease-in-out;
-	-o-transition: all .5s ease-in-out;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
-	background: #000000;
-	/* Old browsers */
-	background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000000 51%, #cfbda8 54%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000000 51%, #cfbda8 54%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#cfbda8', GradientType=1);
-	/* IE6-9 */
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-o-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	-o-text-fill-color: transparent;
-	text-fill-color: transparent;
+	color: #000;
 	background-size: 250%;
 }
 
@@ -1796,12 +1664,11 @@ a {
 .weird-header .weird-shape {
 	width: 255px;
 	height: 762px;
-	display: block;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	border: 12px solid #000;
-	writing-mode: vertical-rl;
+/*	writing-mode: vertical-rl;*/
 	text-align: center;
 
 	z-index: -1;
@@ -1827,7 +1694,7 @@ a {
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
-	transform: rotate(180deg);
+	transform: rotate(-90deg);
 	text-transform: uppercase;
 }
 
@@ -1877,6 +1744,7 @@ a {
 	height: 100%;
 	justify-content: flex-end;
 	margin-top: 54px;
+	height: 41px;
 }
 
 .rating > input {
@@ -3564,10 +3432,20 @@ a {
 }
 
 .size-filter {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 30px;
-	margin-bottom: 30px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-bottom: 0;
 }
 
 .size-filter .box-size {
@@ -3585,6 +3463,8 @@ a {
 	font-family: 'raleway-m';
 	text-transform: uppercase;
 	cursor: pointer;
+	width: 65px;
+	margin-bottom: 30px;
 }
 
 .size-filter .box-size.checked {
@@ -3702,10 +3582,6 @@ a {
 	transform: scale(1.05) rotate(2deg);
 }
 
-.search-result .box .box-img {
-	height: 290px;
-}
-
 .box.box-sq .box-img {
 	height: 196px;
 }
@@ -3746,23 +3622,11 @@ a {
 }
 
 .myProfile-tabs.black li .tabs-links {
-	background: none;
-	-webkit-background-clip: none;
-	-moz-background-clip: none;
-	-o-background-clip: none;
-	background-clip: none;
-	-webkit-text-fill-color: #fff;
-	-moz-text-fill-color: #fff;
-	-o-text-fill-color: #fff;
-	text-fill-color: #fff;
+	color: #000;
 }
 
 .myProfile-tabs.black li .tabs-links.active {
 	color: #cfbda8;
-	-webkit-text-fill-color: #cfbda8;
-	-moz-text-fill-color: #cfbda8;
-	-o-text-fill-color: #cfbda8;
-	text-fill-color: #cfbda8;
 }
 
 

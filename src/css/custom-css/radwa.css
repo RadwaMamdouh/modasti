@@ -328,25 +328,12 @@ label {
     -moz-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
-   background: #000000; /* Old browsers */
-   background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%); /* FF3.6-15 */
-   background: -webkit-linear-gradient(left, #000000 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
-   background: linear-gradient(to right, #000000 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
-       -webkit-background-clip: text;
-          -moz-background-clip: text;
-            -o-background-clip: text;
-               background-clip: text;
-       -webkit-text-fill-color: transparent;
-          -moz-text-fill-color: transparent;
-            -o-text-fill-color: transparent;
-               text-fill-color: transparent;
+   color: #000;
    background-size: 250%;
 }
 
 .social ul li a:hover i {
-    background-position: 100% 0;
+    color: #cfbda8;
     font-size: 16px
 }
 
@@ -1036,20 +1023,7 @@ label {
     color: #000;
     font-size: 12px;
     transition: .5s ease;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
-    background: #000000; /* Old browsers */
-    background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #000000 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #000000 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
-        -webkit-background-clip: text;
-           -moz-background-clip: text;
-             -o-background-clip: text;
-                background-clip: text;
-        -webkit-text-fill-color: transparent;
-           -moz-text-fill-color: transparent;
-             -o-text-fill-color: transparent;
-                text-fill-color: transparent;
+    color: #000;
     background-size: 250%;
     text-transform: uppercase;
     overflow: hidden; 
@@ -1061,7 +1035,7 @@ label {
 .myProfile-tabs .prof-tabs li .tabs-links.active,
 .myProfile-tabs .prof-tabs li .tabs-links:hover
 {
-    background-position: 100% 0;
+    color: #cfbda8;
 }
 
 /* Start Wins Content */
@@ -3629,6 +3603,7 @@ label {
 .coupon-table table tbody tr td img {
     width: 93px;
     height: 71px;
+	object-fit: cover;
 }
 
 .coupon-table table tbody tr td p {
