@@ -3376,9 +3376,15 @@ a {
 .log-btn.reset img {
 	width: 28px;
 }
+.comments .user-comments .comment-details .user-info .user-name
+{
+	color: #000;
+} 
 
-
-
+.user-box-btn img
+{
+	height: auto !important;
+}
 
 .range-slider-holder .ui-widget.ui-widget-content {
 	background-color: #ddd;
@@ -3391,7 +3397,7 @@ a {
 	border-radius: 50%;
 	width: 20px !important;
 	height: 20px !important;
-	top: 50%;
+	top: 50% !important;
 	transform: translateY(-50%);
 	background-color: #000 !important;
 }
