@@ -11,4 +11,4 @@ pipelines:
         caches:
           - node
         script: # Modify the commands below to build your repository.
-          - sudo npm install gulp && sudo gulp build
+          - sudo npm -g install gulp && sudo gulp build
