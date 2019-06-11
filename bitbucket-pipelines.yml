@@ -11,5 +11,5 @@ pipelines:
         caches:
           - node
         script: # Modify the commands below to build your repository.
-          - cd /www/www-data/modasti/dist/css && sudo npm install
-          - cd /www/www-data/modasti/dist/css && sudo gulp build
+          - cd /www/www-data/modasti && sudo npm install
+          - cd /www/www-data/modasti && sudo gulp build
