@@ -4,6 +4,4 @@ pipelines:
         script:
           - npm install
           - npm install -g gulp
-    - step:
-        script:
-           - gulp build
+          - gulp build
