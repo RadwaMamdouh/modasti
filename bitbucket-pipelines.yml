@@ -1,3 +1,5 @@
+image: nodejs12.4.0
+
 pipelines:
   default:
     - step:
