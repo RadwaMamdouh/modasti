@@ -197,6 +197,14 @@
         margin-bottom: 30px;
     }
 
+    .back-login a {
+        font-size: 12px;
+    }
+
+    .input {
+        padding-bottom: 10px;
+    }
+
     /*********** confirmation-message.html *********/
     .confirm-msg .col-lg-6 {
         order: -1;
@@ -1568,6 +1576,26 @@
     .log-forms .social {
         margin: 0;
     }
+
+    .reset-password .form-btn {
+        max-width: none;
+        justify-content: flex-start;
+    }
+
+    .reset-password .form-btn .log-btn {
+        width: 255px !important;
+        padding: 22px 24px !important;
+        height: 60px !important;
+        justify-content: space-between;
+    }
+
+    .reset-password .form-btn .log-btn[type=reset] {
+        margin-right: 30px;
+    }
+
+    .reset-password .form-btn .log-btn span {
+        display: block !important;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1590,6 +1618,10 @@
 
     .reset-password .form-btn button[type='submit'] {
         margin-left: 15px;
+    }
+
+    .reset-password .log-info {
+        margin: 190px 0 190px 117px;
     }
 
     /********** help.html ************/
