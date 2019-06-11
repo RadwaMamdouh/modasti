@@ -2,7 +2,7 @@ pipelines:
   default:
     - step:
         script:
-          - npm -g install gulp
+          - npm -g install gulp --allow-root
     - step:
         script:
-           - gulp build
+           - gulp build --allow-root
