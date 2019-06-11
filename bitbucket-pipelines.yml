@@ -5,4 +5,4 @@ pipelines:
           - npm -g install gulp
     - step:
         script:
-           - sudo gulp build 
+           - gulp build
