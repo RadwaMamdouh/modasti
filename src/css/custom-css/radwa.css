@@ -894,6 +894,8 @@ label {
     text-transform: uppercase;
     color: #000;
     position: relative;
+    font-size: 14px;
+    font-family: 'raleway-m';
 }
 
 .back-login a:hover {
