@@ -7,3 +7,20 @@ pipelines:
           - npm install 
           - npm -g install gulp
           - gulp build
+  branches:
+    master:
+      - step:
+         name: Clone
+         deployment: master
+         script:
+           - npm install
+           - npm -g install gulp
+           - gulp build
+    dev:
+      - step:
+          name: Clone
+          deployment: dev
+          script:
+            - npm install
+            - npm -g install gulp
+            - gulp build
