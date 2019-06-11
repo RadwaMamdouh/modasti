@@ -328,25 +328,12 @@ label {
     -moz-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
-   background: #000000; /* Old browsers */
-   background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%); /* FF3.6-15 */
-   background: -webkit-linear-gradient(left, #000000 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
-   background: linear-gradient(to right, #000000 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
-       -webkit-background-clip: text;
-          -moz-background-clip: text;
-            -o-background-clip: text;
-               background-clip: text;
-       -webkit-text-fill-color: transparent;
-          -moz-text-fill-color: transparent;
-            -o-text-fill-color: transparent;
-               text-fill-color: transparent;
+   color: #000;
    background-size: 250%;
 }
 
 .social ul li a:hover i {
-    background-position: 100% 0;
+    color: #cfbda8;
     font-size: 16px
 }
 
@@ -1036,20 +1023,7 @@ label {
     color: #000;
     font-size: 12px;
     transition: .5s ease;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+51,cfbda8+54 */
-    background: #000000; /* Old browsers */
-    background: -moz-linear-gradient(left, #000000 51%, #cfbda8 54%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #000000 51%,#cfbda8 54%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #000000 51%,#cfbda8 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cfbda8',GradientType=1 ); /* IE6-9 */
-        -webkit-background-clip: text;
-           -moz-background-clip: text;
-             -o-background-clip: text;
-                background-clip: text;
-        -webkit-text-fill-color: transparent;
-           -moz-text-fill-color: transparent;
-             -o-text-fill-color: transparent;
-                text-fill-color: transparent;
+    color: #000;
     background-size: 250%;
     text-transform: uppercase;
     overflow: hidden; 
@@ -1061,7 +1035,7 @@ label {
 .myProfile-tabs .prof-tabs li .tabs-links.active,
 .myProfile-tabs .prof-tabs li .tabs-links:hover
 {
-    background-position: 100% 0;
+    color: #cfbda8;
 }
 
 /* Start Wins Content */
@@ -1486,6 +1460,10 @@ label {
     top: 50%;
 }
 
+.box .btns.middle-btn .log-btn {
+    justify-content: space-between;
+}
+
 .box:hover .btns {
     visibility: visible;
     opacity: 1;
@@ -1498,6 +1476,9 @@ label {
 
 .box .btns .log-btn {
     width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box .btns .log-btn.edit {
@@ -1761,7 +1742,8 @@ label {
 }
 
 .quickView-modal .quick-view .owl-guide .item {
-    height: 817px;
+    max-height: 817px;
+    overflow: hidden;
 }
 
 .quickView-modal .quick-view .owl-guide .item img {
@@ -1782,7 +1764,6 @@ label {
 .quickView-modal .quick-view .owl-dots .owl-dot {
     width: 159px;
     height: 159px;
-    border: 1px solid #000;
     margin-bottom: 30px;
 }
 
@@ -3622,6 +3603,7 @@ label {
 .coupon-table table tbody tr td img {
     width: 93px;
     height: 71px;
+	object-fit: cover;
 }
 
 .coupon-table table tbody tr td p {
@@ -3727,4 +3709,92 @@ label {
 
 .new-coupon-table {
     padding: 60px 0 60px;
+}
+
+
+
+
+
+/****************************************************** newsfeed.html ***************************/
+.news-box {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ececec;
+}
+
+.news-box .img {
+    text-align: center;
+    border: 1px solid #ECECEC;
+}
+
+.news-box .img img {
+    width: auto !important;
+    max-width: 100%;
+    object-fit: inherit !important;
+    border: 1px solid #ECECEC;
+}
+
+.news-box .item-description {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.news-box .item-description .item-title {
+    margin-bottom: 20px;
+    font-family: 'raleway-m';
+    font-size: 24px;
+}
+
+.news-box .item-description p {
+    font-family: 'raleway';
+}
+
+.news-box.shared-box {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.news-box.shared-box .shared-tit {
+    margin-bottom: 0;
+}
+
+.news-box.shared-box .shared-tit .date {
+    width: 50%;
+}
+
+.news-box.shared-box .shared-b {
+    padding: 30px;
+    border: 1px solid #ececec;
+    margin-bottom: 30px;
+}
+
+.news-box .item-price {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-box .item-price .item-title {
+    font-family: 'raleway-m';
+    font-size: 16px;
+}
+
+.news-box .item-price .price {
+    font-family: 'sans-m';
+    font-size: 16px;
+}
+
+.news-box.shared-box .item-price {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.news-box.shared-box .item-description {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-top: 30px;
 }

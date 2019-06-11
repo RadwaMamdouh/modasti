@@ -1,12 +1,18 @@
 /*===========================================// Media //=============================*/
 
+@media(max-width: 1200px) {
+	.colors-container
+	{
+		grid-template-columns: repeat(8, 1fr);
+	}  
+}
 @media(max-width: 1170px) {
 
 	/*    header*/
 
 	.header .logo-side .logo {
 		max-width: 150px;
-	}
+	}  
 
 	.main-nav .nav-list .mynav-link,
 	.icons-side .log-link {
@@ -157,6 +163,10 @@
 		padding: 0 20px;
 		margin-bottom: 30px;
 	}
+	.weird-header.page404-container
+	{
+		padding: 30px 0;
+	}
 	.page404 .main-title
 	{
 		text-align: left;
@@ -164,6 +174,13 @@
 	.page404 .info-content
 	{
 		text-align: left;
+		float: left;
+		margin-bottom: 0;
+	}
+	.page404 .log-btn
+	{
+		float: left;
+		margin: 5px 0 0 10px;
 	}
 	.weird-header.page404-container
 	{
@@ -227,6 +244,33 @@
 	.filter .box .btns {
 		display: none;
 	}
+
+	.rate .log-btn {
+		margin-left: 0;
+	}
+
+	.myProfile-tabs.brands-tabs {
+		display: none;
+	}
+
+	.box .box-price.with-sale span {
+		font-family: 'sans';
+	}
+
+	.box .box-price.with-sale .befor {
+		font-size: 12px;
+	}
+	
+	.box .box-price.with-sale .aftr {
+		font-size: 8px;
+	}
+
+	.box .sale-pers {
+		width: 40px;
+		height: 40px;
+		font-size: 12px;
+		font-family: 'roboto';
+	}
 }
 
 @media (max-width: 768px) {
@@ -255,7 +299,7 @@
 	
 	.log-btn
 	{
-		padding: 0 !important;
+		padding: 0 5px !important;
 		width: 40px;
 		height: 40px;
 		display: -webkit-flex;
@@ -299,24 +343,34 @@
 
 	.footer .foot-content .foot-logo {
 		width: 75px;
+		margin: 0;
+		margin-left: auto;
 	}
-
+	.social
+	{
+		margin-bottom: 0;
+	}
 	.foot-tit.social-tit {
 		font-weight: bold;
-		width: auto;
-		margin-top: 0;
+		width: auto; 
+		margin-top: 0; 
 	}
 
 	.footer .col-md-4 .foot-tit.social-tit {
-		margin-top: 30px;
-	}
+		margin-top: 0;
+	} 
 
 	.footer .social ul li {
-		margin-right: 5px;
+		margin-right: 18px;
+		margin-bottom: 30px; 
 	}
 
 	.footer .social ul li i {
 		font-size: 22px
+	}
+	.footer .foot-content .container
+	{
+		padding: 50px 35px;
 	}
 
 	.footer .foot-content .container::before {
@@ -1130,14 +1184,40 @@
 	
 /*	business user profile*/
 
-	.brand-box .info {
+	.brand-box .info {     
 		transform: none;
 		-webkit-transform: none;
 		-moz-transform: none;
 		-ms-transform: none;
 		-o-transform: none;
 	}
-	
+	.custom-checkbox
+	{
+		width: 30%;
+		margin-bottom: 10px;
+	}
+	.drop-mnu.size-mnu
+	{
+		justify-content: flex-start;
+		padding-bottom: 10px;
+	}
+	.edite-item .form-btns
+	{
+		justify-content: flex-start;
+	}
+	.edite-item .form-btns .log-btn
+	{
+		width: 40px;
+		height: 40px;
+	}
+	.edite-item .form-btns .log-btn:first-child
+	{
+		margin-right: 20px;
+	}
+	.footer .foot-content .foot-logo
+	{
+		margin: auto;
+	}
 }
 
 @media (max-width: 525px) {
@@ -1156,6 +1236,15 @@
 	.filter .box .box-img {
 		width: 100%;
 		height: 468px;
+	}
+	.social ul li img
+	{
+		height: 18px;
+	}
+	.footer .social ul li a
+	{
+		width: 18px;
+		height: 18px;
 	}
 }
 
@@ -1189,6 +1278,7 @@
 	{
 		top: -15px;
 	}
+
 
 }
 

@@ -1467,6 +1467,40 @@
     .coupon-form .add-coupon {
         justify-content: flex-start;
     }
+
+    /********** newsfeed ****************/
+    .news-box {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .news-box .item-description .item-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .news-box .item-description {
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+
+    .news-box .item-description p {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .news-box.shared-box .shared-b {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .news-box .item-price .price {
+        font-size: 14px;
+    }
+
+    .newsfeed .news-box .icons::before {
+        display: none;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
