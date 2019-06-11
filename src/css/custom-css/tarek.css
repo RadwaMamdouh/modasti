@@ -2250,7 +2250,7 @@ a {
 	-ms-align-items: center;
 	align-items: center;
 	margin-right: 40px;
-	font-size: 12px;
+	font-size: 14px;
 	position: relative;
 }
 
@@ -2782,7 +2782,7 @@ a {
 
 .custom-checkbox i {
 	position: static;
-	margin-right: 7px;
+	margin-right: 5px;
 	margin-top: 2px;
 }
 
