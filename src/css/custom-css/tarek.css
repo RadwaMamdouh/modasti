@@ -483,6 +483,7 @@ a {
 	opacity: 0;
 	visibility: hidden;
 	transition: .3s;
+	z-index: 9;
 }
 
 .location-drop-btn.container-poend::before,
@@ -964,8 +965,12 @@ a {
 	}
 }
 
+.notifi-mnu .notifi-head 
+{
+	border-bottom: 1px solid #000;
+}
 .notifi-mnu .up {
-	padding: 20px 25px;
+	padding: 20px 20px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -974,7 +979,7 @@ a {
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: space-between;
-	border-bottom: 1px solid #000;
+	border: 0
 }
 
 .notifi-mnu .up .tit {
@@ -1065,24 +1070,39 @@ a {
 }
 
 .notifi-mnu .center li {
-	padding: 30px 24px;
+	padding: 30px 20px;
 	border-bottom: 1px solid #000;
 }
 
 .notifi-mnu .center .tit {
-	font-size: 15px;
+	font-size: 14px;
 	display: block;
+	font-family: 'raleway'
 }
-
-.drop-mnu.notifi-mnu .center .date {
-	font-size: 12px;
+.notifi-mnu .center .center-content
+{
+	padding-right: 20px;
 	display: block;
+	color: #000;
+}
+.notifi-mnu .center .center-content *
+{
+	transition: .5s
+}
+.notifi-mnu .center .center-content:hover *
+{
+	color: #CFBDA8;
+}
+.drop-mnu.notifi-mnu .center .date {
+	display: block;
+	font-size: 10px;
+	font-family: 'roboto-m';
 }
 
 .notifi-mnu .down {
 	display: block;
 	width: 100%;
-	padding: 12px 24px;
+	padding: 12px 20px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -1112,8 +1132,8 @@ a {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	-ms-align-items: center;
-	align-items: center;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
 	color: #000;
 }
 
@@ -1734,6 +1754,10 @@ a {
 	align-items: center;
 	transform: rotate(-90deg);
 	text-transform: uppercase;
+}
+.weird-header.page404-container .weird-shape p
+{
+	font-size: 30px;
 }
 
 .weird-header .weird-shape img {
@@ -2807,7 +2831,11 @@ a {
 .custom-modal .modal-card.report-catd .custom-checkbox {
 	margin-bottom: 30px;
 }
-
+.custom-modal .modal-card.report-catd .custom-checkbox span
+{
+	font-size: 14px;
+	font-family: 'raleway-m';
+}
 .custom-modal .modal-card.report-catd .btns {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -2833,6 +2861,8 @@ a {
 	width: 100%;
 	height: 115px;
 	border-bottom: 1px solid #ECECEC;
+	font-size: 14px;
+	font-family: 'raleway-m';
 }
 
 .icons-bar {
@@ -2877,6 +2907,10 @@ a {
 	font-size: 14px;
 }
 
+.save-to-dropdown .drop-mnu .c-tit
+{
+	font-family: 'raleway-m';
+}
 .save-to-dropdown .drop-mnu .c-img {
 	width: 100%;
 	margin-bottom: 20px;
@@ -2895,6 +2929,12 @@ a {
 	margin-bottom: 20px;
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
 	text-transform: uppercase;
+	font-family: 'raleway-m';
+}
+.save-to-dropdown .new-collection-box .new-collection-form .input,
+.save-to-dropdown .sc-head .sc-tit
+{
+	font-size: 12px;
 	font-family: 'raleway-m';
 }
 
@@ -2928,7 +2968,7 @@ a {
 .save-to-dropdown .new-collection-box .new-collection-form .img {
 	width: 30%;
 	height: auto;
-	margin-right: 30px;
+	margin-right: 50px;
 }
 
 .save-to-dropdown .new-collection-box .new-collection-form .img img {
@@ -2962,6 +3002,7 @@ a {
 	text-align: center;
 	padding-bottom: 20px;
 	display: none;
+	font-family: 'raleway-m';
 }
 
 .custom-modal.galler-modal.show .modal-card.report-catd {
@@ -3949,13 +3990,11 @@ a {
 	border-bottom-color: rgba(112, 112, 112, .1);
 }
 
+
 .notification-p .notifi-mnu .notifi-head {
 	border-bottom: 1px solid rgba(112, 112, 112, .1);
 }
 
-	{
-	border-bottom: 0;
-}
 
 .notification-p .notifi-mnu .center li:last-child {
 	border-bottom-color: transparent
@@ -3964,7 +4003,7 @@ a {
 .notification-p .notifi-mnu .center li .left {
 	display: -webkit-flex;
 	display: -moz-flex;
-	display: -ms-flex;
+	display: -ms-flex; 
 	display: -o-flex;
 	display: flex;
 	-ms-align-items: center;
@@ -3977,8 +4016,8 @@ a {
 
 .notification-p .notifi-mnu .center .date {
 	font-size: 14px;
-	font-family: 'raleway-m';
-
+	font-family: 'sans-m';
+	text-transform: lowercase;
 }
 
 /*==============================// end notification-p */
@@ -4997,7 +5036,7 @@ a {
 
 .loader .loader-content .persent .num {
 	font-size: 17px;
-	font-family: 'raleway-m';
+	font-family: 'roboto-m';
 }
 
 @keyframes load {
