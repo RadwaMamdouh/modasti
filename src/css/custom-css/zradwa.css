@@ -11,7 +11,7 @@
     }
 
     .log-form {
-        padding: 0 21px;
+        padding: 0;
     }
 
     .title img {
@@ -44,13 +44,13 @@
         display: none;
     }
 
-    .social {
+    .log-forms .social {
         margin: 0 0 30px;
     }
 
-    .custom-checkbox i {
+    /* .custom-checkbox i {
         top: 2px;
-    }
+    } */
 
     /* side-info */
     .side-info::after {
@@ -70,7 +70,7 @@
     }
 
     .log-info {
-        margin: 50px 36px;
+        margin: 50px 0;
         align-items: flex-start
     }
 
@@ -1018,6 +1018,7 @@
     .new-contests .box.box-sq .box-img .time {
         padding: 15px 22px;
         font-size: 20px;
+        font-family: 'sans-m';
     }
 
     .new-contests .box .box-p.box-p-tit {
@@ -1032,8 +1033,13 @@
         font-family: 'sans';
     }
 
-    .new-contests .box .sub-join {
+    /* .new-contests .box .sub-join {
         margin-bottom: 39px;
+    } */
+
+    .contest-hr {
+        width: 100%;
+        margin: 20px 0;
     }
 
     /********** contest-details.html ************/
