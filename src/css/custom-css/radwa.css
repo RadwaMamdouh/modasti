@@ -8,6 +8,10 @@ label {
 
 
 /*********************** login.html *********************/
+.ico-link.not-before::before {
+    display: none !important;
+}
+
 .log-forms {
     padding: 60px 0;
     overflow: hidden;
@@ -52,7 +56,7 @@ label {
     align-items: center;
     justify-content: flex-start;
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
 }
 
@@ -121,7 +125,14 @@ label {
 }
 
 .remeber-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 29px;
+}
+
+.remeber-me .custom-checkbox {
+    margin-bottom: 0;
 }
 
 .custom-checkbox {
@@ -164,6 +175,10 @@ label {
     color: #fff;
 }
 
+.log-forms .custom-checkbox.radio i {
+    margin-top: 3px;
+}
+
 .remeber-me .remeber span {
     /* margin-left: 15px; */
     line-height: 16px;
@@ -201,7 +216,7 @@ label {
 }
 
 .log-btn {
-    padding: 22px 24px;
+    padding: 22px 24px !important;
     width: 255px;
     max-width: 100%;
     display: flex;
@@ -543,7 +558,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 30px;
 }
 
 .custom-modal .modal-card .card-head img.close-img {
@@ -572,7 +587,8 @@ label {
 }
 
 .custom-modal .modal-card .card-content button#skip {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    height: 60px;
 }
 
 .custom-modal .modal-card .card-content button#skip:hover {
@@ -659,10 +675,10 @@ label {
     margin-bottom: 50px;
 }
 
-.register .tabs span,
+/* .register .tabs span,
 .register .tabs span {
     margin-left: 5px;
-}
+} */
 
 .sign-me {
     margin-bottom: 31px;
@@ -672,6 +688,7 @@ label {
     /* margin-left: 15px; */
     font-size: 14px;
     line-height: 16px;
+    font-family: 'raleway-m';
 }
 
 .register .drop-container {
@@ -1639,6 +1656,8 @@ label {
     border: 1px solid #D8D8D8;
     padding: 21px 31px;
     resize: none;
+    font-size: 14px;
+    font-family: 'raleway-m';
 }
 
 .comments .comment-area .write-comment textarea::placeholder {
@@ -2734,7 +2753,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .new-contests .box .sub-join .box-p {
@@ -2749,6 +2768,12 @@ label {
 
 .new-contests .box .sub-join a.box-p:hover {
     color: #000;
+}
+
+.contest-hr {
+    border: 1px solid #ececec;
+    width: 56px;
+    margin: 30px 0;
 }
 
 
@@ -2990,7 +3015,7 @@ label {
 .contest-bar .contest-tabs li .tabs-links {
     margin: 0 20px;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     transition: .5s ease;
 }
 
@@ -2998,6 +3023,10 @@ label {
 .contest-bar .contest-tabs li .tabs-links:hover
 {
     color: #CFBDA8;
+}
+    
+.contest-bar .contest-tabs li:first-child .tabs-links {
+    margin-left: 0;
 }
 
 .contest-bar .tabs-form {
