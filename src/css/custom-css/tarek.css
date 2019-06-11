@@ -1561,6 +1561,42 @@ a {
 	transform: none;
 }
 
+.social ul li:nth-child(1) img
+{
+	width: 29px;
+	height: 29px;
+}
+.social ul li:nth-child(2) img
+{
+	width: 31px;
+	height: 25px;
+}
+.social ul li:nth-child(3) img
+{
+	width: 29px;
+	height: 29px;
+}
+.social ul li:nth-child(4) img
+{
+	width: 29px;
+	height: 29px;
+}
+.social ul li:nth-child(5) img
+{
+	width: 34px;
+	height: 25px;
+}
+.footer .col-md-4 .social li:nth-child(1) img
+{
+	width: 24px;
+	height: 29px;
+}
+.footer .col-md-4 .social li:nth-child(2) img
+{
+	width: 25px;
+	height: 30px;
+}
+
 /*============= end foot-content*/
 
 
