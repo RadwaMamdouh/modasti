@@ -168,6 +168,11 @@
     .register.custom-modal .modal-card .card-content button span {
         display: block !important;
     }
+
+    .custom-modal .modal-card .card-content button#skip,
+    .custom-modal .modal-card .card-content button#guide-me {
+        padding: 22px 24px !important;
+    }
     /* End Business User submit Modal */
 
     /*************** reset-password.html **********/
@@ -357,6 +362,10 @@
     .user-box .user-box-btn span {
         font-size: 12px;
         line-height: 14px;
+    }
+
+    .user-box-btn span {
+        font-size: 12px;
     }
 
     /********** myProfile-collections.html ************/
@@ -594,6 +603,10 @@
         height: 46px;
     }
 
+    .comments .comment-area .write-comment textarea {
+        font-size: 12px;
+    }
+
     .comments .comment-area .write-comment textarea::placeholder {
         font-size: 12px;
         line-height: 14px;
@@ -601,6 +614,14 @@
 
     .comments .user-comments {
         margin-bottom: 30px;
+    }
+
+    .comments .comment-area .write-comment {
+        width: calc(100% - 77px);
+    }
+
+    .comments .user-comments .comment-details {
+        width: calc(100% - 67px);
     }
 
     .comments .user-comments .comment-details .user-info .user-name {
@@ -1051,6 +1072,7 @@
         padding: 12px 22px;
         font-size: 20px;
         width: 95%;
+        font-family: 'sans-m';
     }
 
     .contest-info {
@@ -1100,6 +1122,7 @@
 
     .people-applied .user-box .user-name {
         margin-bottom: 20px;
+        font-family: 'raleway-m';
     }
 
     .people-applied .btns .applied-btn {
@@ -1158,6 +1181,13 @@
 
     .the-winner .collec-img {
         height: 623px;
+    }
+
+    .the-winner .winner-cup .cup-txt {
+        font-size: 16px;
+        font-family: 'raleway-m';
+        line-height: 24px;
+        width: 98px;
     }
 
     /********** join-contest.html ************/
@@ -1533,6 +1563,10 @@
 
     .collapse-box .collapse-btn .btn-txt {
         max-width: none;
+    }
+
+    .log-forms .social {
+        margin: 0;
     }
 }
 

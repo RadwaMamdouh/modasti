@@ -558,7 +558,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 30px;
 }
 
 .custom-modal .modal-card .card-head img.close-img {
@@ -587,7 +587,8 @@ label {
 }
 
 .custom-modal .modal-card .card-content button#skip {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    height: 60px;
 }
 
 .custom-modal .modal-card .card-content button#skip:hover {
@@ -1655,6 +1656,8 @@ label {
     border: 1px solid #D8D8D8;
     padding: 21px 31px;
     resize: none;
+    font-size: 14px;
+    font-family: 'raleway-m';
 }
 
 .comments .comment-area .write-comment textarea::placeholder {
@@ -2763,7 +2766,7 @@ label {
     color: #000;
 }
 
-.new-contests .box .sub-join a.box-p:hover { 
+.new-contests .box .sub-join a.box-p:hover {
     color: #000;
 }
 
@@ -3012,7 +3015,7 @@ label {
 .contest-bar .contest-tabs li .tabs-links {
     margin: 0 20px;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     transition: .5s ease;
 }
 
@@ -3020,6 +3023,10 @@ label {
 .contest-bar .contest-tabs li .tabs-links:hover
 {
     color: #CFBDA8;
+}
+
+.contest-bar .contest-tabs li:first-child .tabs-links {
+    margin-left: 0;
 }
 
 .contest-bar .tabs-form {
