@@ -1,0 +1,1601 @@
+@media (max-width: 1200px) {
+    .data-feed-content .feed-table {
+        overflow: auto;
+    }
+}
+
+@media (max-width: 922px) {
+    /********** login.html ************/
+    .log-forms {
+        padding: 30px 0;
+    }
+
+    .log-form {
+        padding: 0 21px;
+    }
+
+    .title img {
+        max-width: 17px;
+        height: 17px;
+    }
+    
+    .title div {
+        font-size: 24px;
+    }
+
+    .tit {
+        font-size: 12px;
+    }
+
+    .remeber-me .col-6:nth-child(2) {
+        padding-right: 0;
+    }
+
+    .log-btn {
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .log-btn span {
+        display: none;
+    }
+
+    .social {
+        margin: 0 0 30px;
+    }
+
+    .custom-checkbox i {
+        top: 2px;
+    }
+
+    /* side-info */
+    .side-info::after {
+        content: '';
+        width: 1000px;
+        position: absolute;
+        height: 100%;
+        background-color: #000;
+        z-index: 9999999999999999;
+        overflow: visible;
+        top: 0;
+        right: 100%;
+    }
+    
+    .side-info.right::after {
+        right: calc(100% - 1px);
+    }
+
+    .log-info {
+        margin: 50px 36px;
+        align-items: flex-start
+    }
+
+    .personal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .log-info .personal-details {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .big-title {
+        margin-bottom: 32px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .log-btn img {
+        width: 17px;
+    }
+
+    /*********** register.html *********/
+    .register .col-lg-6 {
+        order: -1;
+    }
+
+    .side-info.left::after {
+        left: calc(100% - 1px);
+    }
+
+    .register .log-info {
+        margin: 50px 21px;
+        align-items: flex-start
+    }
+
+    .register .log-info .personal-details {
+        width: 221px;
+    }
+
+    .register .big-title {
+        font-size: 24px;
+        width: 100%;
+        max-width: 122px;
+        margin-bottom: 39px;
+    }
+
+    .upload-submit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .uploading {
+        width: 84px;
+        height: 84px;
+    }
+
+    .upload-img .add-img .type {
+        width: 116px;
+    }
+
+    .signing-up .signing-text {
+        margin-left: 20px;
+    }
+
+    .custom-radio i {
+        top: 2px;
+    }
+
+    .m-form .log-footer .title {
+        margin-bottom: 30px;
+    }
+
+    .b-form .log-footer .title {
+        margin-bottom: 30px;
+    }
+
+    /* Start Business User submit Modal */
+    .register.custom-modal .modal-card .card-content button {
+        width: 262px;
+        height: 65px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 24px;
+    }
+
+    .register.custom-modal .modal-card .card-content button span {
+        display: block !important;
+    }
+    /* End Business User submit Modal */
+
+    /*************** reset-password.html **********/
+    .resetPass-head p {
+        line-height: 24px;
+        font-size: 14px;
+        width: 100%;
+        max-width: 199px;
+    }
+
+    .reset-password .form-btn {
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 100px;
+    }
+
+    .reset-password .email {
+        margin-bottom: 30px;
+    }
+
+    .back-login {
+        margin-bottom: 30px;
+    }
+
+    /*********** confirmation-message.html *********/
+    .confirm-msg .col-lg-6 {
+        order: -1;
+    }
+
+    .confirm-message .check-email {
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 30px;
+        line-height: 24px;
+    }
+
+    .confirm-message .chck-email p {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 30px;
+        line-height: 24px;
+    }
+
+    .confirm-message .recieve-email p {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: 'raleway';
+    }
+
+    .confirm-message .recieve-email p.spam {
+        font-size: 14px;
+    }
+
+    .confirm-message .recieve-email div.or {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .confirm-message .recieve-email .log-btn {
+        margin-bottom: 30px;
+    }
+
+    .confirm-message .not-recieve {
+        max-width: 100%;
+    }
+
+    .confirm-message .recieve-email .log-btn img.cancel {
+        width: 20px;
+    }
+
+    .confirm-msg .log-info {
+        margin: 50px 36px;
+    }
+
+    .confirm-msg .big-title {
+        font-size: 24px;
+        line-height: 29px;
+        max-width: 122px;
+        margin-bottom: 39px;
+    }
+
+    /*********** new-password.html *********/
+    .new-pass p.reset-pass-request {
+        font-size: 14px;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 143px;
+        line-height: 24px;
+    }
+
+    .new-pass .log-btn {
+        margin-bottom: 30px;
+    }
+
+    /********** myProfile-wins.html ************/
+    .myProfile-tabs {
+        overflow-x: auto;
+    }
+
+    .myProfile-tabs .prof-tabs {
+        justify-content: flex-start;
+    }
+
+    .wins-content {
+        padding: 50px 0 20px;
+    }
+
+    .profile-details .user-data {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 29px;
+    }
+
+    .profile-details .user-data .user-img {
+        margin-right: 20px;
+        width: 84px;
+        height: 84px;
+        margin-bottom: 0;
+    }
+
+    .profile-details .user-data .user-name {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .profile-details .info-row span.num {
+        font-size: 12px;
+        font-family: 'sans';
+    }
+
+    .profile-details .user-info {
+        margin-bottom: 50px;
+    }
+
+    .profile-details .user-info .bio {
+        font-size: 16px;
+    }
+
+    .profile-details .user-info p {
+        font-size: 14px;
+    }
+
+    .box .box-img {
+        width: 164px;
+        height: 298px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .box .wins-cup {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0;
+    }
+
+    .box .wins-cup .cup-img {
+        width: 71px;
+        height: 62px;
+        margin-bottom: 20px;
+    }
+
+    .box .icon-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /********** myProfile-following.html ************/
+    .following-content {
+        padding: 50px 0 20px;
+    }
+
+    .user-box .user-img {
+        width: 66px;
+        height: 66px;
+        margin-bottom: 10px;
+    }
+
+    .user-box .user-name {
+        font-size: 12px;
+        margin-bottom: 10px;
+        line-height: 14px;
+    }
+
+    .user-box .user-box-btn span {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    /********** myProfile-collections.html ************/
+    .collections-content {
+        padding: 50px 0 20px;
+    }
+
+    .collec-btn {
+        width: 100%;
+        height: 123px;
+    }
+
+    .collec-btn img {
+        width: 17px;
+        height: 17px;
+        margin-bottom: 13px;
+    }
+
+    .collec-btn .tit {
+        line-height: 24px;
+    }
+
+    .collec-box .box-title {
+        margin-top: 20px;
+    }
+
+    .collec-box a img {
+        width: 100%;
+        max-width: 100%;
+        height: 123px;
+        max-height: 100%;
+    }
+
+    /* Modal */
+    .collections-content.custom-modal .modal-card .card-content .form-btns {
+        justify-content: flex-start;
+    }
+
+    .collections-content.custom-modal .modal-card .card-content .form-btns .log-btn {
+        width: 40px;
+        height: 40px;
+        max-width: 100%;
+        padding: 8px;
+        justify-content: center;
+    }
+
+    .collections-content.custom-modal .modal-card .card-content .form-btns .log-btn[type='reset'] {
+        margin-right: 20px;
+    }
+
+    .collections-content.custom-modal .modal-card .card-content .form-btns .log-btn span {
+        display: none;
+    }
+
+    .collections-content.custom-modal .modal-card .card-head {
+        padding: 30px 20px 30px 50px;
+    }
+
+    .collections-content.custom-modal .modal-card .card-head .tit {
+        line-height: 29px;
+    }
+
+    .collections-content.custom-modal .modal-card .card-content {
+        padding: 0px 50px 30px;
+    }
+
+    /********** myProfile-my-sets.html ************/
+    .profile-details .create-set {
+        margin-bottom: 30px;
+    }
+
+    .box .box-tit {
+        font-size: 16px;
+        line-height: 24px;
+        width: 123px;
+        max-width: 100%;
+        margin: 20px 0 10px;
+    }
+
+    .box .box-p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .box .btns {
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        margin: 30px 0;
+        left: 0;
+    }
+
+    .box:hover .btns {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+}
+
+    .box .btns .log-btn.edit {
+        width: 40px;
+        height: 40px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-right: 19px;
+    }
+
+    .box .btns .log-btn.edit img {
+        width: 11px;
+        height: 11px;
+    }
+
+    .box .btns .log-btn.delete {
+        width: 40px;
+        height: 40px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ECECEC;
+    }
+
+    .box .btns .log-btn.delete img {
+        width: 17px;
+        height: 15px;
+    }
+
+    .box .box-btns {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .box .btns .log-btn.view-contest {
+        display: none;
+    }
+
+    .box .price-cup {
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+
+    .box .btns.middle-btn .log-btn {
+        margin-top: 0;
+    }
+
+    .box .price-cup img {
+        width: 25px;
+        height: 22px;
+    }
+
+    /********** myProfile-my-sets-details.html ************/
+    .sets-details {
+        padding: 30px 0;
+    }
+
+    .set-view {
+        margin-bottom: 30px;
+    }
+
+    .sets-details .set-img {
+        /* width: 342px; */
+        height: 623px;
+        max-width: 100%;
+        margin-bottom: 29px;
+    }
+
+    .sets-details .set-title {
+        font-family: 'raleway-m';
+        font-size: 16px;
+        line-height: 24px;
+        width: 123px;
+        max-width: 100%;
+    }
+
+    .sets-details .set-desc {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .sets-details .set-data .btns .log-btn {
+        width: 163px;
+        height: 50px;
+        max-width: 100%;
+        padding: 19px 20px; 
+    }
+
+    .sets-details .set-data .btns .log-btn span {
+        display: block !important;
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .edit-del-btns {
+        justify-content: flex-start;
+    }
+
+    .sets-details .set-data .edit-del-btns .log-btn span {
+        display: none !important;
+    }
+
+    .sets-details .set-data .btns .log-btn.edit {
+        margin-right: 19px;
+    }
+
+    .sets-details .set-data .btns .log-btn.delete,
+    .sets-details .set-data .btns .log-btn.edit {
+        width: 40px;
+        height: 40px;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .sets-details .set-data .btns .log-btn.delete span,
+    .sets-details .set-data .btns .log-btn.edit span {
+        display: none;
+    }
+
+    /* Start Comments */
+    .comments {
+        padding: 30px 0;
+    }
+
+    .comments .comment-area .user-img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .comments .comment-area .write-comment textarea::placeholder {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .comments .user-comments {
+        margin-bottom: 30px;
+    }
+
+    .comments .user-comments .comment-details .user-info .user-name {
+        font-family: 'raleway-m';
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .comments .user-comments .comment-details .user-info .date {
+        font-family: 'sans';
+        font-size: 12px;
+    }
+
+    .comments .user-comments .comment-details .user-comment {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .comments .comment-area {
+        margin-bottom: 30px;
+    }
+
+    /* start Items Used */
+    .items-used {
+        padding-bottom: 0;
+    }
+
+    .items-used .box .btns {
+        display: none;
+    }
+
+    .items-used .box .box-btn {
+        display: none;
+    }
+
+    /********** items-details.html ************/
+    .items-details {
+        overflow: hidden;
+    }
+
+    .items-details .quick-view {
+        margin-bottom: 20px;
+    }
+
+    .items-details .quick-view .owl-guide {
+        width: 100%;
+    }
+
+    .items-details .quick-view .owl-dots {
+        display: none;
+    }
+
+    .items-details .quick-view .owl-guide .item {
+        height: 496px;
+    }
+
+    .items-details .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+
+    .items-details .quick-view-details .details .item-name {
+        font-size: 16px;
+    }
+
+    .items-details .quick-view-details .details .size-guid .size {
+        margin-bottom: 20px;
+    }
+
+    .items-details .quick-view-details .details .size-guid .size span,
+    .items-details .quick-view-details .details .size-guid .size a {
+        font-size: 12px;
+    }
+
+    .items-details .quick-view-details .details .size-guid .size span {
+        margin-right: 111px;
+    }
+
+    .items-details .quid-box {
+        margin-bottom: 20px;
+    }
+
+    .items-details .size-box {
+        width: 53px;
+        height: 36px;
+        margin-right: 20px;
+    }
+
+    .item-description .description-tit {
+        margin-bottom: 24px;
+        font-family: 'raleway-b';
+        font-size: 14px;
+        line-height: 24px;    
+    }
+
+    .items-details .item-description .desc-info p {
+        font-family: 'raleway-m';
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 10px;
+    }
+
+    .items-details .item-description .desc-p,
+    .items-details .item-description .desc-info span {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .items-details .item-price {
+        margin-bottom: 0;
+        margin-right: 113px;
+    }
+
+    .items-details .price-getItem {
+        display: flex;
+        align-items: center;
+    }
+
+    .items-used.related-items .box-btn {
+        display: block;
+    }
+
+    .items-used.related-items .box .box-tit {
+        margin: 22px 0 9px;
+    }
+
+    .items-used.related-items .box .box-price {
+        margin-bottom: 20px;
+    }
+
+    .items-used.related-items {
+        padding-top: 0;
+    }
+
+    .items-details .quick-view-details .details {
+        padding: 0;
+    }
+
+    .items-details .full-details a {
+        display: none;
+    }
+
+
+    /********** myProfile-my-likes.html ************/
+    .myLikes {
+        padding: 30px 0 0;
+    }
+
+    .myLikes .profile-details .user-info {
+        margin-bottom: 0;
+    }
+
+    .profile-details .sort-by {
+        margin-bottom: 30px;
+    }
+
+    .profile-details .sort-by .tit {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .profile-details .sort-by .drpo-btn {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .myLikes .items-used .box .box-tit a {
+        width: 123px;
+    }
+
+    .myLikes .items-used .box .box-price {
+        font-family: 'sans';
+        font-size: 12px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    /********** collection-details.html ************/
+    .collection-details .profile-details .user-data {
+        margin-bottom: 14px;
+    }
+
+    .profile-details .collection-name {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .profile-details .collection-maker {
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 9px;
+    }
+
+    .profile-details .collection-date {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .profile-details .collection-date span {
+        font-size: 12px;
+    }
+
+    .profile-details .btns {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .profile-details .btns a {
+        margin-right: 19px;
+        height: 40px;
+        margin-bottom: 0;
+    }
+
+    .profile-details .btns a img {
+        width: 11px;
+    }
+
+    .profile-details .btns button {
+        height: 40px;
+    }
+
+    .profile-details .btns button img {
+        width: 17px;
+    }
+
+    .collection-details {
+        padding: 30px 0 0;
+    }
+
+    .box .box-price {
+        font-family: 'sans';
+        font-size: 12px;
+    }
+
+    .items-used .box .box-tit {
+        margin: 20px 0 9px;
+    }
+
+
+    /********** collection-details-edit.html ************/
+    .profile-details .btns button[type=submit] {
+        margin-bottom: 0;
+        margin-right: 19px;
+    }
+
+    .profile-details .collection-name .input {
+        padding-bottom: 9px;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 1;
+    }
+
+    .collection-details-edit .items-used .box .box-img .log-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .collection-details-edit .items-used .box .box-img .log-btn img {
+        width: 17px;
+    }
+
+
+    /********** help.html ************/
+    .help-head .left {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .help-head .tite {
+        width: 50%;
+    }
+
+    .help-head .left .behind-u {
+        width: 50%;
+        font-size: 42px;
+        line-height: 49px;
+    }
+
+    .collapse-box .collapse-btn .btn-txt {
+        /* max-width: 294px; */
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /*********** terms-of-services ********/
+    .terms-head {
+        padding: 50px 0;
+    }
+
+    .terms-content {
+        padding: 53px 0 50px;
+    }
+
+    .terms-content p:not(.t-title) {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    .terms-content p.t-title {
+        margin-bottom: 30px;
+        width: 194px;
+    }
+
+    /*********** data-feed ********/
+    .data-feed-head {
+        padding: 50px 0;
+    }
+
+    .data-feed-content .feed-table {
+        overflow: auto;
+    }
+
+    .data-feed-head .tite div {
+        width: 275px;
+    }
+
+    .data-feed-content {
+        padding: 50px 0;
+    }
+
+    /********** myProfile-wins-empty.html ************/
+    .empty-content {
+        padding: 30px 0;
+    }
+
+    .empty-content .profile-details .user-info {
+        margin-bottom: 30px;
+    }
+
+    .empty-content .empty-container .empty-img {
+        width: 163px;
+        height: 143px;
+    }
+
+    .empty-content .empty-container .empty-txt {
+        font-size: 24px;
+    }
+
+    .empty-content .empty-container .empty-btn .log-btn {
+        padding: 0;
+    }
+
+    /********** myProfile-following-empty.html ************/
+    .empty-following {
+        padding: 30px 0 0;
+    }
+
+    /********** myProfile-followers-empty.html ************/
+    .followers-empty .empty-container .empty-img {
+        width: 122px;
+        height: 143px;
+    }
+
+    .followers-empty .empty-container .empty-txt {
+        line-height: 34px;
+    }
+
+    /********** myProfile-group-empty.html ************/
+    .empty-group .empty-container .empty-img {
+        width: 248px;
+        height: 138px;
+    }
+
+    /********** myProfile-collections-empty.html ************/
+    .collections-empty .empty-container .empty-img {
+        width: 138px;
+        height: 138px;
+    }
+
+    .collections-empty .empty-container .empty-txt {
+        line-height: 34px;
+        width: 218px;
+        text-align: center;
+    }
+
+    /********** myProfile-sets-empty.html ************/
+    .sets-empty .empty-container .empty-txt {
+        line-height: 26px;
+        width: 100%;
+    }
+
+    /********** myProfile-likes-empty.html ************/
+    .likes-empty .empty-container .empty-img {
+        width: 162px;
+        height: 143px;
+    }
+
+    .likes-empty .empty-container .empty-txt {
+        line-height: 34px;
+    }
+
+    /********** myProfile-blocking-empty.html ************/
+    .blocking-empty .empty-container .empty-img {
+        width: 122px;
+        height: 148px;
+    }
+
+    .blocking-empty .empty-container .empty-txt {
+        line-height: 34px;
+    }
+
+
+    /********** new-contests.html ************/
+    .new-contests {
+        padding: 30px 0 0;
+    }
+
+    .new-contests .box.box-sq .box-img {
+        height: 262px;
+    }
+
+    .new-contests .box.box-sq .box-img .time {
+        padding: 15px 22px;
+        font-size: 20px;
+    }
+
+    .new-contests .box .box-p.box-p-tit {
+        margin-top: 20px;
+        margin-bottom: 1px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .new-contests .box .sub-join .box-p {
+        font-size: 12px;
+        font-family: 'sans';
+    }
+
+    .new-contests .box .sub-join {
+        margin-bottom: 39px;
+    }
+
+    /********** contest-details.html ************/
+    .contest-details .contest-img {
+        height: 230px;
+    }
+
+    .contest-details .contest-img .time {
+        padding: 12px 22px;
+        font-size: 20px;
+        width: 95%;
+    }
+
+    .contest-info {
+        padding: 57px 0 30px;
+    }
+
+    .contest-info .contest-name {
+        margin-bottom: 20px;
+        font-family: 'raleway-b';
+    }
+
+    .contest-info .icons-bar {
+        margin-bottom: 19px;
+    }
+
+    .contest-info .submission {
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+
+    .contest-info .contest-p {
+        font-size: 14px;
+        width: 70%;
+        max-width: 100%;
+    }
+
+    .contest-comments {
+        padding: 30px 0 0;
+    }
+
+    .people-applied {
+        margin-top: 30px;
+    }
+
+    .people-applied .user-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .people-applied .user-box .user-img {
+        margin: 0;
+        width: 84px;
+        height: 84px;
+        margin-bottom: 10px;
+    }
+
+    .people-applied .user-box .user-name {
+        margin-bottom: 20px;
+    }
+
+    .people-applied .btns .applied-btn {
+        display: none;
+    }
+
+    /********** contest-winner.html ************/
+    .contest-winner .contest-info {
+        padding: 30px 0;
+    }
+
+    .the-winner {
+        padding: 30px 0;
+        margin-bottom: 30px;
+    }
+
+    .the-winner .user-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .the-winner .user-info .user-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 84px;
+        height: 84px;
+    }
+
+    .the-winner .user-info .info .user-name {
+        font-size: 16px;
+    }
+
+    .the-winner .winner-cup {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .the-winner .winner-cup .cup-img {
+        width: 95px;
+        height: 84px;
+        margin-bottom: 10px;
+    }
+
+    .the-winner .winner-p {
+        font-size: 24px;
+        width: 185px;
+        max-width: 100%;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+
+    .the-winner .winner-desc {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .the-winner .collec-img {
+        height: 623px;
+    }
+
+    /********** join-contest.html ************/
+    .contest-bar .collapse-btn {
+        display: block;
+    }
+
+    .contest-bar .tabs-form {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+    }
+
+    .contest-bar.active .tabs-form {
+        max-height: 500px;
+        overflow: hidden;
+        padding-top: 30px;
+    }
+
+    .contest-bar .container {
+        padding: 0;
+    }
+
+    .contest-bar .contest-tabs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contest-bar .contest-tabs li {
+        padding: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, .20);
+    }
+
+    .contest-bar .contest-tabs li:last-child {
+        border-bottom: none;
+    }
+
+    .contest-bar .contest-tabs li .tabs-links {
+        margin: 0;
+    }
+
+    .contest-bar .tabs-form form {
+        order: -1;
+        padding: 30px;
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, .20);
+        border-bottom: 1px solid rgba(255, 255, 255, .20);
+    }
+
+    .join-contest {
+        padding: 30px 0 0;
+    }
+
+    .drop-btns {
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .drop-btns .log-btn {
+        height: 40px;
+    }
+
+    .drop-btns .log-btn:first-child {
+        margin-right: 20px;
+    }
+
+    .droppable-area {
+        height: 622px;
+    }
+
+    .draggable-items .set-item .item-img {
+        height: 298px;
+    }
+
+    /********** create-set-publish.html ************/
+    .join-contest.set-publish {
+        padding: 30px 0;
+    }
+
+    .set-publish .droppable-area {
+        margin-bottom: 30px;
+    }
+
+    .set-publish .set-form .set-titles {
+        font-family: 'raleway-b';
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .set-publish .set-form .hashtags .log-white {
+        margin-bottom: 20px;
+        width: 137px;
+        height: 50px;
+    }
+
+    .set-publish .set-form .hashtags .log-white.log-btn span {
+        display: block !important;
+    }
+
+    .set-publish .set-form .hashtags {
+        margin-bottom: 10px;
+    }
+
+    .set-publish .set-form .set-titles.share {
+        margin-bottom: 30px;
+    }
+
+    .set-publish .set-form .set-form-btns {
+        justify-content: flex-start;
+    }
+
+    .set-publish .set-form .set-form-btns .log-btn {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+
+    .set-publish .set-form .set-form-btns .log-btn:nth-child(1) {
+        margin-right: 20px;
+    }
+
+    /********** business-help.html ************/
+    .business-img {
+        height: 297px;
+    }
+
+    .business-img .b-search {
+        padding: 22px 29px 22px 2px;
+    }
+
+    .business-help {
+        padding: 60px 0 50px;
+    }
+
+    .business-help .col-lg-3 {
+        order: -1;
+    }
+
+    .business-help .help-faqs .faqs {
+        margin-bottom: 61px;
+    }
+
+    .business-help .help-txt .txt-row .help-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .business-help .help-txt .txt-row p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /********** business-edit-account.html ************/
+    .b-edit-account .b-search {
+        padding: 30px 0;
+    }
+
+    .pull-bear {
+        margin-bottom: 30px;
+    }
+
+    .b-edit-account .b-search .count span {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .b-edit-account .b-search .count span:first-child {
+        margin-right: 20px;
+    }
+
+    .b-edit-form {
+        padding: 144px 0 30px;
+    }
+
+    .b-edit-form .profile-data .form-btns {
+        justify-content: flex-start;
+    }
+
+    .b-edit-form .profile-data .form-btns .log-btn {
+        height: 40px;
+        padding: 0;
+    }
+
+    .b-edit-form .profile-data .form-btns .log-btn:nth-child(1) {
+        margin-right: 10px;
+    }
+
+    .b-edit-form .profile-data .form-btns .log-btn:nth-child(2) {
+        margin-left: 10px;
+    }
+
+    /********** business-user.html ************/
+    .business-user .power-modasti .title div {
+        width: 100%;
+    }
+
+    .business-user .power-modasti .power-modasti-txt {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .business-user .weird-header .weird-shape::before {
+        bottom: -6px;
+        left: -6px;
+    }
+
+    .business-user .weird-header .main-tit.about {
+        margin-top: -20px;
+    }
+
+    .business-user .weird-header {
+        padding: 30px 0;
+    }
+
+    .business-user .business-img {
+        height: 294px;;
+    }
+
+    .business-user .business-us {
+        padding: 88px 0 30px;
+    }
+
+    .business-user .business-us .title div {
+        width: 100%;
+    }
+
+    .business-user .business-us .register-now {
+        margin-bottom: 30px;
+    }
+
+    /********** coupon.html ************/
+    .coupon .b-search .coupon-title {
+        font-family: 'raleway-b';
+        line-height: 29px;
+        margin-bottom: 29px;
+    }
+
+    .coupon .coupon-date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .coupon .b-search .coupon-date p:nth-child(1) {
+        margin-bottom: 0;
+    }
+
+    .coupon .b-search .log-btn {
+        width: 100%;
+        height: 60px;
+        margin-top: 31px;
+        justify-content: space-between;
+        padding: 0 24px;
+    }
+
+    .coupon .b-search .log-btn span {
+        display: block !important;
+    }
+
+    .table {
+        border: 0 !important;
+    }
+
+    .coupon-table table thead tr th {
+        font-size: 12px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #ECECEC !important;
+    }
+
+    .coupon-table table tbody tr td {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .coupon-table table tbody tr td p {
+        font-size: 12px;
+    }
+
+    /********** new-coupon.html ************/
+    .coupon-image {
+        height: 297px;
+    }
+
+    .coupon-image .coupon-img img.upload {
+        margin-bottom: 9px;
+    }
+
+    .coupon-image .coupon-img p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .coupon-image .coupon-img .img-type {
+        font-size: 12px;
+    }
+
+    .coupon-form .coupon-f {
+        padding: 30px 35px 30px 2px;
+    }
+
+    .coupon-form .new-coupon-title {
+        margin-bottom: 30px;
+    }
+
+    .coupon-form .add-coupon {
+        justify-content: flex-start;
+    }
+
+    /********** newsfeed ****************/
+    .news-box {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .news-box .item-description .item-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .news-box .item-description {
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+
+    .news-box .item-description p {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .news-box.shared-box .shared-b {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .news-box .item-price .price {
+        font-size: 14px;
+    }
+
+    .newsfeed .news-box .icons::before {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .sets-details .set-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .new-contests .box.box-sq .box-img {
+        height: 530px;
+    }
+
+    .the-winner .collec-img {
+        height: 1198px;
+    }
+
+    .droppable-area {
+        height: 900px;
+    }
+
+    .draggable-items .set-item .item-img {
+        height: 568px;
+    }
+
+    .collapse-box .collapse-btn .btn-txt {
+        max-width: none;
+    }
+}
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 768px) {
+    .collapse-box .collapse-btn .btn-txt {
+        max-width: 294px;
+    }
+}
+
+
+
+@media (min-width: 993px) and (max-width: 1024px) {
+    /*************** reset-password.html **********/
+    .reset-password .form-btn button[type='reset'] {
+        margin-right: 15px;
+    }
+
+    .reset-password .form-btn button[type='submit'] {
+        margin-left: 15px;
+    }
+
+    /********** help.html ************/
+    .help-head .left {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .help-head .tite {
+        width: 50%;
+    }
+
+    .help-head .left .behind-u {
+        width: 50%;
+    }
+
+    /********* my-sets-details **********/
+    .sets-details .set-data .btns .log-btn.edit {
+        margin-right: 15px;
+    }
+
+    .sets-details .set-data .btns .log-btn.delete {
+        margin-left: 15px;
+    }
+
+    /********** create-set-publish.html ************/
+    .set-publish .set-form .set-form-btns .log-btn:nth-child(1) {
+        margin-right: 10px;
+    }
+
+    .set-publish .set-form .set-form-btns .log-btn:nth-child(2) {
+        margin-left: 10px;
+    }
+
+    /********** business-edit-account.html ************/
+    .b-edit-form .profile-data .form-btns .log-btn:nth-child(1) {
+        margin-right: 10px;
+    }
+
+    .b-edit-form .profile-data .form-btns .log-btn:nth-child(2) {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 922px) {
+    .reset-password .form-btn .log-btn[type='reset'] {
+        padding: 0;
+    }
+}
