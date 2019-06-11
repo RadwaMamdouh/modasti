@@ -13,7 +13,9 @@
     "gulp-rename": "^1.4.0",
     "gulp-watch": "^5.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-build": "^0.5.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
