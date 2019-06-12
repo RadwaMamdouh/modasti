@@ -452,7 +452,7 @@
     }
 
     .box .box-tit {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
         width: 123px;
         max-width: 100%;
@@ -808,7 +808,6 @@
     .myLikes .items-used .box .box-price {
         font-family: 'sans';
         font-size: 12px;
-        padding-bottom: 20px;
         margin-bottom: 20px;
     }
 
@@ -869,7 +868,7 @@
     }
 
     .box .box-price {
-        font-family: 'sans';
+        font-family: 'sans-m';
         font-size: 12px;
     }
 
@@ -1281,6 +1280,11 @@
         height: 298px;
     }
 
+    .droppable-area span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
     /********** create-set-publish.html ************/
     .join-contest.set-publish {
         padding: 30px 0;
@@ -1288,6 +1292,13 @@
 
     .set-publish .droppable-area {
         margin-bottom: 30px;
+    }
+
+    .set-publish .set-form .form-group .input,
+    .set-publish .set-form .form-group .input::placeholder,
+    .set-publish .set-form .form-group textarea,
+    .set-publish .set-form .form-group textarea::placeholder {
+        font-size: 12px;
     }
 
     .set-publish .set-form .set-titles {

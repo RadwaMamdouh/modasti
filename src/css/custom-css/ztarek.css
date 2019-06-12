@@ -66,11 +66,13 @@
 	}
 	.brand-box .info .tit-content
 	{
-		font-size: 24px
+		font-size: 24px;
+		font-family: 'raleway-b';
 	}
 	.brand-box .info .info-content
 	{
-		font-size: 14px
+		font-size: 14px;
+		margin-bottom: 30px;
 	}
 	.brand-box .info .side-folow-btn
 	{
@@ -564,6 +566,10 @@
 		height: 3px;
 	}
 
+	.icons-bar {
+		padding-top: 20px;
+	}
+
 	/*    .news-box */
 
 
@@ -870,7 +876,7 @@
 	}
 
 	.filter .filter-form .log-btn {
-		margin-right: 20px;
+		margin-right: 50px;
 	}
 
 	.filter .filter-form .btns {
@@ -899,6 +905,10 @@
 
 	.filter .items-head .drpo-btn img {
 		width: 20px;
+	}
+
+	.filter .filter-form > .tit {
+		font-size: 14px;
 	}
 
 	.close-filter,
@@ -1063,6 +1073,7 @@
 	{
 		width: 50%;
 		font-size: 12px;
+		display: block;
 	}
 	.brand-box.brand-box-head .active-row.code-details .active-details
 	{
@@ -1080,6 +1091,10 @@
 	.brand-box.brand-box-head .img
 	{
 		height: 300px;
+	}
+
+	.brand-box.brand-box-head .active-row .active-details p span {
+		margin-left: 20px;
 	}
 	
 /*	brands*/
@@ -1266,6 +1281,7 @@
 		-moz-transform: none;
 		-ms-transform: none;
 		-o-transform: none;
+		padding: 30px 38px;
 	}
 	.label .custom-checkbox
 	{
