@@ -377,27 +377,27 @@
 	.footer .foot-content .container::before {
 		right: calc(100% - 30px);
 	}
-	.social ul li:nth-child(1) img
+	.footer .social ul li:nth-child(1) img
 	{
 		width: 18px;
 		height: 18px;
 	}
-	.social ul li:nth-child(2) img
+	.footer .social ul li:nth-child(2) img
 	{
 		width: 19px;
 		height: 15px;
 	}
-	.social ul li:nth-child(3) img
+	.footer .social ul li:nth-child(3) img
 	{
 		width: 18px;
 		height: 18px;
 	}
-	.social ul li:nth-child(4) img
+	.footer .social ul li:nth-child(4) img
 	{
 		width: 18px;
 		height: 18px;
 	}
-	.social ul li:nth-child(5) img
+	.footer .social ul li:nth-child(5) img
 	{
 		width: 21px;
 		height: 15px;
