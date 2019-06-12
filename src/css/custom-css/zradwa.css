@@ -108,7 +108,7 @@
     }
 
     .register .log-info {
-        margin: 50px 21px;
+        margin: 50px 0;
         align-items: flex-start
     }
 
@@ -246,6 +246,8 @@
 
     .confirm-message .not-recieve {
         max-width: 100%;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .confirm-message .recieve-email .log-btn img.cancel {
@@ -253,7 +255,7 @@
     }
 
     .confirm-msg .log-info {
-        margin: 50px 36px;
+        margin: 50px 0;
     }
 
     .confirm-msg .big-title {
@@ -261,6 +263,10 @@
         line-height: 29px;
         max-width: 122px;
         margin-bottom: 39px;
+    }
+
+    .confirm-message .recieve-email .log-btn.resend {
+        border: 1px solid #ececec;
     }
 
     /*********** new-password.html *********/
@@ -1622,6 +1628,10 @@
 
     .reset-password .log-info {
         margin: 190px 0 190px 117px;
+    }
+
+    .confirm-msg .log-info {
+        margin: 190px 117px 190px 0px;
     }
 
     /********** help.html ************/
