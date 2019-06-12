@@ -2027,6 +2027,10 @@ a {
 	margin-top: 10px;
 }
 
+.main-title span {
+	font-family: 'raleway-b';
+}
+
 .title-container .more {
 	display: block;
 	width: 255px;
@@ -2209,7 +2213,7 @@ a {
 
 .news-box .tit .name .name-txt {
 	font-family: 'raleway-m';
-	font-size: 18px
+	font-size: 13px
 }
 
 .news-box .tit .img-u {
@@ -2217,7 +2221,7 @@ a {
 	height: 33px;
 	border-radius: 50%;
 	overflow: hidden;
-	margin-right: 10px;
+	margin-right: 5px;
 }
 
 .news-box .tit .img-u img {
@@ -2252,6 +2256,11 @@ a {
 	margin-right: 40px;
 	font-size: 14px;
 	position: relative;
+	font-family: 'sans';
+}
+
+.icons .icon span {
+	font-family: 'sans';
 }
 
 
@@ -2874,6 +2883,8 @@ a {
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: space-between;
+	border-top: 1px solid #ececec;
+    padding-top: 30px;
 }
 
 .icons-bar > .icon img {
@@ -3377,6 +3388,10 @@ a {
 	color: #000;
 }
 
+.filter .select-c .drpo-btn span {
+	font-family: 'raleway-m';
+}
+
 .box .box-tit a {
 	font-family: 'raleway-m';
 }
@@ -3470,7 +3485,7 @@ a {
 }
 
 .range-slider-holder .ui-slider-handle {
-	border: 1px solid #fff;
+	border: 1px solid #000;
 	border-radius: 50%;
 	width: 20px !important;
 	height: 20px !important;
@@ -3514,7 +3529,7 @@ a {
 }
 .range-slider-holder .range-input .tit
 {
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-family: 'raleway-m';
@@ -3533,7 +3548,7 @@ a {
 	display: inline-block;
 	font-size: 14px;
 	color: #000;
-	font-family: 'roboto';
+	font-family: 'sans-m';
 }
 
 .range-slider-holder .out:first-of-type {
@@ -3596,7 +3611,7 @@ a {
 	justify-content: center;
 	height: 65px;
 	font-size: 14px;
-	font-family: 'roboto-m';
+	font-family: 'sans-m';
 	text-transform: uppercase;
 	cursor: pointer;
 	width: 65px;
@@ -3865,6 +3880,10 @@ a {
 	margin-right: 25px;
 }
 
+.brand-details .brand-box .info .tit-content {
+	margin-right: 0;
+}
+
 .brand-box .info .b-img {
 	width: 67px;
 	height: 67px;
@@ -3888,11 +3907,13 @@ a {
 	bottom: 0;
 	right: -18%;
 	color: #000;
+	font-size: 14px;
+	font-family: 'raleway-m';
 }
 
 .brand-box.brand-box-head .info {
 	display: block;
-	padding: 50px 0;
+	padding: 60px 0;
 	width: 100%;
 }
 
@@ -3929,7 +3950,10 @@ a {
 .brand-box.brand-box-head .active-row .active-details p {
 	margin-bottom: 15px;
 	text-transform: uppercase;
-	font-size: 14px
+	font-size: 14px;
+	font-family: 'raleway-m';
+	display: flex;
+	justify-content: space-between;
 }
 
 .brand-box.brand-box-head {
@@ -3950,12 +3974,11 @@ a {
 	height: 475px;
 }
 
-.brand-details {
-	pointer-events: none;
-}
 
 .myProfile-tabs.brands-tabs {
 	margin-top: -97px;
+	position: relative;
+	z-index: 9;
 }
 
 /*==============================// end brands */
