@@ -1005,6 +1005,7 @@ label {
 
 .confirm-message .recieve-email .log-btn.resend span {
     color: #000;
+    font-family: 'raleway-b';
 }
 
 .confirm-message .recieve-email .log-btn.resend:hover span {
