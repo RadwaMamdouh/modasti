@@ -361,7 +361,7 @@ a {
 .icons-side .ico-link::before {
 	content: '';
 	display: block;
-	width: 1px;
+	width: 1.1px;
 	height: 16px;
 	position: absolute;
 	top: 50%;
@@ -1274,7 +1274,7 @@ a {
 }
 
 .collapse-nav .collapse-list {
-	padding: 50px 30px 0;
+	padding: 30px 30px 0;
 	color: #FFF;
 }
 
@@ -1289,6 +1289,7 @@ a {
 	background-color: transparent;
 	border: 0;
 	outline: 0;
+	padding: 0;
 }
 
 .collapse-nav .collapse-list .sub-collapse a {
@@ -2257,6 +2258,7 @@ a {
 	font-size: 14px;
 	position: relative;
 	font-family: 'sans';
+	cursor: pointer;
 }
 
 .icons .icon span {
@@ -2310,6 +2312,116 @@ a {
 .icons .share-icons a img {
 	height: 15px;
 }
+
+
+
+.share-top
+{
+	position: relative;
+}
+.share-top .share-ico.active
+{
+	bottom: calc(100% + 15px);
+	opacity: 1;
+	visibility: visible;
+}
+.share-top .share-ico
+{
+	bottom: 50%;
+	position: absolute;
+	right: 0;
+	border-radius: 15px;
+	background-color: #fff;
+	border: 1px solid #ececec;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+}
+.share-top .share-ico .overflow
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 10px;
+}
+.share-top .share-ico::after
+{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -14px;
+	right: 20px;
+	display: block;
+	position: absolute;
+	border: 7px solid transparent;
+	border-top-color: #fff;
+	transition: .3s;
+	z-index: 9;
+}
+.share-top .share-ico::before
+{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -15px;
+	right: 20px;
+	display: block;
+	position: absolute;
+	border: 7px solid transparent;
+	border-top-color: #dad8d8;
+	transition: .3s;
+	z-index: 9;
+}
+
+.share-top .share-ico .share-link
+{
+	display: block;
+	margin: 0 5px;
+	text-align: center;
+	width: 25px;
+	height: 15px;
+	position: relative;
+}
+.share-top .share-ico .share-link img
+{
+	height: 15px;
+	transition: .3s;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transition: .3s;
+	transform-origin: top;
+	transform: translateX(-50%);
+	margin: 0;
+}
+.share-top .share-ico .share-link img:nth-child(2) {
+	top: 100%;
+	transform: rotateX(-90deg) perspective(600px) translateX(-50%);
+}
+.share-top .share-ico .share-link:hover img:nth-child(1) {
+	top: -100%;
+	transform: rotateX(90deg) perspective(600px) translateX(-50%);
+}
+.share-top .share-ico .share-link:hover img:nth-child(2) {
+	top: 0;
+	transform: translateX(-50%);
+}
+.share-top .share-ico .share-link:hover img
+{
+	
+}
+
+
+
+
+
+
+
 
 .icons .icon::before {
 	content: '';
@@ -3480,7 +3592,7 @@ a {
 
 .range-slider-holder .ui-widget.ui-widget-content {
 	background-color: #ddd;
-	flex-basis: 100%;
+	flex-basis: calc(100% - 20px);
 	margin-bottom: 20px;
 }
 
