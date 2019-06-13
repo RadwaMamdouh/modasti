@@ -247,7 +247,10 @@
 	.filter .box .btns {
 		display: none;
 	}
-
+	.size-filter .box-size
+	{
+		width: 88px;
+	}
 	.rate .log-btn {
 		margin-left: 0;
 	}
@@ -438,6 +441,11 @@
 	.news-form .news-submit
 	{
 		padding: 18px 0;
+	}
+	.news-form .news-input,
+	.news-form .news-input::placeholder
+	{
+		font-size: 12px;
 	}
 	/*    footer*/
 
