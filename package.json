@@ -14,7 +14,8 @@
     "gulp-watch": "^5.0.1"
   },
   "devDependencies": {
-    "gulp-build": "^0.5.3"
+    "gulp-build": "^0.5.3",
+    "gulp-util": "^3.0.8"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
