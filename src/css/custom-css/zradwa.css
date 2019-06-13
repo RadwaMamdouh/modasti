@@ -452,7 +452,7 @@
     }
 
     .box .box-tit {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 24px;
         width: 123px;
         max-width: 100%;
@@ -901,6 +901,10 @@
 
 
     /********** help.html ************/
+    .help-head {
+        padding: 30px 0;
+    }
+
     .help-head .left {
         display: flex;
         align-items: flex-start;
@@ -916,10 +920,20 @@
         line-height: 49px;
     }
 
+    .collapseing {
+        padding: 30px 0;
+    }
+
     .collapse-box .collapse-btn .btn-txt {
         /* max-width: 294px; */
         width: 100%;
         overflow: hidden;
+    }
+
+    .collapse-box.active .collapse-content {
+        padding-top: 10px;
+        font-size: 14px;
+        font-family: 'raleway-m';
     }
 
     /*********** terms-of-services ********/
@@ -1653,6 +1667,7 @@
 
     .help-head .tite {
         width: 50%;
+        line-height: 34px;
     }
 
     .help-head .left .behind-u {

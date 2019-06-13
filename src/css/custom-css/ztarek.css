@@ -108,7 +108,7 @@
 
 @media (max-width: 1085px) {
 	.weird-header {
-		padding: 50px 0;
+		padding: 30px 0;
 	}
 
 	.weird-header .main-tit {
@@ -142,8 +142,8 @@
 		position: absolute;
 		width: 50%;
 		height: 40px;
-		bottom: -5px;
-		left: -5px;
+		bottom: -7px;
+		left: -7px;
 		background-color: #fff;
 		min-width: 200px;
 	}
@@ -195,12 +195,12 @@
 	}
 
 	.weird-header .info .info-row .info-content {
-		font-size: 12px;
+		font-size: 14px;
 		width: 60%;
 	}
 
 	.weird-header .info .info-row a {
-		font-size: 12px;
+		font-size: 14px;
 		width: auto;
 	}
 
@@ -215,6 +215,7 @@
 
 	.weird-header .info .tit {
 		font-size: 24px;
+		font-family: 'raleway-b';
 	}
 
 	.weird-header .justify-content-end {
@@ -248,6 +249,14 @@
 		display: none;
 	}
 
+	.rating {
+		margin: 0 auto 30px;
+	}
+
+	.rating>label:last-child:before {
+		margin-left: 0;
+	}
+
 	.rate .log-btn {
 		margin-left: 0;
 	}
@@ -272,7 +281,15 @@
 		width: 40px;
 		height: 40px;
 		font-size: 12px;
-		font-family: 'roboto';
+		font-family: 'sans';
+	}
+
+	.map {
+		padding-bottom: 30px;
+	}
+
+	.line-title {
+		font-size: 24px;
 	}
 }
 
@@ -547,7 +564,8 @@
 	}
 
 	.news-box .tit .name .name-txt {
-		font-size: 14px
+		font-size: 12px;
+		font-family: 'raleway-m';
 	}
 
 	.news-box .icons {
@@ -568,6 +586,10 @@
 
 	.icons-bar {
 		padding-top: 20px;
+	}
+
+	.icons .icon {
+		font-size: 12px;
 	}
 
 	/*    .news-box */
@@ -649,6 +671,10 @@
 		margin-bottom: 30px;
 	}
 
+	.hashtags-page {
+		padding: 30px 0 20px;
+	}
+
 	.hashtags .log-white {
 		margin-bottom: 30px;
 	}
@@ -695,6 +721,11 @@
 	.folow-row {
 		padding-bottom: 30px;
 		margin-bottom: 30px;
+	}
+
+	.folow-row .tit .name {
+		font-size: 12px;
+		font-family: 'raleway-m';
 	}
 
 	/* .newsfeed .container {
@@ -876,7 +907,7 @@
 	}
 
 	.filter .filter-form .log-btn {
-		margin-right: 50px;
+		margin-right: 20px;
 	}
 
 	.filter .filter-form .btns {
@@ -949,7 +980,8 @@
 	}
 
 	.box .box-price {
-		font-size: 12px
+		font-size: 12px;
+		font-family: 'sans';
 	}
 
 	.news-box.newsfeed-box.newsfeed-box-search {
