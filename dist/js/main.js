@@ -22,7 +22,6 @@ $(document).ready(function () {
 		
 	}, 3000/100)
 	
-	
 	//    nav open
 	//    $('.tog-btn').on('click', function () {
 	//        $('.main-nav').toggleClass('show-nav');
@@ -109,8 +108,9 @@ $(document).ready(function () {
 		$('.drop-container').removeClass('container-poend');
 		$('.drpo-btn').removeClass('open');
 		$('.news-box').removeClass('top-z');
+		$('.icon.share-top .share-ico').removeClass('active');
 	});
-	$('.drpo-btn , .drop-mnu , .news-box').click(function (e) {
+	$('.drpo-btn , .drop-mnu , .news-box, .icon.share-top').click(function (e) {
 		e.stopPropagation();
 	});
 
@@ -145,6 +145,15 @@ $(document).ready(function () {
 		} else {
 			$('.sub-collapse').removeClass('open');
 			$(this).siblings('.sub-collapse').addClass('open');
+		}
+	});
+//    share icons
+	$('.icon.share-top').on('click', function () {
+		if ($(this).find('.share-ico').hasClass('active')) {
+			$('.share-ico').removeClass('active');
+		} else {
+			$('.share-ico').removeClass('active');
+			$(this).find('.share-ico').addClass('active');
 		}
 	});
 
