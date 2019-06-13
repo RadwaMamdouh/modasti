@@ -3739,6 +3739,10 @@ a {
 	flex-wrap: wrap;
 	margin-bottom: 0;
 }
+.size-filter > div
+{
+	width: 30%;
+}
 
 .size-filter .box-size {
 	border: 1px solid #000;
