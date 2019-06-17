@@ -2037,6 +2037,10 @@ a {
 	margin-bottom: 30px;
 }
 
+.title-container .main-title {
+	margin-bottom: 0 !important;
+}
+
 .main-title {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -2242,7 +2246,7 @@ a {
 
 .news-box .tit .name .name-txt {
 	font-family: 'raleway-m';
-	font-size: 13px
+	font-size: 18px
 }
 
 .news-box .tit .img-u {
@@ -3404,6 +3408,10 @@ a {
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 30px;
+}
+
+.profile-details .stylist span {
+	text-transform: uppercase;
 }
 
 .profile-details .stylist .line {

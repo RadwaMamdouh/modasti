@@ -324,7 +324,7 @@
     }
 
     .profile-details .user-info {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .profile-details .user-info .bio {
@@ -333,6 +333,15 @@
 
     .profile-details .user-info p {
         font-size: 14px;
+    }
+
+    .profile-details .stylist {
+        margin-bottom: 30px;
+    }
+
+    .profile-details .stylist span {
+        font-size: 14px;
+	    font-family: 'raleway-m';
     }
 
     .box .box-img {
