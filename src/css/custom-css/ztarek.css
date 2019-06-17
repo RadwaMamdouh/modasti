@@ -841,6 +841,7 @@
 		justify-content: center;
 		max-width: none;
 		height: 40px;
+		padding: 0 !important;
 	}
 
 	.newsfeed .other-side .log-btn {

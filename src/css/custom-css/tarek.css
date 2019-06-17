@@ -867,7 +867,7 @@ a {
 	flex-direction: column;
 	-ms-align-items: center;
 	align-items: center;
-	padding: 18px 10px 10px;
+	padding: 20px 10px;
 	border-bottom: 1px solid rgba(112, 112, 112, .1);
 }
 
@@ -894,8 +894,9 @@ a {
 	font-weight: bold;
 	font-size: 14px;
 	text-transform: capitalize;
-	/color: #000;
+	color: #000;
 	background-size: 250%;
+	margin-bottom: 10px;
 }
 
 .drop-mnu.user-mnu .up .mail {
@@ -904,14 +905,15 @@ a {
 }
 
 .drop-mnu.user-mnu .center {
-	padding: 15px 10px 12px;
+	padding: 20px 10px;
 	border-bottom: 1px solid rgba(112, 112, 112, .1);
+	text-align: center;
 }
 
 .drop-mnu.user-mnu .link {
 	font-size: 14px;
 	display: block;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	color: #000;
 	background-size: 250%;
 }
@@ -926,7 +928,8 @@ a {
 }
 
 .drop-mnu.user-mnu .down {
-	padding: 18px 10px;
+	padding: 20px 10px;
+	text-align: center;
 }
 
 /*.user-mnu*/
@@ -3454,7 +3457,7 @@ a {
 
 .profile-data .log-btn {
 	height: 60px;
-	padding: 0 24px;
+	padding: 0 24px !important;
 }
 
 /*==============================// end profile-data */
