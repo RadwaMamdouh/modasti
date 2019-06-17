@@ -248,7 +248,6 @@
 	.filter .box .btns {
 		display: none;
 	}
-<<<<<<< HEAD
 
 	.rating {
 		margin: 0 auto 30px;
@@ -258,12 +257,6 @@
 		margin-left: 0;
 	}
 
-=======
-	.size-filter .box-size
-	{
-		width: 88px;
-	}
->>>>>>> 750307ae00c0e61a1cc624d704530d01943133fb
 	.rate .log-btn {
 		margin-left: 0;
 	}
