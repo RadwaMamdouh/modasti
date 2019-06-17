@@ -296,7 +296,7 @@
     }
 
     .wins-content {
-        padding: 50px 0 20px;
+        padding: 30px 0 0;
     }
 
     .profile-details .user-data {
@@ -349,6 +349,11 @@
         height: 298px;
         max-width: 100%;
         max-height: 100%;
+    }
+
+    .box .box-img a {
+        width: 164px;
+        height: 298px;
     }
 
     .box .wins-cup {
@@ -485,7 +490,7 @@
         align-items: center;
         justify-content: flex-start;
         position: relative;
-        margin: 30px 0;
+        margin: 30px 0 0;
         left: 0;
     }
 
@@ -542,6 +547,7 @@
         position: relative;
         width: 40px;
         height: 40px;
+        margin-top: 30px;
     }
 
     .box .btns.middle-btn .log-btn {
@@ -555,7 +561,7 @@
 
     /********** myProfile-my-sets-details.html ************/
     .sets-details {
-        padding: 30px 0;
+        padding: 30px 0 0;
     }
 
     .set-view {
@@ -586,7 +592,8 @@
         width: 163px;
         height: 50px;
         max-width: 100%;
-        padding: 19px 20px; 
+        padding: 19px 20px;
+        margin-bottom: 20px;
     }
 
     .sets-details .set-data .btns .log-btn span {
@@ -595,8 +602,20 @@
         line-height: 24px;
     }
 
+    .sets-details .set-data .btns .log-btn.delete img {
+        width: 17px;
+        height: 16px;
+    }
+
+    .sets-details .set-data .btns .log-btn.edit img {
+        width: 11px;
+        height: 11px;
+    }
+
     .edit-del-btns {
         justify-content: flex-start;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .sets-details .set-data .edit-del-btns .log-btn span {
@@ -628,6 +647,7 @@
     .comments .comment-area .user-img {
         width: 46px;
         height: 46px;
+        margin-right: 20px;
     }
 
     .comments .comment-area .write-comment textarea {
@@ -673,7 +693,7 @@
 
     /* start Items Used */
     .items-used {
-        padding-bottom: 0;
+        padding: 30px 0 0;
     }
 
     .items-used .box .btns {
@@ -902,6 +922,10 @@
     .profile-details .btns button[type=submit] {
         margin-bottom: 0;
         margin-right: 19px;
+    }
+
+    .profile-details .btns .log-btn {
+        padding: 0 !important;
     }
 
     .profile-details .collection-name .input {
@@ -1244,8 +1268,28 @@
     }
 
     /********** join-contest.html ************/
+    .contest-bar {
+        padding: 28px 0;
+    }
+
     .contest-bar .collapse-btn {
         display: block;
+    }
+
+    .contest-bar .collapse-btn img {
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+    }
+
+    .contest-bar.active .collapse-btn img {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
     }
 
     .contest-bar .tabs-form {
@@ -1285,6 +1329,7 @@
 
     .contest-bar .contest-tabs li .tabs-links {
         margin: 0;
+        font-size: 12px;
     }
 
     .contest-bar .tabs-form form {
@@ -1296,7 +1341,7 @@
     }
 
     .join-contest {
-        padding: 30px 0 0;
+        padding: 20px 0 0;
     }
 
     .drop-btns {
@@ -1306,6 +1351,7 @@
 
     .drop-btns .log-btn {
         height: 40px;
+        padding: 0 !important;
     }
 
     .drop-btns .log-btn:first-child {
@@ -1314,10 +1360,16 @@
 
     .droppable-area {
         height: 622px;
+        margin-bottom: 20px;
+    }
+
+    .drop-tools {
+        margin-bottom: 20px;
     }
 
     .draggable-items .set-item .item-img {
         height: 298px;
+        margin-bottom: 20px;
     }
 
     .droppable-area span {

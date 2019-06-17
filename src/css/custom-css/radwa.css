@@ -620,7 +620,10 @@ label {
     height: 19px;
 }
 /* End Business User submit Modal */
-
+.custom-modal .modal-card .card-content .log-btn .close-icon {
+    width: 17px;
+    height: 17px;
+}
 
 
 
@@ -1091,7 +1094,7 @@ label {
 }
 
 .profile-details .info-row {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1107,7 +1110,7 @@ label {
 }
 
 .profile-details .user-info {
-    margin-top: 11px;
+    padding-top: 10px;
 }
 
 .profile-details .user-info .bio {
@@ -1123,6 +1126,10 @@ label {
     width: 17px;
     height: 17px;
     max-width: 100%;
+}
+
+.profile-details .btns .log-btn {
+    padding: 0 24px !important;
 }
 
 .box {
@@ -1142,6 +1149,11 @@ label {
     justify-content: center;
     position: relative;
     border: 1px solid #ECECEC;
+}
+
+.box .box-img a {
+    width: 255px;
+    height: 468px;
 }
 
 .box .box-img img {
@@ -1651,7 +1663,8 @@ label {
 
 .comments .comment-area .write-comment {
     width: 100%;
-    max-width: 84%;
+    /* max-width: 84%; */
+    max-width: calc(100% - 94px);
 }
 
 .comments .comment-area .write-comment textarea {
@@ -1675,7 +1688,7 @@ label {
 
 .comments .user-comments {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     margin-bottom: 60px;
 }
@@ -1733,6 +1746,10 @@ label {
 /* Start Items Used */
 .items-used {
     padding: 60px 0 30px;
+}
+
+.sets-details .items-used {
+    padding-bottom: 0;
 }
 
 .items-used .box .box-img {
@@ -3105,7 +3122,7 @@ label {
 }
 
 .join-contest {
-    padding: 60px 0;
+    padding: 60px 0 30px;
 }
 
 .droppable-area {
@@ -3172,6 +3189,7 @@ label {
 
 .drop-btns .log-btn {
     height: 60px;
+    padding: 0 24px !important;
 }
 
 .draggable-items .set-item {
