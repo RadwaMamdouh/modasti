@@ -657,6 +657,10 @@
 		font-size: 12px;
 	}
 
+	.icons .icon span {
+		font-family: 'sans';
+	}
+
 	/*    .news-box */
 
 
@@ -1289,7 +1293,20 @@
 	{
 		width: 17px;
 	}
+
+	.online-box .up .info {
+		width: calc(100% - 65px);
+	}
 	
+	.online-box .up .name {
+		font-size: 16px;
+		font-family: 'raleway-m';
+	}
+
+	.online-box .up .date {
+		font-size: 12px;
+		font-family: 'sans';
+	}
 /*	messages*/
 	
 /*	business user profile*/

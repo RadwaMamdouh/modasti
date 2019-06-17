@@ -2305,7 +2305,7 @@ a {
 }
 
 .icons .icon span {
-	font-family: 'sans';
+	font-family: 'sans-m';
 }
 
 
@@ -4344,6 +4344,7 @@ a {
 	resize: none;
 	font-size: 14px;
 	overflow: hidden;
+	font-family: 'raleway-m';
 }
 
 .t-comnts-form .t-comnt-submit {
@@ -4357,6 +4358,10 @@ a {
 	align-items: center;
 	text-transform: uppercase;
 	font-size: 14px;
+	font-family: 'raleway-m';
+}
+
+.t-comnts-form .t-comnt-submit span {
 	font-family: 'raleway-m';
 }
 
@@ -4488,7 +4493,9 @@ a {
 }
 
 .online-box .up .date {
-	font-size: 12px;
+	font-size: 10px;
+	font-family: 'sans-m';
+	text-transform: uppercase;
 }
 
 .online-box .up .name {
@@ -4505,7 +4512,7 @@ a {
 }
 
 .online-box .up .last-msg {
-	font-size: 13px;
+	font-size: 14px;
 	color: rgba(0, 0, 0, .4);
 }
 
@@ -4541,6 +4548,7 @@ a {
 .msg-box.receive .img-box {
 	margin-right: 0;
 	margin-left: 20px;
+	direction: ltr;
 }
 
 .msg-box .img {
@@ -4572,6 +4580,7 @@ a {
 .msg-box.receive .msg-content {
 	background-color: #000;
 	color: #fff;
+	direction: ltr;
 }
 
 .mob-msg-head {
