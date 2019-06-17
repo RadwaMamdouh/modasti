@@ -278,6 +278,8 @@ label {
 .log-btn span {
     color: #fff;
     line-height: 16px;
+    font-size: 14px;
+    font-family: 'raleway-m';
 }
 
 .log-btn:hover span {
@@ -558,7 +560,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 30px;
+    padding: 20px;
 }
 
 .custom-modal .modal-card .card-head img.close-img {
@@ -1790,7 +1792,7 @@ label {
 }
 
 .quickView-modal .quick-view-details .details {
-    padding: 0 60px 60px 30px;
+    padding: 0 60px 0 30px;
 }
 
 .quickView-modal .quick-view-details .details .item-name {
@@ -1845,7 +1847,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'roboto-m';
+    font-family: 'sans-m';
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
@@ -2011,7 +2013,7 @@ label {
 
 /******************************************** items-details.html **********************************/
 .items-details {
-    padding: 60px 0 30px;
+    padding: 60px 0 40px;
 }
 
 .items-details .quick-view .owl-guide {
@@ -2027,12 +2029,12 @@ label {
 
 .items-details .quick-view .owl-guide .item img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: auto;
+    /* object-fit: contain; */
 }
 
 .items-details .quick-view .owl-dots {
-    padding: 42px 63px;
+    padding: 0 63px;
     position: absolute;
     left: -286px;
     top: 0;
@@ -2047,7 +2049,7 @@ label {
 }
 
 .items-details .quick-view-details .details {
-    padding: 0 60px 60px 30px;
+    padding: 0 60px 0 30px;
 }
 
 .items-details .quick-view-details .details .item-name {
@@ -2101,7 +2103,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'roboto-m';
+    font-family: 'sans-m';
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
@@ -2492,7 +2494,7 @@ label {
 
 /******************************* terms-of-services.html **************************/
 .terms-head {
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: #000;
 }
 
@@ -2501,7 +2503,7 @@ label {
 }
 
 .terms-content {
-    padding: 108px 0 100px;
+    padding: 60px 0;
 }
 
 .terms-content p {
@@ -2524,7 +2526,7 @@ label {
 
 /******************************* data-feed.html **************************/
 .data-feed-head {
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: #000;
 }
 
@@ -2550,6 +2552,10 @@ label {
     padding: 0 30px;
 }
 
+.data-feed-content table thead th:first-child {
+    padding-left: 0;
+}
+
 .data-feed-content .tite {
     margin-bottom: 0;
 }
@@ -2566,13 +2572,21 @@ label {
     border-bottom: 0;
 }
 
+.data-feed-content table tbody tr:last-child td {
+    padding-bottom: 0;
+}
+
 .data-feed-content table tbody td {
-    padding: 30px 30px 46px 30px;
+    padding: 30px;
     vertical-align: top;
 }
 
 .data-feed-content table tbody tr:first-child td {
     border-top: 0;
+}
+
+.data-feed-content table tbody td:first-child {
+    padding-left: 0;
 }
 
 .data-feed-content table tbody td .t-tit {
@@ -3472,7 +3486,7 @@ label {
 
 .b-edit-form .profile-data .form-btns .log-btn {
     height: 60px;
-    padding: 0 24px;
+    padding: 0 24px !important;
 }
 
 .b-edit-form .profile-data .form-btns .log-btn.modal-btn img {
