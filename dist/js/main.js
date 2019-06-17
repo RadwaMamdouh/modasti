@@ -108,9 +108,9 @@ $(document).ready(function () {
 		$('.drop-container').removeClass('container-poend');
 		$('.drpo-btn').removeClass('open');
 		$('.news-box').removeClass('top-z');
-		$('.icon.share-top .share-ico').removeClass('active');
+		$('.icon.share-top .share-ico , .icons .share2btn .share-icons , .share-bar-container').removeClass('active');
 	});
-	$('.drpo-btn , .drop-mnu , .news-box, .icon.share-top').click(function (e) {
+	$('.drpo-btn , .drop-mnu , .news-box, .icon.share-top , .icons .share2btn .d-flex').click(function (e) {
 		e.stopPropagation();
 	});
 
@@ -156,6 +156,23 @@ $(document).ready(function () {
 			$(this).find('.share-ico').addClass('active');
 		}
 	});
+
+//    share icons
+	$('.icons .share2btn .d-flex').on('click', function () {
+		if ($(this).parents('.share-bar-container').hasClass('active')) {
+			$('.share-icons').removeClass('active');
+			$('.share-bar-container').removeClass('active');
+			console.log('1')
+		} else {
+			$('.share-icons').removeClass('active');
+			$(this).siblings('.share-icons').addClass('active');
+			$('.share-bar-container').removeClass('active');
+			$(this).parents('.share-bar-container').addClass('active');
+			console.log('2')
+		}
+	});
+	
+
 
 
 

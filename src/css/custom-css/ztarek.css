@@ -107,6 +107,20 @@
 }
 
 @media (max-width: 1085px) {
+	.weird-header .main-tit,
+	.weird-header .main-tit.about
+	{
+		font-size: 45px;
+		width: 520px;
+		line-height: 71px;
+	}
+	.weird-header .weird-shape
+	{
+		height: 640px;
+	}
+}
+
+@media (max-width: 1023px) {
 	.weird-header {
 		padding: 30px 0;
 	}
@@ -114,7 +128,7 @@
 	.weird-header .main-tit {
 		font-size: 45px;
 		padding: 0;
-		margin: 0 0 30px;
+		margin: 0 0 30px; 
 		line-height: 54px;
 		background-color: transparent;
 		width: 313px;
@@ -129,6 +143,7 @@
 		height: 177px;
 		writing-mode: inherit;
 		border-width: 5px;
+		left: 0;
 	}
 
 	.page404-container.weird-header .weird-shape::before
@@ -147,7 +162,14 @@
 		background-color: #fff;
 		min-width: 200px;
 	}
-
+	.page404-container.weird-header .main-tit::after
+	{
+		display: none;
+	}
+	.page500-container .page404 .info-content
+	{
+		margin-bottom: 0;
+	}
 	.page404-container.weird-header .weird-shape p,
 	.weird-header .weird-shape p
 	{
@@ -157,6 +179,7 @@
 	{
 		font-size: 107px;
 		line-height: 90px;
+		height: auto;
 		margin-top: -60px;
 		background: #fff;
 		display: inline-block;
@@ -461,9 +484,42 @@
 	{
 		font-size: 12px;
 	}
+	
+	
 	/*    footer*/
-
+	.newsfeed .other-side .log-btn
+	{
+		padding: 0;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+	}
 	/*    .about-us */
+	
+	.profile-details .user-data .user-name
+	{
+		width: calc(100% - 100px);
+	}
+	.profile-details .user-data .user-name a
+	{
+		opacity: 1
+	}
+	
+	.weird-header
+	{
+		padding: 30px 0;
+	}
+	.socialize .info-content
+	{
+		font-size: 14px
+	}
 	.weird-header .main-tit.about {
 		margin-bottom: 0;
 	}
@@ -473,7 +529,7 @@
 	}
 
 	.weird-shape.about::before {
-		width: 85%;
+		width: 95%;
 	}
 
 	.weird-header .main-tit.about {
@@ -481,10 +537,11 @@
 	}
 
 	.socialize {
+		padding: 30px 0;
 		padding-bottom: 0;
 		position: relative;
 		overflow: hidden;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 		margin-top: 0;
 	}
 
@@ -525,7 +582,10 @@
 	.the-name .container {
 		padding: 0 35px;
 	}
-
+	.inspire .info-content
+	{
+		font-size: 14px;
+	}
 	.inspire {
 		margin-bottom: 30px;
 	}
@@ -535,7 +595,7 @@
 	}
 
 	.the-name {
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 
 	/*    .about-us */
@@ -713,9 +773,13 @@
 
 	.newsfeed .contest-side .log-btn {
 		margin: auto;
-		top: -52px;
+		top: -20px;
 		position: relative;
 		z-index: 9;
+	}
+	.newsfeed .owl-contest
+	{
+		margin-bottom: 0;
 	}
 
 	.newsfeed .owl-sets .owl-dots,
@@ -726,6 +790,9 @@
 	.folow-row {
 		padding-bottom: 30px;
 		margin-bottom: 30px;
+	}
+	.folow-row:last-child {
+		margin-bottom: 0;
 	}
 
 	.folow-row .tit .name {
@@ -766,7 +833,10 @@
 	.log-btn span {
 		display: none !important;
 	}
-
+	.save-to-dropdown .new-collection-box .new-collection-form
+	{
+		padding: 0;
+	}
 	.save-to-dropdown .new-collection-box .new-collection-form .form-group {
 		margin-bottom: 10px;
 	}
@@ -811,7 +881,8 @@
 	}
 	.sent-modal.custom-modal .modal-card .card-content p
 	{
-		margin-bottom: 0;
+		margin-bottom: 30px;
+		font-size: 14px;
 	}
 	.sent-modal.custom-modal .modal-card .card-content .log-btn {
 		display: inline-block;
@@ -834,7 +905,24 @@
 		justify-content: center;
 		max-width: none;
 		height: 40px;
-		padding: 0 !important;
+		width: 40px;
+	}
+	.profile-data .log-btn:first-child
+	{
+		margin-right: 20px;
+	}
+	.profile-data .correct
+	{
+		top: 47px;
+	}
+	.profile-data .log-btn.log-white img
+	{
+		width: 17px;
+		height: auto;
+	}
+	.profile-data
+	{
+		margin-bottom: 0;
 	}
 
 	.newsfeed .other-side .log-btn {
@@ -857,6 +945,7 @@
 		transform: translateX(50%);
 	}
 
+/*
 	.newsfeed .other-side {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -866,6 +955,7 @@
 		-ms-align-items: flex-start;
 		align-items: flex-start;
 	}
+*/
 
 	.newsfeed .other-side .drop-container {
 		display: inline-block;
@@ -974,7 +1064,7 @@
 	}
 
 	.other-options.drop-mnu.open {
-		transform: none;
+		transform: translateX(35%);
 		right: 0;
 	}
 
