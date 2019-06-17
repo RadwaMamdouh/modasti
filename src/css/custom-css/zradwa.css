@@ -1599,7 +1599,7 @@
         font-size: 14px;
     }
 
-    .newsfeed .news-box .icons::before {
+    .newsfeed .news-box.newsfeed-box .icons::before {
         display: none;
     }
 }

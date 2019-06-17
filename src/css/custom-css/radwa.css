@@ -242,7 +242,7 @@ label {
     content: '';
     top:0;
     left: -1px;
-    width: 100%;
+    width: 105%;
     height: 100%;
     background-color: #fff;
     transform-origin: left;
@@ -3866,4 +3866,17 @@ label {
 .news-box.shared-box .icons-bar {
     border-top: none;
     padding-top: 0;
+}
+
+.news-box:not(.newsfeed-box) .icons {
+    position: relative;
+    padding-top: 30px;
+}
+
+.news-box:not(.newsfeed-box) .icons::before {
+    content: '';
+    border: 1px solid #ececec;
+    position: absolute;
+    top: 0;
+    width: 56px;
 }
