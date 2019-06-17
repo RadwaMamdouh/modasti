@@ -291,6 +291,10 @@
         justify-content: flex-start;
     }
 
+    .myProfile-tabs .prof-tabs li:first-child .tabs-links {
+        margin-left: 0;
+    }
+
     .wins-content {
         padding: 50px 0 20px;
     }
@@ -320,7 +324,7 @@
     }
 
     .profile-details .user-info {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .profile-details .user-info .bio {
@@ -329,6 +333,15 @@
 
     .profile-details .user-info p {
         font-size: 14px;
+    }
+
+    .profile-details .stylist {
+        margin-bottom: 30px;
+    }
+
+    .profile-details .stylist span {
+        font-size: 14px;
+	    font-family: 'raleway-m';
     }
 
     .box .box-img {
@@ -452,7 +465,7 @@
     }
 
     .box .box-tit {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 24px;
         width: 123px;
         max-width: 100%;
@@ -674,6 +687,7 @@
     /********** items-details.html ************/
     .items-details {
         overflow: hidden;
+        padding: 30px 0 0;
     }
 
     .items-details .quick-view {
@@ -690,6 +704,8 @@
 
     .items-details .quick-view .owl-guide .item {
         height: 496px;
+        display: flex;
+        align-items: center;
     }
 
     .items-details .owl-carousel .owl-stage-outer {
@@ -721,6 +737,7 @@
         width: 53px;
         height: 36px;
         margin-right: 20px;
+        font-size: 12px;
     }
 
     .item-description .description-tit {
@@ -755,6 +772,10 @@
 
     .items-used.related-items .box-btn {
         display: block;
+    }
+
+    .items-used.related-items .box-btn .log-btn {
+        margin-top: 0;
     }
 
     .items-used.related-items .box .box-tit {
@@ -901,6 +922,10 @@
 
 
     /********** help.html ************/
+    .help-head {
+        padding: 30px 0;
+    }
+
     .help-head .left {
         display: flex;
         align-items: flex-start;
@@ -916,10 +941,20 @@
         line-height: 49px;
     }
 
+    .collapseing {
+        padding: 30px 0;
+    }
+
     .collapse-box .collapse-btn .btn-txt {
         /* max-width: 294px; */
         width: 100%;
         overflow: hidden;
+    }
+
+    .collapse-box.active .collapse-content {
+        padding-top: 10px;
+        font-size: 14px;
+        font-family: 'raleway-m';
     }
 
     /*********** terms-of-services ********/
@@ -928,7 +963,7 @@
     }
 
     .terms-content {
-        padding: 53px 0 50px;
+        padding: 30px 0;
     }
 
     .terms-content p:not(.t-title) {
@@ -938,7 +973,7 @@
 
     .terms-content p.t-title {
         margin-bottom: 30px;
-        width: 194px;
+        /* width: 194px; */
     }
 
     /*********** data-feed ********/
@@ -955,7 +990,12 @@
     }
 
     .data-feed-content {
-        padding: 50px 0;
+        padding: 30px 0;
+    }
+
+    .data-feed-content table tbody td p {
+        font-size: 14px;
+        font-family: 'raleway-m';
     }
 
     /********** myProfile-wins-empty.html ************/
@@ -1398,7 +1438,7 @@
 
     .b-edit-form .profile-data .form-btns .log-btn {
         height: 40px;
-        padding: 0;
+        padding: 0 !important;
     }
 
     .b-edit-form .profile-data .form-btns .log-btn:nth-child(1) {
@@ -1559,7 +1599,7 @@
         font-size: 14px;
     }
 
-    .newsfeed .news-box .icons::before {
+    .newsfeed .news-box.newsfeed-box .icons::before {
         display: none;
     }
 }
@@ -1653,6 +1693,7 @@
 
     .help-head .tite {
         width: 50%;
+        line-height: 34px;
     }
 
     .help-head .left .behind-u {

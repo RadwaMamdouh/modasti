@@ -241,8 +241,8 @@ label {
     position: absolute;
     content: '';
     top:0;
-    left: 0;
-    width: 100%;
+    left: -1px;
+    width: 105%;
     height: 100%;
     background-color: #fff;
     transform-origin: left;
@@ -278,6 +278,8 @@ label {
 .log-btn span {
     color: #fff;
     line-height: 16px;
+    font-size: 14px;
+    font-family: 'raleway-m';
 }
 
 .log-btn:hover span {
@@ -558,7 +560,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 30px;
+    padding: 20px;
 }
 
 .custom-modal .modal-card .card-head img.close-img {
@@ -1790,7 +1792,7 @@ label {
 }
 
 .quickView-modal .quick-view-details .details {
-    padding: 0 60px 60px 30px;
+    padding: 0 60px 0 30px;
 }
 
 .quickView-modal .quick-view-details .details .item-name {
@@ -1845,7 +1847,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'roboto-m';
+    font-family: 'sans-m';
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
@@ -2011,7 +2013,7 @@ label {
 
 /******************************************** items-details.html **********************************/
 .items-details {
-    padding: 60px 0 30px;
+    padding: 60px 0 40px;
 }
 
 .items-details .quick-view .owl-guide {
@@ -2027,12 +2029,12 @@ label {
 
 .items-details .quick-view .owl-guide .item img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: auto;
+    /* object-fit: contain; */
 }
 
 .items-details .quick-view .owl-dots {
-    padding: 42px 63px;
+    padding: 0 63px;
     position: absolute;
     left: -286px;
     top: 0;
@@ -2047,7 +2049,7 @@ label {
 }
 
 .items-details .quick-view-details .details {
-    padding: 0 60px 60px 30px;
+    padding: 0 60px 0 30px;
 }
 
 .items-details .quick-view-details .details .item-name {
@@ -2101,7 +2103,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'roboto-m';
+    font-family: 'sans-m';
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
@@ -2347,7 +2349,7 @@ label {
 
 /******************************************** help.html **********************************/
 .help-head {
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: #000;
     font-size: 0;
     line-height: 16px;
@@ -2401,7 +2403,7 @@ label {
 
 /* Start Collapsing */
 .collapseing {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .collapse-box {
@@ -2412,6 +2414,8 @@ label {
 
 .collapse-box:last-child {
     margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .collapse-box .collapse-btn {
@@ -2419,12 +2423,14 @@ label {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    align-items: baseline;
 }
 
 .collapse-box .collapse-btn .btn-txt {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    align-items: baseline;
 }
 
 .collapse-box .collapse-btn .btn-txt img {
@@ -2488,7 +2494,7 @@ label {
 
 /******************************* terms-of-services.html **************************/
 .terms-head {
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: #000;
 }
 
@@ -2497,7 +2503,7 @@ label {
 }
 
 .terms-content {
-    padding: 108px 0 100px;
+    padding: 60px 0;
 }
 
 .terms-content p {
@@ -2520,7 +2526,7 @@ label {
 
 /******************************* data-feed.html **************************/
 .data-feed-head {
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: #000;
 }
 
@@ -2546,6 +2552,10 @@ label {
     padding: 0 30px;
 }
 
+.data-feed-content table thead th:first-child {
+    padding-left: 0;
+}
+
 .data-feed-content .tite {
     margin-bottom: 0;
 }
@@ -2562,13 +2572,21 @@ label {
     border-bottom: 0;
 }
 
+.data-feed-content table tbody tr:last-child td {
+    padding-bottom: 0;
+}
+
 .data-feed-content table tbody td {
-    padding: 30px 30px 46px 30px;
+    padding: 30px;
     vertical-align: top;
 }
 
 .data-feed-content table tbody tr:first-child td {
     border-top: 0;
+}
+
+.data-feed-content table tbody td:first-child {
+    padding-left: 0;
 }
 
 .data-feed-content table tbody td .t-tit {
@@ -3468,7 +3486,7 @@ label {
 
 .b-edit-form .profile-data .form-btns .log-btn {
     height: 60px;
-    padding: 0 24px;
+    padding: 0 24px !important;
 }
 
 .b-edit-form .profile-data .form-btns .log-btn.modal-btn img {
@@ -3755,9 +3773,14 @@ label {
 
 
 /****************************************************** newsfeed.html ***************************/
-.news-box {
+/* .news-box {
     padding-bottom: 30px;
     border-bottom: 1px solid #ececec;
+} */
+
+.news-box:first-child {
+    border-top: none;
+    padding-top: 0;
 }
 
 .news-box .img {
@@ -3772,10 +3795,10 @@ label {
     border: 1px solid #ECECEC;
 }
 
-.news-box .item-description {
+/* .news-box .item-description {
     padding-bottom: 30px;
     border-bottom: 1px solid #ECECEC;
-}
+} */
 
 .news-box .item-description .item-title {
     margin-bottom: 20px;
@@ -3790,6 +3813,8 @@ label {
 .news-box.shared-box {
     padding-bottom: 0;
     border-bottom: none;
+    border-top: 1px solid #ececec;
+    padding-top: 30px;
 }
 
 .news-box.shared-box .shared-tit {
@@ -3807,8 +3832,8 @@ label {
 }
 
 .news-box .item-price {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #ECECEC;
+    /* padding-bottom: 30px;
+    border-bottom: 1px solid #ECECEC; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -3836,4 +3861,22 @@ label {
     border-bottom: none;
     margin-bottom: 0;
     margin-top: 30px;
+}
+
+.news-box.shared-box .icons-bar {
+    border-top: none;
+    padding-top: 0;
+}
+
+.news-box:not(.newsfeed-box) .icons {
+    position: relative;
+    padding-top: 30px;
+}
+
+.news-box:not(.newsfeed-box) .icons::before {
+    content: '';
+    border: 1px solid #ececec;
+    position: absolute;
+    top: 0;
+    width: 56px;
 }
