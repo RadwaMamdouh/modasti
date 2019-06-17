@@ -968,7 +968,7 @@
 	.newsfeed .other-side > .log-btn:first-child {
 		padding-top: 12px;
 	}
-
+ 
 	.newsfeed .other-side .drop-container::after,
 	.newsfeed .other-side .drop-container::before {
 		left: 40%;
@@ -976,9 +976,10 @@
 	}
 
 	/*    .news-feed page*/
-
+ 
 
 	/*    filter page*/
+	
 
 	.filter {
 		padding: 30px 0 0;
