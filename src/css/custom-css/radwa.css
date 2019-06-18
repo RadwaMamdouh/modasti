@@ -1967,10 +1967,13 @@ label {
 /* Start Quid Size Modal */
 .sizeQuid-modal .card-head {
     padding: 20px 20px 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .custom-modal.sizeQuid-modal .card-content {
-    padding: 0 95px 0;
+    padding: 0 30px 66px;
     overflow: auto;
 }
 
@@ -1984,6 +1987,7 @@ label {
     line-height: 44px;
     margin-bottom: 29px;
     text-transform: uppercase;
+    padding-top: 30px;
 }
 
 .sizeQuid-modal .tabs {
@@ -1993,16 +1997,52 @@ label {
     margin-bottom: 30px;
 }
 
-.sizeQuid-modal .tabs .cm {
-    margin-right: 57px;
+.sizeQuid-modal .tabs label {
+    margin: 0 20px;
+    text-transform: uppercase;
 }
 
-.sizeQuid-modal .custom-radio i {
+.sizeQuid-modal .tabs label:first-child {
+    margin-left: 0;
+}
+
+.sizeQuid-modal .custom-checkbox i {
     margin-right: 6px;
 }
 
-.sizeQuid-modal .custom-radio {
+.sizeQuid-modal .custom-checkbox {
     line-height: 16px;
+}
+.sizeQuid-modal .guid-sizes
+{
+    display: flex;
+}
+.sizeQuid-modal .guid-sizes .fixed-table
+{
+    width: 65px;
+}
+
+.sizeQuid-modal .guid-sizes .fixed-table tr:first-child td {
+    color: transparent;
+    font-family: 'raleway-m';
+}
+
+.sizeQuid-modal .guid-sizes .overflow-container
+{
+    width: calc(100% - 65px);
+    overflow-x: auto
+}
+
+.sizeQuid-modal .guid-sizes .overflow-container thead tr th:first-child {
+    border-left: 0;
+}
+
+.sizeQuid-modal .guid-sizes .overflow-container tbody tr td:first-child {
+    border-left: 0;
+}
+
+.sizeQuid-modal .guid-sizes .overflow-container tbody tr:first-child td {
+    font-family: 'raleway-m';
 }
 
 .sizeQuid-modal .guid-sizes table {
@@ -2015,15 +2055,21 @@ label {
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 22px;
+    border: 1px solid #000;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .sizeQuid-modal .guid-sizes table tbody tr td {
-    padding-bottom: 30px;
-}
-
-.sizeQuid-modal .guid-sizes table tbody .size-box {
-    margin: 0 auto;
+    padding: 22px;
+    border: 1px solid #000;
+    font-size: 14px;
+    font-family: 'sans-m';
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .inch-tab-content {
