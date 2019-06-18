@@ -299,7 +299,7 @@
         padding: 30px 0 0;
     }
 
-    .profile-details .user-data {
+    /* .profile-details .user-data {
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -342,7 +342,7 @@
     .profile-details .stylist span {
         font-size: 14px;
 	    font-family: 'raleway-m';
-    }
+    } */
 
     .box .box-img {
         width: 164px;
@@ -366,6 +366,7 @@
         width: 71px;
         height: 62px;
         margin-bottom: 20px;
+        max-width: none;
     }
 
     .box .icon-button {
@@ -376,7 +377,11 @@
 
     /********** myProfile-following.html ************/
     .following-content {
-        padding: 50px 0 20px;
+        padding: 50px 0 0;
+    }
+
+    .user-box {
+        padding: 23px;
     }
 
     .user-box .user-img {
@@ -1705,6 +1710,25 @@
     .reset-password .form-btn .log-btn span {
         display: block !important;
     }
+
+    .profile-details .user-data .user-name {
+        width: 100% !important;
+        white-space: nowrap;
+    }
+
+    .box .box-img {
+        width: 196px;
+        height: 468px;
+    }
+
+    .box .box-img a {
+        width: 196px;
+        height: 468px;
+    }
+
+    .filter .box .box-img {
+        height: 468px !important;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1714,6 +1738,53 @@
 @media (max-width: 768px) {
     .collapse-box .collapse-btn .btn-txt {
         max-width: 294px;
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-details .user-data {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 29px;
+    }
+
+    .profile-details .user-data .user-img {
+        margin-right: 20px;
+        width: 84px;
+        height: 84px;
+        margin-bottom: 0;
+    }
+
+    .profile-details .user-data .user-name {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .profile-details .info-row span.num {
+        font-size: 12px;
+        font-family: 'sans';
+    }
+
+    .profile-details .user-info {
+        margin-bottom: 30px;
+    }
+
+    .profile-details .user-info .bio {
+        font-size: 16px;
+    }
+
+    .profile-details .user-info p {
+        font-size: 14px;
+    }
+
+    .profile-details .stylist {
+        margin-bottom: 30px;
+    }
+
+    .profile-details .stylist span {
+        font-size: 14px;
+	    font-family: 'raleway-m';
     }
 }
 

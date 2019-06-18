@@ -1209,13 +1209,18 @@ label {
 }
 
 .box .box-icons {
-    padding: 30px 0;
+    padding: 30px 0 0;
 }
 
 .box .box-icons .heart img {
     width: 25px;
     height: 22px;
     max-width: 100%;
+}
+
+.wins-details .box-btn .log-btn img {
+    width: 18px;
+    height: 16px;
 }
 
 
@@ -1268,7 +1273,7 @@ label {
     font-size: 24px;
     margin-bottom: 14px;
     text-transform: capitalize;
-    line-height: 44px;
+    line-height: 25px;
 	color: #000;
 }
 
