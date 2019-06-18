@@ -710,6 +710,10 @@
     }
 
     /********** items-details.html ************/
+    .custom-modal.sizeQuid-modal .card-content {
+        padding: 0 30px 30px;
+    }
+
     .items-details {
         overflow: hidden;
         padding: 30px 0 0;
@@ -1717,12 +1721,12 @@
     }
 
     .box .box-img {
-        width: 196px;
+        width: 255px;
         height: 468px;
     }
 
     .box .box-img a {
-        width: 196px;
+        width: 255px;
         height: 468px;
     }
 
