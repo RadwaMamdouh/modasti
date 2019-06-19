@@ -4265,7 +4265,7 @@ a {
 }
 .page500-container .page404 .info-content
 {
-	margin-bottom: 38px;
+	margin-bottom: 40px;
 }
 
 .page404-container.weird-header .weird-shape {
@@ -4291,7 +4291,7 @@ a {
 	content: '';
 	display: block;
 	position: absolute;
-	top: 48px;
+	top: 52px;
 	left: 0;
 	width: 200px;
 	height: 325px;
