@@ -2022,7 +2022,7 @@ label {
     width: 65px;
 }
 
-.sizeQuid-modal .guid-sizes .fixed-table tr:first-child td {
+.sizeQuid-modal .guid-sizes .fixed-table tr td.empty-cell {
     color: transparent;
     font-family: 'raleway-m';
 }
@@ -2074,6 +2074,20 @@ label {
 
 .inch-tab-content {
     display: none;
+}
+
+
+/* Shoes Quide Size */
+.custom-modal.sizeQuid-modal.shoes-guide .card-content {
+    padding: 0 30px 30px;
+}
+
+.sizeQuid-modal.shoes-guide .guid-sizes .overflow-container tbody tr:first-child td {
+    font-family: 'sans-m';
+}
+
+.sizeQuid-modal.shoes-guide .guid-sizes table tbody tr td {
+    padding: 12px;
 }
 
 
@@ -3359,7 +3373,8 @@ label {
     bottom: 0;
     transform: translate(0, -50%);
     background-color: #000;
-    padding: 45px 43px 45px 2px;
+    padding: 60px 43px 60px 2px;
+    z-index: 2;
 }
 
 .business-img .b-search::before {
@@ -3547,6 +3562,28 @@ label {
     margin-bottom: 0;
 }
 
+.b-edit-form .profile-data textarea {
+    resize: none;
+    color: rgba(0,0,0,.3);
+    height: 45px;
+    line-height: 20px;
+}
+
+.b-edit-form .profile-data .change-pass {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-family: 'raleway-m';
+    text-decoration: underline !important;
+    line-height: 16px;
+    display: block;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.b-edit-form .profile-data .change-pass:hover {
+    color: #CFBDA8;
+}
+
 .b-edit-form .profile-data .form-btns {
     display: flex;
     align-items: center;
@@ -3669,7 +3706,7 @@ label {
 
 .coupon .b-search .coupon-date p {
     color: #fff;
-    font-family: 'raleway-m';
+    font-family: 'sans-m';
     font-size: 14px;
 }
 
@@ -3684,6 +3721,8 @@ label {
 
 .coupon-table {
     padding: 153px 0 60px;
+    position: relative;
+    z-index: 1;
 }
 
 .table {
@@ -3729,7 +3768,8 @@ label {
 .coupon-table table tbody tr td img {
     width: 93px;
     height: 71px;
-	object-fit: cover;
+    object-fit: cover;
+    max-width: none;
 }
 
 .coupon-table table tbody tr td p {
@@ -3782,7 +3822,7 @@ label {
     opacity: .30;
 }
 
-.coupon-form  .coupon-f {
+.coupon-form .coupon-f {
     position: relative;
     bottom: 0;
     background-color: #000;
@@ -3790,7 +3830,7 @@ label {
     margin-top: -60px;
 }
 
-.coupon-form  .coupon-f::before {
+.coupon-form .coupon-f::before {
     content: '';
     background-color: #000;
     position: absolute;
@@ -3825,6 +3865,18 @@ label {
     border-left: 0;
     color: #fff !important;
     opacity: .30;
+    font-family: 'sans-m' !important;
+}
+
+.coupon-form .profile-data textarea.input {
+    resize: none;
+    line-height: 20px;
+    height: 45px;
+    font-family: 'raleway-m' !important;
+}
+
+.coupon-form .profile-data .correct {
+    top: 40px;
 }
 
 .coupon-form .add-coupon {
@@ -3833,8 +3885,18 @@ label {
     justify-content: flex-end;
 }
 
+.coupon-form .add-coupon .log-btn {
+    margin-right: 0 !important;
+    width: 255px;
+}
+
+.coupon-form .add-coupon .log-btn img {
+    width: 35px !important;
+    height: auto !important;
+}
+
 .new-coupon-table {
-    padding: 60px 0 60px;
+    padding: 60px 0 !important;
 }
 
 
