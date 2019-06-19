@@ -1453,6 +1453,24 @@
         margin-top: -58px;
     }
 
+    .business-img .b-search.business-search {
+        padding: 20px 38px 20px 2px;
+        margin-top: 0;
+        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+    }
+
+    .business-img .b-search.business-search form button {
+        font-size: 0;
+    }
+
+    .business-img .b-search form input {
+        padding: 0 5px;
+    }
+
     .business-help {
         padding: 60px 0 50px;
     }
@@ -1653,6 +1671,10 @@
     .coupon-form .new-coupon-title {
         margin-bottom: 30px;
         font-family: 'raleway-b';
+    }
+
+    .coupon-form .profile-data .input {
+        font-size: 12px;
     }
 
     .coupon-form .add-coupon {
