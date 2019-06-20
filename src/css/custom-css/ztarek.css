@@ -1316,6 +1316,14 @@
 		padding: 30px 0;
 		margin-bottom: 0;
 	}
+	.b-profile-head .up-btn
+	{
+		height: 40px;
+	}
+	.b-profile-head .cho-file
+	{
+		padding: 22px 24px !important;
+	}
 	.b-profile-head .row
 	{
 		-ms-align-items: center;
@@ -1341,6 +1349,10 @@
 		font-size: 12px;
 		display: inline-block;
 	}
+	.profile-table
+	{
+		margin-bottom: 0;
+	}
 	.profile-table .container.in-list
 	{
 		overflow: auto
@@ -1349,6 +1361,14 @@
 	{
 		white-space: nowrap
 	}
+	.profile-table .table .tr .td
+	{
+		padding: 20px 10px;
+	}
+	.profile-table .table .tr .td:not(:first-child)
+	{
+		border-right: 0
+	}
 	.profile-table .table .general
 	{
 		display: block;
@@ -1356,6 +1376,10 @@
 	.drop-mnu.table-dropdown
 	{
 		left: -10px;
+	}
+	.drop-mnu.table-dropdown a
+	{
+		font-size: 12px
 	}
 	.profile-table .table .general .options
 	{
@@ -1373,6 +1397,10 @@
 		flex-wrap: wrap;
 		margin-top: 10px;
 	}
+	.b-profile-head .grid-controll img
+	{
+		height: 20px;
+	}
 	.profile-table .table .general .options *
 	{
 		width: 50%;
@@ -1388,8 +1416,10 @@
 	}
 	.profile-table .table .info-content
 	{
-		width: 154px;
+		width: 155px;
 		font-weight: bold;
+		margin-right: 36px;
+		max-width: 155px
 	}
 	.profile-table .in-list.container
 	{
@@ -1416,7 +1446,7 @@
 	}
 	.profile-table .row .general .img
 	{
-		height: 230px;
+		height: 250px;
 	}
 	
 /*	business user profile*/
@@ -1446,7 +1476,7 @@
 	.edite-item .form-btns .log-btn
 	{
 		width: 40px;
-		height: 40px;
+		height: 40px;	
 	}
 	.edite-item .form-btns .log-btn:first-child
 	{
@@ -1472,10 +1502,19 @@
 	{
 		margin-bottom: 20px;
 	}
-.loader .loader-content .persent .num {
-	font-size: 14px;
-	font-family: 'roboto-m';
-}
+	.loader .loader-content .persent .num {
+		font-size: 14px;
+		font-family: 'roboto-m';
+	}
+	.profile-table .location-drop-btn.container-poend::after, .profile-table .location-drop-btn.container-poend::before
+	{
+		left: 15px;
+	}
+	.profile-table .row .general .options *
+	{
+		margin-right: 30px;
+		font-size: 18px
+	}
 }
 
 @media (max-width: 525px) {
@@ -1484,7 +1523,7 @@
 	}
 	.b-profile-head .up-btn
 	{
-		margin-bottom: 10px;
+		margin-bottom: 0;
 	}
 	.notification-p .notifi-mnu .n-img
 	{
@@ -1532,6 +1571,10 @@
 		width: 18px;
 		height: 18px;
 	}
+	.b-profile-head .cho-file span
+	{
+		font-size: 12px;
+	}
 }
 
 @media (max-width: 375px) {
@@ -1577,7 +1620,17 @@
 	.header-m.header .icons-side .ico-link img {
 		margin: 0 15px;
 	}
-
+	.b-profile-head .row > div:nth-child(3),
+	.b-profile-head .row > div:nth-child(2)
+	{
+		width: 100%;
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	.b-profile-head .up-btn
+	{
+		margin-bottom: 15px;
+	}
 }
 
 @media (max-width: 922px) {
