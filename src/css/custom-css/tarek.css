@@ -3289,6 +3289,27 @@ a {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+.apply-modal-c.sent-modal.custom-modal .card-content
+{
+	padding: 50px 47px;
+}
+.apply-modal-c.sent-modal.custom-modal .modal-card .card-content .log-btn:nth-of-type(2) img
+{
+	width: 17px;
+	height: 17px;
+}
+.apply-modal-c.sent-modal .info-content
+{
+	max-width: 235px;
+}
+.apply-modal-c.sent-modal .info-content + p
+{
+	margin-bottom: 20px;
+}
+.apply-modal-c.custom-modal .modal-card .card-content p
+{
+	line-height: normal
+}
 
 .sent-modal.custom-modal .modal-card .card-content .log-btn:nth-of-type(2) {
 	margin-top: 30px;
