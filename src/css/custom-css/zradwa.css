@@ -1480,7 +1480,9 @@
     }
 
     .business-help .help-faqs .faqs {
-        margin-bottom: 61px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ececec;
     }
 
     .business-help .help-txt .txt-row .help-title {
@@ -1538,6 +1540,14 @@
     }
 
     /********** business-user.html ************/
+    .business-user .power-modasti {
+        padding: 30px 0;
+    }
+
+    .business-user .power-modasti .title {
+        margin-bottom: 30px;
+    }
+
     .business-user .power-modasti .title div {
         width: 100%;
     }
@@ -1547,6 +1557,10 @@
         line-height: 24px;
     }
 
+    .business-user .weird-shape.about::before {
+        width: 80%;
+    }
+
     .business-user .weird-header .weird-shape::before {
         bottom: -6px;
         left: -6px;
@@ -1554,6 +1568,9 @@
 
     .business-user .weird-header .main-tit.about {
         margin-top: -20px;
+        font-size: 46px;
+        font-family: 'raleway-b';
+        line-height: 54px;
     }
 
     .business-user .weird-header {
@@ -1566,6 +1583,7 @@
 
     .business-user .business-us {
         padding: 88px 0 30px;
+        margin-bottom: 30px;
     }
 
     .business-user .business-us .title div {
@@ -1574,6 +1592,11 @@
 
     .business-user .business-us .register-now {
         margin-bottom: 30px;
+        font-size: 12px;
+    }
+
+    .business-user .business-us .business-us-txt p {
+        font-size: 14px;
     }
 
     /********** coupon.html ************/
@@ -1804,7 +1827,21 @@
 }
 
 @media (max-width: 575px) {
+    
+}
 
+@media (max-width: 375px) {
+    .business-user .weird-header .main-tit.about {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .business-user .weird-header .weird-shape::before {
+        bottom: -7px;
+        left: -7px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1920,6 +1957,10 @@
 
     .b-edit-form .profile-data .form-btns .log-btn:nth-child(2) {
         margin-left: 10px;
+    }
+
+    .weird-header .weird-shape {
+        height: 615px !important;
     }
 }
 
