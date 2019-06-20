@@ -512,6 +512,7 @@ a {
 	transform: translateX(-50%);
 	transition-delay: .5s;
 	visibility: visible;
+	z-index: 999;
 }
 
 .location-mnu {
@@ -1662,6 +1663,14 @@ a {
 .myProfile-tabs a {
 	display: block;
 	line-height: 14px;
+}
+.res-collapse.myProfile-tabs .prof-tabs li .tabs-links
+{
+	color: #fff;
+}
+.res-collapse.myProfile-tabs .prof-tabs li .tabs-links:hover
+{
+	color: #cfbda8;
 }
 
 /*==============================// end brands page */
@@ -5094,6 +5103,11 @@ a {
 	font-size: 14px;
 	font-family: 'raleway-m';
 	line-height: 16px;
+	background-color: transparent;
+}
+.label .edite-input:disabled
+{
+	color: rgba(112, 112, 112, .2);
 }
 
 .label textarea.edite-input {
