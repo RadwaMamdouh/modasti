@@ -1497,16 +1497,30 @@
 
     /********** business-edit-account.html ************/
     .b-edit-account .b-search {
-        padding: 30px 0;
+        padding: 30px 0 30px 2px;
+    }
+
+    .update-img span {
+        font-size: 12px;
+        line-height: 14px;
     }
 
     .pull-bear {
         margin-bottom: 30px;
     }
 
+    .pull-bear .uploading {
+        margin-right: 18px;
+    }
+
+    .pull-bear span {
+        font-size: 24px;
+    }
+
     .b-edit-account .b-search .count span {
         font-size: 12px;
         white-space: nowrap;
+        font-family: 'sans';
     }
 
     .b-edit-account .b-search .count span:first-child {
@@ -1517,9 +1531,19 @@
         padding: 144px 0 30px;
     }
 
+    .b-edit-form .profile-data .correct {
+        top: 37px;
+    }
+
     .b-edit-form .profile-data .change-pass {
         font-size: 12px;
         line-height: 14px;
+    }
+
+    .b-edit-form .profile-data .input {
+        border-bottom-color: #ececec;
+        font-size: 12px;
+        line-height: 20px;
     }
 
     .b-edit-form .profile-data .form-btns {
@@ -1533,6 +1557,11 @@
 
     .b-edit-form .profile-data .form-btns .log-btn:nth-child(1) {
         margin-right: 10px;
+    }
+
+    .b-edit-form .profile-data .form-btns .log-btn:nth-child(1) img {
+        width: 17px;
+        height: 16px;
     }
 
     .b-edit-form .profile-data .form-btns .log-btn:nth-child(2) {
@@ -1753,6 +1782,39 @@
 
     .newsfeed .news-box.newsfeed-box .icons::before {
         display: none;
+    }
+
+    /******* profile-data-change-password.html ***********/
+    .profile-data.change-pass .input {
+        font-size: 12px;
+    }
+
+    .profile-data.m-user-account .correct,
+    .profile-data.change-pass .correct {
+        top: 36px;
+    }
+
+    .profile-data.m-user-account .log-btn,
+    .profile-data.change-pass .log-btn {
+        padding: 0 !important;
+    }
+
+    .profile-data.m-user-account .label .custom-checkbox {
+        width: 33%;
+        margin-bottom: 18px;
+    }
+
+    .profile-data.m-user-account .drop-mnu.size-mnu {
+        padding-bottom: 2px;
+    }
+
+    .profile-data.m-user-account .change-pass {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .profile-data.m-user-account .input {
+        font-size: 12px;
     }
 }
 
