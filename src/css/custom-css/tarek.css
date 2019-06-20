@@ -3289,6 +3289,27 @@ a {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+.apply-modal-c.sent-modal.custom-modal .card-content
+{
+	padding: 50px 47px;
+}
+.apply-modal-c.sent-modal.custom-modal .modal-card .card-content .log-btn:nth-of-type(2) img
+{
+	width: 17px;
+	height: 17px;
+}
+.apply-modal-c.sent-modal .info-content
+{
+	max-width: 235px;
+}
+.apply-modal-c.sent-modal .info-content + p
+{
+	margin-bottom: 20px;
+}
+.apply-modal-c.custom-modal .modal-card .card-content p
+{
+	line-height: normal
+}
 
 .sent-modal.custom-modal .modal-card .card-content .log-btn:nth-of-type(2) {
 	margin-top: 30px;
@@ -4628,6 +4649,11 @@ a {
 	margin-bottom: 60px;
 	background-color: #ECECEC;
 }
+.b-profile-head .log-btn
+{
+/*	padding: 0 24px !important;*/
+	height: 60px;
+}
 
 .b-profile-head .cho-file {
 	width: 100%;
@@ -4741,6 +4767,10 @@ a {
 .profile-table .table .tr {
 	display: table-row;
 }
+.profile-table .table .tr .td .thead-content
+{
+	font-family: 'raleway-m';
+}
 
 .profile-table .table .tr .td {
 	display: table-cell;
@@ -4759,12 +4789,12 @@ a {
 }
 
 .profile-table {
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 
 .profile-table .table .td:first-child {
 	width: 6%;
-	padding: 10px;
+	padding: 20px;
 }
 
 .profile-table .custom-radio {
@@ -4811,7 +4841,7 @@ a {
 .profile-table .table .info-content {
 	max-width: 155px;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'raleway-m';
 }
 
@@ -4877,7 +4907,7 @@ a {
 
 .profile-table .row .general .options * {
 	margin-bottom: 0;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 
 .profile-table .row .general .options *:last-child {
@@ -4903,10 +4933,13 @@ a {
 .profile-table .row .g-box .tit {
 	font-weight: bold;
 	font-size: 16px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	max-width: 160px
 }
-
+.profile-table .row .g-box .tit .info-content
+{
+	font-family: 'raleway-bo';
+}
 .profile-table .row .g-box > * {
 	padding: 0 20px;
 	border-bottom: 1px solid #ECECEC;
@@ -4934,11 +4967,14 @@ a {
 }
 
 .profile-table .row .g-box .info span {
-	font-weight: bold;
 	font-size: 14px;
 	font-family: 'raleway-m';
 }
-
+.profile-table .row .g-box .info .info-content
+{
+	font-family: 'raleway-m';
+	font-size: 14px;
+}
 .profile-table .first-sort {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -4969,7 +5005,7 @@ a {
 
 .profile-table .location-drop-btn.container-poend::after,
 .profile-table .location-drop-btn.container-poend::before {
-	z-index: 9;
+	z-index: 99;
 }
 
 .drop-mnu.table-dropdown a:hover {
