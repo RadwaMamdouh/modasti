@@ -6,6 +6,15 @@ label {
     min-height: calc(100vh - 822px);
 }
 
+/* Fonts */
+.gsans {
+    font-family: 'sans' !important;
+}
+
+.gsans-m {
+    font-family: 'sans-m' !important;
+}
+
 
 /*********************** login.html *********************/
 .ico-link.not-before::before {
@@ -3515,7 +3524,7 @@ label {
 .pull-bear .uploading {
     width: 67px;
     height: 67px;
-    margin-right: 6px;
+    margin-right: 16px;
 }
 
 .pull-bear .uploading > img {
@@ -3563,11 +3572,29 @@ label {
     margin-bottom: 0;
 }
 
+.b-edit-form .profile-data .tit {
+    line-height: 16px;
+}
+
+.b-edit-form .profile-data .form-group {
+    font-size: 0;
+}
+
+.b-edit-form .profile-data .correct {
+    top: 40px;
+}
+
+.b-edit-form .profile-data .input {
+    margin-top: 17px;
+    padding-bottom: 17px;
+}
+
 .b-edit-form .profile-data textarea {
     resize: none;
     color: rgba(0,0,0,.3);
     height: 45px;
     line-height: 20px;
+    font-family: 'raleway-m';
 }
 
 .b-edit-form .profile-data .change-pass {
@@ -3601,6 +3628,11 @@ label {
     height: 26px;
 }
 
+.b-change-pass .log-btn[type='reset'] img {
+    width: 17px !important;
+    height: 17px !important;
+}
+
 
 
 /******************************************** business-user.html **********************************/
@@ -3628,6 +3660,7 @@ label {
 
 .business-user .weird-header .info.about .info-content {
     margin-bottom: 40px;
+    font-family: 'raleway';
 }
 
 .business-user .weird-header .info.about .info-content:nth-child(2) {
@@ -3663,6 +3696,7 @@ label {
 
 .business-user .business-us .title {
     align-items: baseline;
+    margin-bottom: 17px;
 }
 
 .business-user .business-us .title div {
@@ -3679,7 +3713,7 @@ label {
 }
 
 .business-user .business-us .business-us-txt p:first-child {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .business-user .business-us .business-us-txt p {
