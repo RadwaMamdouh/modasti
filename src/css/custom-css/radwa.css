@@ -3581,7 +3581,7 @@ label {
 }
 
 .b-edit-form .profile-data .correct {
-    top: 40px;
+    top: 36px;
 }
 
 .b-edit-form .profile-data .input {
@@ -3592,7 +3592,7 @@ label {
 .b-edit-form .profile-data textarea {
     resize: none;
     color: rgba(0,0,0,.3);
-    height: 45px;
+    height: 40px;
     line-height: 20px;
     font-family: 'raleway-m';
 }
@@ -4046,4 +4046,53 @@ label {
     position: absolute;
     top: 0;
     width: 56px;
+}
+
+
+/******************************* profile-data-change-password.html **************************/
+.profile-data.change-pass .data-btns .log-btn:nth-child(1) img {
+    width: 17px;
+    height: 17px;
+}
+
+.profile-data.change-pass .form-group {
+    margin-bottom: 30px;
+}
+
+.profile-data.change-pass .input {
+    margin-top: 17px;
+    padding-bottom: 17px;
+    font-family: 'sans-m' !important;
+}
+
+.profile-data.change-pass .correct {
+    top: 40px;
+}
+
+.profile-data.m-user-account .input {
+    margin-top: 17px;
+    padding-bottom: 17px;
+}
+
+.profile-data.m-user-account .correct {
+    top: 43px;
+}
+
+.profile-data.m-user-account .form-group {
+    margin-bottom: 30px;
+}
+
+.profile-data.m-user-account .change-pass {
+    display: block;
+    color: #000;
+    text-decoration: underline !important;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-family: 'raleway-m';
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.profile-data.m-user-account .change-pass:hover {
+    color: #CFBDA8;
 }
