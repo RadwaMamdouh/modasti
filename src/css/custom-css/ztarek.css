@@ -945,6 +945,9 @@
 		transform: rotateX(-90deg) rotateY(10deg) perspective(600px) translateX(-50%);
 	}
 
+	.edite-item .other-options.drop-mnu.open {
+		transform: none
+	}
 	.other-options.drop-mnu.open {
 		transform: translateX(50%);
 	}
@@ -1462,12 +1465,26 @@
 	.label .custom-checkbox
 	{
 		width: 30%;
-		margin-bottom: 10px;
+		margin-bottom: 18px;
+	}
+	.label .drop-container .open.edite-input::before
+	{
+		width: 86%;
+	}
+	.label .label-tit,
+	.label .hint,
+	.label .edite-inputs
+	{
+		font-size: 12px
 	}
 	.drop-mnu.size-mnu
 	{
 		justify-content: flex-start;
 		padding-bottom: 10px;
+	}
+	.edite-item
+	{
+		padding: 30px 0;
 	}
 	.edite-item .form-btns
 	{
