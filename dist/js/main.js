@@ -20,7 +20,7 @@ $(document).ready(function () {
 			$('body').addClass('over-y')
 		}
 		
-	}, 3000/100)
+	}, 500/100)
 	
 	//    nav open
 	//    $('.tog-btn').on('click', function () {

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<!-- desctop header -->
+	<!-- start desctop header -->
 	<header class="main-header">
 		<section class="header">
 			<div class="logo-side">
@@ -130,38 +130,42 @@
 					</a>
 
 					<div class="drop-mnu notifi-mnu">
-						<div class="up">
-							<p class="tit">notfication</p>
-							<div class="switch">
-								<span class="mode-btn">
-									<span class="on">on</span>
-									<span class="off">off</span>
-								</span>
-								<span class="line"></span>
-								<span class="dot"></span>
+						<div class="notifi-head">
+							<div class="up">
+								<p class="tit">
+									NOTFICATIONS
+								</p>
+								<div class="switch">
+									<span class="mode-btn">
+										<span class="on">on</span>
+										<span class="off">off</span>
+									</span>
+									<span class="line"></span>
+									<span class="dot"></span>
+								</div>
 							</div>
 						</div>
 						<ul class="center">
+
 							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
+								<div class="n-link">
+									<div class="n-user">
+										<img src="../dist/img/news-feed2.png" alt="">
+									</div>
+									<div class="left">
+										<a href="" class="center-content">
+											<span class="tit">User X like on your set</span>
+											<span class="date">5 MINUTES AGO</span>
+										</a>
+									</div>
+									<div class="n-img">
+										<img src="../dist/img/news-feed.png" alt="">
+									</div>
+								</div>
 							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
+
 						</ul>
-						<a href="" class="down">
+						<a href="notfications.html" class="down">
 							see all
 							<img src="../dist/img/right-arrow.png" alt="">
 						</a>
@@ -182,10 +186,16 @@
 			</div>
 		</section>
 		<!-- search form -->
-		<form action="" class="search-input">
+		<form action="search-result.html" class="search-input">
 			<div class="container">
 				<input type="text" class="srch-input" placeholder="search">
 				<p class="info">result <span></span> 100</p>
+				<ul class="hints">
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+				</ul>
 			</div>
 		</form>
 		<!-- sec nav list -->
@@ -203,7 +213,10 @@
 				<li>
 					<a href="">SHOES</a>
 				</li>
-				
+
+				<li>
+					<a href="newsfeed.html">newsfeed</a>
+				</li>
 				<li>
 					<a href="exclusive-discount.html">DISCOUNTS</a>
 				</li>
@@ -216,8 +229,8 @@
 			</ul>
 		</div>
 	</header>
-
-	<!-- mobile header -->
+	<!-- end desctop header -->
+	<!-- start mobile header -->
 	<section class="header-container header-container-m">
 
 		<div class="header-m header">
@@ -420,13 +433,8 @@
 		</div>
 
 	</section>
-
+	<!-- end mobile header -->
 	<section class="content">
-
-
-
-
-
 		<!-- start brands -->
 
 		<div class="brand-details">
@@ -1940,12 +1948,12 @@
 		<div class="footer-head">
 			<div class="container">
 				<div class="row">
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content">
 							Studiestræde 19, 4th floor DK-1455 Copenhagen
 						</p>
 					</div>
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content confirms">
 							Konform A/S CVR: 11794343
 						</p>
@@ -1988,9 +1996,13 @@
 							<div class="col-12 col-md-6 col-lg-6">
 								<a href="data-feed.html" class="foot-link foot-data-feed">DATA FEED GUIDELINES AND SPECIFICATIONS</a>
 							</div>
-							<div class="col-12 col-md-6 col-lg-3">
+							<div class="col-12 col-md-6 col-lg-2">
+								<a href="rate-your-experience.html" class="foot-link">RATE MODASTI</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-1">
 								<a href="help.html" class="foot-link">HELP</a>
 							</div>
+
 							<div class="col-12 col-md-8">
 								<p class="foot-tit social-tit">FIND US ON</p>
 								<div class="social">
@@ -2020,128 +2032,128 @@
 	</footer>
 
 	<!-- end footer -->
-	
-	
-    <!-- Start Quick View Modal -->
-    <div class="custom-modal quickView-modal" id="modal">
-        <div class="overlay"></div>
-        <div class="modal-card">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="quick-view">
-                        <div class="owl-carousel owl-theme owl-guide">
-                            <div class="item">
-                                <img src="../dist/img/main-view.png" class="img-fluid">
-                            </div>
-                            <div class="item">
-                                <img src="../dist/img/subView5.png" class="img-fluid">
-                            </div>
-                            <div class="item">
-                                <img src="../dist/img/sub-view2.png" class="img-fluid">
-                            </div>
-                            <div class="item">
-                                <img src="../dist/img/sub-view3.png" class="img-fluid">
-                            </div>
-                            <div class="item">
-                                <img src="../dist/img/sub-view4.png" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="quick-view-details">
-                        <div class="card-head">
-                            <img src="../dist/img/close.png" class="img-fluid close-img">
-                        </div>
-                        <div class="details">
-                            <div class="item-name">T-SHIRT WITH SEAM DETAIL</div>
-                            <div class="size-guid">
-                                <div class="size">
-                                    <span>SIZE</span>
-                                    <a href="#" class="modal-btn" data-target="#sizeQuid-modal">SIZE GUIDE</a>
-                                </div>
-                                <div class="quid-box">
-                                    <div class="size-box">
-                                        XS
-                                    </div>
-                                    <div class="size-box">
-                                        S
-                                    </div>
-                                    <div class="size-box">
-                                        M
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-status">
-                                <span>STATUES:</span>
-                                <span>BACK-IN-STOCK</span>
-                            </div>
-                            <div class="item-description">
-                                <div class="description-tit">DESCRIPTION</div>
-                                <div class="item-color">
-                                    <p>Color</p>
-                                    <p>Blue</p>
-                                </div>
-                                <div class="item-style">
-                                    <p>Style</p>
-                                    <p>Casual, Basics</p>
-                                </div>
-                            </div>
-                            <div class="item-composition">
-                                <div class="comp-tit">Composition:</div>
-                                <p>65% Cotton, 30% Polyester, 5% Spandex</p>
-                            </div>
-                            <div class="item-price">250$</div>
-                            <div class="get-item">
-                                <a href="#" class="log-btn">
-                                    <span>GET ITEM</span>
-                                    <img src="../dist/img/right-arrow.png" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="full-details">
-                                <a href="#">FULL DETAILS</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Quick View Modal -->
 
-    <!-- Start Size Quid Modal -->
-    <div class="custom-modal sizeQuid-modal" id="sizeQuid-modal">
-        <div class="overlay"></div>
-        <div class="modal-card">
-            <div class="card-head">
-                <img src="../dist/img/close.png" class="img-fluid close-img">
-            </div>
-            <div class="card-content">
-                <div class="guid-title">SIZE GUIDE</div>
-                <div class="tabs">
-                    <label class="custom-checkbox radio">
-                        <input type="radio" name="userType" checked class="d-none">
-                        <i class="fas fa-square"></i>
-                        <span class="tit">US</span>
-                    </label>
-                    <label class="custom-checkbox radio">
-                        <input type="radio" name="userType" class="d-none">
-                        <i class="fas fa-square"></i>
-                        <span class="tit">UK</span>
+
+	<!-- Start Quick View Modal -->
+	<div class="custom-modal quickView-modal" id="modal">
+		<div class="overlay"></div>
+		<div class="modal-card">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="quick-view">
+						<div class="owl-carousel owl-theme owl-guide">
+							<div class="item">
+								<img src="../dist/img/main-view.png" class="img-fluid">
+							</div>
+							<div class="item">
+								<img src="../dist/img/subView5.png" class="img-fluid">
+							</div>
+							<div class="item">
+								<img src="../dist/img/sub-view2.png" class="img-fluid">
+							</div>
+							<div class="item">
+								<img src="../dist/img/sub-view3.png" class="img-fluid">
+							</div>
+							<div class="item">
+								<img src="../dist/img/sub-view4.png" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="quick-view-details">
+						<div class="card-head">
+							<img src="../dist/img/close.png" class="img-fluid close-img">
+						</div>
+						<div class="details">
+							<div class="item-name">T-SHIRT WITH SEAM DETAIL</div>
+							<div class="size-guid">
+								<div class="size">
+									<span>SIZE</span>
+									<a href="#" class="modal-btn" data-target="#sizeQuid-modal">SIZE GUIDE</a>
+								</div>
+								<div class="quid-box">
+									<div class="size-box">
+										XS
+									</div>
+									<div class="size-box">
+										S
+									</div>
+									<div class="size-box">
+										M
+									</div>
+								</div>
+							</div>
+							<div class="item-status">
+								<span>STATUES:</span>
+								<span>BACK-IN-STOCK</span>
+							</div>
+							<div class="item-description">
+								<div class="description-tit">DESCRIPTION</div>
+								<div class="item-color">
+									<p>Color</p>
+									<p>Blue</p>
+								</div>
+								<div class="item-style">
+									<p>Style</p>
+									<p>Casual, Basics</p>
+								</div>
+							</div>
+							<div class="item-composition">
+								<div class="comp-tit">Composition:</div>
+								<p>65% Cotton, 30% Polyester, 5% Spandex</p>
+							</div>
+							<div class="item-price">250$</div>
+							<div class="get-item">
+								<a href="#" class="log-btn">
+									<span>GET ITEM</span>
+									<img src="../dist/img/right-arrow.png" class="img-fluid">
+								</a>
+							</div>
+							<div class="full-details">
+								<a href="#">FULL DETAILS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Quick View Modal -->
+
+	<!-- Start Size Quid Modal -->
+	<div class="custom-modal sizeQuid-modal" id="sizeQuid-modal">
+		<div class="overlay"></div>
+		<div class="modal-card">
+			<div class="card-head">
+				<img src="../dist/img/close.png" class="img-fluid close-img">
+			</div>
+			<div class="card-content">
+				<div class="guid-title">SIZE GUIDE</div>
+				<div class="tabs">
+					<label class="custom-checkbox radio">
+						<input type="radio" name="userType" checked class="d-none">
+						<i class="fas fa-square"></i>
+						<span class="tit">US</span>
 					</label>
 					<label class="custom-checkbox radio">
-                        <input type="radio" name="userType" class="d-none">
-                        <i class="fas fa-square"></i>
-                        <span class="tit">EUR</span>
+						<input type="radio" name="userType" class="d-none">
+						<i class="fas fa-square"></i>
+						<span class="tit">UK</span>
 					</label>
 					<label class="custom-checkbox radio">
-                        <input type="radio" name="userType" class="d-none">
-                        <i class="fas fa-square"></i>
-                        <span class="tit">FA</span>
-                    </label>
-                </div>
-                <div class="tab-content">
-                    <div class="guid-sizes">
+						<input type="radio" name="userType" class="d-none">
+						<i class="fas fa-square"></i>
+						<span class="tit">EUR</span>
+					</label>
+					<label class="custom-checkbox radio">
+						<input type="radio" name="userType" class="d-none">
+						<i class="fas fa-square"></i>
+						<span class="tit">FA</span>
+					</label>
+				</div>
+				<div class="tab-content">
+					<div class="guid-sizes">
 						<table class="fixed-table">
 							<thead>
 								<tr>
@@ -2213,7 +2225,7 @@
 										</td>
 									</tr>
 									<tr>
-	
+
 										<td>
 											81.28-83.82
 										</td>
@@ -2316,24 +2328,24 @@
 								</tbody>
 							</table>
 						</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- End Size Quid Modal -->
-	
+
 	<!-- Start Shoes Size Quid Modal -->
-    <div class="custom-modal sizeQuid-modal shoes-guide" id="shoes-sizeQuid-modal">
-        <div class="overlay"></div>
-        <div class="modal-card">
-            <div class="card-head">
-                <img src="../dist/img/close.png" class="img-fluid close-img">
-            </div>
-            <div class="card-content">
-                <div class="guid-title">SHOES SIZE GUIDE</div>
-                <div class="tab-content">
-                    <div class="guid-sizes">
+	<div class="custom-modal sizeQuid-modal shoes-guide" id="shoes-sizeQuid-modal">
+		<div class="overlay"></div>
+		<div class="modal-card">
+			<div class="card-head">
+				<img src="../dist/img/close.png" class="img-fluid close-img">
+			</div>
+			<div class="card-content">
+				<div class="guid-title">SHOES SIZE GUIDE</div>
+				<div class="tab-content">
+					<div class="guid-sizes">
 						<table class="fixed-table">
 							<thead>
 								<tr>
@@ -2493,7 +2505,7 @@
 										</td>
 									</tr>
 									<tr>
-	
+
 										<td>
 											36
 										</td>
@@ -2666,7 +2678,7 @@
 											11
 										</td>
 										<td>
-											
+
 										</td>
 									</tr>
 									<tr>
@@ -2677,7 +2689,7 @@
 											11 1/2
 										</td>
 										<td>
-											
+
 										</td>
 									</tr>
 									<tr>
@@ -2688,7 +2700,7 @@
 											12
 										</td>
 										<td>
-											
+
 										</td>
 									</tr>
 									<tr>
@@ -2699,7 +2711,7 @@
 											12 1/2
 										</td>
 										<td>
-											
+
 										</td>
 									</tr>
 									<tr>
@@ -2710,7 +2722,7 @@
 											13
 										</td>
 										<td>
-											
+
 										</td>
 									</tr>
 									<tr>
@@ -2721,7 +2733,7 @@
 											13 1/2
 										</td>
 										<td>
-											
+
 										</td>
 									</tr>
 									<tr>
@@ -2732,7 +2744,7 @@
 											14
 										</td>
 										<td>
-											
+
 										</td>
 									</tr>
 									<tr>
@@ -2743,7 +2755,7 @@
 											14 1/2
 										</td>
 										<td>
-											
+
 										</td>
 									</tr>
 									<tr>
@@ -2754,18 +2766,18 @@
 											15
 										</td>
 										<td>
-											
+
 										</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Shoes Size Quid Modal -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Shoes Size Quid Modal -->
 
 	<!-- end footer -->
 	<script src="../dist/js/jquery-3.2.1.min.js"></script>
@@ -2790,14 +2802,14 @@
 				slide: function(event, ui) {
 					to.val(ui.values[1]);
 					from.val(ui.values[0]);
-//					console.log(to.val(),from.val())
-					
+					//					console.log(to.val(),from.val())
+
 				}
-				
+
 			});
 			to.val(rangeSlider.slider("values", 1));
 			from.val(rangeSlider.slider("values", 0));
-				console.log(rangeSlider.slider("values", 1))
+			console.log(rangeSlider.slider("values", 1))
 
 			fromTo.on("keyup", function() {
 				var rangeSlider = $(this).siblings(".range-slider");
@@ -2808,56 +2820,52 @@
 				}
 			});
 		});
-
 	</script>
-	
-<script>
-    $('.owl-guide').owlCarousel({
-        loop: false,
-        autoplay: false,
-        margin: 20,
-        nav: false,
-        dots: true,
-        autoWidth: false,
-        rtl: true,
-        animateOut: 0,
-        animateIn: 0,
-        navSpeed: 1000,
-        slideTransition: 1000,
-        autoplaySpeed: 1000,
-        navText: [
-            '<i class="fa fa-chevron-right" aria-hidden="true"></i><a href= "$"></a>',
-            '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-        ],
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-    $('.owl-guide').each(function(){
 
-        var dotss = $(this).find('.owl-dot'),
-            i = 0 ;
+	<script>
+		$('.owl-guide').owlCarousel({
+			loop: false,
+			autoplay: false,
+			margin: 20,
+			nav: false,
+			dots: true,
+			autoWidth: false,
+			rtl: true,
+			animateOut: 0,
+			animateIn: 0,
+			navSpeed: 1000,
+			slideTransition: 1000,
+			autoplaySpeed: 1000,
+			navText: [
+				'<i class="fa fa-chevron-right" aria-hidden="true"></i><a href= "$"></a>',
+				'<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+			],
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1
+				},
+				1000: {
+					items: 1
+				}
+			}
+		});
+		$('.owl-guide').each(function() {
 
-            var imgs = [];
-            $(this).find('.item img').each(function(){
-            imgs.push( $(this).attr("src"));
-        });
-            console.log(imgs);
-        dotss.each(function(){
-            i ++;
-            $(this).html('<img src="' + imgs[i - 1] + '">')
-        });
-    })
+			var dotss = $(this).find('.owl-dot'),
+				i = 0;
 
-</script>
-</body>
-
-</html>
+			var imgs = [];
+			$(this).find('.item img').each(function() {
+				imgs.push($(this).attr("src"));
+			});
+			console.log(imgs);
+			dotss.each(function() {
+				i++;
+				$(this).html('<img src="' + imgs[i - 1] + '">')
+			});
+		})
+	</script>
+</body></html>
