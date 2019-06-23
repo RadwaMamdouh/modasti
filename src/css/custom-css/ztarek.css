@@ -3,11 +3,13 @@
 @media(max-width: 1200px) {
 	.colors-container
 	{
-		grid-template-columns: repeat(8, 1fr);
+		grid-template-columns: repeat(10, 1fr);
 	}  
 }
 @media(max-width: 1170px) {
-
+	.edite-item .form-btns .log-btn:first-child {
+		margin-right: 20px;
+	}
 	/*    header*/
 
 	.header .logo-side .logo {
@@ -299,7 +301,10 @@
 	.box .box-price.with-sale .aftr {
 		font-size: 8px;
 	}
-
+	.search-result > .container > div
+	{
+		margin-bottom: 0;
+	}
 	.box .sale-pers {
 		width: 40px;
 		height: 40px;
@@ -648,7 +653,19 @@
 		width: 55px;
 		height: 3px;
 	}
-
+	.sent-modal .reverce
+	{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	}
+	.sent-modal .reverce button:last-child
+	{
+		order: -1
+	}
 	.icons-bar {
 		padding-top: 20px;
 	}
@@ -875,18 +892,33 @@
 		font-size: 24px
 	}
 	.custom-modal .modal-card .card-content button:first-child {
-		margin-right: 50px;
+		margin-left: 50px;
+		margin-top: 30px;
 	}
-
+	.res-collapse.myProfile-tabs .prof-tabs li:first-child .tabs-links
+	{
+		margin-left: 15px;
+	}
 	.sent-modal.custom-modal .modal-card .card-content {
 		text-align: center;
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding: 50px 30px;
+	}
+	.apply-modal-c.custom-modal .modal-card .card-content .tit-discount
+	{
+		font-size: 24px;
 	}
 	.sent-modal.custom-modal .modal-card .card-content p
 	{
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 		font-size: 14px;
+	}
+	.dis-input
+	{
+		margin-bottom: 10px;
+	}
+	.apply-modal-c.sent-modal .info-content + p
+	{
+		font-size: 12px !important
 	}
 	.sent-modal.custom-modal .modal-card .card-content .log-btn {
 		display: inline-block;
@@ -1012,6 +1044,20 @@
 
 	.filter .filter-form .log-btn {
 		margin-right: 20px;
+		height: 40px;
+		padding: 0 !important;
+	}
+	.box .box-p.box-p-tit
+	{
+		font-size: 12px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.box .box-p,
+	.box .box-p.info-content,
+	.box .box-tit a
+	{
+		font-size: 12px
 	}
 
 	.filter .filter-form .btns {
@@ -1084,7 +1130,7 @@
 	}
 
 	.box .box-price {
-		font-size: 12px;
+		font-size: 14px;
 		font-family: 'sans';
 	}
 
@@ -1127,15 +1173,25 @@
 	}
 	.myProfile-tabs.res-collapse ul.open
 	{
-		padding: 20px;
+		padding: 0;
 		padding-bottom: 0;
 		max-height: 500px;
 	}
 	.res-collapse ul li
 	{
 		margin-bottom: 20px;
+		padding: 0 20px;
 		padding-top: 20px;
 		border-top: 1px solid rgba(125, 125, 125, 0.1)
+	}
+	.trans-none,
+	.drop-mnu.other-options.sort-by
+	{
+		transform: none !important;
+	}
+	.user-box.user-box-s .user-name
+	{
+		font-size: 12px
 	}
 	.res-collapse .col-btn
 	{
@@ -1154,10 +1210,16 @@
 		font-size: 12px;
 		text-transform: uppercase;
 		cursor: pointer;
+		font-family: 'raleway-m';
+		padding: 20px 35px;
 	}
 	.res-collapse .col-btn img
 	{
 		width: 10px;
+	}
+	.search-result
+	{
+		padding: 30px 0 0;
 	}
 	.box.search-item-box .log-btn
 	{
@@ -1529,7 +1591,7 @@
 	}
 	.profile-table .row .general .options *
 	{
-		margin-right: 30px;
+		margin-right: 20px;
 		font-size: 18px
 	}
 }
@@ -1592,6 +1654,14 @@
 	{
 		font-size: 12px;
 	}
+	
+	
+	.drop-mnu.size-mnue.edite-drop.other-options
+	{
+		grid-template-columns: repeat(3, auto);
+	}
+	
+	
 }
 
 @media (max-width: 375px) {
@@ -1648,6 +1718,10 @@
 	{
 		margin-bottom: 15px;
 	}
+	.colors-container
+	{
+		grid-template-columns: repeat(8, 1fr);
+	}  
 }
 
 @media (max-width: 922px) {
