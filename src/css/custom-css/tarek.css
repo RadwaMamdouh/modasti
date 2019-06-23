@@ -87,7 +87,7 @@ ul {
 
 body {
 	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow-y: hidden;
 	direction: ltr;
 	color: #000;
 	text-align: left;
