@@ -208,7 +208,7 @@
 	.page404 .log-btn
 	{
 		float: left;
-		margin: 5px 0 0 10px;
+		margin: 5px 0 0 20px;
 	}
 	.weird-header.page404-container
 	{
@@ -373,6 +373,10 @@
 		margin-bottom: 30px;
 		width: 76px;
 		font-weight: bold;
+	}
+
+	.footer .footer-head .row>div:first-child {
+		padding-left: 15px;
 	}
 
 	.footer .footer-head .container .info-content {
@@ -1581,9 +1585,12 @@
 	{
 		margin-bottom: 20px;
 	}
+	.loader .loader-content .persent {
+		font-size: 14px;
+	}
 	.loader .loader-content .persent .num {
 		font-size: 14px;
-		font-family: 'roboto-m';
+		font-family: 'sans-m';
 	}
 	.profile-table .location-drop-btn.container-poend::after, .profile-table .location-drop-btn.container-poend::before
 	{

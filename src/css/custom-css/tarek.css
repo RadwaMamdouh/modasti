@@ -4077,6 +4077,14 @@ a {
 	font-size: 14px
 }
 
+.search-result .box.search-item-box .btns {
+	display: none;
+}
+
+.search-result .box.search-item-box .box-price {
+	margin-bottom: 0;
+}
+
 .res-collapse .col-btn {
 	display: none;
 }
@@ -5392,12 +5400,12 @@ a {
 .loader .loader-content .persent {
 	text-align: center;
 	font-size: 17px;
-	font-family: 'raleway-m';
+	font-family: 'sans-m';
 }
 
 .loader .loader-content .persent .num {
 	font-size: 17px;
-	font-family: 'roboto-m';
+	font-family: 'sans-m';
 }
 
 @keyframes load {
