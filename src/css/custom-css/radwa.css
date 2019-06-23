@@ -3780,7 +3780,7 @@ label {
     font-family: 'raleway-m';
     font-size: 14px;
     vertical-align: middle;
-    padding: 20px;
+    padding: 20px 20px 20px 35px;
     cursor: pointer;
     white-space: nowrap;
 }
@@ -3792,7 +3792,7 @@ label {
 
 .coupon-table table tbody tr td {
     vertical-align: middle;
-    padding: 30px 20px;
+    padding: 30px 145px 30px 35px;
 }
 
 .coupon-table table tbody tr td:first-child {
@@ -3814,6 +3814,7 @@ label {
 
 .coupon-table table tbody tr td p.status {
     font-family: 'raleway-m';
+    white-space: nowrap;
 }
 
 /******************************************** new-coupon.html **********************************/
@@ -3933,6 +3934,14 @@ label {
 
 .new-coupon-table {
     padding: 60px 0 !important;
+}
+
+.coupon-table.new-coupon-table table thead tr th {
+    padding: 20px;
+}
+
+.coupon-table.new-coupon-table  table tbody tr td {
+    padding: 30px 20px;
 }
 
 
