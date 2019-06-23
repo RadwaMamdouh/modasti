@@ -3938,6 +3938,14 @@ a {
 	margin-bottom: 0;
 }
 
+.search-result .box .box-p.view {
+	font-size: 14px;
+    font-family: 'raleway-m';
+    line-height: 16px;
+    margin-top: 30px;
+    display: block;
+}
+
 .user-box {
 	text-align: center;
 }
