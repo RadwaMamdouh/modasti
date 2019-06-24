@@ -2323,6 +2323,10 @@ a {
 	overflow: hidden;
 }
 
+.newsfeed-box .icons .share-icons {
+	width: auto;
+}
+
 .icons .share2btn .share-icons {
 	width: auto;
 }

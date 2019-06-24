@@ -657,6 +657,15 @@
 		width: 55px;
 		height: 3px;
 	}
+
+	.icons .share2btn .share-icons {
+		left: calc(100% + -4px);
+	}
+
+	.share-bar-container.share-bar-small.active .icons .share2btn .val {
+		display: none;
+	}
+
 	.sent-modal .reverce
 	{
 		display: -webkit-flex;
