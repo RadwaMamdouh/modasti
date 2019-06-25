@@ -1130,6 +1130,11 @@
 		margin-bottom: 30px;
 	}
 
+	.size-filter .box-size {
+		width: 88px;
+		height: 60px;
+	}
+
 	.other-options.drop-mnu.open {
 		transform: translateX(35%);
 		right: 0;

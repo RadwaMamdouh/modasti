@@ -1003,12 +1003,16 @@
 
     .terms-content p:not(.t-title) {
         font-size: 14px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .terms-content p.t-title {
         margin-bottom: 30px;
         /* width: 194px; */
+    }
+
+    .terms-content p:last-child {
+        margin-bottom: 0;
     }
 
     /*********** data-feed ********/
@@ -1142,9 +1146,9 @@
         font-family: 'sans';
     }
 
-    /* .new-contests .box .sub-join {
-        margin-bottom: 39px;
-    } */
+    .new-contests .box .sub-join {
+        margin-bottom: 20px;
+    }
 
     .contest-hr {
         width: 100%;
@@ -2043,5 +2047,17 @@
 @media (max-width: 922px) {
     .reset-password .form-btn .log-btn[type='reset'] {
         padding: 0;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .log-forms .log-form .correct,
+    .log-forms .log-form .email .wrong {
+        top: 5px;
+    }
+
+    .email .wrong img {
+        margin-right: 3px;
     }
 }
