@@ -569,7 +569,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 30px 30px 20px;
 }
 
 .custom-modal .modal-card .card-head img.close-img {
@@ -2869,7 +2869,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-bottom: 50px; */
+    margin-bottom: 30px;
 }
 
 .new-contests .box .sub-join .box-p {
@@ -2880,6 +2880,7 @@ label {
 .new-contests .box .sub-join a.box-p {
     font-family: 'raleway-m';
     color: #000;
+    margin-top: 0;
 }
 
 .new-contests .box .sub-join a.box-p:hover {
