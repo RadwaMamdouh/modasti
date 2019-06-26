@@ -597,6 +597,7 @@ label {
     text-transform: uppercase;
     max-width: 100%;
     line-height: 36px;
+    font-family: 'raleway-b';
 }
 
 .custom-modal .modal-card .card-content p {
