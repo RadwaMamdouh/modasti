@@ -527,7 +527,9 @@
 	}
 	.socialize .info-content
 	{
-		font-size: 14px
+		font-size: 14px;
+		font-family: 'raleway-m';
+		max-width: 340px;
 	}
 	.weird-header .main-tit.about {
 		margin-bottom: 0;
@@ -594,6 +596,7 @@
 	.inspire .info-content
 	{
 		font-size: 14px;
+		font-family: 'raleway-m';
 	}
 	.inspire {
 		margin-bottom: 30px;
@@ -857,6 +860,15 @@
 		width: 85vw;
 	}
 
+	.save-to-dropdown .sc-head .sc-tit {
+		font-size: 12px;
+	}
+
+	.save-to-dropdown .drop-mnu .c-tit {
+		font-family: 'raleway-m';
+		font-size: 16px;
+	}
+
 	.custom-modal.galler-modal.show .modal-card.report-catd .gallery-content {
 		height: 50vh;
 	}
@@ -908,6 +920,13 @@
 		margin-left: 50px;
 		margin-top: 30px;
 	}
+
+	.report-modal.custom-modal .modal-card .card-content button:first-child {
+		margin-left: 0;
+		margin-top: 0;
+		margin-right: 20px;
+	}
+
 	.res-collapse.myProfile-tabs .prof-tabs li:first-child .tabs-links
 	{
 		margin-left: 15px;
@@ -1297,16 +1316,24 @@
 		background-color: #fff;
 		padding: 20px 10px;
 		margin-bottom: 30px;
-		margin-top: 15px;
+		margin-top: 30px;
 	}
 	.brand-box.brand-box-head .active-row.code-details .active-details p
 	{
 		color: #000;
 		margin-bottom: 0;
 	}
+
+	.brand-box.brand-box-head .active-row.code-details .active-details p:nth-child(2) {
+		font-family: 'sans';
+	}
 	.brand-box.brand-box-head .img
 	{
 		height: 300px;
+	}
+
+	.brand-box.brand-box-head .active-row .active-details p:nth-child(1) {
+		margin-bottom: 0;
 	}
 
 	.brand-box.brand-box-head .active-row .active-details p span {
