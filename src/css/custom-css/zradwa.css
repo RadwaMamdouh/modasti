@@ -1411,7 +1411,7 @@
 
     .contest-bar .tabs-form form {
         order: -1;
-        padding: 30px;
+        padding: 0 0 30px;
         width: 100%;
         /* border-top: 1px solid rgba(255, 255, 255, .20); */
         border-bottom: 1px solid rgba(255, 255, 255, .20);
@@ -1452,6 +1452,10 @@
 
     .drop-tools {
         margin-bottom: 20px;
+    }
+
+    .draggable-items {
+        max-height: 1312px;
     }
 
     .draggable-items .set-item .item-img {

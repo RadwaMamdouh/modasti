@@ -1692,7 +1692,8 @@
 	}
 	.notification-p .notifi-mnu .center .tit
 	{
-		font-size: 16px
+		font-size: 16px;
+		font-family: 'raleway-m';
 	}
 	.drop-mnu.notifi-mnu
 	{
@@ -1700,7 +1701,8 @@
 	}
 	.notification-p .notifi-mnu .center .date
 	{
-		font-size: 12px
+		font-size: 12px;
+		font-family: 'sans';
 	}
 	.filter .box .box-img {
 		width: 100%;
