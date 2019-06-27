@@ -495,14 +495,15 @@
     .box .box-tit {
         font-size: 16px;
         line-height: 24px;
-        width: 123px;
+        /* width: 123px; */
         max-width: 100%;
         margin: 20px 0 10px;
     }
 
     .box .box-p {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 24px;
+        font-family: 'raleway';
     }
 
     .box .btns {
@@ -873,11 +874,11 @@
         width: 123px;
     }
 
-    .myLikes .items-used .box .box-price {
+    /* .myLikes .items-used .box .box-price {
         font-family: 'sans';
         font-size: 12px;
         margin-bottom: 20px;
-    }
+    } */
 
 
     /********** collection-details.html ************/
@@ -937,11 +938,11 @@
 
     .box .box-price {
         font-family: 'sans-m';
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .items-used .box .box-tit {
-        margin: 20px 0 9px;
+        margin: 20px 0 10px;
     }
 
 
@@ -1148,17 +1149,24 @@
         padding: 15px 22px;
         font-size: 20px;
         font-family: 'sans-m';
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
     }
 
     .new-contests .box .box-p.box-p-tit {
         margin-top: 20px;
-        margin-bottom: 1px;
-        font-size: 14px;
+        margin-bottom: 2px;
+        font-size: 16px;
         line-height: 24px;
     }
 
     .new-contests .box .sub-join .box-p {
-        font-size: 12px;
+        font-size: 16px;
+        font-family: 'raleway-m';
+    }
+
+    .new-contests .box .sub-join .box-p span:not(.dot) {
         font-family: 'sans';
     }
 

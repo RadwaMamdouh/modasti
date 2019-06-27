@@ -306,6 +306,7 @@
 	{
 		margin-bottom: 0;
 	}
+
 	.box .sale-pers {
 		width: 40px;
 		height: 40px;
@@ -697,7 +698,7 @@
 	}
 
 	.icons .icon span {
-		font-family: 'sans';
+		font-family: 'sans-m';
 	}
 
 	/*    .news-box */
@@ -1074,7 +1075,10 @@
 	}
 
 	.down .box-tit {
-		padding-right: 15px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		padding-right: 18px;
 	}
 
 	.down .save {
@@ -1094,15 +1098,15 @@
 	}
 	.box .box-p.box-p-tit
 	{
-		font-size: 14px;
+		font-size: 16px;
 		margin-top: 20px;
-		margin-bottom: 10px;
+		margin-bottom: 2px;
 	}
 	.box .box-p,
 	.box .box-p.info-content,
 	.box .box-tit a
 	{
-		font-size: 12px
+		font-size: 16px
 	}
 
 	.filter .filter-form .btns {
@@ -1181,7 +1185,7 @@
 
 	.box .box-price {
 		font-size: 14px;
-		font-family: 'sans';
+		font-family: 'sans-m';
 	}
 
 	.news-box.newsfeed-box.newsfeed-box-search {
@@ -1686,6 +1690,23 @@
 	{
 		margin-right: 20px;
 		font-size: 18px
+	}
+
+	.box .box-p.view,
+	.search-result .box .box-p.view {
+		margin-top: 0;
+	}
+
+	.submission-contest {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.box.box-sq .box-img .time {
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
 	}
 }
 
