@@ -3659,8 +3659,8 @@ a {
 }
 
 .box .box-p.view {
-	font-family: 'raleway-m';
-	margin-top: 20px;
+	margin-top: 30px;
+	display: block;
 }
 .box .box-p
 {
@@ -3956,7 +3956,7 @@ a {
 }
 
 .search-result .box .box-p.view {
-	font-size: 14px;
+	font-size: 16px;
     font-family: 'raleway-m';
     line-height: 16px;
     margin-top: 30px;
@@ -3990,7 +3990,7 @@ a {
 	margin-top: 30px;
 	text-transform: uppercase;
 	font-size: 24px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	font-family: 'raleway-m';
 }
 
@@ -4084,7 +4084,7 @@ a {
 }
 
 .box.search-item-box .box-tit {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: normal;
 	font-family: 'raleway'
 }

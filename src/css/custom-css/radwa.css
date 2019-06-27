@@ -1510,8 +1510,11 @@ label {
     font-size: 24px;
     line-height: 36px;
     margin: 30px 0 10px;
-    width: 185px;
+    /* width: 185px; */
     max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .box .box-tit a {
@@ -1523,7 +1526,7 @@ label {
 }
 
 .box .box-p {
-    font-family: 'raleway';
+    font-family: 'raleway-m';
     font-size: 16px;
     line-height: 26px;
 }
@@ -1818,7 +1821,7 @@ label {
 } */
 
 .items-used .box .box-tit {
-    margin: 30px 0 7px;
+    margin: 30px 0 10px;
 }
 
 .box .box-price {
@@ -2366,16 +2369,16 @@ label {
     padding: 0;
 }
 
-.myLikes .items-used .box .box-tit {
+/* .myLikes .items-used .box .box-tit {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-}
+} */
 
-.myLikes .items-used .box .box-tit a {
+/* .myLikes .items-used .box .box-tit a {
     width: 185px;
-}
+} */
 
 .myLikes .items-used .box .btns {
     top: 40%;
@@ -2892,20 +2895,23 @@ label {
     text-align: center;
     background-color: #000;
     color: #fff;
-    width: 95%;
+    /* width: 95%; */
     font-family: 'sans-b';
     font-size: 28px;
     padding: 25px 45px;
+    left: 20px;
+    right: 20px;
 }
 .box.box-sq .box-img .time.time-s
 {
     font-size: 14px;
-    padding: 15px 15px;
+    padding: 20px 6px;
 }
 
 .new-contests .box .box-p.box-p-tit {
     font-family: 'raleway-m';
     line-height: 44px;
+    margin-bottom: 5px;
 }
 
 .new-contests .box .sub-join {
@@ -2916,8 +2922,12 @@ label {
 }
 
 .new-contests .box .sub-join .box-p {
+    font-family: 'raleway-m';
+    font-size: 16px;
+}
+
+.new-contests .box .sub-join .box-p span:not(.dot) {
     font-family: 'sans-m';
-    font-size: 14px;
 }
 
 .new-contests .box .sub-join a.box-p {
@@ -3329,6 +3339,13 @@ label {
 .draggable-items .set-item .item-img {
     margin-bottom: 0;
     height: 213px;
+    position: relative;
+}
+
+.draggable-items .set-item .item-img .custom-checkbox {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .draggable-items .set-item .item-img img {
