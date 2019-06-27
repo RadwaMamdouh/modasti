@@ -1854,7 +1854,7 @@
     }
 
     .news-box.shared-box .shared-b {
-        padding-bottom: 20px;
+        padding: 20px;
         margin-bottom: 20px;
     }
 
@@ -1895,7 +1895,8 @@
         line-height: 14px;
     }
 
-    .profile-data.m-user-account .input {
+    .profile-data.m-user-account .input,
+	.profile-data.m-user-account .input::placeholder{
         font-size: 12px;
     }
 }
