@@ -3662,6 +3662,10 @@ a {
 	margin-top: 30px;
 	display: block;
 }
+.box .box-p
+{
+	font-family: 'raleway-m';
+}
 
 .box .box-p.info-content {
 	font-size: 14px;
