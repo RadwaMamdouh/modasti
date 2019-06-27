@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<!-- desctop header -->
+	<!-- start desctop header -->
 	<header class="main-header">
 		<section class="header">
 			<div class="logo-side">
@@ -130,38 +130,42 @@
 					</a>
 
 					<div class="drop-mnu notifi-mnu">
-						<div class="up">
-							<p class="tit">notfication</p>
-							<div class="switch">
-								<span class="mode-btn">
-									<span class="on">on</span>
-									<span class="off">off</span>
-								</span>
-								<span class="line"></span>
-								<span class="dot"></span>
+						<div class="notifi-head">
+							<div class="up">
+								<p class="tit">
+									NOTFICATIONS
+								</p>
+								<div class="switch">
+									<span class="mode-btn">
+										<span class="on">on</span>
+										<span class="off">off</span>
+									</span>
+									<span class="line"></span>
+									<span class="dot"></span>
+								</div>
 							</div>
 						</div>
 						<ul class="center">
+
 							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
+								<div class="n-link">
+									<div class="n-user">
+										<img src="../dist/img/news-feed2.png" alt="">
+									</div>
+									<div class="left">
+										<a href="" class="center-content">
+											<span class="tit">User X like on your set</span>
+											<span class="date">5 MINUTES AGO</span>
+										</a>
+									</div>
+									<div class="n-img">
+										<img src="../dist/img/news-feed.png" alt="">
+									</div>
+								</div>
 							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
+
 						</ul>
-						<a href="" class="down">
+						<a href="notfications.html" class="down">
 							see all
 							<img src="../dist/img/right-arrow.png" alt="">
 						</a>
@@ -182,10 +186,16 @@
 			</div>
 		</section>
 		<!-- search form -->
-		<form action="" class="search-input">
+		<form action="search-result.html" class="search-input">
 			<div class="container">
 				<input type="text" class="srch-input" placeholder="search">
 				<p class="info">result <span></span> 100</p>
+				<ul class="hints">
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+				</ul>
 			</div>
 		</form>
 		<!-- sec nav list -->
@@ -205,6 +215,9 @@
 				</li>
 
 				<li>
+					<a href="newsfeed.html">newsfeed</a>
+				</li>
+				<li>
 					<a href="exclusive-discount.html">DISCOUNTS</a>
 				</li>
 				<li>
@@ -216,8 +229,8 @@
 			</ul>
 		</div>
 	</header>
-
-	<!-- mobile header -->
+	<!-- end desctop header -->
+	<!-- start mobile header -->
 	<section class="header-container header-container-m">
 
 		<div class="header-m header">
@@ -420,16 +433,33 @@
 		</div>
 
 	</section>
+	<!-- end mobile header -->
 
 	<!-- Start Join Contest -->
 	<section class="content">
-		<div class="contest-bar">
+		<!-- <div class="contest-bar">
 			<div class="collapse-btn">
 				<img src="../dist/img/search-arrow.png" class="img-fluid">
 			</div>
 			<div class="container">
-				<div class="tabs-form">
-					<ul class="contest-tabs">
+				<div class="tabs-form d-block">
+					<div class="row justify-content-end">
+						<div class="col-12 col-md-6">
+							<ul class="contest-tabs">
+								<li><a class="tabs-links tit active" href="">CLOTHES</a></li>
+								<li><a class="tabs-links tit" href="">SHOES</a></li>
+								<li><a class="tabs-links tit" href="">ACCESSORIES</a></li>
+								<li><a class="tabs-links tit" href="">BEAUTY</a></li>
+							</ul>
+							<form>
+								<input type="search" class="input" placeholder="Search">
+								<button type="submit">
+									<img src="../dist/img/search.png" class="img-fluid">
+								</button>
+							</form>
+						</div>
+					</div>
+					 <ul class="contest-tabs">
 						<li><a class="tabs-links tit active" href="">CLOTHES</a></li>
 						<li><a class="tabs-links tit" href="">SHOES</a></li>
 						<li><a class="tabs-links tit" href="">ACCESSORIES</a></li>
@@ -440,10 +470,10 @@
 						<button type="submit">
 							<img src="../dist/img/search-white.png" class="img-fluid">
 						</button>
-					</form>
+					</form> 
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="join-contest">
 			<div class="container">
 				<div class="row">
@@ -479,7 +509,7 @@
 						</div>
 						<div class="drop-btns">
 							<button type="button" class="log-btn">
-								<span class="tit">JOIN CONTEST</span>
+								<span class="tit">PUBLISH</span>
 								<img src="../dist/img/right-arrow.png" class="img-fluid">
 							</button>
 							<button type="button" class="log-btn log-white">
@@ -489,95 +519,165 @@
 						</div>
 					</div>
 					<div class="col-lg-6">
+						<div class="contest-bar">
+							<div class="collapse-btn">
+								<img src="../dist/img/search-arrow.png" class="img-fluid">
+							</div>
+							<div class="tabs-form d-block">
+								<ul class="contest-tabs">
+									<li><a class="tabs-links tit active" href="">CLOTHES</a></li>
+									<li><a class="tabs-links tit" href="">SHOES</a></li>
+									<li><a class="tabs-links tit" href="">ACCESSORIES</a></li>
+									<li><a class="tabs-links tit" href="">BEAUTY</a></li>
+								</ul>
+								<form>
+									<input type="search" class="input" placeholder="Search">
+									<button type="submit">
+										<img src="../dist/img/search.png" class="img-fluid d-none d-lg-block">
+										<img src="../dist/img/search-white.png" class="d-block d-lg-none" alt="">
+									</button>
+								</form>
+							</div>
+						</div>
 						<div class="draggable-items">
 							<div class="row">
-								<div class="col-6 col-lg-4">
+								<div class="col-6 col-lg-3">
 									<div class="set-item">
 										<div class="item-img">
 											<img src="../dist/img/pic11.png" class="img-fluid">
 										</div>
-										<div class="item-desc">
-											BUTTONED FAUX FUR COAT
-										</div>
 									</div>
 								</div>
-								<div class="col-6 col-lg-4">
-									<div class="set-item">
-										<div class="item-img">
-											<img src="../dist/img/pic10.png" class="img-fluid">
-										</div>
-										<div class="item-desc">
-											BUTTONED FAUX FUR COAT
-										</div>
-									</div>
-								</div>
-								<div class="col-6 col-lg-4">
+								<div class="col-6 col-lg-3">
 									<div class="set-item">
 										<div class="item-img">
 											<img src="../dist/img/pic11.png" class="img-fluid">
 										</div>
-										<div class="item-desc">
-											BUTTONED FAUX FUR COAT
-										</div>
 									</div>
 								</div>
-								<div class="col-6 col-lg-4">
-									<div class="set-item">
-										<div class="item-img">
-											<img src="../dist/img/pic10.png" class="img-fluid">
-										</div>
-										<div class="item-desc">
-											BUTTONED FAUX FUR COAT
-										</div>
-									</div>
-								</div>
-								<div class="col-6 col-lg-4">
+								<div class="col-6 col-lg-3">
 									<div class="set-item">
 										<div class="item-img">
 											<img src="../dist/img/pic11.png" class="img-fluid">
 										</div>
-										<div class="item-desc">
-											BUTTONED FAUX FUR COAT
-										</div>
 									</div>
 								</div>
-								<div class="col-6 col-lg-4">
-									<div class="set-item">
-										<div class="item-img">
-											<img src="../dist/img/pic10.png" class="img-fluid">
-										</div>
-										<div class="item-desc">
-											BUTTONED FAUX FUR COAT
-										</div>
-									</div>
-								</div>
-								<div class="col-6 col-lg-4">
+								<div class="col-6 col-lg-3">
 									<div class="set-item">
 										<div class="item-img">
 											<img src="../dist/img/pic11.png" class="img-fluid">
 										</div>
-										<div class="item-desc">
-											BUTTONED FAUX FUR COAT
-										</div>
 									</div>
 								</div>
-								<div class="col-6 col-lg-4">
-									<div class="set-item">
-										<div class="item-img">
-											<img src="../dist/img/pic10.png" class="img-fluid">
-										</div>
-										<div class="item-desc">
-											BUTTONED FAUX FUR COAT
-										</div>
-									</div>
-								</div>
-								<div class="col-6 col-lg-4">
+								<div class="col-6 col-lg-3">
 									<div class="set-item">
 										<div class="item-img">
 											<img src="../dist/img/pic11.png" class="img-fluid">
 										</div>
-										<div class="item-desc">
-											BUTTONED FAUX FUR COAT
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
 										</div>
 									</div>
 								</div>
@@ -596,12 +696,12 @@
 		<div class="footer-head">
 			<div class="container">
 				<div class="row">
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content">
 							Studiestræde 19, 4th floor DK-1455 Copenhagen
 						</p>
 					</div>
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content confirms">
 							Konform A/S CVR: 11794343
 						</p>
@@ -644,9 +744,13 @@
 							<div class="col-12 col-md-6 col-lg-6">
 								<a href="data-feed.html" class="foot-link foot-data-feed">DATA FEED GUIDELINES AND SPECIFICATIONS</a>
 							</div>
-							<div class="col-12 col-md-6 col-lg-3">
+							<div class="col-12 col-md-6 col-lg-2">
+								<a href="rate-your-experience.html" class="foot-link">RATE MODASTI</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-1">
 								<a href="help.html" class="foot-link">HELP</a>
 							</div>
+
 							<div class="col-12 col-md-8">
 								<p class="foot-tit social-tit">FIND US ON</p>
 								<div class="social">

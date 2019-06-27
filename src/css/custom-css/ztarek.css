@@ -208,7 +208,7 @@
 	.page404 .log-btn
 	{
 		float: left;
-		margin: 5px 0 0 10px;
+		margin: 5px 0 0 20px;
 	}
 	.weird-header.page404-container
 	{
@@ -375,6 +375,10 @@
 		font-weight: bold;
 	}
 
+	.footer .footer-head .row>div:first-child {
+		padding-left: 15px;
+	}
+
 	.footer .footer-head .container .info-content {
 		margin-bottom: 30px;
 		font-size: 14px;
@@ -523,7 +527,9 @@
 	}
 	.socialize .info-content
 	{
-		font-size: 14px
+		font-size: 14px;
+		font-family: 'raleway-m';
+		max-width: 340px;
 	}
 	.weird-header .main-tit.about {
 		margin-bottom: 0;
@@ -590,6 +596,7 @@
 	.inspire .info-content
 	{
 		font-size: 14px;
+		font-family: 'raleway-m';
 	}
 	.inspire {
 		margin-bottom: 30px;
@@ -653,6 +660,15 @@
 		width: 55px;
 		height: 3px;
 	}
+
+	.icons .share2btn .share-icons {
+		left: calc(100% + -4px);
+	}
+
+	.share-bar-container.share-bar-small.active .icons .share2btn .val {
+		display: none;
+	}
+
 	.sent-modal .reverce
 	{
 		display: -webkit-flex;
@@ -844,6 +860,15 @@
 		width: 85vw;
 	}
 
+	.save-to-dropdown .sc-head .sc-tit {
+		font-size: 12px;
+	}
+
+	.save-to-dropdown .drop-mnu .c-tit {
+		font-family: 'raleway-m';
+		font-size: 16px;
+	}
+
 	.custom-modal.galler-modal.show .modal-card.report-catd .gallery-content {
 		height: 50vh;
 	}
@@ -895,6 +920,13 @@
 		margin-left: 50px;
 		margin-top: 30px;
 	}
+
+	.report-modal.custom-modal .modal-card .card-content button:first-child {
+		margin-left: 0;
+		margin-top: 0;
+		margin-right: 20px;
+	}
+
 	.res-collapse.myProfile-tabs .prof-tabs li:first-child .tabs-links
 	{
 		margin-left: 15px;
@@ -1117,6 +1149,11 @@
 		margin-bottom: 30px;
 	}
 
+	.size-filter .box-size {
+		width: 88px;
+		height: 60px;
+	}
+
 	.other-options.drop-mnu.open {
 		transform: translateX(35%);
 		right: 0;
@@ -1279,16 +1316,24 @@
 		background-color: #fff;
 		padding: 20px 10px;
 		margin-bottom: 30px;
-		margin-top: 15px;
+		margin-top: 30px;
 	}
 	.brand-box.brand-box-head .active-row.code-details .active-details p
 	{
 		color: #000;
 		margin-bottom: 0;
 	}
+
+	.brand-box.brand-box-head .active-row.code-details .active-details p:nth-child(2) {
+		font-family: 'sans';
+	}
 	.brand-box.brand-box-head .img
 	{
 		height: 300px;
+	}
+
+	.brand-box.brand-box-head .active-row .active-details p:nth-child(1) {
+		margin-bottom: 0;
 	}
 
 	.brand-box.brand-box-head .active-row .active-details p span {
@@ -1581,9 +1626,12 @@
 	{
 		margin-bottom: 20px;
 	}
+	.loader .loader-content .persent {
+		font-size: 14px;
+	}
 	.loader .loader-content .persent .num {
 		font-size: 14px;
-		font-family: 'roboto-m';
+		font-family: 'sans-m';
 	}
 	.profile-table .location-drop-btn.container-poend::after, .profile-table .location-drop-btn.container-poend::before
 	{

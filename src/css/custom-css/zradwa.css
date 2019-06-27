@@ -411,8 +411,8 @@
     }
 
     .collec-btn {
-        width: 100%;
-        height: 123px;
+        width: 164px;
+        height: 296px;
     }
 
     .collec-btn img {
@@ -431,11 +431,20 @@
         line-height: 16px;
     }
 
+    .collec-box a {
+        width: 164px;
+        height: 296px;
+    }
+
     .collec-box a img {
         width: 100%;
         max-width: 100%;
-        height: 123px;
+        height: 100%;
         max-height: 100%;
+    }
+
+    .collec-box .collec-box-p {
+        font-size: 12px;
     }
 
     /* Modal */
@@ -453,6 +462,8 @@
 
     .collections-content.custom-modal .modal-card .card-content .form-btns .log-btn[type='reset'] {
         margin-right: 20px;
+        margin-top: 0;
+        margin-left: 0;
     }
 
     .collections-content.custom-modal .modal-card .card-content .form-btns .log-btn span {
@@ -469,6 +480,11 @@
 
     .collections-content.custom-modal .modal-card .card-content {
         padding: 0px 50px 30px;
+    }
+
+    .collections-content.custom-modal .modal-card .card-content .tit.create-tit {
+        padding-top: 50px;
+        line-height: 29px;
     }
 
     /********** myProfile-my-sets.html ************/
@@ -1003,12 +1019,16 @@
 
     .terms-content p:not(.t-title) {
         font-size: 14px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .terms-content p.t-title {
         margin-bottom: 30px;
         /* width: 194px; */
+    }
+
+    .terms-content p:last-child {
+        margin-bottom: 0;
     }
 
     /*********** data-feed ********/
@@ -1142,9 +1162,9 @@
         font-family: 'sans';
     }
 
-    /* .new-contests .box .sub-join {
-        margin-bottom: 39px;
-    } */
+    .new-contests .box .sub-join {
+        margin-bottom: 20px;
+    }
 
     .contest-hr {
         width: 100%;
@@ -1280,11 +1300,15 @@
 
     /********** join-contest.html ************/
     .contest-bar {
-        padding: 28px 0;
+        padding: 0;
+        margin: 28px 0;
+        position: relative;
     }
 
     .contest-bar .collapse-btn {
         display: block;
+        background-color: #000;
+        padding: 28px 0;
     }
 
     .contest-bar .collapse-btn img {
@@ -1295,13 +1319,41 @@
         -o-transition: .3s;
     }
 
-    .contest-bar.active .collapse-btn img {
+    .collapse-btn::before {
+        content: '';
+        width: 500px;
+        height: 100%;
+        background-color: #000;
+        position: absolute;
+        right: calc(100% - 1px);
+        top: 0;
+    }
+
+    .collapse-btn::after {
+        content: '';
+        width: 500px;
+        height: 100%;
+        background-color: #000;
+        position: absolute;
+        left: calc(100% - 1px);
+        top: 0;
+    }
+
+    .contest-bar .collapse-btn img {
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         -o-transform: rotate(180deg);
-    }
+}
+
+    .contest-bar.active .collapse-btn img {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
 
     .contest-bar .tabs-form {
         flex-direction: column;
@@ -1317,7 +1369,12 @@
     .contest-bar.active .tabs-form {
         max-height: 500px;
         overflow: hidden;
-        padding-top: 30px;
+        /* padding-top: 30px; */
+    }
+
+    .contest-bar .tabs-form {
+        background: #000;
+        display: flex !important;
     }
 
     .contest-bar .container {
@@ -1341,18 +1398,28 @@
     .contest-bar .contest-tabs li .tabs-links {
         margin: 0;
         font-size: 12px;
+        color: #fff
     }
 
     .contest-bar .tabs-form form {
         order: -1;
         padding: 30px;
         width: 100%;
-        border-top: 1px solid rgba(255, 255, 255, .20);
+        /* border-top: 1px solid rgba(255, 255, 255, .20); */
         border-bottom: 1px solid rgba(255, 255, 255, .20);
+    }
+
+    .contest-bar .tabs-form form .input {
+        color: #fff;
+    }
+
+    .contest-bar .tabs-form form .input::placeholder {
+        color: #ececec;
     }
 
     .join-contest {
         padding: 20px 0 0;
+        overflow: hidden;
     }
 
     .drop-btns {
@@ -1372,6 +1439,7 @@
     .droppable-area {
         height: 622px;
         margin-bottom: 20px;
+        margin-top: 10px;
     }
 
     .drop-tools {
@@ -1515,6 +1583,7 @@
 
     .pull-bear span {
         font-size: 24px;
+        font-family: 'raleway-b';
     }
 
     .b-edit-account .b-search .count span {
@@ -1669,7 +1738,7 @@
     }
 
     .coupon-table {
-        padding: 226px 0 30px;
+        padding: 210px 0 30px;
     }
 
     .coupon-table .container {
@@ -2042,5 +2111,17 @@
 @media (max-width: 922px) {
     .reset-password .form-btn .log-btn[type='reset'] {
         padding: 0;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .log-forms .log-form .correct,
+    .log-forms .log-form .email .wrong {
+        top: 5px;
+    }
+
+    .email .wrong img {
+        margin-right: 3px;
     }
 }
