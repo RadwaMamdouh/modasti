@@ -53,6 +53,7 @@
 	.search-input .srch-input {
 		font-size: 30px;
 		margin-bottom: 15px;
+		line-height: 65px;
 	}
 
 	.search-input .info {
@@ -472,7 +473,7 @@
 		padding-left: 30px;
 		margin-right: auto;
 		width: 91%;
-		margin-left: 0;
+		margin-left: auto;
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
@@ -639,6 +640,11 @@
 
 	.title-container .more {
 		width: auto;
+		font-size: 12px
+	}
+	.user-box.user-box-s .user-name
+	{
+		font-family: 'raleway-m';
 	}
 
 	.news-box .tit .name .name-txt {
@@ -808,7 +814,14 @@
 	.newsfeed .owl-carousel .owl-stage-outer .box .box-img img {
 		width: 100%;
 	}
-
+	.newsfeed .contest-side
+	{
+		margin-bottom: 10px;
+	}
+	.news-box.shared-box .item-description
+	{
+		margin-top: 20px;
+	}
 	.newsfeed .contest-side .log-btn {
 		margin: auto;
 		top: -20px;
@@ -1355,7 +1368,8 @@
 	}
 	.msg-box .msg-content
 	{
-		max-width: 80%
+		max-width: 80%;
+		font-size: 14px;
 	}
 	.message-content
 	{
@@ -1370,6 +1384,7 @@
 	.messages
 	{
 		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 	.messages > .container
 	{
@@ -1408,6 +1423,14 @@
 	{
 		width: 17px;
 	}
+	.online-box
+	{
+		padding: 20px;
+	}
+	.online-box .up
+	{
+		padding-bottom: 0;
+	}
 
 	.online-box .up .info {
 		width: calc(100% - 65px);
@@ -1417,10 +1440,32 @@
 		font-size: 16px;
 		font-family: 'raleway-m';
 	}
-
+	.t-comnts-form .t-comnt-input, .t-comnts-form .t-comnt-submit
+	{
+		font-size: 12px
+	}
 	.online-box .up .date {
 		font-size: 12px;
 		font-family: 'sans';
+	}
+	*::-webkit-scrollbar-track,
+	*::-webkit-scrollbar,
+	*::-webkit-scrollbar-thumb
+	{
+		display: none;
+	}
+	.msg-box .date
+	{
+		font-size: 10px
+	}
+	.messages .t-comnts-form
+	{
+		width: calc(100% - 53px);
+		padding: 11px;
+	}
+	.t-comnts-form .t-comnt-input
+	{
+		padding-left: 0;
 	}
 /*	messages*/
 	
@@ -1666,6 +1711,10 @@
 }
 
 @media (max-width: 525px) {
+	.footer .footer-head .container
+	{
+		padding-left: 11px;
+	}
 	.newsfeed .owl-contest .item {
 		height: 265px;
 	}
