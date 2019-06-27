@@ -985,7 +985,7 @@ a {
 .drop-mnu.notifi-mnu {
 	top: calc(100% + 22px);
 	right: -10px;
-	width: 300px;
+	width: 305px;
 }
 
 .drpo-btn.notifi-btn img {
@@ -1138,7 +1138,7 @@ a {
 }
 
 .notifi-mnu .center .tit {
-	font-size: 14px;
+	font-size: 16px;
 	display: block;
 	font-family: 'raleway'
 }
@@ -5056,7 +5056,8 @@ a {
 }
 
 .profile-table .row .g-box .tit .info-content {
-	font-family: 'raleway-bo';
+	font-family: 'raleway-m';
+	font-weight: 500;
 }
 
 .profile-table .row .g-box > * {

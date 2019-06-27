@@ -952,6 +952,7 @@
 	.apply-modal-c.custom-modal .modal-card .card-content .tit-discount
 	{
 		font-size: 24px;
+		font-family: 'raleway-m';
 	}
 	.sent-modal.custom-modal .modal-card .card-content p
 	{
@@ -960,7 +961,8 @@
 	}
 	.dis-input
 	{
-		margin-bottom: 10px;
+		margin-bottom: 0;
+		width: 95%;
 	}
 	.apply-modal-c.sent-modal .info-content + p
 	{
@@ -972,6 +974,14 @@
 
 	.sent-modal.custom-modal .modal-card .card-content .log-btn:nth-of-type(2) {
 		margin-left: 20px;
+	}
+	.sent-modal.custom-modal .modal-card .log-btn:nth-child(1)
+	{
+		margin-left: 20px;
+	}
+	.sent-modal.custom-modal .modal-card .log-btn:nth-child(2)
+	{
+		margin-left: 0;
 	}
 
 	.profile-data .log-btn {
@@ -1505,8 +1515,12 @@
 	}
 	.b-profile-head .up-btn + a
 	{
-		font-size: 12px;
+		font-size: 14px;
 		display: inline-block;
+	}
+	.edite-input
+	{
+		font-size: 12px !important
 	}
 	.profile-table
 	{
@@ -1576,7 +1590,7 @@
 	.profile-table .table .info-content
 	{
 		width: 155px;
-		font-weight: bold;
+		font-weight: 500;
 		margin-right: 36px;
 		max-width: 155px
 	}
@@ -1689,7 +1703,7 @@
 	.profile-table .row .general .options *
 	{
 		margin-right: 20px;
-		font-size: 18px
+		font-size: 14px
 	}
 
 	.box .box-p.view,
