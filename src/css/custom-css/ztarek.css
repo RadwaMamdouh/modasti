@@ -8,7 +8,7 @@
 }
 @media(max-width: 1170px) {
 	.edite-item .form-btns .log-btn:first-child {
-		margin-right: 20px;
+		margin-right: 30px;
 	}
 	/*    header*/
 
@@ -959,6 +959,9 @@
 		margin-bottom: 20px;
 		font-size: 14px;
 	}
+	.sent-modal.custom-modal .modal-card .card-head {
+		padding: 20px 20px 0;
+	}
 	.dis-input
 	{
 		margin-bottom: 0;
@@ -1559,7 +1562,8 @@
 	}
 	.drop-mnu.table-dropdown a
 	{
-		font-size: 12px
+		font-size: 12px;
+		font-family: 'raleway-m';
 	}
 	.profile-table .table .general .options
 	{
@@ -1585,6 +1589,7 @@
 	{
 		width: 50%;
 		margin-bottom: 10px;
+		font-size: 12px;
 	}
 	.profile-table .table .general .options *:nth-child(1)
 	{
@@ -1627,6 +1632,19 @@
 	.profile-table .row .general .img
 	{
 		height: 250px;
+	}
+
+	.profile-table .row .g-box .info span {
+		font-size: 16px;
+		font-family: 'raleway-b';
+	}
+
+	.profile-table .row .g-box .info .info-content {
+		font-size: 16px;
+	}
+
+	.profile-table .row .g-box .td:first-child {
+		padding: 30px;
 	}
 	
 /*	business user profile*/
