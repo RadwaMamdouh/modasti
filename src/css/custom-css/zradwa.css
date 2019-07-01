@@ -1409,7 +1409,7 @@
     }
 
     .contest-bar .contest-tabs li {
-        padding: 30px;
+        padding: 30px 2px;
         border-bottom: 1px solid rgba(255, 255, 255, .20);
     }
 
