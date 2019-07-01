@@ -296,11 +296,11 @@
 	}
 
 	.box .box-price.with-sale .befor {
-		font-size: 12px;
+		font-size: 16px;
 	}
 	
 	.box .box-price.with-sale .aftr {
-		font-size: 8px;
+		font-size: 14px;
 	}
 	.search-result > .container > div
 	{
@@ -1113,10 +1113,17 @@
 		margin-bottom: 2px;
 	}
 	.box .box-p,
-	.box .box-p.info-content,
-	.box .box-tit a
+	.box .box-p.info-content
 	{
-		font-size: 16px
+		font-size: 14px
+	}
+
+	.box .box-tit a {
+		font-size: 16px;
+	}
+
+	.box .box-p.info-content {
+		font-size: 14px;
 	}
 
 	.filter .filter-form .btns {
@@ -1709,6 +1716,10 @@
 	.box .box-p.view,
 	.search-result .box .box-p.view {
 		margin-top: 0;
+	}
+
+	.search-result .box .box-p.view {
+		font-size: 14px;
 	}
 
 	.submission-contest {
