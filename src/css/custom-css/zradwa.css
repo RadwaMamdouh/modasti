@@ -846,6 +846,10 @@
         display: none;
     }
 
+    .items-details .quick-view-img {
+        margin-bottom: 20px;
+    }
+
 
     /********** myProfile-my-likes.html ************/
     .myLikes {
