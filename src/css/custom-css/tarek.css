@@ -3404,6 +3404,10 @@ a {
 	width: 100%;
 }
 
+.apply-modal-c.sent-modal .modal-card .card-content .log-btn:nth-of-type(2) {
+	margin-left: 0 !important;
+}
+
 /*==============================// end newsfeed page */
 
 
@@ -3728,7 +3732,7 @@ a {
 }
 
 .box .box-p.info-content {
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'raleway-m';
 }
 
@@ -3749,7 +3753,8 @@ a {
 .box .box-price.with-sale .befor {
 	margin-right: 10px;
 	color: #CFBDA8;
-	font-size: 30px;
+	/* font-size: 30px; */
+	font-size: 24px;
 }
 
 .box .box-price.with-sale .aftr {
