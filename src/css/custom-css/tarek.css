@@ -2775,6 +2775,22 @@ a {
 	margin-bottom: 60px;
 }
 
+.create-set-section .news-box.shared-box {
+	border-top: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+.create-set-section .news-box.shared-box .shared-b {
+	padding: 0;
+	border: 0;
+	margin-bottom: 0;
+}
+
+.create-set-section .news-box .img img {
+	border: 0;
+}
+
 /**********  end create-set-section */
 
 /*==============================// end home page */
