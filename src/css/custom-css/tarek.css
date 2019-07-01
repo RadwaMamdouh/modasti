@@ -1160,7 +1160,7 @@ a {
 .drop-mnu.notifi-mnu .center .date {
 	display: block;
 	font-size: 10px;
-	font-family: 'roboto-m';
+	font-family: 'sans-m';
 }
 
 .notifi-mnu .down {
@@ -2303,7 +2303,7 @@ a {
 
 .news-box .tit .name .name-txt {
 	font-family: 'raleway-m';
-	font-size: 18px
+	font-size: 13px
 }
 
 .news-box .tit .img-u {
@@ -2785,10 +2785,6 @@ a {
 	padding: 0;
 	border: 0;
 	margin-bottom: 0;
-}
-
-.create-set-section .news-box .img img {
-	border: 0;
 }
 
 /**********  end create-set-section */
@@ -4136,6 +4132,7 @@ a {
 
 .items-head.head-items-bet .main-title {
 	margin-bottom: 0;
+	align-items: baseline;
 }
 
 .items-head.head-items-bet > div {
@@ -4982,7 +4979,7 @@ a {
 	max-width: 155px;
 	text-transform: uppercase;
 	font-size: 16px;
-	font-family: 'raleway-m';
+	font-family: 'raleway';
 }
 
 .profile-table .table .c-width {
@@ -5110,7 +5107,7 @@ a {
 
 .profile-table .row .g-box .info span {
 	font-size: 14px;
-	font-family: 'raleway-m';
+	font-family: 'raleway-b';
 }
 
 .profile-table .row .g-box .info .info-content {
@@ -5539,4 +5536,6 @@ a {
 	max-width: none;
 	appearance: none;
 	padding: 0 20px;
+	font-size: 14px;
+	font-family: 'sans-m';
 }
