@@ -695,7 +695,7 @@ label {
 }
 
 .register .tabs {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 /* .register .tabs span,
@@ -4046,12 +4046,12 @@ label {
 
 
 /****************************************************** newsfeed.html ***************************/
-.news-box {
+.newsfeed.overflow .news-box {
     padding-top: 30px;
     border-top: 1px solid #ececec;
 }
 
-.news-box:first-of-type {
+.newsfeed.overflow .news-box:first-of-type {
     border-top: 0;
     padding-top: 0;
 }
