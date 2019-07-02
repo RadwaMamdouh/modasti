@@ -10,6 +10,10 @@
 	.edite-item .form-btns .log-btn:first-child {
 		margin-right: 30px;
 	}
+	.page404-container.weird-header .main-tit::after
+	{
+		left: 50px;
+	}
 	/*    header*/
 
 	.header .logo-side .logo {
@@ -18,7 +22,7 @@
 
 	.main-nav .nav-list .mynav-link,
 	.icons-side .log-link {
-		font-size: 12px;
+		font-size: 12px; 
 	}
 
 	.main-nav .nav-list .mynav-link,
