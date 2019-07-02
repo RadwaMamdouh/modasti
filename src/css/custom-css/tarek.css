@@ -51,6 +51,13 @@ body::-webkit-scrollbar-thumb
 }
 
 @font-face {
+	font-family: 'raleway-b';
+	src: url("../fonts/Raleway-Black.ttf"); 
+}
+
+
+
+@font-face {
 	font-family: 'raleway-bo';
 	src: url("../fonts/Raleway-Bold.ttf");
 }
@@ -65,10 +72,29 @@ body::-webkit-scrollbar-thumb
 	src: url("../fonts/Raleway-Medium.ttf");
 }
 
+
+
+
+
+
 @font-face {
-	font-family: 'raleway-b';
-	src: url("../fonts/Raleway-Black.ttf");
+	font-family: 'raleway-bo';
+	src: url("../fonts/GoogleSans-Bold.ttf");
+	unicode-range: U+0030-0039;
 }
+
+@font-face {
+	font-family: 'raleway';
+	src: url("../fonts/GoogleSans-Regular.ttf");
+	unicode-range: U+0030-0039;
+}
+
+@font-face {
+	font-family: 'raleway-m';
+	src: url("../fonts/GoogleSans-Medium.ttf");
+	unicode-range: U+0030-0039;
+}
+ 
 
 
 @font-face {
@@ -107,7 +133,14 @@ body::-webkit-scrollbar-thumb
 }
 
 
-
+.test
+{
+	font-family: 'raleway-bo';
+}
+.test2
+{
+	font-family: 'sans-b';
+}
 
 .content {
 	position: relative;
@@ -2619,8 +2652,29 @@ a {
 	overflow: hidden;
 }
 
+.exclusive .exclusive-img
+{
+	display: block;
+	width: 100%;
+	height: 255px;
+}
+.exclusive .info .main-title,
+.exclusive .info .info-content
+{
+	margin-bottom: 30px;
+}
+.exclusive .box
+{
+	margin-bottom: 0;
+}
+.exclusive .exclusive-img img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover
+}
 .exclusive .container {
-	background-color: #000;
+	background-color: #ECECEC;
 	position: relative;
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -2634,8 +2688,19 @@ a {
 	height: 100%;
 	right: 100%;
 	top: 0;
-	background-color: #000;
+	background-color: #ECECEC;
 }
+.exclusive .container::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 1000px;
+	height: 100%;
+	left: 100%;
+	top: 0;
+	background-color: #ECECEC;
+}
+
 
 .exclusive .container .title-container {
 	margin-bottom: 0;
