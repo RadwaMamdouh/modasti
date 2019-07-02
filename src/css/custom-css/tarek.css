@@ -2613,6 +2613,10 @@ a {
 	background-color: #ECECEC;
 }
 
+.whats-new .box .btns {
+	top: 45%;
+}
+
 .whats-new .col-6 {
 	overflow: hidden;
 }
