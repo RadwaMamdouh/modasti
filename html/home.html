@@ -489,20 +489,10 @@
 								<div class="box-price">
 									250$
 								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-md-3">
-						<div class="box">
-							<div class="box-img">
-								<a href="items-details.html"><img src="../dist/img/pic9.png" class="img-fluid"></a>
-							</div>
-							<div class="down">
-								<div class="box-tit">
-									<a href="items-details.html">BUTTONED FAUX FUR COAT</a>
-								</div>
-								<div class="box-price">
-									250$
+								<div class="btns">
+									<button type="button" class="log-btn modal-btn view" data-target="#modal">
+										<span class="tit">QUICK VIEW</span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -519,6 +509,11 @@
 								<div class="box-price">
 									250$
 								</div>
+								<div class="btns">
+									<button type="button" class="log-btn modal-btn view" data-target="#modal">
+										<span class="tit">QUICK VIEW</span>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -533,6 +528,31 @@
 								</div>
 								<div class="box-price">
 									250$
+								</div>
+								<div class="btns">
+									<button type="button" class="log-btn modal-btn view" data-target="#modal">
+										<span class="tit">QUICK VIEW</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-3">
+						<div class="box">
+							<div class="box-img">
+								<a href="items-details.html"><img src="../dist/img/pic9.png" class="img-fluid"></a>
+							</div>
+							<div class="down">
+								<div class="box-tit">
+									<a href="items-details.html">BUTTONED FAUX FUR COAT</a>
+								</div>
+								<div class="box-price">
+									250$
+								</div>
+								<div class="btns">
+									<button type="button" class="log-btn modal-btn view" data-target="#modal">
+										<span class="tit">QUICK VIEW</span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -1180,7 +1200,735 @@
 			</div>
 		</div>
 	</footer>
+   
+    <!-- Start Quick View Modal -->
+    <div class="custom-modal quickView-modal" id="modal">
+        <div class="overlay"></div>
+        <div class="modal-card">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="quick-view-img">
+						<img src="../dist/img/main-view.png" alt="">
+					</div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="quick-view-details">
+                        <div class="card-head">
+                            <img src="../dist/img/close.png" class="img-fluid close-img">
+                        </div>
+                        <div class="details">
+                            <div class="item-name">T-SHIRT WITH SEAM DETAIL</div>
+                            <div class="size-guid">
+                                <div class="size">
+                                    <span>SIZE</span>
+                                    <a href="#" class="modal-btn" data-target="#sizeQuid-modal">SIZE GUIDE</a>
+                                </div>
+                                <div class="quid-box">
+                                    <div class="size-box">
+                                        XS
+                                    </div>
+                                    <div class="size-box">
+                                        S
+                                    </div>
+                                    <div class="size-box">
+                                        M
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-status">
+                                <span>STATUES:</span>
+                                <span>BACK-IN-STOCK</span>
+                            </div>
+                            <div class="item-description">
+                                <div class="description-tit">DESCRIPTION</div>
+                                <div class="item-color">
+                                    <p>Color</p>
+                                    <p>Blue</p>
+                                </div>
+                                <div class="item-style">
+                                    <p>Style</p>
+                                    <p>Casual, Basics</p>
+                                </div>
+                            </div>
+                            <div class="item-composition">
+                                <div class="comp-tit">Composition:</div>
+                                <p>65% Cotton, 30% Polyester, 5% Spandex</p>
+                            </div>
+                            <div class="item-price">250$</div>
+                            <div class="get-item">
+                                <a href="#" class="log-btn">
+                                    <span>GET ITEM</span>
+                                    <img src="../dist/img/right-arrow.png" class="img-fluid">
+                                </a>
+							</div>
+							<div class="full-details">
+                                <a href="#">FULL DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Quick View Modal -->
+   
+    <!-- Start Size Quid Modal -->
+    <div class="custom-modal sizeQuid-modal" id="sizeQuid-modal">
+        <div class="overlay"></div>
+        <div class="modal-card">
+            <div class="card-head">
+                <img src="../dist/img/close.png" class="img-fluid close-img">
+            </div>
+            <div class="card-content">
+                <div class="guid-title">SIZE GUIDE</div>
+                <div class="tabs">
+                    <label class="custom-checkbox radio">
+                        <input type="radio" name="userType" checked class="d-none">
+                        <i class="fas fa-square"></i>
+                        <span class="tit">US</span>
+                    </label>
+                    <label class="custom-checkbox radio">
+                        <input type="radio" name="userType" class="d-none">
+                        <i class="fas fa-square"></i>
+                        <span class="tit">UK</span>
+					</label>
+					<label class="custom-checkbox radio">
+                        <input type="radio" name="userType" class="d-none">
+                        <i class="fas fa-square"></i>
+                        <span class="tit">EUR</span>
+					</label>
+					<label class="custom-checkbox radio">
+                        <input type="radio" name="userType" class="d-none">
+                        <i class="fas fa-square"></i>
+                        <span class="tit">FA</span>
+                    </label>
+                </div>
+                <div class="tab-content">
+                    <div class="guid-sizes">
+						<table class="fixed-table">
+							<thead>
+								<tr>
+									<th>
+										SIZE
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="empty-cell">sss</td>
+								</tr>
+								<tr>
+									<td>
+										XS
+									</td>
+								</tr>
+								<tr>
+									<td>
+										S
+									</td>
+								</tr>
+								<tr>
+									<td>
+										m
+									</td>
+								</tr>
+								<tr>
+									<td>
+										l
+									</td>
+								</tr>
+								<tr>
+									<td>
+										xl
+									</td>
+								</tr>
+							</tbody>
+						</table>
 
+						<div class="overflow-container">
+							<table>
+								<thead>
+									<tr>
+										<th colspan="2">BUST</th>
+										<th colspan="2">WAIST</th>
+										<th colspan="2">HIPS</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											CM
+										</td>
+										<td>
+											INCH
+										</td>
+										<td>
+											CM
+										</td>
+										<td>
+											INCH
+										</td>
+										<td>
+											CM
+										</td>
+										<td>
+											INCH
+										</td>
+									</tr>
+									<tr>
+	
+										<td>
+											81.28-83.82
+										</td>
+										<td>
+											32-33
+										</td>
+										<td>
+											60.96-63.5
+										</td>
+										<td>
+											24-25
+										</td>
+										<td>
+											87.63-90.17
+										</td>
+										<td>
+											34.5-35.5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											86.36-88.9
+										</td>
+										<td>
+											34-35
+										</td>
+										<td>
+											66.04-68.58
+										</td>
+										<td>
+											26-27
+										</td>
+										<td>
+											92.71-95.25
+										</td>
+										<td>
+											36.5-37.5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											91.44-93.98
+										</td>
+										<td>
+											36-37
+										</td>
+										<td>
+											71.12-73.66
+										</td>
+										<td>
+											28-29
+										</td>
+										<td>
+											97.79-102.87
+										</td>
+										<td>
+											38.5-40.5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											97.79-101.6
+										</td>
+										<td>
+											38.5-40
+										</td>
+										<td>
+											77.47-81.28
+										</td>
+										<td>
+											30.5-32
+										</td>
+										<td>
+											107.95-113.03
+										</td>
+										<td>
+											42.5-44.5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											105.41-109.22
+										</td>
+										<td>
+											41.5-43
+										</td>
+										<td>
+											85.09-88.9
+										</td>
+										<td>
+											33.5-35
+										</td>
+										<td>
+											108.585
+										</td>
+										<td>
+											42.75
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- End Size Quid Modal -->
+	
+	<!-- Start Shoes Size Quid Modal -->
+    <div class="custom-modal sizeQuid-modal shoes-guide" id="shoes-sizeQuid-modal">
+        <div class="overlay"></div>
+        <div class="modal-card">
+            <div class="card-head">
+                <img src="../dist/img/close.png" class="img-fluid close-img">
+            </div>
+            <div class="card-content">
+                <div class="guid-title">SHOES SIZE GUIDE</div>
+                <div class="tab-content">
+                    <div class="guid-sizes">
+						<table class="fixed-table">
+							<thead>
+								<tr>
+									<th>
+										SIZE
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										22,2 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										22,6 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										23,1 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										23,5 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										23,9 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										24,3 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										24,8 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										25,2 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										25,6 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										26,0 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										26,5 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										26,9 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										27,3 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										27,7 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										28,1 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										28,6 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										29,0 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										29,4 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										29,8 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										30,2 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										30,6 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										31,0 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										31,4 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										31,8 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										32,2 cm
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="overflow-container">
+							<table>
+								<thead>
+									<tr>
+										<th>EUR</th>
+										<th>UK</th>
+										<th>US</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											35
+										</td>
+										<td>
+											3
+										</td>
+										<td>
+											4 1/2
+										</td>
+									</tr>
+									<tr>
+	
+										<td>
+											36
+										</td>
+										<td>
+											3 1/2
+										</td>
+										<td>
+											5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											37
+										</td>
+										<td>
+											4
+										</td>
+										<td>
+											5 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											37 1/2
+										</td>
+										<td>
+											4 1/2
+										</td>
+										<td>
+											6
+										</td>
+									</tr>
+									<tr>
+										<td>
+											38
+										</td>
+										<td>
+											5
+										</td>
+										<td>
+											6 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											39
+										</td>
+										<td>
+											5 1/2
+										</td>
+										<td>
+											7
+										</td>
+									</tr>
+									<tr>
+										<td>
+											39 1/2
+										</td>
+										<td>
+											6
+										</td>
+										<td>
+											7 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											40
+										</td>
+										<td>
+											6 1/2
+										</td>
+										<td>
+											8
+										</td>
+									</tr>
+									<tr>
+										<td>
+											41
+										</td>
+										<td>
+											7
+										</td>
+										<td>
+											8 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											41 1/2
+										</td>
+										<td>
+											7 1/2
+										</td>
+										<td>
+											9
+										</td>
+									</tr>
+									<tr>
+										<td>
+											42
+										</td>
+										<td>
+											8
+										</td>
+										<td>
+											9 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											42 1/2
+										</td>
+										<td>
+											8 1/2
+										</td>
+										<td>
+											10
+										</td>
+									</tr>
+									<tr>
+										<td>
+											43
+										</td>
+										<td>
+											9
+										</td>
+										<td>
+											10 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											44
+										</td>
+										<td>
+											9 1/2
+										</td>
+										<td>
+											11
+										</td>
+									</tr>
+									<tr>
+										<td>
+											44 1/2
+										</td>
+										<td>
+											10
+										</td>
+										<td>
+											11 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											45
+										</td>
+										<td>
+											10 1/2
+										</td>
+										<td>
+											12
+										</td>
+									</tr>
+									<tr>
+										<td>
+											46
+										</td>
+										<td>
+											11
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											46 1/2
+										</td>
+										<td>
+											11 1/2
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											47
+										</td>
+										<td>
+											12
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											48
+										</td>
+										<td>
+											12 1/2
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											48 1/2
+										</td>
+										<td>
+											13
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											49
+										</td>
+										<td>
+											13 1/2
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											49 1/2
+										</td>
+										<td>
+											14
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											50
+										</td>
+										<td>
+											14 1/2
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											50 1/2
+										</td>
+										<td>
+											15
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Shoes Size Quid Modal -->
 	<!-- end footer -->
 	<script src="../dist/js/jquery-3.2.1.min.js"></script>
 	<script src="../dist/js/main.js"></script>

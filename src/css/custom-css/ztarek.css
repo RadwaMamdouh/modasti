@@ -443,10 +443,10 @@
 	.footer .foot-content .container
 	{
 		padding: 50px 35px;
-	}
+	} 
 
 	.footer .foot-content .container::before {
-		right: calc(100% - 30px);
+		right: calc(100% - 35px);
 	}
 	.footer .social ul li:nth-child(1) img
 	{
@@ -1786,7 +1786,7 @@
 @media (max-width: 525px) {
 	.footer .footer-head .container
 	{
-		padding-left: 11px;
+		padding-left: 15px;
 	}
 	.newsfeed .owl-contest .item {
 		height: 265px;
@@ -1915,6 +1915,11 @@
 	{
 		grid-template-columns: repeat(8, 1fr);
 	}  
+	.footer .footer-head .container
+	{
+		padding-left: 20px;
+	}
+	
 }
 
 @media (max-width: 922px) {
