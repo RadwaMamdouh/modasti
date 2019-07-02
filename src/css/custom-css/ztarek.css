@@ -8,7 +8,7 @@
 }
 @media(max-width: 1170px) {
 	.edite-item .form-btns .log-btn:first-child {
-		margin-right: 20px;
+		margin-right: 30px;
 	}
 	/*    header*/
 
@@ -296,11 +296,11 @@
 	}
 
 	.box .box-price.with-sale .befor {
-		font-size: 12px;
+		font-size: 16px;
 	}
 	
 	.box .box-price.with-sale .aftr {
-		font-size: 8px;
+		font-size: 14px;
 	}
 	.search-result > .container > div
 	{
@@ -983,6 +983,9 @@
 		margin-bottom: 20px;
 		font-size: 14px;
 	}
+	.sent-modal.custom-modal .modal-card .card-head {
+		padding: 20px 20px 0;
+	}
 	.dis-input
 	{
 		margin-bottom: 0;
@@ -1137,10 +1140,17 @@
 		margin-bottom: 2px;
 	}
 	.box .box-p,
-	.box .box-p.info-content,
-	.box .box-tit a
+	.box .box-p.info-content
 	{
-		font-size: 16px
+		font-size: 14px
+	}
+
+	.box .box-tit a {
+		font-size: 16px;
+	}
+
+	.box .box-p.info-content {
+		font-size: 14px;
 	}
 
 	.filter .filter-form .btns {
@@ -1577,7 +1587,8 @@
 	}
 	.drop-mnu.table-dropdown a
 	{
-		font-size: 12px
+		font-size: 12px;
+		font-family: 'raleway-m';
 	}
 	.profile-table .table .general .options
 	{
@@ -1603,6 +1614,7 @@
 	{
 		width: 50%;
 		margin-bottom: 10px;
+		font-size: 12px;
 	}
 	.profile-table .table .general .options *:nth-child(1)
 	{
@@ -1645,6 +1657,19 @@
 	.profile-table .row .general .img
 	{
 		height: 250px;
+	}
+
+	.profile-table .row .g-box .info span {
+		font-size: 16px;
+		font-family: 'raleway-b';
+	}
+
+	.profile-table .row .g-box .info .info-content {
+		font-size: 16px;
+	}
+
+	.profile-table .row .g-box .td:first-child {
+		padding: 30px;
 	}
 	
 /*	business user profile*/
@@ -1736,6 +1761,10 @@
 		margin-top: 0;
 	}
 
+	.search-result .box .box-p.view {
+		font-size: 14px;
+	}
+
 	.submission-contest {
 		display: flex;
 		align-items: center;
@@ -1780,7 +1809,8 @@
 	}
 	.notification-p .notifi-mnu .center .tit
 	{
-		font-size: 16px
+		font-size: 16px;
+		font-family: 'raleway-m';
 	}
 	.drop-mnu.notifi-mnu
 	{
@@ -1788,7 +1818,8 @@
 	}
 	.notification-p .notifi-mnu .center .date
 	{
-		font-size: 12px
+		font-size: 12px;
+		font-family: 'sans';
 	}
 	.filter .box .box-img {
 		width: 100%;

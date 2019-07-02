@@ -7,11 +7,13 @@
 	<title>Modasti</title>
 	<link rel="icon" href="../dist/img/min-logo.png" type="image/x-icon" />
 	<link rel="stylesheet" href="../dist/css/style.min.css">
+	<link rel="stylesheet" href="../src/css/custom-css/tarek.css">
+	<link rel="stylesheet" href="../src/css/custom-css/ztarek.css">
 	
 </head>
 
 <body>
-	<!-- desctop header -->
+	<!-- start desctop header -->
 	<header class="main-header">
 		<section class="header">
 			<div class="logo-side">
@@ -47,7 +49,7 @@
 						</div>
 						<div class="center">
 							<a href="" class="link">Edit profile </a>
-							<a href="" class="link">Settings</a>
+							<a href="help.html" class="link">Help</a>
 						</div>
 						<div class="down">
 							<a href="index.html" class="link">Logout</a>
@@ -131,38 +133,42 @@
 					</a>
 
 					<div class="drop-mnu notifi-mnu">
-						<div class="up">
-							<p class="tit">notfication</p>
-							<div class="switch">
-								<span class="mode-btn">
-									<span class="on">on</span>
-									<span class="off">off</span>
-								</span>
-								<span class="line"></span>
-								<span class="dot"></span>
+						<div class="notifi-head">
+							<div class="up">
+								<p class="tit">
+									NOTIFICATIONS
+								</p>
+								<div class="switch">
+									<span class="mode-btn">
+										<span class="on">on</span>
+										<span class="off">off</span>
+									</span>
+									<span class="line"></span>
+									<span class="dot"></span>
+								</div>
 							</div>
 						</div>
 						<ul class="center">
+
 							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
+								<div class="n-link">
+									<div class="n-user">
+										<img src="../dist/img/news-feed2.png" alt="">
+									</div>
+									<div class="left">
+										<a href="" class="center-content">
+											<span class="tit">User X like on your set</span>
+											<span class="date">5 MINUTES AGO</span>
+										</a>
+									</div>
+									<div class="n-img">
+										<img src="../dist/img/news-feed.png" alt="">
+									</div>
+								</div>
 							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
+
 						</ul>
-						<a href="" class="down">
+						<a href="notfications.html" class="down">
 							see all
 							<img src="../dist/img/right-arrow.png" alt="">
 						</a>
@@ -183,10 +189,16 @@
 			</div>
 		</section>
 		<!-- search form -->
-		<form action="" class="search-input">
+		<form action="search-result.html" class="search-input">
 			<div class="container">
 				<input type="text" class="srch-input" placeholder="search">
 				<p class="info">result <span></span> 100</p>
+				<ul class="hints">
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+				</ul>
 			</div>
 		</form>
 		<!-- sec nav list -->
@@ -204,7 +216,10 @@
 				<li>
 					<a href="">SHOES</a>
 				</li>
-				
+
+				<li>
+					<a href="newsfeed.html">newsfeed</a>
+				</li>
 				<li>
 					<a href="exclusive-discount.html">DISCOUNTS</a>
 				</li>
@@ -217,8 +232,8 @@
 			</ul>
 		</div>
 	</header>
-
-	<!-- mobile header -->
+	<!-- end desctop header -->
+	<!-- start mobile header -->
 	<section class="header-container header-container-m">
 
 		<div class="header-m header">
@@ -331,7 +346,7 @@
 						</div>
 						<div class="center">
 							<a href="" class="link">Edit profile </a>
-							<a href="" class="link">Settings</a>
+							<a href="help.html" class="link">Help</a>
 						</div>
 						<div class="down">
 							<a href="index.html" class="link">Logout</a>
@@ -350,7 +365,7 @@
 
 					<div class="drop-mnu notifi-mnu">
 						<div class="up">
-							<p class="tit">notfication</p>
+							<p class="tit">NOTIFICATIONS</p>
 							<div class="switch">
 								<span class="mode-btn">
 									<span class="on">on</span>
@@ -421,6 +436,7 @@
 		</div>
 
 	</section>
+	<!-- end mobile header -->
 
 
 	<!-- start content -->
@@ -437,10 +453,10 @@
 		</div>
 		<!-- start news feed -->
 
-		<section class="newsfeed">
+		<section class="newsfeed overflow">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-md-6 col-lg-3 overflow">
+					<div class="col-12 col-md-12 col-lg-3">
 
 						<div class="contest-side">
 							<p class="main-title">
@@ -486,21 +502,43 @@
 										<a href="" class="box-img">
 											<img src="../dist/img/collections.png" class="img-fluid">
 										</a>
-										<div class="icons">
-											<div class="icon heart">
-												<img src="../dist/img/red-heart.png" alt="" class="checked-img">
-												<img src="../dist/img/heart.png" alt="">
-												<span class="val">900</span>
-											</div>
-											<div class="icon">
-												<img src="../dist/img/comment.png" alt="">
-												<span class="val">900</span>
-											</div>
-											<div class="icon">
-												<img src="../dist/img/share.png" alt="">
-												<span class="val">900</span>
-											</div>
+										<div class="share-bar-container">
+											<div class="icons">
+												<div class="icon heart">
+													<img src="../dist/img/red-heart.png" alt="" class="checked-img">
+													<img src="../dist/img/heart.png" alt="">
+													<span class="val">900</span>
+												</div>
+												<div class="icon">
+													<img src="../dist/img/comment.png" alt="">
+													<span class="val">900</span>
+												</div>
+												<div class="icon share-top share2btn">
+													<div class="d-flex">
+														<img src="../dist/img/share.png" alt="">
+														<span class="val">900</span>
+													</div>
+													<div class="share-icons">
+														<a href="" class="share-link">
+															<img src="../dist/img/sit.png" alt="">
+															<img src="../dist/img/site-c.png" alt="">
+														</a>
+														<a href="" class="share-link">
+															<img src="../dist/img/Facebook.png" alt="">
+															<img src="../dist/img/Facebook-c.png" alt="">
+														</a>
+														<a href="" class="share-link">
+															<img src="../dist/img/twit.png" alt="">
+															<img src="../dist/img/twit-c.png" alt="">
+														</a>
+														<a href="" class="share-link">
+															<img src="../dist/img/g+.png" alt="">
+															<img src="../dist/img/g+-c.png" alt="">
+														</a>
+													</div>
+												</div>
 
+											</div>
 										</div>
 									</div>
 								</div>
@@ -555,7 +593,7 @@
 						</div>
 
 					</div>
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-md-12 col-lg-6">
 						<p class="main-title">
 							<img src="../dist/img/title-sign.png" class="img">
 							<span>
@@ -563,13 +601,8 @@
 							</span>
 						</p>
 						<div class="news-box newsfeed-box">
-							<div class="group-img">
-								<div><img src="../dist/img/pic4.png" alt="" class="modal-btn" data-target="#gallery-modal"></div>
-								<div><img src="../dist/img/pic18.png" alt="" class="modal-btn" data-target="#gallery-modal"></div>
-								<div class="modal-btn" data-target="#gallery-modal">
-									<img src="../dist/img/pic19.png" alt="">
-									<span class="plus-num">+18</span>
-								</div>
+							<div class="img">
+								<img src="../dist/img/collections.png" alt="" class="modal-btn" data-target="#gallery-modal">
 							</div>
 							<div class="tit">
 								<a href="" class="name">
@@ -595,6 +628,12 @@
 									</div>
 								</div>
 							</div>
+							<div class="item-description">
+								<div class="item-title">
+									BUTTONED FAUX FUR COAT
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+							</div>
 							<div class="icons-bar">
 								<div class="icons">
 									<div class="icon heart">
@@ -608,7 +647,7 @@
 									</div>
 									<div class="share-icons">
 										<a href="">
-											<img src="../dist/img/site.png" alt="">
+											<img src="../dist/img/sit.png" alt="">
 										</a>
 										<a href="">
 											<img src="../dist/img/Facebook.png" alt="">
@@ -638,7 +677,7 @@
 													<img src="../dist/img/collape-plus.png" alt="">
 												</div>
 												<div class="row">
-													<div class="col-4 col-md-4 col-xl-3">
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
 														<div class="save-collection">
 															<img src="../dist/img/save-collection.png" alt="" class="c-img">
 															<p class="c-tit">
@@ -646,7 +685,7 @@
 															</p>
 														</div>
 													</div>
-													<div class="col-4 col-md-4 col-xl-3">
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
 														<div class="save-collection">
 															<img src="../dist/img/save-collection.png" alt="" class="c-img">
 															<p class="c-tit">
@@ -654,7 +693,7 @@
 															</p>
 														</div>
 													</div>
-													<div class="col-4 col-md-4 col-xl-3">
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
 														<div class="save-collection">
 															<img src="../dist/img/save-collection.png" alt="" class="c-img">
 															<p class="c-tit">
@@ -662,7 +701,7 @@
 															</p>
 														</div>
 													</div>
-													<div class="col-4 col-md-4 col-xl-3">
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
 														<div class="save-collection">
 															<img src="../dist/img/save-collection.png" alt="" class="c-img">
 															<p class="c-tit">
@@ -670,7 +709,7 @@
 															</p>
 														</div>
 													</div>
-													<div class="col-4 col-md-4 col-xl-3">
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
 														<div class="save-collection">
 															<img src="../dist/img/save-collection.png" alt="" class="c-img">
 															<p class="c-tit">
@@ -678,7 +717,7 @@
 															</p>
 														</div>
 													</div>
-													<div class="col-4 col-md-4 col-xl-3">
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
 														<div class="save-collection">
 															<img src="../dist/img/save-collection.png" alt="" class="c-img">
 															<p class="c-tit">
@@ -686,7 +725,7 @@
 															</p>
 														</div>
 													</div>
-													<div class="col-4 col-md-4 col-xl-3">
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
 														<div class="save-collection">
 															<img src="../dist/img/save-collection.png" alt="" class="c-img">
 															<p class="c-tit">
@@ -694,7 +733,7 @@
 															</p>
 														</div>
 													</div>
-													<div class="col-4 col-md-4 col-xl-3">
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
 														<div class="save-collection">
 															<img src="../dist/img/save-collection.png" alt="" class="c-img">
 															<p class="c-tit">
@@ -714,8 +753,8 @@
 														<img src="../dist/img/save-collection.png" alt="">
 													</div>
 													<div class="sub">
-														<div class="form-group email">
-															<input type="email" class="input" placeholder="EMAIL OR PHONE NUMBER">
+														<div class="form-group">
+															<input type="text" class="input" placeholder="COLLECTION NAME">
 															<span></span>
 														</div>
 														<button type="submit" class="log-btn">
@@ -733,17 +772,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="news-box newsfeed-box">
-							<div class="dubl-img">
-								<img src="../dist/img/pic18.png" alt="" class="modal-btn" data-target="#gallery-modal">
-								<img src="../dist/img/pic20.png" alt="" class="modal-btn" data-target="#gallery-modal">
-							</div>
+						<div class="news-box newsfeed-box shared-box">
 							<div class="tit">
 								<a href="" class="name">
 									<span class="img-u">
 										<img src="../dist/img/user.png" alt="">
 									</span>
-									<span class="name-txt">Yosra Fahmy</span>
+									<span class="name-txt">Menna Khaled</span>
 								</a>
 								<span class="date">
 									1 minute ago
@@ -762,6 +797,28 @@
 									</div>
 								</div>
 							</div>
+							<div class="shared-b">
+								<div class="img">
+									<img src="../dist/img/collections.png" alt="" class="modal-btn" data-target="#gallery-modal">
+								</div>
+								<div class="tit shared-tit">
+									<a href="" class="name">
+										<span class="img-u">
+											<img src="../dist/img/user.png" alt="">
+										</span>
+										<span class="name-txt">Sara Emad</span>
+									</a>
+									<span class="date">
+										1 minute ago
+									</span>
+								</div>
+								<div class="item-description">
+									<div class="item-title">
+										BUTTONED FAUX FUR COAT
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+								</div>
+							</div>
 							<div class="icons-bar">
 								<div class="icons">
 									<div class="icon heart">
@@ -775,7 +832,7 @@
 									</div>
 									<div class="share-icons">
 										<a href="">
-											<img src="../dist/img/site.png" alt="">
+											<img src="../dist/img/sit.png" alt="">
 										</a>
 										<a href="">
 											<img src="../dist/img/Facebook.png" alt="">
@@ -881,8 +938,8 @@
 														<img src="../dist/img/save-collection.png" alt="">
 													</div>
 													<div class="sub">
-														<div class="form-group email">
-															<input type="email" class="input" placeholder="EMAIL OR PHONE NUMBER">
+														<div class="form-group">
+															<input type="text" class="input" placeholder="COLLECTION NAME">
 															<span></span>
 														</div>
 														<button type="submit" class="log-btn">
@@ -902,14 +959,14 @@
 						</div>
 						<div class="news-box newsfeed-box">
 							<div class="img">
-								<img src="../dist/img/pic20.png" alt="" class="modal-btn" data-target="#gallery-modal">
+								<img src="../dist/img/pic10.png" alt="" class="modal-btn" data-target="#gallery-modal">
 							</div>
 							<div class="tit">
 								<a href="" class="name">
 									<span class="img-u">
-										<img src="../dist/img/user.png" alt="">
+										<img src="../dist/img/pull.png" alt="">
 									</span>
-									<span class="name-txt">Yosra Fahmy</span>
+									<span class="name-txt">PULL&BEAR</span>
 								</a>
 								<span class="date">
 									1 minute ago
@@ -928,6 +985,14 @@
 									</div>
 								</div>
 							</div>
+							<div class="item-price">
+								<div class="item-title">
+									BUTTONED FAUX FUR COAT
+								</div>
+								<div class="price">
+									250$
+								</div>
+							</div>
 							<div class="icons-bar">
 								<div class="icons">
 									<div class="icon heart">
@@ -941,7 +1006,7 @@
 									</div>
 									<div class="share-icons">
 										<a href="">
-											<img src="../dist/img/site.png" alt="">
+											<img src="../dist/img/sit.png" alt="">
 										</a>
 										<a href="">
 											<img src="../dist/img/Facebook.png" alt="">
@@ -1047,8 +1112,8 @@
 														<img src="../dist/img/save-collection.png" alt="">
 													</div>
 													<div class="sub">
-														<div class="form-group email">
-															<input type="email" class="input" placeholder="EMAIL OR PHONE NUMBER">
+														<div class="form-group">
+															<input type="text" class="input" placeholder="COLLECTION NAME">
 															<span></span>
 														</div>
 														<button type="submit" class="log-btn">
@@ -1066,15 +1131,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="news-box newsfeed-box">
-							<div class="group-img">
-								<div><img src="../dist/img/pic4.png" alt="" class="modal-btn" data-target="#gallery-modal"></div>
-								<div><img src="../dist/img/pic18.png" alt="" class="modal-btn" data-target="#gallery-modal"></div>
-								<div class="modal-btn" data-target="#gallery-modal">
-									<img src="../dist/img/pic19.png" alt="">
-									<span class="plus-num">+18</span>
-								</div>
-							</div>
+						<div class="news-box newsfeed-box shared-box">
 							<div class="tit">
 								<a href="" class="name">
 									<span class="img-u">
@@ -1099,170 +1156,27 @@
 									</div>
 								</div>
 							</div>
-							<div class="icons-bar">
-								<div class="icons">
-									<div class="icon heart">
-										<img src="../dist/img/red-heart.png" alt="" class="checked-img">
-										<img src="../dist/img/heart.png" alt="">
-										<span class="val">900</span>
-									</div>
-									<div class="icon share-control">
-										<img src="../dist/img/share.png" alt="">
-										<span class="val">900</span>
-									</div>
-									<div class="share-icons">
-										<a href="">
-											<img src="../dist/img/site.png" alt="">
-										</a>
-										<a href="">
-											<img src="../dist/img/Facebook.png" alt="">
-										</a>
-										<a href="">
-											<img src="../dist/img/Twitter.png" alt="">
-										</a>
-										<a href="">
-											<img src="../dist/img/G+.png" alt="">
-										</a>
-									</div>
+							<div class="shared-b">
+								<div class="img">
+									<img src="../dist/img/pic10.png" alt="" class="modal-btn" data-target="#gallery-modal">
 								</div>
-
-								<div class="save">
-									<div class="drop-container location-drop-btn save-to-dropdown">
-										<a href="" class="drpo-btn">
-											<div class="icon heart">
-												<img src="../dist/img/save-checked.png" alt="" class="checked-img">
-												<img src="../dist/img/save.png" alt="">
-											</div>
-										</a>
-
-										<div class="drop-mnu">
-											<div class="save-collection-box active">
-												<div class="sc-head">
-													<p class="sc-tit">save to</p>
-													<img src="../dist/img/collape-plus.png" alt="">
-												</div>
-												<div class="row">
-													<div class="col-4 col-md-4 col-xl-3">
-														<div class="save-collection">
-															<img src="../dist/img/save-collection.png" alt="" class="c-img">
-															<p class="c-tit">
-																SUMMER
-															</p>
-														</div>
-													</div>
-													<div class="col-4 col-md-4 col-xl-3">
-														<div class="save-collection">
-															<img src="../dist/img/save-collection.png" alt="" class="c-img">
-															<p class="c-tit">
-																SUMMER
-															</p>
-														</div>
-													</div>
-													<div class="col-4 col-md-4 col-xl-3">
-														<div class="save-collection">
-															<img src="../dist/img/save-collection.png" alt="" class="c-img">
-															<p class="c-tit">
-																SUMMER
-															</p>
-														</div>
-													</div>
-													<div class="col-4 col-md-4 col-xl-3">
-														<div class="save-collection">
-															<img src="../dist/img/save-collection.png" alt="" class="c-img">
-															<p class="c-tit">
-																SUMMER
-															</p>
-														</div>
-													</div>
-													<div class="col-4 col-md-4 col-xl-3">
-														<div class="save-collection">
-															<img src="../dist/img/save-collection.png" alt="" class="c-img">
-															<p class="c-tit">
-																SUMMER
-															</p>
-														</div>
-													</div>
-													<div class="col-4 col-md-4 col-xl-3">
-														<div class="save-collection">
-															<img src="../dist/img/save-collection.png" alt="" class="c-img">
-															<p class="c-tit">
-																SUMMER
-															</p>
-														</div>
-													</div>
-													<div class="col-4 col-md-4 col-xl-3">
-														<div class="save-collection">
-															<img src="../dist/img/save-collection.png" alt="" class="c-img">
-															<p class="c-tit">
-																SUMMER
-															</p>
-														</div>
-													</div>
-													<div class="col-4 col-md-4 col-xl-3">
-														<div class="save-collection">
-															<img src="../dist/img/save-collection.png" alt="" class="c-img">
-															<p class="c-tit">
-																SUMMER
-															</p>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="new-collection-box">
-												<div class="sc-head">
-													<p class="sc-tit">new collection</p>
-													<img src="../dist/img/close.png" alt="">
-												</div>
-												<form action="" class="new-collection-form">
-													<div class="img">
-														<img src="../dist/img/save-collection.png" alt="">
-													</div>
-													<div class="sub">
-														<div class="form-group email">
-															<input type="email" class="input" placeholder="EMAIL OR PHONE NUMBER">
-															<span></span>
-														</div>
-														<button type="submit" class="log-btn">
-															<span class="tit">done</span>
-															<img src="../dist/img/right-arrow.png" class="img-fluid">
-														</button>
-													</div>
-												</form>
-											</div>
-											<p class="item-added">
-												item added
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="news-box newsfeed-box">
-							<div class="dubl-img">
-								<img src="../dist/img/pic18.png" alt="" class="modal-btn" data-target="#gallery-modal">
-								<img src="../dist/img/pic20.png" alt="" class="modal-btn" data-target="#gallery-modal">
-							</div>
-							<div class="tit">
-								<a href="" class="name">
-									<span class="img-u">
-										<img src="../dist/img/user.png" alt="">
+								<div class="tit shared-tit">
+									<a href="" class="name">
+										<span class="img-u">
+											<img src="../dist/img/pull.png" alt="">
+										</span>
+										<span class="name-txt">PULL&BEAR</span>
+									</a>
+									<span class="date">
+										1 minute ago
 									</span>
-									<span class="name-txt">Yosra Fahmy</span>
-								</a>
-								<span class="date">
-									1 minute ago
-								</span>
-								<div class="report">
-									<div class="drop-container location-drop-btn report-dropdown">
-										<a href="" class="drpo-btn">
-											<img src="../dist/img/dots.png" alt="">
-										</a>
-
-										<div class="drop-mnu">
-											<button type="submit" class="modal-btn" data-target="#report-modal">
-												report
-											</button>
-										</div>
+								</div>
+								<div class="item-price">
+									<div class="item-title">
+										BUTTONED FAUX FUR COAT
+									</div>
+									<div class="price">
+										250$
 									</div>
 								</div>
 							</div>
@@ -1279,7 +1193,7 @@
 									</div>
 									<div class="share-icons">
 										<a href="">
-											<img src="../dist/img/site.png" alt="">
+											<img src="../dist/img/sit.png" alt="">
 										</a>
 										<a href="">
 											<img src="../dist/img/Facebook.png" alt="">
@@ -1385,8 +1299,8 @@
 														<img src="../dist/img/save-collection.png" alt="">
 													</div>
 													<div class="sub">
-														<div class="form-group email">
-															<input type="email" class="input" placeholder="EMAIL OR PHONE NUMBER">
+														<div class="form-group">
+															<input type="text" class="input" placeholder="COLLECTION NAME">
 															<span></span>
 														</div>
 														<button type="submit" class="log-btn">
@@ -1406,14 +1320,14 @@
 						</div>
 						<div class="news-box newsfeed-box">
 							<div class="img">
-								<img src="../dist/img/pic20.png" alt="" class="modal-btn" data-target="#gallery-modal">
+								<img src="../dist/img/collections.png" alt="" class="modal-btn" data-target="#gallery-modal">
 							</div>
 							<div class="tit">
 								<a href="" class="name">
 									<span class="img-u">
 										<img src="../dist/img/user.png" alt="">
 									</span>
-									<span class="name-txt">Yosra Fahmy</span>
+									<span class="name-txt">Hadeer Sayed</span>
 								</a>
 								<span class="date">
 									1 minute ago
@@ -1432,6 +1346,12 @@
 									</div>
 								</div>
 							</div>
+							<div class="item-description">
+								<div class="item-title">
+									BUTTONED FAUX FUR COAT
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+							</div>
 							<div class="icons-bar">
 								<div class="icons">
 									<div class="icon heart">
@@ -1445,7 +1365,7 @@
 									</div>
 									<div class="share-icons">
 										<a href="">
-											<img src="../dist/img/site.png" alt="">
+											<img src="../dist/img/sit.png" alt="">
 										</a>
 										<a href="">
 											<img src="../dist/img/Facebook.png" alt="">
@@ -1551,8 +1471,193 @@
 														<img src="../dist/img/save-collection.png" alt="">
 													</div>
 													<div class="sub">
-														<div class="form-group email">
-															<input type="email" class="input" placeholder="EMAIL OR PHONE NUMBER">
+														<div class="form-group">
+															<input type="text" class="input" placeholder="COLLECTION NAME">
+															<span></span>
+														</div>
+														<button type="submit" class="log-btn">
+															<span class="tit">done</span>
+															<img src="../dist/img/right-arrow.png" class="img-fluid">
+														</button>
+													</div>
+												</form>
+											</div>
+											<p class="item-added">
+												item added
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="news-box newsfeed-box shared-box">
+							<div class="tit">
+								<a href="" class="name">
+									<span class="img-u">
+										<img src="../dist/img/user.png" alt="">
+									</span>
+									<span class="name-txt">Menna Khaled</span>
+								</a>
+								<span class="date">
+									1 minute ago
+								</span>
+								<div class="report">
+									<div class="drop-container location-drop-btn report-dropdown">
+										<a href="" class="drpo-btn">
+											<img src="../dist/img/dots.png" alt="">
+										</a>
+
+										<div class="drop-mnu">
+											<button type="submit" class="modal-btn" data-target="#report-modal">
+												report
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="shared-b">
+								<div class="img">
+									<img src="../dist/img/collections.png" alt="" class="modal-btn" data-target="#gallery-modal">
+								</div>
+								<div class="tit shared-tit">
+									<a href="" class="name">
+										<span class="img-u">
+											<img src="../dist/img/user.png" alt="">
+										</span>
+										<span class="name-txt">Sara Emad</span>
+									</a>
+									<span class="date">
+										1 minute ago
+									</span>
+								</div>
+								<div class="item-description">
+									<div class="item-title">
+										BUTTONED FAUX FUR COAT
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+								</div>
+							</div>
+							<div class="icons-bar">
+								<div class="icons">
+									<div class="icon heart">
+										<img src="../dist/img/red-heart.png" alt="" class="checked-img">
+										<img src="../dist/img/heart.png" alt="">
+										<span class="val">900</span>
+									</div>
+									<div class="icon share-control">
+										<img src="../dist/img/share.png" alt="">
+										<span class="val">900</span>
+									</div>
+									<div class="share-icons">
+										<a href="">
+											<img src="../dist/img/sit.png" alt="">
+										</a>
+										<a href="">
+											<img src="../dist/img/Facebook.png" alt="">
+										</a>
+										<a href="">
+											<img src="../dist/img/Twitter.png" alt="">
+										</a>
+										<a href="">
+											<img src="../dist/img/G+.png" alt="">
+										</a>
+									</div>
+								</div>
+
+								<div class="save">
+									<div class="drop-container location-drop-btn save-to-dropdown">
+										<a href="" class="drpo-btn">
+											<div class="icon heart">
+												<img src="../dist/img/save-checked.png" alt="" class="checked-img">
+												<img src="../dist/img/save.png" alt="">
+											</div>
+										</a>
+
+										<div class="drop-mnu">
+											<div class="save-collection-box active">
+												<div class="sc-head">
+													<p class="sc-tit">save to</p>
+													<img src="../dist/img/collape-plus.png" alt="">
+												</div>
+												<div class="row">
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
+														<div class="save-collection">
+															<img src="../dist/img/save-collection.png" alt="" class="c-img">
+															<p class="c-tit">
+																SUMMER
+															</p>
+														</div>
+													</div>
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
+														<div class="save-collection">
+															<img src="../dist/img/save-collection.png" alt="" class="c-img">
+															<p class="c-tit">
+																SUMMER
+															</p>
+														</div>
+													</div>
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
+														<div class="save-collection">
+															<img src="../dist/img/save-collection.png" alt="" class="c-img">
+															<p class="c-tit">
+																SUMMER
+															</p>
+														</div>
+													</div>
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
+														<div class="save-collection">
+															<img src="../dist/img/save-collection.png" alt="" class="c-img">
+															<p class="c-tit">
+																SUMMER
+															</p>
+														</div>
+													</div>
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
+														<div class="save-collection">
+															<img src="../dist/img/save-collection.png" alt="" class="c-img">
+															<p class="c-tit">
+																SUMMER
+															</p>
+														</div>
+													</div>
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
+														<div class="save-collection">
+															<img src="../dist/img/save-collection.png" alt="" class="c-img">
+															<p class="c-tit">
+																SUMMER
+															</p>
+														</div>
+													</div>
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
+														<div class="save-collection">
+															<img src="../dist/img/save-collection.png" alt="" class="c-img">
+															<p class="c-tit">
+																SUMMER
+															</p>
+														</div>
+													</div>
+													<div class="col-4 col-md-6 col-lg-4 col-xl-3">
+														<div class="save-collection">
+															<img src="../dist/img/save-collection.png" alt="" class="c-img">
+															<p class="c-tit">
+																SUMMER
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="new-collection-box">
+												<div class="sc-head">
+													<p class="sc-tit">new collection</p>
+													<img src="../dist/img/close.png" alt="">
+												</div>
+												<form action="" class="new-collection-form">
+													<div class="img">
+														<img src="../dist/img/save-collection.png" alt="">
+													</div>
+													<div class="sub">
+														<div class="form-group">
+															<input type="text" class="input" placeholder="COLLECTION NAME">
 															<span></span>
 														</div>
 														<button type="submit" class="log-btn">
@@ -1572,7 +1677,7 @@
 						</div>
 
 					</div>
-					<div class="col-12 col-md-6 col-lg-3 overflow">
+					<div class="col-12 col-md-12 col-lg-3 overflow">
 						<div class="contest-side">
 							<p class="main-title">
 								<img src="../dist/img/title-sign.png" class="img">
@@ -1587,9 +1692,9 @@
 										<div class="img">
 											<img src="../dist/img/user.png" alt="">
 										</div>
-										<a href="other-profile.html" class="name">
+										<span class="name">
 											Yosra Abd El Aziz
-										</a>
+										</span>
 									</a>
 									<span class="side-folow-btn folow">
 										<img src="../dist/img/title-sign.png" alt="">
@@ -1602,9 +1707,9 @@
 										<div class="img">
 											<img src="../dist/img/user.png" alt="">
 										</div>
-										<a href="other-profile.html" class="name">
+										<span class="name">
 											Yosra Abd El Aziz
-										</a>
+										</span>
 									</a>
 									<span class="side-folow-btn folow">
 										<img src="../dist/img/title-sign.png" alt="">
@@ -1617,9 +1722,9 @@
 										<div class="img">
 											<img src="../dist/img/user.png" alt="">
 										</div>
-										<a href="other-profile.html" class="name">
+										<span class="name">
 											Yosra Abd El Aziz
-										</a>
+										</span>
 									</a>
 									<span class="side-folow-btn folow">
 										<img src="../dist/img/title-sign.png" alt="">
@@ -1632,9 +1737,9 @@
 										<div class="img">
 											<img src="../dist/img/user.png" alt="">
 										</div>
-										<a href="other-profile.html" class="name">
+										<span class="name">
 											Yosra Abd El Aziz
-										</a>
+										</span>
 									</a>
 									<span class="side-folow-btn folow">
 										<img src="../dist/img/title-sign.png" alt="">
@@ -1647,9 +1752,9 @@
 										<div class="img">
 											<img src="../dist/img/user.png" alt="">
 										</div>
-										<a href="other-profile.html" class="name">
+										<span class="name">
 											Yosra Abd El Aziz
-										</a>
+										</span>
 									</a>
 									<span class="side-folow-btn folow">
 										<img src="../dist/img/title-sign.png" alt="">
@@ -1662,9 +1767,9 @@
 										<div class="img">
 											<img src="../dist/img/user.png" alt="">
 										</div>
-										<a href="other-profile.html" class="name">
+										<span class="name">
 											Yosra Abd El Aziz
-										</a>
+										</span>
 									</a>
 									<span class="side-folow-btn folow">
 										<img src="../dist/img/title-sign.png" alt="">
@@ -1677,9 +1782,24 @@
 										<div class="img">
 											<img src="../dist/img/user.png" alt="">
 										</div>
-										<a href="other-profile.html" class="name">
+										<span class="name">
 											Yosra Abd El Aziz
-										</a>
+										</span>
+									</a>
+									<span class="side-folow-btn folow">
+										<img src="../dist/img/title-sign.png" alt="">
+										<img src="../dist/img/follow.png" alt="">
+										folow
+									</span>
+								</div>
+								<div class="folow-row">
+									<a href="other-profile.html" class="tit">
+										<div class="img">
+											<img src="../dist/img/user.png" alt="">
+										</div>
+										<span class="name">
+											Yosra Abd El Aziz
+										</span>
 									</a>
 									<span class="side-folow-btn folow">
 										<img src="../dist/img/title-sign.png" alt="">
@@ -1708,12 +1828,12 @@
 		<div class="footer-head">
 			<div class="container">
 				<div class="row">
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content">
 							Studiestræde 19, 4th floor DK-1455 Copenhagen
 						</p>
 					</div>
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content confirms">
 							Konform A/S CVR: 11794343
 						</p>
@@ -1756,18 +1876,22 @@
 							<div class="col-12 col-md-6 col-lg-6">
 								<a href="data-feed.html" class="foot-link foot-data-feed">DATA FEED GUIDELINES AND SPECIFICATIONS</a>
 							</div>
-							<div class="col-12 col-md-6 col-lg-3">
+							<div class="col-12 col-md-6 col-lg-2">
+								<a href="rate-your-experience.html" class="foot-link">RATE MODASTI</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-1">
 								<a href="help.html" class="foot-link">HELP</a>
 							</div>
+
 							<div class="col-12 col-md-8">
 								<p class="foot-tit social-tit">FIND US ON</p>
 								<div class="social">
 									<ul>
-										<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
-										<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
-										<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+										<li><a href="https://www.facebook.com/"><img src="../dist/img/face.png" alt=""><img src="../dist/img/face-c.png" alt=""></a></li>
+										<li><a href="https://twitter.com/"><img src="../dist/img/twit.png" alt=""><img src="../dist/img/twit-c.png" alt=""></a></li>
+										<li><a href="https://www.instagram.com/"><img src="../dist/img/inst.png" alt=""><img src="../dist/img/inst-c.png" alt=""></a></li>
+										<li><a href="https://www.pinterest.com/"><img src="../dist/img/pi.png" alt=""><img src="../dist/img/pi-c.png" alt=""></a></li>
+										<li><a href="#"><img src="../dist/img/youtube.png" alt=""><img src="../dist/img/youtube-c.png" alt=""></a></li>
 									</ul>
 								</div>
 							</div>
@@ -1794,7 +1918,7 @@
 	<!-- modal -->
 
 	<!-- report-modal -->
-	<div class="custom-modal" id="report-modal">
+	<div class="custom-modal report-modal" id="report-modal">
 		<div class="overlay"></div>
 		<div class="modal-card report-catd">
 			<div class="card-head">
@@ -1805,56 +1929,56 @@
 
 				<div class="row">
 					<div class="col-12 col-md-6 col-lg-4">
-						<label class="custom-checkbox">
+						<label class="custom-checkbox radio">
 							<input type="radio" class="d-none" name="report">
 							<i class="fas fa-square"></i>
 							<span>COPYRIGHT VIOLATIONS.</span>
 						</label>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4">
-						<label class="custom-checkbox">
+						<label class="custom-checkbox radio">
 							<input type="radio" class="d-none" name="report">
 							<i class="fas fa-square"></i>
 							<span>RACIST AND HATE SPEECH. </span>
 						</label>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4">
-						<label class="custom-checkbox">
+						<label class="custom-checkbox radio">
 							<input type="radio" class="d-none" name="report">
 							<i class="fas fa-square"></i>
 							<span>COPYING OTHER SETS.</span>
 						</label>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4">
-						<label class="custom-checkbox">
+						<label class="custom-checkbox radio">
 							<input type="radio" class="d-none" name="report">
 							<i class="fas fa-square"></i>
 							<span>ADULT CONTENT (PORNOGRAPHIC).</span>
 						</label>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4">
-						<label class="custom-checkbox">
+						<label class="custom-checkbox radio">
 							<input type="radio" class="d-none" name="report">
 							<i class="fas fa-square"></i>
 							<span>VIOLATION OF COMMUNITY RULES. </span>
 						</label>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4">
-						<label class="custom-checkbox">
+						<label class="custom-checkbox radio">
 							<input type="radio" class="d-none" name="report">
 							<i class="fas fa-square"></i>
 							<span>PRIVACY VIOLATION.</span>
 						</label>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4">
-						<label class="custom-checkbox">
+						<label class="custom-checkbox radio">
 							<input type="radio" class="d-none" name="report">
 							<i class="fas fa-square"></i>
 							<span>USING PHOTOS OF OTHERS. </span>
 						</label>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4">
-						<label class="custom-checkbox">
+						<label class="custom-checkbox radio">
 							<input type="radio" class="d-none" name="report">
 							<i class="fas fa-square"></i>
 							<span>OTHER.</span>
@@ -1914,7 +2038,7 @@
 			</div>
 			<div class="card-content">
 				<p class="info-content">
-					Are you sure you want to delete this item?
+					Are you sure you want to  cancel the report?
 				</p>
 
 				<button type="button" class="log-btn modal-btn" data-target="#sent-modal">
@@ -1922,8 +2046,8 @@
 					<img src="../dist/img/right-arrow.png" class="img-fluid">
 				</button>
 				<button type="button" class="log-btn log-white modal-btn" data-target="#report-modal">
-					<span class="tit">back</span>
-					<img src="../dist/img/left-arrow2.png" class="img-fluid">
+					<span class="tit">CANCEL</span>
+					<img src="../dist/img/wrong.png" class="img-fluid">
 				</button>
 			</div>
 		</div>
@@ -1953,13 +2077,13 @@
 		new WOW().init();
 
 		$('.owl-contest').owlCarousel({
-			loop: true,
-			autoplay: true,
+			loop: false,
+			autoplay: false,
 			margin: 20,
 			nav: false,
 			dots: true,
 			autoWidth: false,
-			rtl: true,
+			rtl: false,
 			animateOut: 0,
 			animateIn: 0,
 			navSpeed: 1000,
@@ -1982,13 +2106,13 @@
 			}
 		});
 		$('.owl-sets').owlCarousel({
-			loop: true,
-			autoplay: true,
+			loop: false,
+			autoplay: false,
 			margin: 20,
 			nav: false,
 			dots: true,
 			autoWidth: false,
-			rtl: true,
+			rtl: false,
 			animateOut: 0,
 			animateIn: 0,
 			navSpeed: 1000,

@@ -17,10 +17,10 @@
 		<section class="header">
 			<div class="logo-side">
 				<!-- open sec nav btn -->
-				<div class="nav-btn">
+				<!-- <div class="nav-btn">
 					<span></span>
 					<span></span>
-				</div>
+				</div> -->
 				<a href="home.html"><img src="../dist/img/logo.png" alt="" class="logo"></a>
 			</div>
 			<!-- navbar list -->
@@ -48,7 +48,7 @@
 						</div>
 						<div class="center">
 							<a href="" class="link">Edit profile </a>
-							<a href="" class="link">Settings</a>
+							<a href="help.html" class="link">Help</a>
 						</div>
 						<div class="down">
 							<a href="index.html" class="link">Logout</a>
@@ -135,7 +135,7 @@
 						<div class="notifi-head">
 							<div class="up">
 								<p class="tit">
-									NOTFICATIONS
+									NOTIFICATIONS
 								</p>
 								<div class="switch">
 									<span class="mode-btn">
@@ -201,7 +201,7 @@
 			</div>
 		</form>
 		<!-- sec nav list -->
-		<div class="sec-nav">
+		<div class="sec-nav open">
 			<ul>
 				<li>
 					<a href="">CLOTHES</a>
@@ -345,7 +345,7 @@
 						</div>
 						<div class="center">
 							<a href="" class="link">Edit profile </a>
-							<a href="" class="link">Settings</a>
+							<a href="help.html" class="link">Help</a>
 						</div>
 						<div class="down">
 							<a href="index.html" class="link">Logout</a>
@@ -364,7 +364,7 @@
 
 					<div class="drop-mnu notifi-mnu">
 						<div class="up">
-							<p class="tit">notfication</p>
+							<p class="tit">NOTIFICATIONS</p>
 							<div class="switch">
 								<span class="mode-btn">
 									<span class="on">on</span>
@@ -458,23 +458,27 @@
 				<div class="row">
 					<div class="col-md-3">
 						<div class="profile-details">
-							<div class="user-data">
-								<div class="user-img">
-									<img src="../dist/img/profile-img.png" class="img-fluid">
+							<div class="profile-user-data">
+								<div class="user-data">
+									<div class="user-img">
+										<img src="../dist/img/profile-img.png" class="img-fluid">
+									</div>
 								</div>
-							</div>
-							<div class="collection-name">
-								SWEATSHIRTS
-							</div>
-							<div class="collection-maker">
-								BY
-								<div class="dot"></div>
-								YOSRA FAHMY
-							</div>
-							<div class="collection-date">
-								Updated
-								<div class="dot"></div>
-								<span>March 26, 2019</span>
+								<div class="profile-user-info">
+									<div class="collection-name">
+										SWEATSHIRTS
+									</div>
+									<div class="collection-maker">
+										BY
+										<div class="dot"></div>
+										YOSRA FAHMY
+									</div>
+									<div class="collection-date">
+										Updated
+										<div class="dot"></div>
+										<span>March 26, 2019</span>
+									</div>
+								</div>
 							</div>
 							<div class="btns">
 								<a href="collection-details-edit.html" class="log-btn">
@@ -814,24 +818,8 @@
 		<div class="modal-card">
 			<div class="row">
 				<div class="col-lg-8">
-					<div class="quick-view">
-						<div class="owl-carousel owl-theme owl-guide">
-							<div class="item">
-								<img src="../dist/img/main-view.png" class="img-fluid">
-							</div>
-							<div class="item">
-								<img src="../dist/img/subView5.png" class="img-fluid">
-							</div>
-							<div class="item">
-								<img src="../dist/img/sub-view2.png" class="img-fluid">
-							</div>
-							<div class="item">
-								<img src="../dist/img/sub-view3.png" class="img-fluid">
-							</div>
-							<div class="item">
-								<img src="../dist/img/sub-view4.png" class="img-fluid">
-							</div>
-						</div>
+					<div class="quick-view-img">
+						<img src="../dist/img/main-view.png" alt="">
 					</div>
 				</div>
 				<div class="col-lg-4">
@@ -885,8 +873,8 @@
 								</a>
 							</div>
 							<div class="full-details">
-								<a href="#">FULL DETAILS</a>
-							</div>
+                                <a href="#">FULL DETAILS</a>
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -1583,49 +1571,4 @@
 <script src="../dist/js/wow.min.js"></script>
 <script src="../dist/js/owl.carousel.min.js"></script>
 <script src="../dist/js/main.js"></script>
-<script>
-	$('.owl-guide').owlCarousel({
-		loop: false,
-		autoplay: false,
-		margin: 20,
-		nav: false,
-		dots: true,
-		autoWidth: false,
-		rtl: true,
-		animateOut: 0,
-		animateIn: 0,
-		navSpeed: 1000,
-		slideTransition: 1000,
-		autoplaySpeed: 1000,
-		navText: [
-			'<i class="fa fa-chevron-right" aria-hidden="true"></i><a href= "$"></a>',
-			'<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-		],
-		responsive: {
-			0: {
-				items: 1
-			},
-			600: {
-				items: 1
-			},
-			1000: {
-				items: 1
-			}
-		}
-	});
-	$('.owl-guide').each(function() {
-
-		var dotss = $(this).find('.owl-dot'),
-			i = 0;
-
-		var imgs = [];
-		$(this).find('.item img').each(function() {
-			imgs.push($(this).attr("src"));
-		});
-		console.log(imgs);
-		dotss.each(function() {
-			i++;
-			$(this).html('<img src="' + imgs[i - 1] + '">')
-		});
-	})
-</script></html>
+</html>

@@ -872,6 +872,7 @@ a {
 	height: 0;
 	padding: 0;
 	transition: .5s;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
 .sec-nav.open {
@@ -1193,7 +1194,7 @@ a {
 .drop-mnu.notifi-mnu .center .date {
 	display: block;
 	font-size: 10px;
-	font-family: 'roboto-m';
+	font-family: 'sans-m';
 }
 
 .notifi-mnu .down {
@@ -2336,7 +2337,7 @@ a {
 
 .news-box .tit .name .name-txt {
 	font-family: 'raleway-m';
-	font-size: 18px
+	font-size: 13px
 }
 
 .news-box .tit .img-u {
@@ -2838,6 +2839,22 @@ a {
 
 .hashtags .log-white {
 	margin-bottom: 60px;
+}
+
+.create-set-section .news-box.shared-box {
+	border-top: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+.create-set-section .news-box.shared-box .img {
+	margin-bottom: 30px;
+}
+
+.create-set-section .news-box.shared-box .shared-b {
+	padding: 0;
+	border: 0;
+	margin-bottom: 0;
 }
 
 /**********  end create-set-section */
@@ -3453,6 +3470,10 @@ a {
 	width: 100%;
 }
 
+.apply-modal-c.sent-modal .modal-card .card-content .log-btn:nth-of-type(2) {
+	margin-left: 0 !important;
+}
+
 /*==============================// end newsfeed page */
 
 
@@ -3777,7 +3798,7 @@ a {
 }
 
 .box .box-p.info-content {
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'raleway-m';
 }
 
@@ -3798,7 +3819,8 @@ a {
 .box .box-price.with-sale .befor {
 	margin-right: 10px;
 	color: #CFBDA8;
-	font-size: 30px;
+	/* font-size: 30px; */
+	font-size: 24px;
 }
 
 .box .box-price.with-sale .aftr {
@@ -4180,6 +4202,7 @@ a {
 
 .items-head.head-items-bet .main-title {
 	margin-bottom: 0;
+	align-items: baseline;
 }
 
 .items-head.head-items-bet > div {
@@ -4365,6 +4388,7 @@ a {
 
 .brand-box.brand-box-head .active-row .active-details p span {
 	margin-left: 30px;
+	font-family: 'sans';
 }
 
 .brand-box.brand-box-head .active-row .side-folow-btn {
@@ -5025,7 +5049,7 @@ a {
 	max-width: 155px;
 	text-transform: uppercase;
 	font-size: 16px;
-	font-family: 'raleway-m';
+	font-family: 'raleway';
 }
 
 .profile-table .table .c-width {
@@ -5153,7 +5177,7 @@ a {
 
 .profile-table .row .g-box .info span {
 	font-size: 14px;
-	font-family: 'raleway-m';
+	font-family: 'raleway-b';
 }
 
 .profile-table .row .g-box .info .info-content {
@@ -5582,4 +5606,6 @@ a {
 	max-width: none;
 	appearance: none;
 	padding: 0 20px;
+	font-size: 14px;
+	font-family: 'sans-m';
 }
