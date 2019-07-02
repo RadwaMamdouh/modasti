@@ -493,7 +493,8 @@
 	}
 
 	.news-form {
-		width: 100%;
+		width: calc(100% - 35px);
+		height: 60px;
 	}
 
 	.footer .social ul li a {
