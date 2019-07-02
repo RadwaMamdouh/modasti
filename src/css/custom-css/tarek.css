@@ -839,6 +839,7 @@ a {
 	height: 0;
 	padding: 0;
 	transition: .5s;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
 .sec-nav.open {
@@ -2779,6 +2780,10 @@ a {
 	border-top: 0;
 	padding-top: 0;
 	margin-bottom: 0;
+}
+
+.create-set-section .news-box.shared-box .img {
+	margin-bottom: 30px;
 }
 
 .create-set-section .news-box.shared-box .shared-b {
