@@ -1518,16 +1518,10 @@
 	.msg-box .date {
 		font-size: 10px
 	}
-<<<<<<< HEAD
 	.messages .t-comnts-form
 	{
 		/* width: calc(100% - 53px); */
 		width: 100%;
-=======
-
-	.messages .t-comnts-form {
-		width: calc(100% - 53px);
->>>>>>> bfdc77a3b9ef92495138ed7792a3ef0ee5967c93
 		padding: 11px;
 	}
 
