@@ -1509,7 +1509,8 @@
 	}
 	.messages .t-comnts-form
 	{
-		width: calc(100% - 53px);
+		/* width: calc(100% - 53px); */
+		width: 100%;
 		padding: 11px;
 	}
 	.t-comnts-form .t-comnt-input
