@@ -765,7 +765,7 @@
 	/*    .exclusive */
 	.exclusive .container {
 		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-bottom: 0;
 	}
 
 	.exclusive .box,
@@ -776,6 +776,10 @@
 
 	.exclusive .exclusive-img {
 		height: 340px;
+		margin-bottom: 30px;
+	}
+
+	.exclusive .exclusive-box {
 		margin-bottom: 30px;
 	}
 
@@ -1800,6 +1804,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+
+	.exclusive .submission-contest .box-p.view span {
+		font-size: 12px;
+		line-height: 14px;
 	}
 
 	.box.box-sq .box-img .time {
