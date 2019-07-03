@@ -738,6 +738,10 @@
 		padding-right: 0;
 	}
 
+	.whats-new .box .btns {
+		display: none;
+	}
+
 	/*    .whats-box */
 
 
@@ -773,6 +777,10 @@
 	.exclusive .exclusive-img {
 		height: 340px;
 		margin-bottom: 30px;
+	}
+
+	.exclusive .exclusive-box .log-btn span {
+		display: block !important;
 	}
 
 	/*    .exclusive */
