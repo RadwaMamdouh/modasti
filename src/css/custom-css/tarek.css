@@ -1381,6 +1381,7 @@ a {
 	border: 0;
 	outline: 0;
 	padding: 0;
+	text-transform: uppercase;
 }
 
 .collapse-nav .collapse-list .sub-collapse a {
