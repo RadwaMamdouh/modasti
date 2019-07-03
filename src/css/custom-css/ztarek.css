@@ -291,7 +291,7 @@
 	}
 
 	.myProfile-tabs.brands-tabs {
-		display: none;
+		margin-top: 0;
 	}
 
 	.box .box-price.with-sale span {
