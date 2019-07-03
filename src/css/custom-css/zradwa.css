@@ -1234,6 +1234,14 @@
         max-width: 100%;
     }
 
+    .contest-info .contest-join {
+        display: inline-block;
+    }
+
+    .contest-info .contest-join span {
+        line-height: 14px;
+    }
+
     .contest-comments {
         padding: 30px 0 0;
     }
