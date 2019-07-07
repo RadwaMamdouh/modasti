@@ -1381,6 +1381,7 @@ a {
 	border: 0;
 	outline: 0;
 	padding: 0;
+	text-transform: uppercase;
 }
 
 .collapse-nav .collapse-list .sub-collapse a {
@@ -2742,6 +2743,34 @@ a {
 	margin-bottom: 0;
 }
 
+.exclusive .submission-contest .box-p.view {
+	text-align: center;
+	padding: 15px 20px;
+	color:#000;
+	position: relative;
+	transition: color 0.25s ease;
+	border: 1px solid #dadada;
+	-webkit-transition: color 0.25s ease;
+	-moz-transition: color 0.25s ease;
+	-ms-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
+}
+
+.exclusive .submission-contest .box-p.view::after {
+	z-index: 1;
+}
+
+.exclusive .submission-contest .box-p.view span {
+	font-family: 'raleway-m';
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.exclusive .submission-contest .box-p.view:hover span {
+	position: relative;
+	z-index: 2;
+}
+
 /**********  end exclusive */
 
 
@@ -3824,8 +3853,39 @@ a {
 }
 
 .box .box-p.view {
-	margin-top: 30px;
+	margin-top: 20px;
 	display: block;
+	text-align: center;
+	padding: 10px 20px;
+	color:#000;
+	position: relative;
+	transition: color 0.25s ease;
+	border: 1px solid #dadada;
+	-webkit-transition: color 0.25s ease;
+	-moz-transition: color 0.25s ease;
+	-ms-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
+}
+
+.box .box-p.view:hover {
+	color:#fff;
+}
+
+.box .box-p.view::after {
+	position: absolute;
+	content: '';
+	top:0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #000;
+	transform-origin:left;
+	transition:width 0.25s ease;
+	z-index:-1;
+}
+
+.box .box-p.view:hover::after {
+	width: 100%;
 }
 
 .box .box-p {
@@ -4125,8 +4185,9 @@ a {
 	font-size: 16px;
 	font-family: 'raleway-m';
 	line-height: 16px;
-	margin-top: 30px;
+	margin-top: 20px;
 	display: block;
+	padding: 15px 20px;
 }
 
 .user-box {
