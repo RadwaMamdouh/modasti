@@ -22,8 +22,9 @@ label {
 }
 
 .log-forms {
-    padding: 60px 0;
+    margin: 60px 0;
     overflow: hidden;
+    position: relative;
 }
 
 .title {
@@ -381,27 +382,38 @@ label {
 
 /* Start Side info */
 .side-info {
-    background-color: #000;
+    background-color: transparent;
+    position: static;
+    z-index: 9;
 }
 
 .side-info::before {
     content: '';
-    width: 1000px;
+    width: 45%;
     position: absolute;
     height: 100%;
     background-color: #000;
     z-index: -1;
     overflow: visible;
     top: 0;
+    transition: .5s
 }
 
 .side-info.right::before {
-    left: calc(100% - 1px);
+    left: 0;
 }
 
 .side-info.left::before {
-    right: calc(100% - 1px);
+    right: 0 ;
 }
+.side-info.right.default::before {
+    left: 55%;
+}
+
+.side-info.left.default::before {
+    right: 55% ;
+}
+
 
 .log-info {
     margin: 190px 0 190px 190px;

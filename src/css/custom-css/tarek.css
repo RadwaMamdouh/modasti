@@ -155,7 +155,7 @@ ul {
 
 body {
 	overflow-x: hidden;
-	overflow-y: hidden;
+/*	overflow-y: hidden;*/
 	direction: ltr;
 	color: #000;
 	text-align: left;
