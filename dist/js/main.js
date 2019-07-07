@@ -2,7 +2,10 @@
 $(document).ready(function () {
 	'use strict';
 	// new WOW().init();
-
+    
+    $(window).on('load', function () {
+        $('.side-info.right, .side-info.left').addClass('default')
+    })
 	
 	var countVal = 0;
 	

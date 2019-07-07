@@ -7,7 +7,7 @@
 @media (max-width: 922px) {
     /********** login.html ************/
     .log-forms {
-        padding: 30px 0;
+        margin: 30px 0;
     }
 
     .log-form {
@@ -53,6 +53,10 @@
     } */
 
     /* side-info */
+    .side-info
+    {
+        position: relative;
+    }
     .side-info::after {
         content: '';
         width: 1000px;
@@ -68,7 +72,17 @@
     .side-info.right::after {
         right: calc(100% - 1px);
     }
-
+    .side-info.left.default::before
+    {
+        width: 1000px;
+        right: 0;
+    }
+    .side-info.right.default::before
+    {
+        left: 0;
+        width: 1000px; 
+    }
+    
     .log-info {
         margin: 50px 0;
         align-items: flex-start
