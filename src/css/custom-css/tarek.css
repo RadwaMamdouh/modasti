@@ -2527,6 +2527,15 @@ a {
 	position: relative;
 }
 
+.icons .share-icons a {
+	display: block;
+	text-align: center;
+	width: 25px;
+	height: 15px;
+	position: relative;
+}
+
+.icons .share-icons a img,
 .icons .share2btn .share-icons a img {
 	height: 15px;
 	transition: .3s;
@@ -2539,16 +2548,19 @@ a {
 	margin: 0;
 }
 
+.icons .share-icons a img:nth-child(2),
 .icons .share2btn .share-icons a img:nth-child(2) {
 	top: 100%;
 	transform: rotateX(-90deg) perspective(600px) translateX(-50%);
 }
 
+.icons .share-icons a:hover img:nth-child(1),
 .icons .share2btn .share-icons a:hover img:nth-child(1) {
 	top: -100%;
 	transform: rotateX(90deg) perspective(600px) translateX(-50%);
 }
 
+.icons .share-icons a:hover img:nth-child(2),
 .icons .share2btn .share-icons a:hover img:nth-child(2) {
 	top: 0;
 	transform: translateX(-50%);
@@ -3019,6 +3031,10 @@ a {
 
 .newsfeed .contest-side .icons .icon:last-child {
 	margin-right: 0;
+}
+
+.newsfeed .share-icons.active {
+	width: 100%;
 }
 
 .folow-row {
