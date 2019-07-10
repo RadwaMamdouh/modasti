@@ -3034,7 +3034,7 @@ a {
 }
 
 .newsfeed .share-icons.active {
-	width: 100%;
+	width: auto;
 }
 
 .folow-row {
