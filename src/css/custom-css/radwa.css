@@ -1294,6 +1294,7 @@ label {
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
+    overflow: hidden;
 }
 
 .user-box .user-img img {
