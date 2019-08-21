@@ -436,6 +436,28 @@ a {
 	cursor: pointer;
 }
 
+[data-content]::after {
+	content: attr(data-content);
+    position: absolute;
+    background-color: #CFBDA8;
+    width: 22px;
+    height: 12px;
+    top: 6px;
+    left: 18px;
+	border-radius: 20px;
+	font-size: 8px;
+	font-family: 'raleway-m';
+	color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fff;
+}
+
+.drpo-btn.notifi-btn.open[data-content]::after {
+	animation: bell 1s 1 forwards ease-out;
+}
+
 .icons-side > *:last-child img {
 	margin-right: 0;
 }
