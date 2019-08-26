@@ -442,7 +442,7 @@ a {
     background-color: #CFBDA8;
     width: 22px;
     height: 12px;
-    top: 6px;
+    top: 3px;
     left: 18px;
 	border-radius: 20px;
 	font-size: 8px;
@@ -456,6 +456,11 @@ a {
 
 .drpo-btn.notifi-btn.open[data-content]::after {
 	animation: bell 1s 1 forwards ease-out;
+}
+
+.ico-link.cs-link[href="messages.html"] img {
+    width: 22px;
+    height: 17px;
 }
 
 .icons-side > *:last-child img {
