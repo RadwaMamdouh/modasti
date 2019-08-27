@@ -3536,10 +3536,12 @@ a {
 	padding-bottom: 30px;
 }
 
-.sent-modal.custom-modal .modal-card .log-btn.log-white img {
+.sent-modal.custom-modal .modal-card .log-btn.log-white:not(.delete-info) img {
 	width: 17px;
 	height: 17px;
 }
+
+
 
 .apply-modal-c.sent-modal.custom-modal .card-content {
 	padding: 50px 47px;
