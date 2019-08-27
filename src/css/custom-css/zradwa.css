@@ -2067,6 +2067,7 @@
         width: 84px;
         height: 84px;
         margin-bottom: 0;
+        flex-shrink: 0;
     }
 
     .profile-details .user-data .user-name {
