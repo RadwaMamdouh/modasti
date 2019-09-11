@@ -396,7 +396,12 @@ label {
     z-index: -1;
     overflow: visible;
     top: 0;
-    transition: .5s
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    height: 638px;
 }
 
 .side-info.right::before {
