@@ -1758,6 +1758,14 @@
         margin-bottom: 29px;
     }
 
+    .coupon .b-search .coupon-tit-desc {
+        display: block;
+    }
+
+    .coupon .b-search .coupon-desc {
+        margin-bottom: 30px;
+    }
+
     .coupon .coupon-date {
         display: flex;
         align-items: center;
@@ -1792,7 +1800,7 @@
     }
 
     .coupon-table {
-        padding: 210px 0 30px;
+        padding: 319px 0 30px;
     }
 
     .coupon-table .container {
