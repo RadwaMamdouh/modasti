@@ -3890,6 +3890,19 @@ label {
     line-height: 36px;
     width: 114px;
     max-width: 100%;
+    margin-right: 76px;
+}
+
+.coupon .b-search .coupon-tit-desc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.coupon .b-search .coupon-desc {
+    color: #fff;
+    max-width: 207px;
+    word-break: break-word;
 }
 
 .coupon .b-search .coupon-code {
