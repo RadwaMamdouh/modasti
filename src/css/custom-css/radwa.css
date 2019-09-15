@@ -3526,23 +3526,29 @@ label {
 /******************************************** business-help.html **********************************/
 .business-img {
     width: 100%;
-    height: 476px;
+    /* height: 476px; */
     position: relative;
 }
 
 .business-img > img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    height: 476px;
     object-fit: cover;
 }
 
 .business-img .b-search {
     position: relative;
     bottom: 0;
-    transform: translate(0, -50%);
+    /* transform: translate(0, -50%); */
     background-color: #000;
     padding: 60px 43px 60px 2px;
     z-index: 2;
+    margin-top: -96px;
+}
+
+.business-img .b-search.business-search {
+    margin-top: -73px;
 }
 
 .business-img .b-search::before {
@@ -3594,7 +3600,7 @@ label {
 }
 
 .business-help {
-    padding: 113px 0 60px;
+    padding: 60px 0 60px;
 }
 
 .business-help .help-txt .txt-row {
@@ -3634,6 +3640,16 @@ label {
 
 
 /******************************************** business-edit-account.html **********************************/
+.img-overlay {
+    position: relative;
+}
+
+.img-overlay>img {
+    height: 476px;
+    width: 100%;
+    object-fit: cover;
+}
+
 .b-edit-account .overlay {
     position: absolute;
     top: 0;
@@ -3724,7 +3740,7 @@ label {
 }
 
 .b-edit-form {
-    padding: 160px 0 60px;
+    padding: 60px 0 60px;
 }
 
 .b-edit-form .profile-data {
@@ -3927,7 +3943,7 @@ label {
 }
 
 .coupon-table {
-    padding: 153px 0 60px;
+    padding: 60px 0 60px;
     position: relative;
     z-index: 1;
 }
