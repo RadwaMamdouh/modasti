@@ -1764,6 +1764,10 @@
 
     .coupon .b-search .coupon-desc {
         margin-bottom: 30px;
+        font-size: 14px;
+        max-width: 100%;
+        max-height: 64px;
+        overflow: hidden;
     }
 
     .coupon .coupon-date {
@@ -1800,7 +1804,7 @@
     }
 
     .coupon-table {
-        padding: 319px 0 30px;
+        padding: 300px 0 30px;
     }
 
     .coupon-table .container {
