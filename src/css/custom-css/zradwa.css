@@ -1565,7 +1565,15 @@
     }
 
     /********** business-help.html ************/
-    .business-img {
+    /* .business-img {
+        height: 297px;
+    } */
+
+    .business-img>img {
+        height: 297px;
+    }
+
+    .img-overlay>img {
         height: 297px;
     }
 
@@ -1577,12 +1585,7 @@
 
     .business-img .b-search.business-search {
         padding: 20px 38px 20px 2px;
-        margin-top: 0;
-        transform: translate(0, -50%);
-        -webkit-transform: translate(0, -50%);
-        -moz-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-        -o-transform: translate(0, -50%);
+        margin-top: -30px;
     }
 
     .business-img .b-search.business-search form button {
@@ -1594,7 +1597,7 @@
     }
 
     .business-help {
-        padding: 60px 0 50px;
+        padding: 30px 0 50px;
     }
 
     .business-help .col-lg-3 {
@@ -1651,7 +1654,7 @@
     }
 
     .b-edit-form {
-        padding: 144px 0 30px;
+        padding: 30px 0 30px;
     }
 
     .b-edit-form .profile-data .correct {
@@ -1804,7 +1807,7 @@
     }
 
     .coupon-table {
-        padding: 300px 0 30px;
+        padding: 30px 0 30px;
     }
 
     .coupon-table .container {
