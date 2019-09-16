@@ -76,6 +76,7 @@
 		font-size: 24px;
 		font-family: 'raleway-b';
 		word-break: break-word;
+		margin-right: 0;
 	}
 
 	.brand-box .info .info-content {
