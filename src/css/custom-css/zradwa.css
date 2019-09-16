@@ -1769,8 +1769,6 @@
         margin-bottom: 30px;
         font-size: 14px;
         max-width: 100%;
-        max-height: 64px;
-        overflow: hidden;
     }
 
     .coupon .coupon-date {

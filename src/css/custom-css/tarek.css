@@ -2940,6 +2940,10 @@ a {
 	margin-bottom: 30px;
 }
 
+.create-set-section .log-btn img {
+	width: 17px;
+}
+
 .hashtags .log-white {
 	margin-bottom: 60px;
 }
