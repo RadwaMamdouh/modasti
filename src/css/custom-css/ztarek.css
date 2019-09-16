@@ -839,6 +839,16 @@
 		width: 10px;
 	}
 
+	.create-set-section .info-content {
+		margin-bottom: 0;
+	}
+
+	.create-set-section .content-btn {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
 	/*    .business-section*/
 
 
