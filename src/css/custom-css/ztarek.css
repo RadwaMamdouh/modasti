@@ -75,6 +75,7 @@
 	.brand-box .info .tit-content {
 		font-size: 24px;
 		font-family: 'raleway-b';
+		word-break: break-word;
 	}
 
 	.brand-box .info .info-content {
@@ -1728,6 +1729,12 @@
 		-ms-transform: none;
 		-o-transform: none;
 		padding: 30px 38px;
+		flex-wrap: wrap;
+	}
+
+	.brand-box .info .tit {
+		margin-right: 0;
+		margin-bottom: 30px;
 	}
 
 	.label .custom-checkbox {
