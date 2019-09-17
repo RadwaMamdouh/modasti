@@ -793,12 +793,13 @@
 
     .items-details .quid-box {
         margin-bottom: 20px;
+        grid-gap: 20px;
     }
 
     .items-details .size-box {
         width: 53px;
         height: 36px;
-        margin-right: 20px;
+        /* margin-right: 20px; */
         font-size: 12px;
     }
 
