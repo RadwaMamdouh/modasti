@@ -1091,6 +1091,12 @@
 		margin-bottom: 0;
 	}
 
+	.newsfeed .other-side {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
 	.newsfeed .other-side .log-btn {
 		display: -webkit-inline-flex;
 		display: -moz-inline-flex;
