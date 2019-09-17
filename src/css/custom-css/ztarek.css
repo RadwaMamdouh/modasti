@@ -1274,6 +1274,14 @@
 		right: 0;
 	}
 
+	.myLikes .other-options.drop-mnu.open {
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+}
+
 	.items-head .location-drop-btn.container-poend::after,
 	.items-head .location-drop-btn.container-poend::before {
 		right: 50% !important;
