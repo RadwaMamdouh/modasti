@@ -5601,6 +5601,20 @@ a {
 	margin: 0;
 }
 
+.drop-mnu .colors-container {
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 3px;
+}
+
+.drop-mnu .colors-container .color-check {
+	margin-bottom: 0;
+}
+
+.drop-mnu .color-check .color {
+	width: 23px;
+	height: 23px;
+}
+
 .drop-mnu.size-mnue.edite-drop.other-options .custom-checkbox i {
 	margin-top: 0;
 	flex-shrink: 0;
