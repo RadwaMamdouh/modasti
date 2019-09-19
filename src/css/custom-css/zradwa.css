@@ -55,7 +55,7 @@
     /* side-info */
     .side-info
     {
-        position: relative;
+        position: relative !important;
     }
     .side-info::after {
         content: '';

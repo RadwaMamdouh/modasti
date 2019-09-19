@@ -383,7 +383,7 @@ label {
 /* Start Side info */
 .side-info {
     background-color: transparent;
-    position: static;
+    position: static !important;
     z-index: 9;
 }
 
