@@ -48,6 +48,12 @@
         margin: 0 0 30px;
     }
 
+    /* reset password */
+    .reset-password .form-btn .log-btn[type=submit] img {
+        width: 20px;
+        height: 17px;
+    }
+
     /* .custom-checkbox i {
         top: 2px;
     } */
