@@ -4,8 +4,25 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="apple-touch-icon" sizes="57x57" href="../dist/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../dist/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../dist/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../dist/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../dist/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../dist/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../dist/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../dist/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../dist/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../dist/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../dist/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../dist/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../dist/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../dist/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	<title>Modasti</title>
-	<link rel="icon" href="../dist/img/min-logo.png" type="image/x-icon" />
+	<!-- <link rel="icon" href="../dist/img/m-fav-icon.jpg" type="image/x-icon" /> -->
 	<link rel="stylesheet" href="../dist/css/style.min.css">
 </head>
 
@@ -33,15 +50,16 @@
 
 
 
-
+	<!-- start desktop header -->
+	
 	<header class="main-header">
 		<section class="header">
 			<div class="logo-side">
-				<div class="nav-btn">
+				<!-- <div class="nav-btn"> -->
 					<!-- active class "active" -->
+					<!-- <span></span>
 					<span></span>
-					<span></span>
-				</div>
+				</div> -->
 				<a href="index.html"><img src="../dist/img/logo.png" alt="" class="logo"></a>
 			</div>
 
@@ -49,7 +67,7 @@
 				<div class="overlay"></div>
 				<ul class="nav-list">
 					<li><a class="mynav-link active" href="index.html">home</a></li>
-					<li><a class="mynav-link" href="whats-new.html">what's new</a></li>
+					<li><a class="mynav-link" href="whats-new.html">Latest trends</a></li>
 					<li><a class="mynav-link" href="exclusive-instock.html">EXCLUSIVE</a></li>
 				</ul>
 			</div>
@@ -148,7 +166,7 @@
 			</div>
 		</form>
 		<!-- sec nav list -->
-		<div class="sec-nav">
+		<div class="sec-nav open">
 			<ul>
 				<li>
 					<a href="">CLOTHES</a>
@@ -176,7 +194,9 @@
 		</div>
 	</header>
 
-	<!-- mobile header -->
+	<!-- end desktop header -->
+	
+	<!-- start mobile header -->
 	<section class="header-container header-container-m">
 
 		<div class="header-m header">
@@ -270,6 +290,12 @@
 		<form action="" class="search-input">
 			<div class="container">
 				<input type="text" class="srch-input" placeholder="search">
+				<ul class="hints">
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+				</ul>
 				<p class="info">result <span></span> 100</p>
 			</div>
 		</form>
@@ -277,7 +303,7 @@
 			<ul class="collapse-list">
 				<li><a href="index.html">HOME</a></li>
 				<li><a href="newsfeed.html">NEWSFEED</a></li>
-				<li><a href="whats-new.html">WHAT’S NEW</a></li>
+				<li><a href="whats-new.html">LATEST TRENDS</a></li>
 				<li><a href="exclusive-instock.html">EXCLUSIVE</a></li>
 				<li><a href="exclusive-discount.html">DISCOUNTS</a></li>
 				<li>
@@ -305,9 +331,9 @@
 		</div>
 
 	</section>
+	<!-- end mobile header -->
 
-	<!-- start footer -->
-
+	<!-- start content -->
 
 	<section class="content">
 
@@ -334,54 +360,90 @@
 					<p class="main-title">
 						<img src="../dist/img/title-sign.png" class="img">
 						<span>
-							WHAT’S NEW
+							Latest trends
 						</span>
 					</p>
-					<a href="whats-new.html" class="more">EXPLORE ALL</a>
+					<!-- <a href="" class="more">EXPLORE ALL</a> -->
 				</div>
 				<div class="row">
 					<div class="col-6 col-md-3">
-						<div class="whats-box">
-							<div class="img">
-								<img src="../dist/img/pic14.png" alt="">
+						<div class="box">
+							<div class="box-img">
+								<a href="items-details.html"><img src="../dist/img/pic9.png" class="img-fluid"></a>
 							</div>
-							<a href="whats-new.html" class="log-btn">
-								<span class="tit">CLOTHES</span>
-								<img src="../dist/img/right-arrow.png" class="img-fluid">
-							</a>
+							<div class="down">
+								<div class="box-tit">
+									<a href="items-details.html">BUTTONED FAUX FUR COAT</a>
+								</div>
+								<div class="box-price">
+									250$
+								</div>
+								<div class="btns">
+									<button type="button" class="log-btn modal-btn view" data-target="#modal">
+										<span class="tit">QUICK VIEW</span>
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="col-6 col-md-3">
-						<div class="whats-box">
-							<div class="img">
-								<img src="../dist/img/pic15.png" alt="">
+						<div class="box">
+							<div class="box-img">
+								<a href="items-details.html"><img src="../dist/img/pic9.png" class="img-fluid"></a>
 							</div>
-							<a href="whats-new.html" class="log-btn">
-								<span class="tit">SHOES</span>
-								<img src="../dist/img/right-arrow.png" class="img-fluid">
-							</a>
+							<div class="down">
+								<div class="box-tit">
+									<a href="items-details.html">BUTTONED FAUX FUR COAT</a>
+								</div>
+								<div class="box-price">
+									250$
+								</div>
+								<div class="btns">
+									<button type="button" class="log-btn modal-btn view" data-target="#modal">
+										<span class="tit">QUICK VIEW</span>
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="col-6 col-md-3">
-						<div class="whats-box">
-							<div class="img">
-								<img src="../dist/img/pic16.png" alt="">
+						<div class="box">
+							<div class="box-img">
+								<a href="items-details.html"><img src="../dist/img/pic9.png" class="img-fluid"></a>
 							</div>
-							<a href="whats-new.html" class="log-btn">
-								<span class="tit">ACCESSORIES</span>
-								<img src="../dist/img/right-arrow.png" class="img-fluid">
-							</a>
+							<div class="down">
+								<div class="box-tit">
+									<a href="items-details.html">BUTTONED FAUX FUR COAT</a>
+								</div>
+								<div class="box-price">
+									250$
+								</div>
+								<div class="btns">
+									<button type="button" class="log-btn modal-btn view" data-target="#modal">
+										<span class="tit">QUICK VIEW</span>
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="col-6 col-md-3">
-						<div class="whats-box">
-							<div class="img">
-								<img src="../dist/img/pic17.png" alt="">
+						<div class="box">
+							<div class="box-img">
+								<a href="items-details.html"><img src="../dist/img/pic9.png" class="img-fluid"></a>
 							</div>
-							<a href="whats-new.html" class="log-btn">
-								<span class="tit">BEAUTY</span>
-								<img src="../dist/img/right-arrow.png" class="img-fluid">
-							</a>
+							<div class="down">
+								<div class="box-tit">
+									<a href="items-details.html">BUTTONED FAUX FUR COAT</a>
+								</div>
+								<div class="box-price">
+									250$
+								</div>
+								<div class="btns">
+									<button type="button" class="log-btn modal-btn view" data-target="#modal">
+										<span class="tit">QUICK VIEW</span>
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -402,7 +464,7 @@
 							newsfeed
 						</span>
 					</p>
-					<a href="newsfeed.html" class="more">EXPLORE ALL</a>
+					<a href="" class="more">EXPLORE ALL</a>
 				</div>
 
 				<div class="row">
@@ -430,7 +492,7 @@
 							</div>
 							<div class="icons">
 								<div class="icon heart">
-									<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+									<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 									<img src="../dist/img/heart.png" alt="">
 									<span class="val">900</span>
 								</div>
@@ -440,16 +502,20 @@
 								</div>
 								<div class="share-icons">
 									<a href="">
-										<img src="../dist/img/site.png" alt="">
+										<img src="../dist/img/sit.png" alt="">
+										<img src="../dist/img/site-c.png" alt="">
 									</a>
 									<a href="">
 										<img src="../dist/img/Facebook.png" alt="">
+										<img src="../dist/img/Facebook-c.png" alt="">
 									</a>
 									<a href="">
 										<img src="../dist/img/Twitter.png" alt="">
+										<img src="../dist/img/twit-c.png" alt="">
 									</a>
 									<a href="">
 										<img src="../dist/img/G+.png" alt="">
+										<img src="../dist/img/g+-c.png" alt="">
 									</a>
 								</div>
 							</div>
@@ -471,7 +537,7 @@
 							</div>
 							<div class="icons">
 								<div class="icon heart checked">
-									<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+									<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 									<img src="../dist/img/heart.png" alt="">
 									<span class="val">900</span>
 								</div>
@@ -481,16 +547,20 @@
 								</div>
 								<div class="share-icons">
 									<a href="">
-										<img src="../dist/img/site.png" alt="">
+										<img src="../dist/img/sit.png" alt="">
+										<img src="../dist/img/site-c.png" alt="">
 									</a>
 									<a href="">
 										<img src="../dist/img/Facebook.png" alt="">
+										<img src="../dist/img/Facebook-c.png" alt="">
 									</a>
 									<a href="">
 										<img src="../dist/img/Twitter.png" alt="">
+										<img src="../dist/img/twit-c.png" alt="">
 									</a>
 									<a href="">
 										<img src="../dist/img/G+.png" alt="">
+										<img src="../dist/img/g+-c.png" alt="">
 									</a>
 								</div>
 							</div>
@@ -514,7 +584,7 @@
 							</div>
 							<div class="icons">
 								<div class="icon heart checked">
-									<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+									<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 									<img src="../dist/img/heart.png" alt="">
 									<span class="val">900</span>
 								</div>
@@ -524,16 +594,20 @@
 								</div>
 								<div class="share-icons">
 									<a href="">
-										<img src="../dist/img/site.png" alt="">
+										<img src="../dist/img/sit.png" alt="">
+										<img src="../dist/img/site-c.png" alt="">
 									</a>
 									<a href="">
 										<img src="../dist/img/Facebook.png" alt="">
+										<img src="../dist/img/Facebook-c.png" alt="">
 									</a>
 									<a href="">
 										<img src="../dist/img/Twitter.png" alt="">
+										<img src="../dist/img/twit-c.png" alt="">
 									</a>
 									<a href="">
 										<img src="../dist/img/G+.png" alt="">
+										<img src="../dist/img/g+-c.png" alt="">
 									</a>
 								</div>
 							</div>
@@ -561,7 +635,7 @@
 							</div>
 							<div class="icons">
 								<div class="icon heart">
-									<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+									<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 									<img src="../dist/img/heart.png" alt="">
 									<span class="val">900</span>
 								</div>
@@ -571,16 +645,20 @@
 								</div>
 								<div class="share-icons">
 									<a href="">
-										<img src="../dist/img/site.png" alt="">
+										<img src="../dist/img/sit.png" alt="">
+										<img src="../dist/img/site-c.png" alt="">
 									</a>
 									<a href="">
 										<img src="../dist/img/Facebook.png" alt="">
+										<img src="../dist/img/Facebook-c.png" alt="">
 									</a>
 									<a href="">
 										<img src="../dist/img/Twitter.png" alt="">
+										<img src="../dist/img/twit-c.png" alt="">
 									</a>
 									<a href="">
 										<img src="../dist/img/G+.png" alt="">
+										<img src="../dist/img/g+-c.png" alt="">
 									</a>
 								</div>
 							</div>
@@ -593,27 +671,99 @@
 
 		<!-- end news feed -->
 
+		<!-- start hashtags -->
 
-		<!-- start exclusive -->
-
-		<section class="exclusive">
+		<section class="hashtags">
 			<div class="container">
-				<div class="title-container white">
+				<div class="title-container">
 					<p class="main-title">
-						<img src="../dist/img/help-plus.png" class="img">
+						<img src="../dist/img/title-sign.png" class="img">
 						<span>
-							EXCLUSIVE
+							hashtags
 						</span>
 					</p>
-					<a href="exclusive-instock.html" class="more">EXPLORE ALL</a>
+					<a href="hashtags.html" class="more">EXPLORE ALL</a>
+				</div>
+				<div class="row">
+					<div class="col-6 col-md-3">
+						<a href="" class="log-btn log-white justify-content-center">
+							<span class="tit d-block">New Year Dress</span>
+						</a>
+					</div>
+					<div class="col-6 col-md-3">
+						<a href="" class="log-btn log-white justify-content-center">
+							<span class="tit d-block">New Year Dress</span>
+						</a>
+					</div>
+					<div class="col-6 col-md-3">
+						<a href="" class="log-btn log-white justify-content-center">
+							<span class="tit d-block">New Year Dress</span>
+						</a>
+					</div>
+					<div class="col-6 col-md-3">
+						<a href="" class="log-btn log-white justify-content-center">
+							<span class="tit d-block">New Year Dress</span>
+						</a>
+					</div>
+
 				</div>
 			</div>
-			<a href="exclusive-instock.html" class="d-block">
-				<img src="../dist/img/young&fresh.png" alt="" class="w-100">
-			</a>
 		</section>
 
-		<!-- end exclusive -->
+		<!-- end hashtags -->
+
+
+		<!-- start contest -->
+
+		<section class="exclusive">
+			<div class="container exclusive-black">
+				<div class="row align-items-center">
+					<div class="col-12 col-sm-6 col-lg-3">
+						<p class="main-title">
+							<img src="../dist/img/title-sign.png" class="img">
+							<span>
+								EXCLUSIVE
+							</span>
+						</p>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="exclusive-box" style="background-image: url(../dist/img/exclusive.png)">
+							<p class="sale">50%</p>
+							<p class="info-content">
+								of for all summer collections
+							</p>
+							<a href="exclusive-discount.html" class="log-btn">
+								<span>shop-now</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="exclusive-box" style="background-image: url(../dist/img/exclusive.png)">
+							<p class="sale">50%</p>
+							<p class="info-content">
+								of for all summer collections
+							</p>
+							<a href="exclusive-discount.html" class="log-btn">
+								<span>shop-now</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="exclusive-box" style="background-image: url(../dist/img/exclusive.png)">
+							<p class="sale">50%</p>
+							<p class="info-content">
+								of for all summer collections
+							</p>
+							<a href="exclusive-discount.html" class="log-btn">
+								<span>shop-now</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- end contest -->
 
 
 		<!-- start brands -->
@@ -683,7 +833,7 @@
 										to say who you are.
 									</p>
 								</div>
-								<div class="col-3 col-md-4">
+								<div class="col-3 col-md-4 overflow">
 									<a href="register.html" class="log-btn">
 										<span class="tit">join modasti</span>
 										<img src="../dist/img/right-arrow.png" class="img-fluid">
@@ -702,33 +852,90 @@
 		<!-- start exclusive -->
 
 		<section class="exclusive">
-			<div class="container">
-				<div class="contest-tit white">
-					<div class="row align-items-center">
-						<div class="col-12 col-md-3">
+			<div class="container exclusive-black">
+				<div class="row align-items-center">
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="info">
 							<p class="main-title">
-								<img src="../dist/img/help-plus.png" class="img">
+								<img src="../dist/img/title-sign.png" class="img">
 								<span>
-									contest
+									CONTEST
 								</span>
 							</p>
-						</div>
-						<div class="col-9 col-md-5">
-							<span class="center">BE THE WINNER</span>
-						</div>
-						<div class="col-3 col-md-4">
-							<a href="create-set.html" class="log-btn log-white">
-								<span class="tit">join CONTEST</span>
+							<p class="info-content">
+								BE THE WINNER
+							</p>
+							<a href="new-contests.html" class="log-btn">
+								<span class="tit">JOIN CONTEST</span>
 								<img src="../dist/img/right-arrow.png" class="img-fluid">
 							</a>
 						</div>
 					</div>
-
-
-
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="box box-sq">
+							<a href="" class="box-img">
+								<img src="../dist/img/contest-slide2.png" class="img-fluid">
+								<div class="time time-s">
+									2 DAYS - 18 HOURS - 50 MINS
+								</div>
+							</a>
+							<div class="box-p box-p-tit">
+								CONTEST NAME
+							</div>
+							<div class="submission-contest">
+								<div class="box-p">
+									SUBMISSION <span class="dot"></span> 230
+								</div>
+								<a href="" class="box-p view">
+									<span>JOIN CONTTEST</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="box box-sq">
+							<a href="" class="box-img">
+								<img src="../dist/img/contest-slide2.png" class="img-fluid">
+								<div class="time time-s">
+									2 DAYS - 18 HOURS - 50 MINS
+								</div>
+							</a>
+							<div class="box-p box-p-tit">
+								CONTEST NAME
+							</div>
+							<div class="submission-contest">
+								<div class="box-p">
+									SUBMISSION <span class="dot"></span> 230
+								</div>
+								<a href="" class="box-p view">
+									<span>JOIN CONTTEST</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="box box-sq">
+							<a href="" class="box-img">
+								<img src="../dist/img/contest-slide2.png" class="img-fluid">
+								<div class="time time-s">
+									2 DAYS - 18 HOURS - 50 MINS
+								</div>
+							</a>
+							<div class="box-p box-p-tit">
+								CONTEST NAME
+							</div>
+							<div class="submission-contest">
+								<div class="box-p">
+									SUBMISSION <span class="dot"></span> 230
+								</div>
+								<a href="" class="box-p view">
+									<span>JOIN CONTTEST</span>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<img src="../dist/img/contest.png" alt="" class="w-100">
 		</section>
 
 		<!-- end exclusive -->
@@ -738,26 +945,43 @@
 
 		<section class="create-set-section">
 			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-4">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-12 col-md-4 overflow">
 						<p class="main-title">
 							<img src="../dist/img/title-sign.png" class="img">
 							<span>
 								create a set
 							</span>
 						</p>
-						<p class="info-content">
-							Join MODASTI
-							community and add
-							your touch
-						</p>
-						<a href="create-set.html" class="log-btn">
-							<span class="tit">create</span>
-							<img src="../dist/img/right-arrow.png" class="img-fluid">
-						</a>
+						<div class="content-btn">
+							<p class="info-content">
+								Join MODASTI
+								community and add
+								your touch
+							</p>
+							<a href="create-set.html" class="log-btn">
+								<span class="tit">create</span>
+								<img src="../dist/img/upload.png" class="img-fluid">
+							</a>
+						</div>
 					</div>
-					<div class="col-12 col-md-8">
-						<img src="../dist/img/set.png" alt="" class="w-100">
+					<div class="col-12 col-md-6">
+						<!-- <img src="../dist/img/set.png" alt="" class="w-100"> -->
+						<div class="news-box newsfeed-box shared-box">
+							<div class="shared-b">
+								<div class="img">
+									<img src="../dist/img/collections.png" alt="">
+								</div>
+								<div class="tit shared-tit">
+									<a href="" class="name">
+										<span class="img-u">
+											<img src="../dist/img/user.png" alt="">
+										</span>
+										<span class="name-txt">Sara Emad</span>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -768,7 +992,7 @@
 
 		<!-- start hashtags -->
 
-		<section class="hashtags">
+		<!-- <section class="hashtags">
 			<div class="container">
 				<div class="title-container">
 					<p class="main-title">
@@ -781,37 +1005,38 @@
 				</div>
 				<div class="row">
 					<div class="col-6 col-md-3">
-						<a href="login.html" class="log-btn log-white justify-content-center">
+						<a href="" class="log-btn log-white justify-content-center">
 							<span class="tit d-block">New Year Dress</span>
 						</a>
 					</div>
 					<div class="col-6 col-md-3">
-						<a href="login.html" class="log-btn log-white justify-content-center">
+						<a href="" class="log-btn log-white justify-content-center">
 							<span class="tit d-block">New Year Dress</span>
 						</a>
 					</div>
 					<div class="col-6 col-md-3">
-						<a href="login.html" class="log-btn log-white justify-content-center">
+						<a href="" class="log-btn log-white justify-content-center">
 							<span class="tit d-block">New Year Dress</span>
 						</a>
 					</div>
 					<div class="col-6 col-md-3">
-						<a href="login.html" class="log-btn log-white justify-content-center">
+						<a href="" class="log-btn log-white justify-content-center">
 							<span class="tit d-block">New Year Dress</span>
 						</a>
 					</div>
 
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- end hashtags -->
 
 
 	</section>
 
+	<!-- end content -->
 
-
+	<!-- start footer -->
 	<footer class="footer">
 		<div class="footer-head">
 			<div class="container">
@@ -894,8 +1119,738 @@
 			</div>
 		</div>
 	</footer>
-
 	<!-- end footer -->
+	
+    <!-- Start Quick View Modal -->
+    <div class="custom-modal quickView-modal" id="modal">
+        <div class="overlay"></div>
+        <div class="modal-card">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="quick-view-img">
+						<img src="../dist/img/main-view.png" alt="">
+					</div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="quick-view-details">
+                        <div class="card-head">
+                            <img src="../dist/img/close.png" class="img-fluid close-img">
+                        </div>
+                        <div class="details">
+                            <div class="item-name">T-SHIRT WITH SEAM DETAIL</div>
+                            <div class="size-guid">
+                                <div class="size">
+                                    <span>SIZE</span>
+                                    <a href="#" class="modal-btn" data-target="#sizeQuid-modal">SIZE GUIDE</a>
+                                </div>
+                                <div class="quid-box">
+                                    <div class="size-box">
+                                        XS
+                                    </div>
+                                    <div class="size-box">
+                                        S
+                                    </div>
+                                    <div class="size-box">
+                                        M
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-status">
+                                <span>STATUES:</span>
+                                <span>BACK-IN-STOCK</span>
+                            </div>
+                            <div class="item-description">
+                                <div class="description-tit">DESCRIPTION</div>
+                                <div class="item-color">
+                                    <p>Color</p>
+                                    <p>Blue</p>
+                                </div>
+                                <div class="item-style">
+                                    <p>Style</p>
+                                    <p>Casual, Basics</p>
+                                </div>
+                            </div>
+                            <div class="item-composition">
+                                <div class="comp-tit">Composition:</div>
+                                <p>65% Cotton, 30% Polyester, 5% Spandex</p>
+                            </div>
+                            <div class="item-price">250$</div>
+                            <div class="get-item">
+                                <a href="#" class="log-btn">
+                                    <span>GET ITEM</span>
+                                    <img src="../dist/img/right-arrow.png" class="img-fluid">
+                                </a>
+							</div>
+							<div class="full-details">
+                                <a href="#">FULL DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Quick View Modal -->
+   
+    <!-- Start Size Quid Modal -->
+    <div class="custom-modal sizeQuid-modal" id="sizeQuid-modal">
+        <div class="overlay"></div>
+        <div class="modal-card">
+            <div class="card-head">
+                <img src="../dist/img/close.png" class="img-fluid close-img">
+            </div>
+            <div class="card-content">
+                <div class="guid-title">SIZE GUIDE</div>
+                <div class="tabs">
+                    <label class="custom-checkbox radio">
+                        <input type="radio" name="userType" checked class="d-none">
+                        <i class="fas fa-square"></i>
+                        <span class="tit">US</span>
+                    </label>
+                    <label class="custom-checkbox radio">
+                        <input type="radio" name="userType" class="d-none">
+                        <i class="fas fa-square"></i>
+                        <span class="tit">UK</span>
+					</label>
+					<label class="custom-checkbox radio">
+                        <input type="radio" name="userType" class="d-none">
+                        <i class="fas fa-square"></i>
+                        <span class="tit">EUR</span>
+					</label>
+					<label class="custom-checkbox radio">
+                        <input type="radio" name="userType" class="d-none">
+                        <i class="fas fa-square"></i>
+                        <span class="tit">FA</span>
+                    </label>
+                </div>
+                <div class="tab-content">
+                    <div class="guid-sizes">
+						<table class="fixed-table">
+							<thead>
+								<tr>
+									<th>
+										SIZE
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="empty-cell">sss</td>
+								</tr>
+								<tr>
+									<td>
+										XS
+									</td>
+								</tr>
+								<tr>
+									<td>
+										S
+									</td>
+								</tr>
+								<tr>
+									<td>
+										m
+									</td>
+								</tr>
+								<tr>
+									<td>
+										l
+									</td>
+								</tr>
+								<tr>
+									<td>
+										xl
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="overflow-container">
+							<table>
+								<thead>
+									<tr>
+										<th colspan="2">BUST</th>
+										<th colspan="2">WAIST</th>
+										<th colspan="2">HIPS</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											CM
+										</td>
+										<td>
+											INCH
+										</td>
+										<td>
+											CM
+										</td>
+										<td>
+											INCH
+										</td>
+										<td>
+											CM
+										</td>
+										<td>
+											INCH
+										</td>
+									</tr>
+									<tr>
+	
+										<td>
+											81.28-83.82
+										</td>
+										<td>
+											32-33
+										</td>
+										<td>
+											60.96-63.5
+										</td>
+										<td>
+											24-25
+										</td>
+										<td>
+											87.63-90.17
+										</td>
+										<td>
+											34.5-35.5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											86.36-88.9
+										</td>
+										<td>
+											34-35
+										</td>
+										<td>
+											66.04-68.58
+										</td>
+										<td>
+											26-27
+										</td>
+										<td>
+											92.71-95.25
+										</td>
+										<td>
+											36.5-37.5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											91.44-93.98
+										</td>
+										<td>
+											36-37
+										</td>
+										<td>
+											71.12-73.66
+										</td>
+										<td>
+											28-29
+										</td>
+										<td>
+											97.79-102.87
+										</td>
+										<td>
+											38.5-40.5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											97.79-101.6
+										</td>
+										<td>
+											38.5-40
+										</td>
+										<td>
+											77.47-81.28
+										</td>
+										<td>
+											30.5-32
+										</td>
+										<td>
+											107.95-113.03
+										</td>
+										<td>
+											42.5-44.5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											105.41-109.22
+										</td>
+										<td>
+											41.5-43
+										</td>
+										<td>
+											85.09-88.9
+										</td>
+										<td>
+											33.5-35
+										</td>
+										<td>
+											108.585
+										</td>
+										<td>
+											42.75
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- End Size Quid Modal -->
+	
+	<!-- Start Shoes Size Quid Modal -->
+    <div class="custom-modal sizeQuid-modal shoes-guide" id="shoes-sizeQuid-modal">
+        <div class="overlay"></div>
+        <div class="modal-card">
+            <div class="card-head">
+                <img src="../dist/img/close.png" class="img-fluid close-img">
+            </div>
+            <div class="card-content">
+                <div class="guid-title">SHOES SIZE GUIDE</div>
+                <div class="tab-content">
+                    <div class="guid-sizes">
+						<table class="fixed-table">
+							<thead>
+								<tr>
+									<th>
+										SIZE
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										22,2 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										22,6 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										23,1 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										23,5 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										23,9 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										24,3 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										24,8 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										25,2 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										25,6 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										26,0 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										26,5 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										26,9 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										27,3 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										27,7 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										28,1 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										28,6 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										29,0 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										29,4 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										29,8 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										30,2 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										30,6 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										31,0 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										31,4 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										31,8 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										32,2 cm
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="overflow-container">
+							<table>
+								<thead>
+									<tr>
+										<th>EUR</th>
+										<th>UK</th>
+										<th>US</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											35
+										</td>
+										<td>
+											3
+										</td>
+										<td>
+											4 1/2
+										</td>
+									</tr>
+									<tr>
+	
+										<td>
+											36
+										</td>
+										<td>
+											3 1/2
+										</td>
+										<td>
+											5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											37
+										</td>
+										<td>
+											4
+										</td>
+										<td>
+											5 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											37 1/2
+										</td>
+										<td>
+											4 1/2
+										</td>
+										<td>
+											6
+										</td>
+									</tr>
+									<tr>
+										<td>
+											38
+										</td>
+										<td>
+											5
+										</td>
+										<td>
+											6 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											39
+										</td>
+										<td>
+											5 1/2
+										</td>
+										<td>
+											7
+										</td>
+									</tr>
+									<tr>
+										<td>
+											39 1/2
+										</td>
+										<td>
+											6
+										</td>
+										<td>
+											7 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											40
+										</td>
+										<td>
+											6 1/2
+										</td>
+										<td>
+											8
+										</td>
+									</tr>
+									<tr>
+										<td>
+											41
+										</td>
+										<td>
+											7
+										</td>
+										<td>
+											8 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											41 1/2
+										</td>
+										<td>
+											7 1/2
+										</td>
+										<td>
+											9
+										</td>
+									</tr>
+									<tr>
+										<td>
+											42
+										</td>
+										<td>
+											8
+										</td>
+										<td>
+											9 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											42 1/2
+										</td>
+										<td>
+											8 1/2
+										</td>
+										<td>
+											10
+										</td>
+									</tr>
+									<tr>
+										<td>
+											43
+										</td>
+										<td>
+											9
+										</td>
+										<td>
+											10 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											44
+										</td>
+										<td>
+											9 1/2
+										</td>
+										<td>
+											11
+										</td>
+									</tr>
+									<tr>
+										<td>
+											44 1/2
+										</td>
+										<td>
+											10
+										</td>
+										<td>
+											11 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											45
+										</td>
+										<td>
+											10 1/2
+										</td>
+										<td>
+											12
+										</td>
+									</tr>
+									<tr>
+										<td>
+											46
+										</td>
+										<td>
+											11
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											46 1/2
+										</td>
+										<td>
+											11 1/2
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											47
+										</td>
+										<td>
+											12
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											48
+										</td>
+										<td>
+											12 1/2
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											48 1/2
+										</td>
+										<td>
+											13
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											49
+										</td>
+										<td>
+											13 1/2
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											49 1/2
+										</td>
+										<td>
+											14
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											50
+										</td>
+										<td>
+											14 1/2
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											50 1/2
+										</td>
+										<td>
+											15
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Shoes Size Quid Modal -->
+	
+	
 	<script src="../dist/js/jquery-3.2.1.min.js"></script>
 	<script src="../dist/js/main.js"></script>
 </body></html>

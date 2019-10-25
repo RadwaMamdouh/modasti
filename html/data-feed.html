@@ -5,21 +5,38 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="icon" href="../dist/img/min-logo.png" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="57x57" href="../dist/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../dist/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../dist/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../dist/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../dist/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../dist/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../dist/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../dist/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../dist/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../dist/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../dist/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../dist/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../dist/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../dist/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- <link rel="icon" href="../dist/img/min-logo.png" type="image/x-icon" /> -->
 	<link rel="stylesheet" href="../dist/css/style.min.css">
 	<title>DATA FEED GUIDELINES AND SPECIFICATIONS</title>
 </head>
 
 <body>
-	<!-- desctop header -->
+	<!-- start desctop header -->
 	<header class="main-header">
 		<section class="header">
 			<div class="logo-side">
 				<!-- open sec nav btn -->
-				<div class="nav-btn">
+				<!-- <div class="nav-btn">
 					<span></span>
 					<span></span>
-				</div>
+				</div> -->
 				<a href="home.html"><img src="../dist/img/logo.png" alt="" class="logo"></a>
 			</div>
 			<!-- navbar list -->
@@ -27,7 +44,7 @@
 				<div class="overlay"></div>
 				<ul class="nav-list">
 					<li><a class="mynav-link active" href="index.html">home</a></li>
-					<li><a class="mynav-link" href="whats-new.html">what's new</a></li>
+					<li><a class="mynav-link" href="whats-new.html">Latest trends</a></li>
 					<li><a class="mynav-link" href="exclusive-instock.html">EXCLUSIVE</a></li>
 				</ul>
 			</div>
@@ -41,13 +58,13 @@
 
 					<div class="drop-mnu user-mnu">
 						<div class="up">
-							<a href="" class="img"><img src="../dist/img/user.png" alt=""></a>
-							<a href="" class="tit">Yosra Fahmy</a>
+							<a href="my-profile.html" class="img"><img src="../dist/img/user.png" alt=""></a>
+							<a href="my-profile.html" class="tit">Yosra Fahmy</a>
 							<p class="mail">Yosrafahmy@gmail.com</p>
 						</div>
 						<div class="center">
-							<a href="" class="link">Edit profile </a>
-							<a href="" class="link">Settings</a>
+							<a href="profile-data.html" class="link">Edit profile </a>
+							<a href="help.html" class="link">Help</a>
 						</div>
 						<div class="down">
 							<a href="index.html" class="link">Logout</a>
@@ -55,7 +72,7 @@
 					</div>
 				</div>
 				<!-- create set link -->
-				<a href="" class="ico-link cs-link">
+				<a href="create-set.html" class="ico-link cs-link">
 					<img src="../dist/img/grid-plus.png" alt="">
 				</a>
 				<!-- currency and location dropdown -->
@@ -126,50 +143,54 @@
 				</div>
 				<!-- notification dropdown -->
 				<div class="drop-container location-drop-btn">
-					<a href="" class="ico-link drpo-btn notifi-btn">
+					<a href="" class="ico-link drpo-btn notifi-btn" data-content="100">
 						<img src="../dist/img/bell.png" alt="">
 					</a>
 
 					<div class="drop-mnu notifi-mnu">
-						<div class="up">
-							<p class="tit">notfication</p>
-							<div class="switch">
-								<span class="mode-btn">
-									<span class="on">on</span>
-									<span class="off">off</span>
-								</span>
-								<span class="line"></span>
-								<span class="dot"></span>
+						<div class="notifi-head">
+							<div class="up">
+								<p class="tit">
+									NOTIFICATIONS
+								</p>
+								<div class="switch">
+									<span class="mode-btn">
+										<span class="on">on</span>
+										<span class="off">off</span>
+									</span>
+									<span class="line"></span>
+									<span class="dot"></span>
+								</div>
 							</div>
 						</div>
 						<ul class="center">
+
 							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
+								<div class="n-link">
+									<div class="n-user">
+										<img src="../dist/img/news-feed2.png" alt="">
+									</div>
+									<div class="left">
+										<a href="" class="center-content">
+											<span class="tit">User X like on your set</span>
+											<span class="date">5 MINUTES AGO</span>
+										</a>
+									</div>
+									<div class="n-img">
+										<img src="../dist/img/news-feed.png" alt="">
+									</div>
+								</div>
 							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
+
 						</ul>
-						<a href="" class="down">
+						<a href="notfications.html" class="down">
 							see all
 							<img src="../dist/img/right-arrow.png" alt="">
 						</a>
 					</div>
 				</div>
 				<!-- msgs link -->
-				<a href="" class="ico-link cs-link">
+				<a href="messages.html" class="ico-link cs-link" data-content="100">
 					<img src="../dist/img/msg.png" alt="">
 				</a>
 				<!-- open search btn -->
@@ -183,14 +204,20 @@
 			</div>
 		</section>
 		<!-- search form -->
-		<form action="" class="search-input">
+		<form action="search-result.html" class="search-input">
 			<div class="container">
 				<input type="text" class="srch-input" placeholder="search">
 				<p class="info">result <span></span> 100</p>
+				<ul class="hints">
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+				</ul>
 			</div>
 		</form>
 		<!-- sec nav list -->
-		<div class="sec-nav">
+		<div class="sec-nav open">
 			<ul>
 				<li>
 					<a href="">CLOTHES</a>
@@ -204,7 +231,10 @@
 				<li>
 					<a href="">SHOES</a>
 				</li>
-				
+
+				<li>
+					<a href="newsfeed.html">newsfeed</a>
+				</li>
 				<li>
 					<a href="exclusive-discount.html">DISCOUNTS</a>
 				</li>
@@ -217,8 +247,8 @@
 			</ul>
 		</div>
 	</header>
-
-	<!-- mobile header -->
+	<!-- end desctop header -->
+	<!-- start mobile header -->
 	<section class="header-container header-container-m">
 
 		<div class="header-m header">
@@ -312,6 +342,12 @@
 		<form action="" class="search-input">
 			<div class="container">
 				<input type="text" class="srch-input" placeholder="search">
+				<ul class="hints">
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+				</ul>
 				<p class="info">result <span></span> 100</p>
 			</div>
 		</form>
@@ -325,13 +361,13 @@
 
 					<div class="drop-mnu user-mnu">
 						<div class="up">
-							<a href="" class="img"><img src="../dist/img/user.png" alt=""></a>
-							<a href="" class="tit">Yosra Fahmy</a>
+							<a href="my-profile.html" class="img"><img src="../dist/img/user.png" alt=""></a>
+							<a href="my-profile.html" class="tit">Yosra Fahmy</a>
 							<p class="mail">Yosrafahmy@gmail.com</p>
 						</div>
 						<div class="center">
-							<a href="" class="link">Edit profile </a>
-							<a href="" class="link">Settings</a>
+							<a href="profile-data.html" class="link">Edit profile </a>
+							<a href="help.html" class="link">Help</a>
 						</div>
 						<div class="down">
 							<a href="index.html" class="link">Logout</a>
@@ -339,7 +375,7 @@
 					</div>
 				</div>
 				<!-- create set link -->
-				<a href="" class="ico-link cs-link">
+				<a href="create-set.html" class="ico-link cs-link">
 					<img src="../dist/img/create-set.png" alt="">
 				</a>
 				<!-- notification dropdown -->
@@ -350,7 +386,7 @@
 
 					<div class="drop-mnu notifi-mnu">
 						<div class="up">
-							<p class="tit">notfication</p>
+							<p class="tit">NOTIFICATIONS</p>
 							<div class="switch">
 								<span class="mode-btn">
 									<span class="on">on</span>
@@ -380,23 +416,23 @@
 								</a>
 							</li>
 						</ul>
-						<a href="" class="down">
+						<a href="notfications.html" class="down">
 							see all
 							<img src="../dist/img/right-arrow.png" alt="">
 						</a>
 					</div>
 				</div>
 				<!-- messages link -->
-				<a href="" class="ico-link cs-link">
+				<a href="online-sec.html" class="ico-link cs-link">
 					<img src="../dist/img/msg-b.png" alt="">
 				</a>
 			</div>
 			<ul class="collapse-list">
-				<li><a href="">HOME</a></li>
-				<li><a href="">NEWSFEED</a></li>
-				<li><a href="">WHAT’S NEW</a></li>
-				<li><a href="">EXCLUSIVE</a></li>
-				<li><a href="">DISCOUNTS</a></li>
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="newsfeed.html">NEWSFEED</a></li>
+				<li><a href="whats-new.html">LATEST TRENDS</a></li>
+				<li><a href="exclusive-instock.html">EXCLUSIVE</a></li>
+				<li><a href="exclusive-discount.html">DISCOUNTS</a></li>
 				<li>
 					<button class="sub-collapse-btn">
 						BRANDS
@@ -416,12 +452,12 @@
 				<li><a href="">SHOES</a></li>
 			</ul>
 			<div class="m-log-links">
-				<a href="" class="m-log-link">SIGN OUT</a>
+				<a href="index.html" class="m-log-link">SIGN OUT</a>
 			</div>
 		</div>
 
 	</section>
-
+	<!-- end mobile header -->
 	<!-- Start Data Feed -->
 	<section class="content">
 		<div class="data-feed-head">
@@ -585,12 +621,12 @@
 		<div class="footer-head">
 			<div class="container">
 				<div class="row">
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content">
 							Studiestræde 19, 4th floor DK-1455 Copenhagen
 						</p>
 					</div>
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content confirms">
 							Konform A/S CVR: 11794343
 						</p>
@@ -633,9 +669,13 @@
 							<div class="col-12 col-md-6 col-lg-6">
 								<a href="data-feed.html" class="foot-link foot-data-feed">DATA FEED GUIDELINES AND SPECIFICATIONS</a>
 							</div>
-							<div class="col-12 col-md-6 col-lg-3">
+							<div class="col-12 col-md-6 col-lg-2">
+								<a href="rate-your-experience.html" class="foot-link">RATE MODASTI</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-1">
 								<a href="help.html" class="foot-link">HELP</a>
 							</div>
+
 							<div class="col-12 col-md-8">
 								<p class="foot-tit social-tit">FIND US ON</p>
 								<div class="social">
@@ -667,6 +707,4 @@
 	<!-- end footer -->
 </body>
 <script src="../dist/js/jquery-3.2.1.min.js"></script>
-<script src="../dist/js/main.js"></script>
-
-</html>
+<script src="../dist/js/main.js"></script></html>
