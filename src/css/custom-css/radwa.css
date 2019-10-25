@@ -6,6 +6,15 @@ label {
     min-height: calc(100vh - 822px);
 }
 
+/* Fonts */
+.gsans {
+    font-family: 'sans' !important;
+}
+
+.gsans-m {
+    font-family: 'sans-m' !important;
+}
+
 
 /*********************** login.html *********************/
 .ico-link.not-before::before {
@@ -13,8 +22,9 @@ label {
 }
 
 .log-forms {
-    padding: 60px 0;
+    margin: 60px 0;
     overflow: hidden;
+    position: relative;
 }
 
 .title {
@@ -122,6 +132,14 @@ label {
 
 .form-group input:focus + span {
     width: 100%;
+}
+
+.input[type='email'] {
+    padding-right: 140px;
+}
+
+.input[type='password'] {
+    padding-right: 25px;
 }
 
 .remeber-me {
@@ -241,8 +259,8 @@ label {
     position: absolute;
     content: '';
     top:0;
-    left: 0;
-    width: 100%;
+    left: -1px;
+    width: 105%;
     height: 100%;
     background-color: #fff;
     transform-origin: left;
@@ -278,6 +296,8 @@ label {
 .log-btn span {
     color: #fff;
     line-height: 16px;
+    font-size: 14px;
+    font-family: 'raleway-m';
 }
 
 .log-btn:hover span {
@@ -362,27 +382,38 @@ label {
 
 /* Start Side info */
 .side-info {
-    background-color: #000;
+    background-color: transparent;
+    position: static;
+    z-index: 9;
 }
 
 .side-info::before {
     content: '';
-    width: 1000px;
+    width: 45%;
     position: absolute;
     height: 100%;
     background-color: #000;
     z-index: -1;
     overflow: visible;
     top: 0;
+    transition: .5s
 }
 
 .side-info.right::before {
-    left: calc(100% - 1px);
+    left: 0;
 }
 
 .side-info.left::before {
-    right: calc(100% - 1px);
+    right: 0 ;
 }
+.side-info.right.default::before {
+    left: 55%;
+}
+
+.side-info.left.default::before {
+    right: 55% ;
+}
+
 
 .log-info {
     margin: 190px 0 190px 190px;
@@ -558,7 +589,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 30px;
+    padding: 30px 30px 20px;
 }
 
 .custom-modal .modal-card .card-head img.close-img {
@@ -578,6 +609,7 @@ label {
     text-transform: uppercase;
     max-width: 100%;
     line-height: 36px;
+    font-family: 'raleway-b';
 }
 
 .custom-modal .modal-card .card-content p {
@@ -618,7 +650,10 @@ label {
     height: 19px;
 }
 /* End Business User submit Modal */
-
+.custom-modal .modal-card .card-content .log-btn .close-icon {
+    width: 17px;
+    height: 17px;
+}
 
 
 
@@ -672,7 +707,7 @@ label {
 }
 
 .register .tabs {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 /* .register .tabs span,
@@ -689,6 +724,10 @@ label {
     font-size: 14px;
     line-height: 16px;
     font-family: 'raleway-m';
+}
+
+.register .phone-no {
+    padding-right: 85px;
 }
 
 .register .drop-container {
@@ -894,6 +933,8 @@ label {
     text-transform: uppercase;
     color: #000;
     position: relative;
+    font-size: 14px;
+    font-family: 'raleway-m';
 }
 
 .back-login a:hover {
@@ -1003,6 +1044,7 @@ label {
 
 .confirm-message .recieve-email .log-btn.resend span {
     color: #000;
+    font-family: 'raleway-b';
 }
 
 .confirm-message .recieve-email .log-btn.resend:hover span {
@@ -1086,7 +1128,7 @@ label {
 }
 
 .profile-details .info-row {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1102,7 +1144,7 @@ label {
 }
 
 .profile-details .user-info {
-    margin-top: 11px;
+    padding-top: 10px;
 }
 
 .profile-details .user-info .bio {
@@ -1120,8 +1162,12 @@ label {
     max-width: 100%;
 }
 
+.profile-details .btns .log-btn {
+    padding: 0 24px !important;
+}
+
 .box {
-    background-color: #fff;
+    /* background-color: #fff; */
     margin-bottom: 30px;
     position: relative;
 }
@@ -1137,6 +1183,11 @@ label {
     justify-content: center;
     position: relative;
     border: 1px solid #ECECEC;
+}
+
+.box .box-img a {
+    width: 255px;
+    height: 468px;
 }
 
 .box .box-img img {
@@ -1192,13 +1243,18 @@ label {
 }
 
 .box .box-icons {
-    padding: 30px 0;
+    padding: 30px 0 0;
 }
 
 .box .box-icons .heart img {
     width: 25px;
     height: 22px;
     max-width: 100%;
+}
+
+.wins-details .box-btn .log-btn img {
+    width: 18px;
+    height: 16px;
 }
 
 
@@ -1251,7 +1307,7 @@ label {
     font-size: 24px;
     margin-bottom: 14px;
     text-transform: capitalize;
-    line-height: 44px;
+    line-height: 25px;
 	color: #000;
 }
 
@@ -1298,7 +1354,7 @@ label {
 
 .collec-btn {
     width: 255px;
-    height: 209px;
+    height: 468px;
     max-width: 100%;
     max-height: 100%;
     cursor: pointer;
@@ -1334,19 +1390,30 @@ label {
 }
 
 .collections-content.custom-modal .modal-card .card-head {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px 20px 30px 95px;
+    justify-content: center;
+    padding: 0;
 }
 
-.collections-content.custom-modal .modal-card .card-head .tit {
-    font-size: 24px;
-    line-height: 44px;
+.collections-content.custom-modal .modal-card .card-head img.close-img {
+    max-width: none;
 }
 
 .collections-content.custom-modal .modal-card .card-content {
     padding: 0 95px 30px;
+}
+
+.collections-content.custom-modal .modal-card .card-content .tit.create-tit {
+    font-size: 24px;
+    line-height: 44px;
+    padding: 30px 0 30px;
+    font-family: 'raleway-b';
 }
 
 .collections-content.custom-modal .modal-card .card-content .form-group {
@@ -1417,12 +1484,31 @@ label {
     text-transform: uppercase;
 }
 
+.collec-box .collec-box-p {
+    text-align: left;
+    font-size: 14px;
+    font-family: 'raleway-m';
+    margin-top: 4px;
+}
+
+.collec-box .collec-box-p span {
+    font-family: 'sans-m';
+}
+
 .collec-box {
     margin-bottom: 30px;
 }
 
+.collec-box a {
+    display: block;
+    width: 255px;
+    height: 468px;
+}
+
 .collec-box a img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -1436,8 +1522,11 @@ label {
     font-size: 24px;
     line-height: 36px;
     margin: 30px 0 10px;
-    width: 185px;
+    /* width: 185px; */
     max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .box .box-tit a {
@@ -1449,7 +1538,7 @@ label {
 }
 
 .box .box-p {
-    font-family: 'raleway';
+    font-family: 'raleway-m';
     font-size: 16px;
     line-height: 26px;
 }
@@ -1646,7 +1735,8 @@ label {
 
 .comments .comment-area .write-comment {
     width: 100%;
-    max-width: 84%;
+    /* max-width: 84%; */
+    max-width: calc(100% - 94px);
 }
 
 .comments .comment-area .write-comment textarea {
@@ -1670,7 +1760,7 @@ label {
 
 .comments .user-comments {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     margin-bottom: 60px;
 }
@@ -1730,6 +1820,10 @@ label {
     padding: 60px 0 30px;
 }
 
+.sets-details .items-used {
+    padding-bottom: 0;
+}
+
 .items-used .box .box-img {
     border: none;
 }
@@ -1739,12 +1833,12 @@ label {
 } */
 
 .items-used .box .box-tit {
-    margin: 30px 0 7px;
+    margin: 30px 0 10px;
 }
 
 .box .box-price {
     font-family: 'sans-m';
-    font-size: 30px;
+    font-size: 16px;
     margin-bottom: 30px;
 }
 
@@ -1787,7 +1881,7 @@ label {
 }
 
 .quickView-modal .quick-view-details .details {
-    padding: 0 60px 60px 30px;
+    padding: 0 60px 0 30px;
 }
 
 .quickView-modal .quick-view-details .details .item-name {
@@ -1827,6 +1921,19 @@ label {
     color: #000;
 }
 
+.quickView-modal .quick-view-img {
+    max-height: 817px;
+    overflow: hidden;
+    width: 100%;
+    height: 817px;
+}
+
+.quickView-modal .quick-view-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .quid-box {
     display: flex;
     align-items: center;
@@ -1842,7 +1949,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'roboto-m';
+    font-family: 'sans-m';
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
@@ -1940,10 +2047,13 @@ label {
 /* Start Quid Size Modal */
 .sizeQuid-modal .card-head {
     padding: 20px 20px 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .custom-modal.sizeQuid-modal .card-content {
-    padding: 0 95px 0;
+    padding: 0 30px 66px;
     overflow: auto;
 }
 
@@ -1952,11 +2062,12 @@ label {
 }
 
 .sizeQuid-modal .guid-title {
-    font-family: 'raleway-m';
+    font-family: 'raleway-b';
     font-size: 24px;
     line-height: 44px;
     margin-bottom: 29px;
     text-transform: uppercase;
+    padding-top: 30px;
 }
 
 .sizeQuid-modal .tabs {
@@ -1966,16 +2077,56 @@ label {
     margin-bottom: 30px;
 }
 
-.sizeQuid-modal .tabs .cm {
-    margin-right: 57px;
+.sizeQuid-modal .tabs label {
+    margin: 0 20px;
+    text-transform: uppercase;
 }
 
-.sizeQuid-modal .custom-radio i {
+.sizeQuid-modal .tabs label:first-child {
+    margin-left: 0;
+}
+
+.sizeQuid-modal .tabs label .tit {
+    font-family: 'raleway-b';
+}
+
+.sizeQuid-modal .custom-checkbox i {
     margin-right: 6px;
 }
 
-.sizeQuid-modal .custom-radio {
+.sizeQuid-modal .custom-checkbox {
     line-height: 16px;
+}
+.sizeQuid-modal .guid-sizes
+{
+    display: flex;
+}
+.sizeQuid-modal .guid-sizes .fixed-table
+{
+    width: 65px;
+}
+
+.sizeQuid-modal .guid-sizes .fixed-table tr td.empty-cell {
+    color: transparent;
+    font-family: 'raleway-m';
+}
+
+.sizeQuid-modal .guid-sizes .overflow-container
+{
+    width: calc(100% - 65px);
+    overflow-x: auto
+}
+
+.sizeQuid-modal .guid-sizes .overflow-container thead tr th:first-child {
+    border-left: 0;
+}
+
+.sizeQuid-modal .guid-sizes .overflow-container tbody tr td:first-child {
+    border-left: 0;
+}
+
+.sizeQuid-modal .guid-sizes .overflow-container tbody tr:first-child td {
+    font-family: 'raleway-m';
 }
 
 .sizeQuid-modal .guid-sizes table {
@@ -1988,15 +2139,21 @@ label {
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 22px;
+    border: 1px solid #000;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .sizeQuid-modal .guid-sizes table tbody tr td {
-    padding-bottom: 30px;
-}
-
-.sizeQuid-modal .guid-sizes table tbody .size-box {
-    margin: 0 auto;
+    padding: 12px 22px;
+    border: 1px solid #000;
+    font-size: 14px;
+    font-family: 'sans-m';
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .inch-tab-content {
@@ -2004,11 +2161,25 @@ label {
 }
 
 
+/* Shoes Quide Size */
+.custom-modal.sizeQuid-modal.shoes-guide .card-content {
+    padding: 0 30px 30px;
+}
+
+.sizeQuid-modal.shoes-guide .guid-sizes .overflow-container tbody tr:first-child td {
+    font-family: 'sans-m';
+}
+
+.sizeQuid-modal.shoes-guide .guid-sizes table tbody tr td {
+    padding: 12px;
+}
+
+
 
 
 /******************************************** items-details.html **********************************/
 .items-details {
-    padding: 60px 0 30px;
+    padding: 60px 0 40px;
 }
 
 .items-details .quick-view .owl-guide {
@@ -2024,12 +2195,12 @@ label {
 
 .items-details .quick-view .owl-guide .item img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: auto;
+    /* object-fit: contain; */
 }
 
 .items-details .quick-view .owl-dots {
-    padding: 42px 63px;
+    padding: 0 63px;
     position: absolute;
     left: -286px;
     top: 0;
@@ -2044,7 +2215,7 @@ label {
 }
 
 .items-details .quick-view-details .details {
-    padding: 0 60px 60px 30px;
+    padding: 0 60px 0 30px;
 }
 
 .items-details .quick-view-details .details .item-name {
@@ -2098,7 +2269,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'roboto-m';
+    font-family: 'sans-m';
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
@@ -2131,6 +2302,19 @@ label {
 
 .items-details .price-getItem {
     margin-bottom: 30px;
+}
+
+.items-details .quick-view-img {
+    max-height: 817px;
+    overflow: hidden;
+    width: 100%;
+    height: 817px;
+}
+
+.items-details .quick-view-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -2223,16 +2407,16 @@ label {
     padding: 0;
 }
 
-.myLikes .items-used .box .box-tit {
+/* .myLikes .items-used .box .box-tit {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-}
+} */
 
-.myLikes .items-used .box .box-tit a {
+/* .myLikes .items-used .box .box-tit a {
     width: 185px;
-}
+} */
 
 .myLikes .items-used .box .btns {
     top: 40%;
@@ -2242,10 +2426,10 @@ label {
     z-index: 1;
 }
 
-.myLikes .items-used .box .box-price {
+/* .myLikes .items-used .box .box-price {
     border-bottom: 1px solid #ECECEC;
     padding-bottom: 30px;
-}
+} */
 
 
 
@@ -2344,7 +2528,7 @@ label {
 
 /******************************************** help.html **********************************/
 .help-head {
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: #000;
     font-size: 0;
     line-height: 16px;
@@ -2398,7 +2582,7 @@ label {
 
 /* Start Collapsing */
 .collapseing {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .collapse-box {
@@ -2409,6 +2593,8 @@ label {
 
 .collapse-box:last-child {
     margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .collapse-box .collapse-btn {
@@ -2416,12 +2602,14 @@ label {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    align-items: baseline;
 }
 
 .collapse-box .collapse-btn .btn-txt {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    align-items: baseline;
 }
 
 .collapse-box .collapse-btn .btn-txt img {
@@ -2485,7 +2673,7 @@ label {
 
 /******************************* terms-of-services.html **************************/
 .terms-head {
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: #000;
 }
 
@@ -2494,7 +2682,7 @@ label {
 }
 
 .terms-content {
-    padding: 108px 0 100px;
+    padding: 60px 0;
 }
 
 .terms-content p {
@@ -2517,7 +2705,7 @@ label {
 
 /******************************* data-feed.html **************************/
 .data-feed-head {
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: #000;
 }
 
@@ -2543,6 +2731,10 @@ label {
     padding: 0 30px;
 }
 
+.data-feed-content table thead th:first-child {
+    padding-left: 0;
+}
+
 .data-feed-content .tite {
     margin-bottom: 0;
 }
@@ -2559,13 +2751,21 @@ label {
     border-bottom: 0;
 }
 
+.data-feed-content table tbody tr:last-child td {
+    padding-bottom: 0;
+}
+
 .data-feed-content table tbody td {
-    padding: 30px 30px 46px 30px;
+    padding: 30px;
     vertical-align: top;
 }
 
 .data-feed-content table tbody tr:first-child td {
     border-top: 0;
+}
+
+.data-feed-content table tbody td:first-child {
+    padding-left: 0;
 }
 
 .data-feed-content table tbody td .t-tit {
@@ -2733,42 +2933,50 @@ label {
     text-align: center;
     background-color: #000;
     color: #fff;
-    width: 95%;
+    /* width: 95%; */
     font-family: 'sans-b';
     font-size: 28px;
     padding: 25px 45px;
+    left: 20px;
+    right: 20px;
 }
 .box.box-sq .box-img .time.time-s
 {
     font-size: 14px;
-    padding: 15px 15px;
+    padding: 20px 6px;
 }
 
 .new-contests .box .box-p.box-p-tit {
     font-family: 'raleway-m';
     line-height: 44px;
+    margin-bottom: 5px;
 }
 
 .new-contests .box .sub-join {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-bottom: 50px; */
+    margin-bottom: 30px;
 }
 
 .new-contests .box .sub-join .box-p {
+    font-family: 'raleway-m';
+    font-size: 16px;
+}
+
+.new-contests .box .sub-join .box-p span:not(.dot) {
     font-family: 'sans-m';
-    font-size: 14px;
 }
 
 .new-contests .box .sub-join a.box-p {
     font-family: 'raleway-m';
-    color: #000;
+    /* color: #000; */
+    margin-top: 0;
 }
 
-.new-contests .box .sub-join a.box-p:hover {
+/* .new-contests .box .sub-join a.box-p:hover {
     color: #000;
-}
+} */
 
 .contest-hr {
     border: 1px solid #ececec;
@@ -2844,7 +3052,49 @@ label {
 
 .contest-info .contest-join {
     display: flex;
+    justify-content: center;
     margin-top: 30px;
+    text-align: center;
+	padding: 10px 20px;
+	color:#000;
+	position: relative;
+	transition: color 0.25s ease;
+	border: 1px solid #dadada;
+	-webkit-transition: color 0.25s ease;
+	-moz-transition: color 0.25s ease;
+	-ms-transition: color 0.25s ease;
+	-o-transition: color 0.25s ease;
+}
+
+.contest-info .contest-join:hover {
+	color:#fff;
+}
+
+.contest-info .contest-join::after {
+	position: absolute;
+	content: '';
+	top:0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #000;
+	transform-origin:left;
+	transition:width 0.25s ease;
+	z-index:1;
+}
+
+.contest-info .contest-join:hover::after {
+	width: 100%;
+}
+
+.contest-info .contest-join span {
+    font-family: 'raleway-m';
+    line-height: 16px;
+}
+
+.contest-info .contest-join:hover span {
+    position: relative;
+    z-index: 2;
 }
 
 .contest-comments {
@@ -3002,19 +3252,19 @@ label {
 /******************************************** join-contest.html **********************************/
 .contest-bar {
     padding: 22px 0;
-    background-color: #000;
+    background-color: transparent;
     font-size: 0;
 }
 
 .contest-bar .contest-tabs {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .contest-bar .contest-tabs li .tabs-links {
     margin: 0 20px;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     transition: .5s ease;
 }
@@ -3039,14 +3289,16 @@ label {
     width: 350px;
     margin-right: 0;
     display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .30);
 }
 
 .contest-bar .tabs-form form .input {
     background-color: transparent;
     border-bottom: none;
-    border-left: 1px solid rgba(255, 255, 255, .30);
+    border-left: 0;
     padding: 5px 0 5px 5px;
-    color: #fff;
+    color: #000;
     font-family: 'raleway-m';
     font-size: 14px;
     line-height: 16px;
@@ -3054,7 +3306,7 @@ label {
 }
 
 .contest-bar .tabs-form form .input::placeholder {
-    color: #fff;
+    color: #000;
     opacity: .3;
 }
 
@@ -3084,7 +3336,7 @@ label {
 }
 
 .join-contest {
-    padding: 60px 0;
+    padding: 15px 0 30px;
 }
 
 .droppable-area {
@@ -3094,6 +3346,7 @@ label {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    margin-top: 118px;
 }
 
 .droppable-area span {
@@ -3151,15 +3404,28 @@ label {
 
 .drop-btns .log-btn {
     height: 60px;
+    padding: 0 24px !important;
 }
-
+.draggable-items
+{
+    max-height: 1215px;
+    overflow-y: auto;
+    overflow-x: hidden
+}
 .draggable-items .set-item {
     margin-bottom: 30px;
 }
 
 .draggable-items .set-item .item-img {
-    margin-bottom: 30px;
-    height: 294px;
+    margin-bottom: 0;
+    height: 213px;
+    position: relative;
+}
+
+.draggable-items .set-item .item-img .custom-checkbox {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .draggable-items .set-item .item-img img {
@@ -3181,12 +3447,19 @@ label {
     margin-bottom: 0;
 }
 
+.set-publish .set-form .form-group .input {
+    font-size: 14px;
+    font-family: 'raleway-m';
+}
+
 .set-publish .set-form .form-group textarea {
     position: relative;
     border-bottom: 1px solid #ECECEC;
     width: 100%;
 	height: 150px;
     resize: none;
+    font-size: 14px;
+    font-family: 'raleway-m';
 }
 
 .set-publish .set-form .form-group textarea::placeholder {
@@ -3262,7 +3535,8 @@ label {
     bottom: 0;
     transform: translate(0, -50%);
     background-color: #000;
-    padding: 45px 43px 45px 2px;
+    padding: 60px 43px 60px 2px;
+    z-index: 2;
 }
 
 .business-img .b-search::before {
@@ -3326,7 +3600,7 @@ label {
 .business-help .help-txt .txt-row .help-title {
     font-family: 'raleway-m';
     font-size: 24px;
-    line-height: 44px;
+    line-height: 29px;
     margin-bottom: 20px;
 }
 
@@ -3345,6 +3619,7 @@ label {
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 20px;
+    font-family: 'raleway-m';
 }
 
 .business-help .help-faqs .faqs p:last-child {
@@ -3402,7 +3677,7 @@ label {
 .pull-bear .uploading {
     width: 67px;
     height: 67px;
-    margin-right: 6px;
+    margin-right: 16px;
 }
 
 .pull-bear .uploading > img {
@@ -3450,6 +3725,46 @@ label {
     margin-bottom: 0;
 }
 
+.b-edit-form .profile-data .tit {
+    line-height: 16px;
+}
+
+.b-edit-form .profile-data .form-group {
+    font-size: 0;
+}
+
+.b-edit-form .profile-data .correct {
+    top: 36px;
+}
+
+.b-edit-form .profile-data .input {
+    margin-top: 17px;
+    padding-bottom: 17px;
+}
+
+.b-edit-form .profile-data textarea {
+    resize: none;
+    color: rgba(0,0,0,.3);
+    height: 40px;
+    line-height: 20px;
+    font-family: 'raleway-m';
+}
+
+.b-edit-form .profile-data .change-pass {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-family: 'raleway-m';
+    text-decoration: underline !important;
+    line-height: 16px;
+    display: block;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.b-edit-form .profile-data .change-pass:hover {
+    color: #CFBDA8;
+}
+
 .b-edit-form .profile-data .form-btns {
     display: flex;
     align-items: center;
@@ -3458,12 +3773,17 @@ label {
 
 .b-edit-form .profile-data .form-btns .log-btn {
     height: 60px;
-    padding: 0 24px;
+    padding: 0 24px !important;
 }
 
 .b-edit-form .profile-data .form-btns .log-btn.modal-btn img {
     width: 29px;
     height: 26px;
+}
+
+.b-change-pass .log-btn[type='reset'] img {
+    width: 17px !important;
+    height: 17px !important;
 }
 
 
@@ -3493,6 +3813,7 @@ label {
 
 .business-user .weird-header .info.about .info-content {
     margin-bottom: 40px;
+    font-family: 'raleway';
 }
 
 .business-user .weird-header .info.about .info-content:nth-child(2) {
@@ -3528,6 +3849,7 @@ label {
 
 .business-user .business-us .title {
     align-items: baseline;
+    margin-bottom: 17px;
 }
 
 .business-user .business-us .title div {
@@ -3544,7 +3866,7 @@ label {
 }
 
 .business-user .business-us .business-us-txt p:first-child {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .business-user .business-us .business-us-txt p {
@@ -3572,7 +3894,7 @@ label {
 
 .coupon .b-search .coupon-date p {
     color: #fff;
-    font-family: 'raleway-m';
+    font-family: 'sans-m';
     font-size: 14px;
 }
 
@@ -3587,6 +3909,8 @@ label {
 
 .coupon-table {
     padding: 153px 0 60px;
+    position: relative;
+    z-index: 1;
 }
 
 .table {
@@ -3609,7 +3933,7 @@ label {
     font-family: 'raleway-m';
     font-size: 14px;
     vertical-align: middle;
-    padding: 20px;
+    padding: 20px 20px 20px 35px;
     cursor: pointer;
     white-space: nowrap;
 }
@@ -3621,7 +3945,7 @@ label {
 
 .coupon-table table tbody tr td {
     vertical-align: middle;
-    padding: 30px 20px;
+    padding: 30px 145px 30px 35px;
 }
 
 .coupon-table table tbody tr td:first-child {
@@ -3632,7 +3956,8 @@ label {
 .coupon-table table tbody tr td img {
     width: 93px;
     height: 71px;
-	object-fit: cover;
+    object-fit: cover;
+    max-width: none;
 }
 
 .coupon-table table tbody tr td p {
@@ -3642,6 +3967,7 @@ label {
 
 .coupon-table table tbody tr td p.status {
     font-family: 'raleway-m';
+    white-space: nowrap;
 }
 
 /******************************************** new-coupon.html **********************************/
@@ -3685,7 +4011,7 @@ label {
     opacity: .30;
 }
 
-.coupon-form  .coupon-f {
+.coupon-form .coupon-f {
     position: relative;
     bottom: 0;
     background-color: #000;
@@ -3693,7 +4019,7 @@ label {
     margin-top: -60px;
 }
 
-.coupon-form  .coupon-f::before {
+.coupon-form .coupon-f::before {
     content: '';
     background-color: #000;
     position: absolute;
@@ -3728,6 +4054,19 @@ label {
     border-left: 0;
     color: #fff !important;
     opacity: .30;
+    font-family: 'sans-m' !important;
+}
+
+.coupon-form .profile-data textarea.input {
+    resize: none;
+    line-height: 20px;
+    height: 45px;
+    font-family: 'raleway-m' !important;
+    padding-right: 20px;
+}
+
+.coupon-form .profile-data .correct {
+    top: 40px;
 }
 
 .coupon-form .add-coupon {
@@ -3736,8 +4075,26 @@ label {
     justify-content: flex-end;
 }
 
+.coupon-form .add-coupon .log-btn {
+    margin-right: 0 !important;
+    width: 255px;
+}
+
+.coupon-form .add-coupon .log-btn img {
+    width: 35px !important;
+    height: auto !important;
+}
+
 .new-coupon-table {
-    padding: 60px 0 60px;
+    padding: 60px 0 !important;
+}
+
+.coupon-table.new-coupon-table table thead tr th {
+    padding: 20px;
+}
+
+.coupon-table.new-coupon-table  table tbody tr td {
+    padding: 30px 20px;
 }
 
 
@@ -3745,9 +4102,14 @@ label {
 
 
 /****************************************************** newsfeed.html ***************************/
-.news-box {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #ececec;
+.newsfeed.overflow .news-box {
+    padding-top: 30px;
+    border-top: 1px solid #ececec;
+}
+
+.newsfeed.overflow .news-box:first-of-type {
+    border-top: 0;
+    padding-top: 0;
 }
 
 .news-box .img {
@@ -3762,10 +4124,10 @@ label {
     border: 1px solid #ECECEC;
 }
 
-.news-box .item-description {
+/* .news-box .item-description {
     padding-bottom: 30px;
     border-bottom: 1px solid #ECECEC;
-}
+} */
 
 .news-box .item-description .item-title {
     margin-bottom: 20px;
@@ -3775,11 +4137,16 @@ label {
 
 .news-box .item-description p {
     font-family: 'raleway';
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .news-box.shared-box {
     padding-bottom: 0;
     border-bottom: none;
+    border-top: 1px solid #ececec;
+    padding-top: 30px;
 }
 
 .news-box.shared-box .shared-tit {
@@ -3797,8 +4164,8 @@ label {
 }
 
 .news-box .item-price {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #ECECEC;
+    /* padding-bottom: 30px;
+    border-bottom: 1px solid #ECECEC; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -3826,4 +4193,81 @@ label {
     border-bottom: none;
     margin-bottom: 0;
     margin-top: 30px;
+}
+
+.news-box.shared-box .img {
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.news-box.shared-box .icons-bar {
+    border-top: none;
+    padding-top: 0;
+}
+
+.news-box .icons-bar {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.news-box:not(.newsfeed-box) .icons {
+    position: relative;
+    padding-top: 30px;
+}
+
+.news-box:not(.newsfeed-box) .icons::before {
+    content: '';
+    border: 1px solid #ececec;
+    position: absolute;
+    top: 0;
+    width: 56px;
+}
+
+
+/******************************* profile-data-change-password.html **************************/
+.profile-data.change-pass .data-btns .log-btn:nth-child(1) img {
+    width: 17px;
+    height: 17px;
+}
+
+.profile-data.change-pass .form-group {
+    margin-bottom: 30px;
+}
+
+.profile-data.change-pass .input {
+    margin-top: 17px;
+    padding-bottom: 17px;
+    font-family: 'sans-m' !important;
+}
+
+.profile-data.change-pass .correct {
+    top: 40px;
+}
+
+.profile-data.m-user-account .input {
+    margin-top: 17px;
+    padding-bottom: 17px;
+}
+
+.profile-data.m-user-account .correct {
+    top: 43px;
+}
+
+.profile-data.m-user-account .form-group {
+    margin-bottom: 30px;
+}
+
+.profile-data.m-user-account .change-pass {
+    display: block;
+    color: #000;
+    text-decoration: underline !important;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-family: 'raleway-m';
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.profile-data.m-user-account .change-pass:hover {
+    color: #CFBDA8;
 }

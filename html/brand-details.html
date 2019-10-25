@@ -10,15 +10,15 @@
 </head>
 
 <body>
-	<!-- desctop header -->
+	<!-- start desctop header -->
 	<header class="main-header">
 		<section class="header">
 			<div class="logo-side">
 				<!-- open sec nav btn -->
-				<div class="nav-btn">
+				<!-- <div class="nav-btn">
 					<span></span>
 					<span></span>
-				</div>
+				</div> -->
 				<a href="home.html"><img src="../dist/img/logo.png" alt="" class="logo"></a>
 			</div>
 			<!-- navbar list -->
@@ -26,7 +26,7 @@
 				<div class="overlay"></div>
 				<ul class="nav-list">
 					<li><a class="mynav-link active" href="index.html">home</a></li>
-					<li><a class="mynav-link" href="whats-new.html">what's new</a></li>
+					<li><a class="mynav-link" href="whats-new.html">Latest trends</a></li>
 					<li><a class="mynav-link" href="exclusive-instock.html">EXCLUSIVE</a></li>
 				</ul>
 			</div>
@@ -40,13 +40,13 @@
 
 					<div class="drop-mnu user-mnu">
 						<div class="up">
-							<a href="" class="img"><img src="../dist/img/user.png" alt=""></a>
-							<a href="" class="tit">Yosra Fahmy</a>
+							<a href="my-profile.html" class="img"><img src="../dist/img/user.png" alt=""></a>
+							<a href="my-profile.html" class="tit">Yosra Fahmy</a>
 							<p class="mail">Yosrafahmy@gmail.com</p>
 						</div>
 						<div class="center">
-							<a href="" class="link">Edit profile </a>
-							<a href="" class="link">Settings</a>
+							<a href="profile-data.html" class="link">Edit profile </a>
+							<a href="help.html" class="link">Help</a>
 						</div>
 						<div class="down">
 							<a href="index.html" class="link">Logout</a>
@@ -54,7 +54,7 @@
 					</div>
 				</div>
 				<!-- create set link -->
-				<a href="" class="ico-link cs-link">
+				<a href="create-set.html" class="ico-link cs-link">
 					<img src="../dist/img/grid-plus.png" alt="">
 				</a>
 				<!-- currency and location dropdown -->
@@ -130,45 +130,49 @@
 					</a>
 
 					<div class="drop-mnu notifi-mnu">
-						<div class="up">
-							<p class="tit">notfication</p>
-							<div class="switch">
-								<span class="mode-btn">
-									<span class="on">on</span>
-									<span class="off">off</span>
-								</span>
-								<span class="line"></span>
-								<span class="dot"></span>
+						<div class="notifi-head">
+							<div class="up">
+								<p class="tit">
+									NOTIFICATIONS
+								</p>
+								<div class="switch">
+									<span class="mode-btn">
+										<span class="on">on</span>
+										<span class="off">off</span>
+									</span>
+									<span class="line"></span>
+									<span class="dot"></span>
+								</div>
 							</div>
 						</div>
 						<ul class="center">
+
 							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
+								<div class="n-link">
+									<div class="n-user">
+										<img src="../dist/img/news-feed2.png" alt="">
+									</div>
+									<div class="left">
+										<a href="" class="center-content">
+											<span class="tit">User X like on your set</span>
+											<span class="date">5 MINUTES AGO</span>
+										</a>
+									</div>
+									<div class="n-img">
+										<img src="../dist/img/news-feed.png" alt="">
+									</div>
+								</div>
 							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
+
 						</ul>
-						<a href="" class="down">
+						<a href="notfications.html" class="down">
 							see all
 							<img src="../dist/img/right-arrow.png" alt="">
 						</a>
 					</div>
 				</div>
 				<!-- msgs link -->
-				<a href="" class="ico-link cs-link">
+				<a href="messages.html" class="ico-link cs-link">
 					<img src="../dist/img/msg.png" alt="">
 				</a>
 				<!-- open search btn -->
@@ -182,14 +186,20 @@
 			</div>
 		</section>
 		<!-- search form -->
-		<form action="" class="search-input">
+		<form action="search-result.html" class="search-input">
 			<div class="container">
 				<input type="text" class="srch-input" placeholder="search">
 				<p class="info">result <span></span> 100</p>
+				<ul class="hints">
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+				</ul>
 			</div>
 		</form>
 		<!-- sec nav list -->
-		<div class="sec-nav">
+		<div class="sec-nav open">
 			<ul>
 				<li>
 					<a href="">CLOTHES</a>
@@ -203,7 +213,10 @@
 				<li>
 					<a href="">SHOES</a>
 				</li>
-				
+
+				<li>
+					<a href="newsfeed.html">newsfeed</a>
+				</li>
 				<li>
 					<a href="exclusive-discount.html">DISCOUNTS</a>
 				</li>
@@ -216,8 +229,8 @@
 			</ul>
 		</div>
 	</header>
-
-	<!-- mobile header -->
+	<!-- end desctop header -->
+	<!-- start mobile header -->
 	<section class="header-container header-container-m">
 
 		<div class="header-m header">
@@ -311,6 +324,12 @@
 		<form action="" class="search-input">
 			<div class="container">
 				<input type="text" class="srch-input" placeholder="search">
+				<ul class="hints">
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+				</ul>
 				<p class="info">result <span></span> 100</p>
 			</div>
 		</form>
@@ -324,13 +343,13 @@
 
 					<div class="drop-mnu user-mnu">
 						<div class="up">
-							<a href="" class="img"><img src="../dist/img/user.png" alt=""></a>
-							<a href="" class="tit">Yosra Fahmy</a>
+							<a href="my-profile.html" class="img"><img src="../dist/img/user.png" alt=""></a>
+							<a href="my-profile.html" class="tit">Yosra Fahmy</a>
 							<p class="mail">Yosrafahmy@gmail.com</p>
 						</div>
 						<div class="center">
-							<a href="" class="link">Edit profile </a>
-							<a href="" class="link">Settings</a>
+							<a href="profile-data.html" class="link">Edit profile </a>
+							<a href="help.html" class="link">Help</a>
 						</div>
 						<div class="down">
 							<a href="index.html" class="link">Logout</a>
@@ -338,7 +357,7 @@
 					</div>
 				</div>
 				<!-- create set link -->
-				<a href="" class="ico-link cs-link">
+				<a href="create-set.html" class="ico-link cs-link">
 					<img src="../dist/img/create-set.png" alt="">
 				</a>
 				<!-- notification dropdown -->
@@ -349,7 +368,7 @@
 
 					<div class="drop-mnu notifi-mnu">
 						<div class="up">
-							<p class="tit">notfication</p>
+							<p class="tit">NOTIFICATIONS</p>
 							<div class="switch">
 								<span class="mode-btn">
 									<span class="on">on</span>
@@ -379,23 +398,23 @@
 								</a>
 							</li>
 						</ul>
-						<a href="" class="down">
+						<a href="notfications.html" class="down">
 							see all
 							<img src="../dist/img/right-arrow.png" alt="">
 						</a>
 					</div>
 				</div>
 				<!-- messages link -->
-				<a href="" class="ico-link cs-link">
+				<a href="online-sec.html" class="ico-link cs-link">
 					<img src="../dist/img/msg-b.png" alt="">
 				</a>
 			</div>
 			<ul class="collapse-list">
-				<li><a href="">HOME</a></li>
-				<li><a href="">NEWSFEED</a></li>
-				<li><a href="">WHAT’S NEW</a></li>
-				<li><a href="">EXCLUSIVE</a></li>
-				<li><a href="">DISCOUNTS</a></li>
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="newsfeed.html">NEWSFEED</a></li>
+				<li><a href="whats-new.html">LATEST TRENDS</a></li>
+				<li><a href="exclusive-instock.html">EXCLUSIVE</a></li>
+				<li><a href="exclusive-discount.html">DISCOUNTS</a></li>
 				<li>
 					<button class="sub-collapse-btn">
 						BRANDS
@@ -415,18 +434,13 @@
 				<li><a href="">SHOES</a></li>
 			</ul>
 			<div class="m-log-links">
-				<a href="" class="m-log-link">SIGN OUT</a>
+				<a href="index.html" class="m-log-link">SIGN OUT</a>
 			</div>
 		</div>
 
 	</section>
-
+	<!-- end mobile header -->
 	<section class="content">
-
-
-
-
-
 		<!-- start brands -->
 
 		<div class="brand-details">
@@ -469,15 +483,9 @@
 
 									</div>
 									<span class="side-folow-btn folow">
-										<span class="d-none d-md-block">
-											<img src="../dist/img/title-sign.png" alt="">
-											<img src="../dist/img/follow.png" alt="">
-										</span>
-										<span class="d-block d-md-none">
-											<img src="../dist/img/white-plus.png" alt="">
-											<img src="../dist/img/correct%20-%20white.png" alt="">
-										</span>
-										folow
+										<img src="../dist/img/white-plus.png" alt="">
+										<img src="../dist/img/correct%20-%20white.png" alt="">
+										follow
 									</span>
 								</div>
 
@@ -533,7 +541,7 @@
 									<p class="tit text-left">to</p>
 									<input type="text" class="out to">
 								</div>
-								<div class="range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="-3000" data-max="0" data-value1="-2900" data-value2="-80">
+								<div class="range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="0" data-max="3000" data-value1="0" data-value2="3000">
 									<div class="ui-slider-range ui-corner-all ui-widget-header"></div>
 									<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
 									<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
@@ -569,6 +577,8 @@
 									<a href="">select</a>
 								</div>
 							</div>
+
+							<p class="tit">SIZE</p>
 
 							<div class="size-filter">
 								<div class="box-size">xs</div>
@@ -662,7 +672,7 @@
 										<div class="icons-bar">
 											<div class="icons">
 												<div class="icon heart">
-													<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+													<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 													<img src="../dist/img/heart.png" alt="">
 													<span class="val">900</span>
 												</div>
@@ -805,7 +815,7 @@
 										<div class="icons-bar">
 											<div class="icons">
 												<div class="icon heart">
-													<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+													<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 													<img src="../dist/img/heart.png" alt="">
 													<span class="val">900</span>
 												</div>
@@ -948,7 +958,7 @@
 										<div class="icons-bar">
 											<div class="icons">
 												<div class="icon heart">
-													<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+													<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 													<img src="../dist/img/heart.png" alt="">
 													<span class="val">900</span>
 												</div>
@@ -1091,7 +1101,7 @@
 										<div class="icons-bar">
 											<div class="icons">
 												<div class="icon heart">
-													<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+													<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 													<img src="../dist/img/heart.png" alt="">
 													<span class="val">900</span>
 												</div>
@@ -1234,7 +1244,7 @@
 										<div class="icons-bar">
 											<div class="icons">
 												<div class="icon heart">
-													<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+													<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 													<img src="../dist/img/heart.png" alt="">
 													<span class="val">900</span>
 												</div>
@@ -1377,7 +1387,7 @@
 										<div class="icons-bar">
 											<div class="icons">
 												<div class="icon heart">
-													<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+													<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 													<img src="../dist/img/heart.png" alt="">
 													<span class="val">900</span>
 												</div>
@@ -1520,7 +1530,7 @@
 										<div class="icons-bar">
 											<div class="icons">
 												<div class="icon heart">
-													<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+													<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 													<img src="../dist/img/heart.png" alt="">
 													<span class="val">900</span>
 												</div>
@@ -1663,7 +1673,7 @@
 										<div class="icons-bar">
 											<div class="icons">
 												<div class="icon heart">
-													<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+													<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 													<img src="../dist/img/heart.png" alt="">
 													<span class="val">900</span>
 												</div>
@@ -1806,7 +1816,7 @@
 										<div class="icons-bar">
 											<div class="icons">
 												<div class="icon heart">
-													<img src="../dist/img/heart-fill.png" alt="" class="checked-img">
+													<img src="../dist/img/red-heart.png" alt="" class="checked-img">
 													<img src="../dist/img/heart.png" alt="">
 													<span class="val">900</span>
 												</div>
@@ -1946,12 +1956,12 @@
 		<div class="footer-head">
 			<div class="container">
 				<div class="row">
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content">
 							Studiestræde 19, 4th floor DK-1455 Copenhagen
 						</p>
 					</div>
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content confirms">
 							Konform A/S CVR: 11794343
 						</p>
@@ -1994,9 +2004,13 @@
 							<div class="col-12 col-md-6 col-lg-6">
 								<a href="data-feed.html" class="foot-link foot-data-feed">DATA FEED GUIDELINES AND SPECIFICATIONS</a>
 							</div>
-							<div class="col-12 col-md-6 col-lg-3">
+							<div class="col-12 col-md-6 col-lg-2">
+								<a href="rate-your-experience.html" class="foot-link">RATE MODASTI</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-1">
 								<a href="help.html" class="foot-link">HELP</a>
 							</div>
+
 							<div class="col-12 col-md-8">
 								<p class="foot-tit social-tit">FIND US ON</p>
 								<div class="social">
@@ -2026,580 +2040,736 @@
 	</footer>
 
 	<!-- end footer -->
-	
-	
-    <!-- Start Quick View Modal -->
-    <div class="custom-modal quickView-modal" id="modal">
-        <div class="overlay"></div>
-        <div class="modal-card">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="quick-view">
-                        <div class="owl-carousel owl-theme owl-guide">
-                            <div class="item">
-                                <img src="../dist/img/main-view.png" class="img-fluid">
-                            </div>
-                            <div class="item">
-                                <img src="../dist/img/subView5.png" class="img-fluid">
-                            </div>
-                            <div class="item">
-                                <img src="../dist/img/sub-view2.png" class="img-fluid">
-                            </div>
-                            <div class="item">
-                                <img src="../dist/img/sub-view3.png" class="img-fluid">
-                            </div>
-                            <div class="item">
-                                <img src="../dist/img/sub-view4.png" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="quick-view-details">
-                        <div class="card-head">
-                            <img src="../dist/img/close.png" class="img-fluid close-img">
-                        </div>
-                        <div class="details">
-                            <div class="item-name">T-SHIRT WITH SEAM DETAIL</div>
-                            <div class="size-guid">
-                                <div class="size">
-                                    <span>SIZE</span>
-                                    <a href="#" class="modal-btn" data-target="#sizeQuid-modal">SIZE GUIDE</a>
-                                </div>
-                                <div class="quid-box">
-                                    <div class="size-box">
-                                        XS
-                                    </div>
-                                    <div class="size-box">
-                                        S
-                                    </div>
-                                    <div class="size-box">
-                                        M
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-status">
-                                <span>STATUES:</span>
-                                <span>BACK-IN-STOCK</span>
-                            </div>
-                            <div class="item-description">
-                                <div class="description-tit">DESCRIPTION</div>
-                                <div class="item-color">
-                                    <p>Color</p>
-                                    <p>Blue</p>
-                                </div>
-                                <div class="item-style">
-                                    <p>Style</p>
-                                    <p>Casual, Basics</p>
-                                </div>
-                            </div>
-                            <div class="item-composition">
-                                <div class="comp-tit">Composition:</div>
-                                <p>65% Cotton, 30% Polyester, 5% Spandex</p>
-                            </div>
-                            <div class="item-price">250$</div>
-                            <div class="get-item">
-                                <a href="#" class="log-btn">
-                                    <span>GET ITEM</span>
-                                    <img src="../dist/img/right-arrow.png" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="full-details">
+
+
+	<!-- Start Quick View Modal -->
+	<div class="custom-modal quickView-modal" id="modal">
+		<div class="overlay"></div>
+		<div class="modal-card">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="quick-view-img">
+						<img src="../dist/img/main-view.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="quick-view-details">
+						<div class="card-head">
+							<img src="../dist/img/close.png" class="img-fluid close-img">
+						</div>
+						<div class="details">
+							<div class="item-name">T-SHIRT WITH SEAM DETAIL</div>
+							<div class="size-guid">
+								<div class="size">
+									<span>SIZE</span>
+									<a href="#" class="modal-btn" data-target="#sizeQuid-modal">SIZE GUIDE</a>
+								</div>
+								<div class="quid-box">
+									<div class="size-box">
+										XS
+									</div>
+									<div class="size-box">
+										S
+									</div>
+									<div class="size-box">
+										M
+									</div>
+								</div>
+							</div>
+							<div class="item-status">
+								<span>STATUES:</span>
+								<span>BACK-IN-STOCK</span>
+							</div>
+							<div class="item-description">
+								<div class="description-tit">DESCRIPTION</div>
+								<div class="item-color">
+									<p>Color</p>
+									<p>Blue</p>
+								</div>
+								<div class="item-style">
+									<p>Style</p>
+									<p>Casual, Basics</p>
+								</div>
+							</div>
+							<div class="item-composition">
+								<div class="comp-tit">Composition:</div>
+								<p>65% Cotton, 30% Polyester, 5% Spandex</p>
+							</div>
+							<div class="item-price">250$</div>
+							<div class="get-item">
+								<a href="#" class="log-btn">
+									<span>GET ITEM</span>
+									<img src="../dist/img/right-arrow.png" class="img-fluid">
+								</a>
+							</div>
+							<div class="full-details">
                                 <a href="#">FULL DETAILS</a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Quick View Modal -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Quick View Modal -->
 
-    <!-- Start Size Quid Modal -->
-    <div class="custom-modal sizeQuid-modal" id="sizeQuid-modal">
-        <div class="overlay"></div>
-        <div class="modal-card">
-            <div class="card-head">
-                <img src="../dist/img/close.png" class="img-fluid close-img">
-            </div>
-            <div class="card-content">
-                <div class="guid-title">SIZE GUIDE</div>
-                <div class="tabs">
-                    <label class="custom-radio cm">
-                        <input type="radio" name="userType" checked>
-                        <i class="fas fa-square"></i>
-                        <span class="tit">CM</span>
-                    </label>
-                    <label class="custom-radio inch">
-                        <input type="radio" name="userType">
-                        <i class="fas fa-square"></i>
-                        <span class="tit">INCH</span>
-                    </label>
-                </div>
-                <div class="cm-tab-content" id="cm-tab">
-                    <div class="guid-sizes">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>SIZE</th>
-                                    <th>USA</th>
-                                    <th>UK</th>
-                                    <th>EUR</th>
-                                    <th>FA</th>
-                                    <th>IT</th>
-                                    <th>AU</th>
-                                    <th>AU</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="size-box">
-                                            XS
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="size-box">
-                                            S
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="size-box">
-                                            M
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="size-box">
-                                            L
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="size-box">
-                                            XL
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="inch-tab-content" id="inch-tab">
-                    <div class="guid-sizes">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>SIZE</th>
-                                    <th>USA</th>
-                                    <th>UK</th>
-                                    <th>EUR</th>
-                                    <th>FA</th>
-                                    <th>IT</th>
-                                    <th>AU</th>
-                                    <th>AU</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="size-box">
-                                            XS
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            0-2
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="size-box">
-                                            S
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            4-6
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="size-box">
-                                            M
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            6-8
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="size-box">
-                                            L
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            10-12
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="size-box">
-                                            XL
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="size-box">
-                                            12-14
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Size Quid Modal -->
+	<!-- Start Size Quid Modal -->
+	<div class="custom-modal sizeQuid-modal" id="sizeQuid-modal">
+		<div class="overlay"></div>
+		<div class="modal-card">
+			<div class="card-head">
+				<img src="../dist/img/close.png" class="img-fluid close-img">
+			</div>
+			<div class="card-content">
+				<div class="guid-title">SIZE GUIDE</div>
+				<div class="tabs">
+					<label class="custom-checkbox radio">
+						<input type="radio" name="userType" checked class="d-none">
+						<i class="fas fa-square"></i>
+						<span class="tit">US</span>
+					</label>
+					<label class="custom-checkbox radio">
+						<input type="radio" name="userType" class="d-none">
+						<i class="fas fa-square"></i>
+						<span class="tit">UK</span>
+					</label>
+					<label class="custom-checkbox radio">
+						<input type="radio" name="userType" class="d-none">
+						<i class="fas fa-square"></i>
+						<span class="tit">EUR</span>
+					</label>
+					<label class="custom-checkbox radio">
+						<input type="radio" name="userType" class="d-none">
+						<i class="fas fa-square"></i>
+						<span class="tit">FA</span>
+					</label>
+				</div>
+				<div class="tab-content">
+					<div class="guid-sizes">
+						<table class="fixed-table">
+							<thead>
+								<tr>
+									<th>
+										SIZE
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="empty-cell">sss</td>
+								</tr>
+								<tr>
+									<td>
+										XS
+									</td>
+								</tr>
+								<tr>
+									<td>
+										S
+									</td>
+								</tr>
+								<tr>
+									<td>
+										m
+									</td>
+								</tr>
+								<tr>
+									<td>
+										l
+									</td>
+								</tr>
+								<tr>
+									<td>
+										xl
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="overflow-container">
+							<table>
+								<thead>
+									<tr>
+										<th colspan="2">BUST</th>
+										<th colspan="2">WAIST</th>
+										<th colspan="2">HIPS</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											CM
+										</td>
+										<td>
+											INCH
+										</td>
+										<td>
+											CM
+										</td>
+										<td>
+											INCH
+										</td>
+										<td>
+											CM
+										</td>
+										<td>
+											INCH
+										</td>
+									</tr>
+									<tr>
+
+										<td>
+											81.28-83.82
+										</td>
+										<td>
+											32-33
+										</td>
+										<td>
+											60.96-63.5
+										</td>
+										<td>
+											24-25
+										</td>
+										<td>
+											87.63-90.17
+										</td>
+										<td>
+											34.5-35.5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											86.36-88.9
+										</td>
+										<td>
+											34-35
+										</td>
+										<td>
+											66.04-68.58
+										</td>
+										<td>
+											26-27
+										</td>
+										<td>
+											92.71-95.25
+										</td>
+										<td>
+											36.5-37.5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											91.44-93.98
+										</td>
+										<td>
+											36-37
+										</td>
+										<td>
+											71.12-73.66
+										</td>
+										<td>
+											28-29
+										</td>
+										<td>
+											97.79-102.87
+										</td>
+										<td>
+											38.5-40.5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											97.79-101.6
+										</td>
+										<td>
+											38.5-40
+										</td>
+										<td>
+											77.47-81.28
+										</td>
+										<td>
+											30.5-32
+										</td>
+										<td>
+											107.95-113.03
+										</td>
+										<td>
+											42.5-44.5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											105.41-109.22
+										</td>
+										<td>
+											41.5-43
+										</td>
+										<td>
+											85.09-88.9
+										</td>
+										<td>
+											33.5-35
+										</td>
+										<td>
+											108.585
+										</td>
+										<td>
+											42.75
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Size Quid Modal -->
+
+	<!-- Start Shoes Size Quid Modal -->
+	<div class="custom-modal sizeQuid-modal shoes-guide" id="shoes-sizeQuid-modal">
+		<div class="overlay"></div>
+		<div class="modal-card">
+			<div class="card-head">
+				<img src="../dist/img/close.png" class="img-fluid close-img">
+			</div>
+			<div class="card-content">
+				<div class="guid-title">SHOES SIZE GUIDE</div>
+				<div class="tab-content">
+					<div class="guid-sizes">
+						<table class="fixed-table">
+							<thead>
+								<tr>
+									<th>
+										SIZE
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										22,2 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										22,6 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										23,1 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										23,5 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										23,9 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										24,3 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										24,8 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										25,2 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										25,6 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										26,0 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										26,5 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										26,9 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										27,3 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										27,7 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										28,1 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										28,6 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										29,0 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										29,4 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										29,8 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										30,2 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										30,6 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										31,0 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										31,4 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										31,8 cm
+									</td>
+								</tr>
+								<tr>
+									<td>
+										32,2 cm
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="overflow-container">
+							<table>
+								<thead>
+									<tr>
+										<th>EUR</th>
+										<th>UK</th>
+										<th>US</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											35
+										</td>
+										<td>
+											3
+										</td>
+										<td>
+											4 1/2
+										</td>
+									</tr>
+									<tr>
+
+										<td>
+											36
+										</td>
+										<td>
+											3 1/2
+										</td>
+										<td>
+											5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											37
+										</td>
+										<td>
+											4
+										</td>
+										<td>
+											5 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											37 1/2
+										</td>
+										<td>
+											4 1/2
+										</td>
+										<td>
+											6
+										</td>
+									</tr>
+									<tr>
+										<td>
+											38
+										</td>
+										<td>
+											5
+										</td>
+										<td>
+											6 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											39
+										</td>
+										<td>
+											5 1/2
+										</td>
+										<td>
+											7
+										</td>
+									</tr>
+									<tr>
+										<td>
+											39 1/2
+										</td>
+										<td>
+											6
+										</td>
+										<td>
+											7 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											40
+										</td>
+										<td>
+											6 1/2
+										</td>
+										<td>
+											8
+										</td>
+									</tr>
+									<tr>
+										<td>
+											41
+										</td>
+										<td>
+											7
+										</td>
+										<td>
+											8 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											41 1/2
+										</td>
+										<td>
+											7 1/2
+										</td>
+										<td>
+											9
+										</td>
+									</tr>
+									<tr>
+										<td>
+											42
+										</td>
+										<td>
+											8
+										</td>
+										<td>
+											9 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											42 1/2
+										</td>
+										<td>
+											8 1/2
+										</td>
+										<td>
+											10
+										</td>
+									</tr>
+									<tr>
+										<td>
+											43
+										</td>
+										<td>
+											9
+										</td>
+										<td>
+											10 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											44
+										</td>
+										<td>
+											9 1/2
+										</td>
+										<td>
+											11
+										</td>
+									</tr>
+									<tr>
+										<td>
+											44 1/2
+										</td>
+										<td>
+											10
+										</td>
+										<td>
+											11 1/2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											45
+										</td>
+										<td>
+											10 1/2
+										</td>
+										<td>
+											12
+										</td>
+									</tr>
+									<tr>
+										<td>
+											46
+										</td>
+										<td>
+											11
+										</td>
+										<td>
+
+										</td>
+									</tr>
+									<tr>
+										<td>
+											46 1/2
+										</td>
+										<td>
+											11 1/2
+										</td>
+										<td>
+
+										</td>
+									</tr>
+									<tr>
+										<td>
+											47
+										</td>
+										<td>
+											12
+										</td>
+										<td>
+
+										</td>
+									</tr>
+									<tr>
+										<td>
+											48
+										</td>
+										<td>
+											12 1/2
+										</td>
+										<td>
+
+										</td>
+									</tr>
+									<tr>
+										<td>
+											48 1/2
+										</td>
+										<td>
+											13
+										</td>
+										<td>
+
+										</td>
+									</tr>
+									<tr>
+										<td>
+											49
+										</td>
+										<td>
+											13 1/2
+										</td>
+										<td>
+
+										</td>
+									</tr>
+									<tr>
+										<td>
+											49 1/2
+										</td>
+										<td>
+											14
+										</td>
+										<td>
+
+										</td>
+									</tr>
+									<tr>
+										<td>
+											50
+										</td>
+										<td>
+											14 1/2
+										</td>
+										<td>
+
+										</td>
+									</tr>
+									<tr>
+										<td>
+											50 1/2
+										</td>
+										<td>
+											15
+										</td>
+										<td>
+
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Shoes Size Quid Modal -->
 
 	<!-- end footer -->
 	<script src="../dist/js/jquery-3.2.1.min.js"></script>
@@ -2616,78 +2786,31 @@
 				to = $(".to"),
 				fromTo = $(".from, .to")
 			rangeSlider.slider({
-				isRTL: true,
+				isRTL: false,
 				range: true,
 				min: rangeSlider.data("min"),
 				max: rangeSlider.data("max"),
 				values: [rangeSlider.data("value1"), rangeSlider.data("value2")],
 				slide: function(event, ui) {
-					to.val(-ui.values[0]);
-					from.val(-ui.values[1]);
+					to.val(ui.values[1]);
+					from.val(ui.values[0]);
+					//					console.log(to.val(),from.val())
+
 				}
+
 			});
-			to.val(-rangeSlider.slider("values", 0));
-			from.val(-rangeSlider.slider("values", 1));
+			to.val(rangeSlider.slider("values", 1));
+			from.val(rangeSlider.slider("values", 0));
+			console.log(rangeSlider.slider("values", 1))
 
 			fromTo.on("keyup", function() {
 				var rangeSlider = $(this).siblings(".range-slider");
 				if (parseInt(to.val()) > parseInt(from.val())) {
 					rangeSlider.slider({
-						values: [parseInt(-to.val()), parseInt(-from.val())]
+						values: [parseInt(to.val()), parseInt(from.val())]
 					});
 				}
 			});
 		});
-
 	</script>
-	
-<script>
-    $('.owl-guide').owlCarousel({
-        loop: false,
-        autoplay: false,
-        margin: 20,
-        nav: false,
-        dots: true,
-        autoWidth: false,
-        rtl: true,
-        animateOut: 0,
-        animateIn: 0,
-        navSpeed: 1000,
-        slideTransition: 1000,
-        autoplaySpeed: 1000,
-        navText: [
-            '<i class="fa fa-chevron-right" aria-hidden="true"></i><a href= "$"></a>',
-            '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-        ],
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-    $('.owl-guide').each(function(){
-
-        var dotss = $(this).find('.owl-dot'),
-            i = 0 ;
-
-            var imgs = [];
-            $(this).find('.item img').each(function(){
-            imgs.push( $(this).attr("src"));
-        });
-            console.log(imgs);
-        dotss.each(function(){
-            i ++;
-            $(this).html('<img src="' + imgs[i - 1] + '">')
-        });
-    })
-
-</script>
-</body>
-
-</html>
+</body></html>
