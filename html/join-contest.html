@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="../dist/img/min-logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../dist/css/style.min.css">
-    <title>Join Contest</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="apple-touch-icon" sizes="57x57" href="../dist/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../dist/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../dist/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../dist/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../dist/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../dist/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../dist/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../dist/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../dist/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../dist/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../dist/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../dist/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../dist/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../dist/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- <link rel="icon" href="../dist/img/min-logo.png" type="image/x-icon" /> -->
+	<link rel="stylesheet" href="../dist/css/style.min.css">
+	<title>Join Contest</title>
 </head>
+
 <body>
-    <!-- desctop header -->
+	<!-- start desctop header -->
 	<header class="main-header">
 		<section class="header">
 			<div class="logo-side">
 				<!-- open sec nav btn -->
-				<div class="nav-btn">
+				<!-- <div class="nav-btn">
 					<span></span>
 					<span></span>
-				</div>
+				</div> -->
 				<a href="home.html"><img src="../dist/img/logo.png" alt="" class="logo"></a>
 			</div>
 			<!-- navbar list -->
@@ -25,7 +43,7 @@
 				<div class="overlay"></div>
 				<ul class="nav-list">
 					<li><a class="mynav-link active" href="index.html">home</a></li>
-					<li><a class="mynav-link" href="whats-new.html">what's new</a></li>
+					<li><a class="mynav-link" href="whats-new.html">Latest trends</a></li>
 					<li><a class="mynav-link" href="exclusive-instock.html">EXCLUSIVE</a></li>
 				</ul>
 			</div>
@@ -39,13 +57,13 @@
 
 					<div class="drop-mnu user-mnu">
 						<div class="up">
-							<a href="" class="img"><img src="../dist/img/user.png" alt=""></a>
-							<a href="" class="tit">Yosra Fahmy</a>
+							<a href="my-profile.html" class="img"><img src="../dist/img/user.png" alt=""></a>
+							<a href="my-profile.html" class="tit">Yosra Fahmy</a>
 							<p class="mail">Yosrafahmy@gmail.com</p>
 						</div>
 						<div class="center">
-							<a href="" class="link">Edit profile </a>
-							<a href="" class="link">Settings</a>
+							<a href="profile-data.html" class="link">Edit profile </a>
+							<a href="help.html" class="link">Help</a>
 						</div>
 						<div class="down">
 							<a href="index.html" class="link">Logout</a>
@@ -53,7 +71,7 @@
 					</div>
 				</div>
 				<!-- create set link -->
-				<a href="" class="ico-link cs-link">
+				<a href="create-set.html" class="ico-link cs-link">
 					<img src="../dist/img/grid-plus.png" alt="">
 				</a>
 				<!-- currency and location dropdown -->
@@ -124,50 +142,54 @@
 				</div>
 				<!-- notification dropdown -->
 				<div class="drop-container location-drop-btn">
-					<a href="" class="ico-link drpo-btn notifi-btn">
+					<a href="" class="ico-link drpo-btn notifi-btn" data-content="100">
 						<img src="../dist/img/bell.png" alt="">
 					</a>
 
 					<div class="drop-mnu notifi-mnu">
-						<div class="up">
-							<p class="tit">notfication</p>
-							<div class="switch">
-								<span class="mode-btn">
-									<span class="on">on</span>
-									<span class="off">off</span>
-								</span>
-								<span class="line"></span>
-								<span class="dot"></span>
+						<div class="notifi-head">
+							<div class="up">
+								<p class="tit">
+									NOTIFICATIONS
+								</p>
+								<div class="switch">
+									<span class="mode-btn">
+										<span class="on">on</span>
+										<span class="off">off</span>
+									</span>
+									<span class="line"></span>
+									<span class="dot"></span>
+								</div>
 							</div>
 						</div>
 						<ul class="center">
+
 							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
+								<div class="n-link">
+									<div class="n-user">
+										<img src="../dist/img/news-feed2.png" alt="">
+									</div>
+									<div class="left">
+										<a href="" class="center-content">
+											<span class="tit">User X like on your set</span>
+											<span class="date">5 MINUTES AGO</span>
+										</a>
+									</div>
+									<div class="n-img">
+										<img src="../dist/img/news-feed.png" alt="">
+									</div>
+								</div>
 							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="tit">User X like on your set</span>
-									<span class="date">5 MINUTES AGO</span>
-								</a>
-							</li>
+
 						</ul>
-						<a href="" class="down">
+						<a href="notfications.html" class="down">
 							see all
 							<img src="../dist/img/right-arrow.png" alt="">
 						</a>
 					</div>
 				</div>
 				<!-- msgs link -->
-				<a href="" class="ico-link cs-link">
+				<a href="messages.html" class="ico-link cs-link" data-content="100">
 					<img src="../dist/img/msg.png" alt="">
 				</a>
 				<!-- open search btn -->
@@ -181,14 +203,20 @@
 			</div>
 		</section>
 		<!-- search form -->
-		<form action="" class="search-input">
+		<form action="search-result.html" class="search-input">
 			<div class="container">
 				<input type="text" class="srch-input" placeholder="search">
 				<p class="info">result <span></span> 100</p>
+				<ul class="hints">
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+				</ul>
 			</div>
 		</form>
 		<!-- sec nav list -->
-		<div class="sec-nav">
+		<div class="sec-nav open">
 			<ul>
 				<li>
 					<a href="">CLOTHES</a>
@@ -202,7 +230,10 @@
 				<li>
 					<a href="">SHOES</a>
 				</li>
-				
+
+				<li>
+					<a href="newsfeed.html">newsfeed</a>
+				</li>
 				<li>
 					<a href="exclusive-discount.html">DISCOUNTS</a>
 				</li>
@@ -215,8 +246,8 @@
 			</ul>
 		</div>
 	</header>
-
-	<!-- mobile header -->
+	<!-- end desctop header -->
+	<!-- start mobile header -->
 	<section class="header-container header-container-m">
 
 		<div class="header-m header">
@@ -310,6 +341,12 @@
 		<form action="" class="search-input">
 			<div class="container">
 				<input type="text" class="srch-input" placeholder="search">
+				<ul class="hints">
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+					<li><a href="">SUMMER SET</a></li>
+				</ul>
 				<p class="info">result <span></span> 100</p>
 			</div>
 		</form>
@@ -323,13 +360,13 @@
 
 					<div class="drop-mnu user-mnu">
 						<div class="up">
-							<a href="" class="img"><img src="../dist/img/user.png" alt=""></a>
-							<a href="" class="tit">Yosra Fahmy</a>
+							<a href="my-profile.html" class="img"><img src="../dist/img/user.png" alt=""></a>
+							<a href="my-profile.html" class="tit">Yosra Fahmy</a>
 							<p class="mail">Yosrafahmy@gmail.com</p>
 						</div>
 						<div class="center">
-							<a href="" class="link">Edit profile </a>
-							<a href="" class="link">Settings</a>
+							<a href="profile-data.html" class="link">Edit profile </a>
+							<a href="help.html" class="link">Help</a>
 						</div>
 						<div class="down">
 							<a href="index.html" class="link">Logout</a>
@@ -337,7 +374,7 @@
 					</div>
 				</div>
 				<!-- create set link -->
-				<a href="" class="ico-link cs-link">
+				<a href="create-set.html" class="ico-link cs-link">
 					<img src="../dist/img/create-set.png" alt="">
 				</a>
 				<!-- notification dropdown -->
@@ -348,7 +385,7 @@
 
 					<div class="drop-mnu notifi-mnu">
 						<div class="up">
-							<p class="tit">notfication</p>
+							<p class="tit">NOTIFICATIONS</p>
 							<div class="switch">
 								<span class="mode-btn">
 									<span class="on">on</span>
@@ -378,23 +415,23 @@
 								</a>
 							</li>
 						</ul>
-						<a href="" class="down">
+						<a href="notfications.html" class="down">
 							see all
 							<img src="../dist/img/right-arrow.png" alt="">
 						</a>
 					</div>
 				</div>
 				<!-- messages link -->
-				<a href="" class="ico-link cs-link">
+				<a href="online-sec.html" class="ico-link cs-link">
 					<img src="../dist/img/msg-b.png" alt="">
 				</a>
 			</div>
 			<ul class="collapse-list">
-				<li><a href="">HOME</a></li>
-				<li><a href="">NEWSFEED</a></li>
-				<li><a href="">WHAT’S NEW</a></li>
-				<li><a href="">EXCLUSIVE</a></li>
-				<li><a href="">DISCOUNTS</a></li>
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="newsfeed.html">NEWSFEED</a></li>
+				<li><a href="whats-new.html">LATEST TRENDS</a></li>
+				<li><a href="exclusive-instock.html">EXCLUSIVE</a></li>
+				<li><a href="exclusive-discount.html">DISCOUNTS</a></li>
 				<li>
 					<button class="sub-collapse-btn">
 						BRANDS
@@ -414,193 +451,360 @@
 				<li><a href="">SHOES</a></li>
 			</ul>
 			<div class="m-log-links">
-				<a href="" class="m-log-link">SIGN OUT</a>
+				<a href="index.html" class="m-log-link">SIGN OUT</a>
 			</div>
 		</div>
 
 	</section>
+	<!-- end mobile header -->
 
-    <!-- Start Join Contest -->
-    <section class="content">
-        <div class="contest-bar">
-            <div class="collapse-btn">
-                <img src="../dist/img/search-arrow.png" class="img-fluid">
-            </div>
-            <div class="container">
-                <div class="tabs-form">
-                    <ul class="contest-tabs">
-                        <li><a class="tabs-links tit active" href="">CLOTHES</a></li>
-                        <li><a class="tabs-links tit" href="">SHOES</a></li>
-                        <li><a class="tabs-links tit" href="">ACCESSORIES</a></li>
-                        <li><a class="tabs-links tit" href="">BEAUTY</a></li>
-                    </ul>
-                    <form>
-                        <input type="search" class="input" placeholder="Search">
-                        <button type="submit">
-                            <img src="../dist/img/search-white.png" class="img-fluid">
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="join-contest">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="droppable-area">
-                            <span>DRAG SETS<br>OR ITEMS HERE </span>
-                        </div>
-                        <div class="drop-tools">
-                            <button type="button">
-                                <img src="../dist/img/backward.png" class="img-fluid">
-                            </button>
-                            <button type="button">
-                                <img src="../dist/img/forward.png" class="img-fluid">
-                            </button>
-                            <button type="button">
-                                <img src="../dist/img/ordering.png" class="img-fluid">
-                            </button>
-                            <button type="button">
-                                <img src="../dist/img/rotate.png" class="img-fluid">
-                            </button>
-                            <button type="button">
-                                <img src="../dist/img/flip.png" class="img-fluid">
-                            </button>
-                            <button type="button">
-                                <img src="../dist/img/map.png" class="img-fluid">
-                            </button>
-                            <button type="button">
-                                <img src="../dist/img/resize.png" class="img-fluid">
-                            </button>
-                            <button type="button">
-                                <img src="../dist/img/close.png" class="img-fluid">
-                            </button>
-                        </div>
-                        <div class="drop-btns">
-                            <button type="button" class="log-btn">
-                                <span class="tit">JOIN CONTEST</span>
-                                <img src="../dist/img/right-arrow.png" class="img-fluid">
-                            </button>
-                            <button type="button" class="log-btn log-white">
-                                <span class="tit">RESET</span>
-                                <img src="../dist/img/resend.png" class="img-fluid">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="draggable-items">
-                            <div class="row">
-                                <div class="col-6 col-lg-4">
-                                    <div class="set-item">
-                                        <div class="item-img">
-                                            <img src="../dist/img/pic11.png" class="img-fluid">
-                                        </div>
-                                        <div class="item-desc">
-                                            BUTTONED FAUX FUR COAT
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-lg-4">
-                                    <div class="set-item">
-                                        <div class="item-img">
-                                            <img src="../dist/img/pic10.png" class="img-fluid">
-                                        </div>
-                                        <div class="item-desc">
-                                            BUTTONED FAUX FUR COAT
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-lg-4">
-                                    <div class="set-item">
-                                        <div class="item-img">
-                                            <img src="../dist/img/pic11.png" class="img-fluid">
-                                        </div>
-                                        <div class="item-desc">
-                                            BUTTONED FAUX FUR COAT
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-lg-4">
-                                    <div class="set-item">
-                                        <div class="item-img">
-                                            <img src="../dist/img/pic10.png" class="img-fluid">
-                                        </div>
-                                        <div class="item-desc">
-                                            BUTTONED FAUX FUR COAT
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-lg-4">
-                                    <div class="set-item">
-                                        <div class="item-img">
-                                            <img src="../dist/img/pic11.png" class="img-fluid">
-                                        </div>
-                                        <div class="item-desc">
-                                            BUTTONED FAUX FUR COAT
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-lg-4">
-                                    <div class="set-item">
-                                        <div class="item-img">
-                                            <img src="../dist/img/pic10.png" class="img-fluid">
-                                        </div>
-                                        <div class="item-desc">
-                                            BUTTONED FAUX FUR COAT
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-lg-4">
-                                    <div class="set-item">
-                                        <div class="item-img">
-                                            <img src="../dist/img/pic11.png" class="img-fluid">
-                                        </div>
-                                        <div class="item-desc">
-                                            BUTTONED FAUX FUR COAT
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-lg-4">
-                                    <div class="set-item">
-                                        <div class="item-img">
-                                            <img src="../dist/img/pic10.png" class="img-fluid">
-                                        </div>
-                                        <div class="item-desc">
-                                            BUTTONED FAUX FUR COAT
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-lg-4">
-                                    <div class="set-item">
-                                        <div class="item-img">
-                                            <img src="../dist/img/pic11.png" class="img-fluid">
-                                        </div>
-                                        <div class="item-desc">
-                                            BUTTONED FAUX FUR COAT
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Join Contest -->
+	<!-- Start Join Contest -->
+	<section class="content">
+		<!-- <div class="contest-bar">
+			<div class="collapse-btn">
+				<img src="../dist/img/search-arrow.png" class="img-fluid">
+			</div>
+			<div class="container">
+				<div class="tabs-form d-block">
+					<div class="row justify-content-end">
+						<div class="col-12 col-md-6">
+							<ul class="contest-tabs">
+								<li><a class="tabs-links tit active" href="">CLOTHES</a></li>
+								<li><a class="tabs-links tit" href="">SHOES</a></li>
+								<li><a class="tabs-links tit" href="">ACCESSORIES</a></li>
+								<li><a class="tabs-links tit" href="">BEAUTY</a></li>
+							</ul>
+							<form>
+								<input type="search" class="input" placeholder="Search">
+								<button type="submit">
+									<img src="../dist/img/search.png" class="img-fluid">
+								</button>
+							</form>
+						</div>
+					</div>
+					 <ul class="contest-tabs">
+						<li><a class="tabs-links tit active" href="">CLOTHES</a></li>
+						<li><a class="tabs-links tit" href="">SHOES</a></li>
+						<li><a class="tabs-links tit" href="">ACCESSORIES</a></li>
+						<li><a class="tabs-links tit" href="">BEAUTY</a></li>
+					</ul>
+					<form>
+						<input type="search" class="input" placeholder="Search">
+						<button type="submit">
+							<img src="../dist/img/search-white.png" class="img-fluid">
+						</button>
+					</form> 
+				</div>
+			</div>
+		</div> -->
+		<div class="join-contest">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="droppable-area">
+							<span>DRAG SETS<br>OR ITEMS HERE </span>
+						</div>
+						<div class="drop-tools">
+							<button type="button">
+								<img src="../dist/img/backward.png" class="img-fluid">
+							</button>
+							<button type="button">
+								<img src="../dist/img/forward.png" class="img-fluid">
+							</button>
+							<button type="button">
+								<img src="../dist/img/ordering.png" class="img-fluid">
+							</button>
+							<button type="button">
+								<img src="../dist/img/rotate.png" class="img-fluid">
+							</button>
+							<button type="button">
+								<img src="../dist/img/flip.png" class="img-fluid">
+							</button>
+							<button type="button">
+								<img src="../dist/img/map.png" class="img-fluid">
+							</button>
+							<button type="button">
+								<img src="../dist/img/resize.png" class="img-fluid">
+							</button>
+							<button type="button">
+								<img src="../dist/img/close.png" class="img-fluid">
+							</button>
+						</div>
+						<div class="drop-btns">
+							<button type="button" class="log-btn">
+								<span class="tit">JOIN CONTEST</span>
+								<img src="../dist/img/right-arrow.png" class="img-fluid">
+							</button>
+							<button type="button" class="log-btn log-white">
+								<span class="tit">RESET</span>
+								<img src="../dist/img/resend.png" class="img-fluid">
+							</button>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="contest-bar">
+							<div class="collapse-btn">
+								<img src="../dist/img/search-arrow.png" class="img-fluid">
+							</div>
+							<div class="tabs-form d-block">
+								<ul class="contest-tabs">
+									<li><a class="tabs-links tit active" href="">CLOTHES</a></li>
+									<li><a class="tabs-links tit" href="">SHOES</a></li>
+									<li><a class="tabs-links tit" href="">ACCESSORIES</a></li>
+									<li><a class="tabs-links tit" href="">BEAUTY</a></li>
+								</ul>
+								<form>
+									<input type="search" class="input" placeholder="Search">
+									<button type="submit">
+										<img src="../dist/img/search.png" class="img-fluid d-none d-lg-block">
+										<img src="../dist/img/search-white.png" class="d-block d-lg-none" alt="">
+									</button>
+								</form>
+							</div>
+						</div>
+						<div class="draggable-items">
+							<div class="row">
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-3">
+									<div class="set-item">
+										<div class="item-img">
+											<img src="../dist/img/pic11.png" class="img-fluid">
+											<label class="custom-checkbox d-block d-lg-none">
+												<input type="checkbox" checked>
+												<i class="fas fa-square"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Join Contest -->
 
-     <!-- start footer -->
+	<!-- start footer -->
 
 	<footer class="footer">
 		<div class="footer-head">
 			<div class="container">
 				<div class="row">
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content">
 							Studiestræde 19, 4th floor DK-1455 Copenhagen
 						</p>
 					</div>
-					<div class="col-6 col-md-3">
+					<div class="col-12 col-md-3">
 						<p class="info-content confirms">
 							Konform A/S CVR: 11794343
 						</p>
@@ -643,9 +847,13 @@
 							<div class="col-12 col-md-6 col-lg-6">
 								<a href="data-feed.html" class="foot-link foot-data-feed">DATA FEED GUIDELINES AND SPECIFICATIONS</a>
 							</div>
-							<div class="col-12 col-md-6 col-lg-3">
+							<div class="col-12 col-md-6 col-lg-2">
+								<a href="rate-your-experience.html" class="foot-link">RATE MODASTI</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-1">
 								<a href="help.html" class="foot-link">HELP</a>
 							</div>
+
 							<div class="col-12 col-md-8">
 								<p class="foot-tit social-tit">FIND US ON</p>
 								<div class="social">
@@ -677,5 +885,4 @@
 	<!-- end footer -->
 </body>
 <script src="../dist/js/jquery-3.2.1.min.js"></script>
-<script src="../dist/js/main.js"></script>
-</html>
+<script src="../dist/js/main.js"></script></html>

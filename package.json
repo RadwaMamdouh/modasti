@@ -1,29 +1,35 @@
 {
-  "name": "design-starter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-clean-css": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-concat-css": "^3.1.0",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-rename": "^1.4.0",
-    "gulp-watch": "^5.0.1"
-  },
-  "devDependencies": {
-    "gulp-build": "^0.5.3"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://abdelazizhassanabdelazizhassan@bitbucket.org/dotdeveg/design-starter.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/dotdeveg/design-starter#readme"
+	"homepage": "https://radwamamdouh.github.io/modasti",
+	"name": "design-starter",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^6.1.0",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-cli": "^2.2.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-concat-css": "^3.1.0",
+		"gulp-minify-css": "^1.2.4",
+		"gulp-rename": "^1.4.0",
+		"gulp-watch": "^5.0.1"
+	},
+	"devDependencies": {
+		"gh-pages": "^6.1.1",
+		"gulp-build": "^0.5.3",
+		"gulp-util": "^3.0.8"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "gulp build",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RadwaMamdouh/modasti.git"
+	},
+	"author": "",
+	"license": "ISC"
 }

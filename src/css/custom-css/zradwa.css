@@ -7,7 +7,7 @@
 @media (max-width: 922px) {
     /********** login.html ************/
     .log-forms {
-        padding: 30px 0;
+        margin: 30px 0;
     }
 
     .log-form {
@@ -48,11 +48,21 @@
         margin: 0 0 30px;
     }
 
+    /* reset password */
+    .reset-password .form-btn .log-btn[type=submit] img {
+        width: 20px;
+        height: 17px;
+    }
+
     /* .custom-checkbox i {
         top: 2px;
     } */
 
     /* side-info */
+    .side-info
+    {
+        position: relative !important;
+    }
     .side-info::after {
         content: '';
         width: 1000px;
@@ -68,7 +78,17 @@
     .side-info.right::after {
         right: calc(100% - 1px);
     }
-
+    .side-info.left.default::before
+    {
+        width: 1000px;
+        right: 0;
+    }
+    .side-info.right.default::before
+    {
+        left: 0;
+        width: 1000px; 
+    }
+    
     .log-info {
         margin: 50px 0;
         align-items: flex-start
@@ -108,7 +128,7 @@
     }
 
     .register .log-info {
-        margin: 50px 21px;
+        margin: 50px 0;
         align-items: flex-start
     }
 
@@ -197,6 +217,14 @@
         margin-bottom: 30px;
     }
 
+    .back-login a {
+        font-size: 12px;
+    }
+
+    .input {
+        padding-bottom: 10px;
+    }
+
     /*********** confirmation-message.html *********/
     .confirm-msg .col-lg-6 {
         order: -1;
@@ -238,6 +266,8 @@
 
     .confirm-message .not-recieve {
         max-width: 100%;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .confirm-message .recieve-email .log-btn img.cancel {
@@ -245,7 +275,7 @@
     }
 
     .confirm-msg .log-info {
-        margin: 50px 36px;
+        margin: 50px 0;
     }
 
     .confirm-msg .big-title {
@@ -253,6 +283,10 @@
         line-height: 29px;
         max-width: 122px;
         margin-bottom: 39px;
+    }
+
+    .confirm-message .recieve-email .log-btn.resend {
+        border: 1px solid #ececec;
     }
 
     /*********** new-password.html *********/
@@ -277,11 +311,15 @@
         justify-content: flex-start;
     }
 
-    .wins-content {
-        padding: 50px 0 20px;
+    .myProfile-tabs .prof-tabs li:first-child .tabs-links {
+        margin-left: 0;
     }
 
-    .profile-details .user-data {
+    .wins-content {
+        padding: 30px 0 0;
+    }
+
+    /* .profile-details .user-data {
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -306,7 +344,7 @@
     }
 
     .profile-details .user-info {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .profile-details .user-info .bio {
@@ -317,11 +355,25 @@
         font-size: 14px;
     }
 
+    .profile-details .stylist {
+        margin-bottom: 30px;
+    }
+
+    .profile-details .stylist span {
+        font-size: 14px;
+	    font-family: 'raleway-m';
+    } */
+
     .box .box-img {
         width: 164px;
         height: 298px;
         max-width: 100%;
         max-height: 100%;
+    }
+
+    .box .box-img a {
+        width: 164px;
+        height: 298px;
     }
 
     .box .wins-cup {
@@ -334,6 +386,7 @@
         width: 71px;
         height: 62px;
         margin-bottom: 20px;
+        max-width: none;
     }
 
     .box .icon-button {
@@ -344,7 +397,11 @@
 
     /********** myProfile-following.html ************/
     .following-content {
-        padding: 50px 0 20px;
+        padding: 50px 0 0;
+    }
+
+    .user-box {
+        padding: 23px;
     }
 
     .user-box .user-img {
@@ -370,12 +427,12 @@
 
     /********** myProfile-collections.html ************/
     .collections-content {
-        padding: 50px 0 20px;
+        padding: 30px 0 0;
     }
 
     .collec-btn {
-        width: 100%;
-        height: 123px;
+        /* width: 164px; */
+        height: 296px;
     }
 
     .collec-btn img {
@@ -390,13 +447,24 @@
 
     .collec-box .box-title {
         margin-top: 20px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .collec-box a {
+        /* width: 164px; */
+        height: 296px;
     }
 
     .collec-box a img {
         width: 100%;
         max-width: 100%;
-        height: 123px;
+        height: 100%;
         max-height: 100%;
+    }
+
+    .collec-box .collec-box-p {
+        font-size: 12px;
     }
 
     /* Modal */
@@ -414,6 +482,8 @@
 
     .collections-content.custom-modal .modal-card .card-content .form-btns .log-btn[type='reset'] {
         margin-right: 20px;
+        margin-top: 0;
+        margin-left: 0;
     }
 
     .collections-content.custom-modal .modal-card .card-content .form-btns .log-btn span {
@@ -432,6 +502,11 @@
         padding: 0px 50px 30px;
     }
 
+    .collections-content.custom-modal .modal-card .card-content .tit.create-tit {
+        padding-top: 50px;
+        line-height: 29px;
+    }
+
     /********** myProfile-my-sets.html ************/
     .profile-details .create-set {
         margin-bottom: 30px;
@@ -440,7 +515,7 @@
     .box .box-tit {
         font-size: 16px;
         line-height: 24px;
-        width: 123px;
+        /* width: 123px; */
         max-width: 100%;
         margin: 20px 0 10px;
     }
@@ -448,6 +523,7 @@
     .box .box-p {
         font-size: 14px;
         line-height: 24px;
+        font-family: 'raleway';
     }
 
     .box .btns {
@@ -458,7 +534,7 @@
         align-items: center;
         justify-content: flex-start;
         position: relative;
-        margin: 30px 0;
+        margin: 30px 0 0;
         left: 0;
     }
 
@@ -515,6 +591,7 @@
         position: relative;
         width: 40px;
         height: 40px;
+        margin-top: 30px;
     }
 
     .box .btns.middle-btn .log-btn {
@@ -528,7 +605,7 @@
 
     /********** myProfile-my-sets-details.html ************/
     .sets-details {
-        padding: 30px 0;
+        padding: 30px 0 0;
     }
 
     .set-view {
@@ -559,7 +636,8 @@
         width: 163px;
         height: 50px;
         max-width: 100%;
-        padding: 19px 20px; 
+        padding: 19px 20px;
+        margin-bottom: 20px;
     }
 
     .sets-details .set-data .btns .log-btn span {
@@ -568,8 +646,20 @@
         line-height: 24px;
     }
 
+    .sets-details .set-data .btns .log-btn.delete img {
+        width: 17px;
+        height: 16px;
+    }
+
+    .sets-details .set-data .btns .log-btn.edit img {
+        width: 11px;
+        height: 11px;
+    }
+
     .edit-del-btns {
         justify-content: flex-start;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .sets-details .set-data .edit-del-btns .log-btn span {
@@ -601,6 +691,7 @@
     .comments .comment-area .user-img {
         width: 46px;
         height: 46px;
+        margin-right: 20px;
     }
 
     .comments .comment-area .write-comment textarea {
@@ -646,7 +737,7 @@
 
     /* start Items Used */
     .items-used {
-        padding-bottom: 0;
+        padding: 30px 0 0;
     }
 
     .items-used .box .btns {
@@ -658,8 +749,13 @@
     }
 
     /********** items-details.html ************/
+    .custom-modal.sizeQuid-modal .card-content {
+        padding: 0 30px 30px;
+    }
+
     .items-details {
         overflow: hidden;
+        padding: 30px 0 0;
     }
 
     .items-details .quick-view {
@@ -676,6 +772,8 @@
 
     .items-details .quick-view .owl-guide .item {
         height: 496px;
+        display: flex;
+        align-items: center;
     }
 
     .items-details .owl-carousel .owl-stage-outer {
@@ -701,12 +799,14 @@
 
     .items-details .quid-box {
         margin-bottom: 20px;
+        grid-gap: 20px;
     }
 
     .items-details .size-box {
         width: 53px;
         height: 36px;
-        margin-right: 20px;
+        /* margin-right: 20px; */
+        font-size: 12px;
     }
 
     .item-description .description-tit {
@@ -743,6 +843,10 @@
         display: block;
     }
 
+    .items-used.related-items .box-btn .log-btn {
+        margin-top: 0;
+    }
+
     .items-used.related-items .box .box-tit {
         margin: 22px 0 9px;
     }
@@ -761,6 +865,10 @@
 
     .items-details .full-details a {
         display: none;
+    }
+
+    .items-details .quick-view-img {
+        margin-bottom: 20px;
     }
 
 
@@ -791,17 +899,26 @@
         width: 123px;
     }
 
-    .myLikes .items-used .box .box-price {
+    /* .myLikes .items-used .box .box-price {
         font-family: 'sans';
         font-size: 12px;
-        padding-bottom: 20px;
         margin-bottom: 20px;
-    }
+    } */
 
 
     /********** collection-details.html ************/
     .collection-details .profile-details .user-data {
-        margin-bottom: 14px;
+        margin-bottom: 20px;
+    }
+
+    .profile-details .profile-user-data {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .profile-details .profile-user-data .profile-user-info {
+        width: 100%;
     }
 
     .profile-details .collection-name {
@@ -819,6 +936,7 @@
     .profile-details .collection-date {
         font-size: 12px;
         line-height: 24px;
+        margin-bottom: 20px;
     }
 
     .profile-details .collection-date span {
@@ -855,12 +973,12 @@
     }
 
     .box .box-price {
-        font-family: 'sans';
-        font-size: 12px;
+        font-family: 'sans-m';
+        font-size: 14px;
     }
 
     .items-used .box .box-tit {
-        margin: 20px 0 9px;
+        margin: 20px 0 10px;
     }
 
 
@@ -870,8 +988,12 @@
         margin-right: 19px;
     }
 
+    .profile-details .btns .log-btn {
+        padding: 0 !important;
+    }
+
     .profile-details .collection-name .input {
-        padding-bottom: 9px;
+        padding-bottom: 3px;
         font-size: 16px;
         line-height: 24px;
         opacity: 1;
@@ -886,8 +1008,16 @@
         width: 17px;
     }
 
+    .collection-details-edit .profile-details .collection-name .form-group {
+        margin-bottom: 6px;
+    }
+
 
     /********** help.html ************/
+    .help-head {
+        padding: 30px 0;
+    }
+
     .help-head .left {
         display: flex;
         align-items: flex-start;
@@ -903,10 +1033,20 @@
         line-height: 49px;
     }
 
+    .collapseing {
+        padding: 30px 0;
+    }
+
     .collapse-box .collapse-btn .btn-txt {
         /* max-width: 294px; */
         width: 100%;
         overflow: hidden;
+    }
+
+    .collapse-box.active .collapse-content {
+        padding-top: 10px;
+        font-size: 14px;
+        font-family: 'raleway-m';
     }
 
     /*********** terms-of-services ********/
@@ -915,17 +1055,21 @@
     }
 
     .terms-content {
-        padding: 53px 0 50px;
+        padding: 30px 0;
     }
 
     .terms-content p:not(.t-title) {
         font-size: 14px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .terms-content p.t-title {
         margin-bottom: 30px;
-        width: 194px;
+        /* width: 194px; */
+    }
+
+    .terms-content p:last-child {
+        margin-bottom: 0;
     }
 
     /*********** data-feed ********/
@@ -942,7 +1086,12 @@
     }
 
     .data-feed-content {
-        padding: 50px 0;
+        padding: 30px 0;
+    }
+
+    .data-feed-content table tbody td p {
+        font-size: 14px;
+        font-family: 'raleway-m';
     }
 
     /********** myProfile-wins-empty.html ************/
@@ -1040,23 +1189,30 @@
         padding: 15px 22px;
         font-size: 20px;
         font-family: 'sans-m';
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
     }
 
     .new-contests .box .box-p.box-p-tit {
         margin-top: 20px;
-        margin-bottom: 1px;
-        font-size: 14px;
+        margin-bottom: 2px;
+        font-size: 16px;
         line-height: 24px;
     }
 
     .new-contests .box .sub-join .box-p {
-        font-size: 12px;
+        font-size: 14px;
+        font-family: 'raleway-m';
+    }
+
+    .new-contests .box .sub-join .box-p span:not(.dot) {
         font-family: 'sans';
     }
 
-    /* .new-contests .box .sub-join {
-        margin-bottom: 39px;
-    } */
+    .new-contests .box .sub-join {
+        margin-bottom: 20px;
+    }
 
     .contest-hr {
         width: 100%;
@@ -1097,6 +1253,14 @@
         font-size: 14px;
         width: 70%;
         max-width: 100%;
+    }
+
+    .contest-info .contest-join {
+        display: inline-block;
+    }
+
+    .contest-info .contest-join span {
+        line-height: 14px;
     }
 
     .contest-comments {
@@ -1191,9 +1355,61 @@
     }
 
     /********** join-contest.html ************/
+    .contest-bar {
+        padding: 0;
+        margin: 0 0 30px;
+        position: relative;
+    }
+
     .contest-bar .collapse-btn {
         display: block;
+        background-color: #000;
+        padding: 28px 0;
     }
+
+    .contest-bar .collapse-btn img {
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+    }
+
+    .collapse-btn::before {
+        content: '';
+        width: 500px;
+        height: 100%;
+        background-color: #000;
+        position: absolute;
+        right: calc(100% - 1px);
+        top: 0;
+    }
+
+    .collapse-btn::after {
+        content: '';
+        width: 500px;
+        height: 100%;
+        background-color: #000;
+        position: absolute;
+        left: calc(100% - 1px);
+        top: 0;
+    }
+
+    .contest-bar .collapse-btn img {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+}
+
+    .contest-bar.active .collapse-btn img {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
 
     .contest-bar .tabs-form {
         flex-direction: column;
@@ -1209,7 +1425,12 @@
     .contest-bar.active .tabs-form {
         max-height: 500px;
         overflow: hidden;
-        padding-top: 30px;
+        /* padding-top: 30px; */
+    }
+
+    .contest-bar .tabs-form {
+        background: #000;
+        display: flex !important;
     }
 
     .contest-bar .container {
@@ -1222,7 +1443,7 @@
     }
 
     .contest-bar .contest-tabs li {
-        padding: 30px;
+        padding: 30px 2px;
         border-bottom: 1px solid rgba(255, 255, 255, .20);
     }
 
@@ -1232,18 +1453,29 @@
 
     .contest-bar .contest-tabs li .tabs-links {
         margin: 0;
+        font-size: 12px;
+        color: #fff
     }
 
     .contest-bar .tabs-form form {
         order: -1;
-        padding: 30px;
+        padding: 0 0 30px;
         width: 100%;
-        border-top: 1px solid rgba(255, 255, 255, .20);
+        /* border-top: 1px solid rgba(255, 255, 255, .20); */
         border-bottom: 1px solid rgba(255, 255, 255, .20);
     }
 
+    .contest-bar .tabs-form form .input {
+        color: #fff;
+    }
+
+    .contest-bar .tabs-form form .input::placeholder {
+        color: #ececec;
+    }
+
     .join-contest {
-        padding: 30px 0 0;
+        padding: 20px 0 0;
+        overflow: hidden;
     }
 
     .drop-btns {
@@ -1253,6 +1485,7 @@
 
     .drop-btns .log-btn {
         height: 40px;
+        padding: 0 !important;
     }
 
     .drop-btns .log-btn:first-child {
@@ -1261,10 +1494,27 @@
 
     .droppable-area {
         height: 622px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .drop-tools {
+        margin-bottom: 20px;
+    }
+
+    .draggable-items {
+        /* max-height: 1312px; */
+        margin-bottom: 30px;
     }
 
     .draggable-items .set-item .item-img {
         height: 298px;
+        margin-bottom: 20px;
+    }
+
+    .droppable-area span {
+        font-size: 16px;
+        line-height: 24px;
     }
 
     /********** create-set-publish.html ************/
@@ -1274,6 +1524,13 @@
 
     .set-publish .droppable-area {
         margin-bottom: 30px;
+    }
+
+    .set-publish .set-form .form-group .input,
+    .set-publish .set-form .form-group .input::placeholder,
+    .set-publish .set-form .form-group textarea,
+    .set-publish .set-form .form-group textarea::placeholder {
+        font-size: 12px;
     }
 
     .set-publish .set-form .set-titles {
@@ -1315,16 +1572,39 @@
     }
 
     /********** business-help.html ************/
-    .business-img {
+    /* .business-img {
+        height: 297px;
+    } */
+
+    .business-img>img {
+        height: 297px;
+    }
+
+    .img-overlay>img {
         height: 297px;
     }
 
     .business-img .b-search {
-        padding: 22px 29px 22px 2px;
+        padding: 30px 38px 30px 2px;
+        transform: translate(0);
+        margin-top: -58px;
+    }
+
+    .business-img .b-search.business-search {
+        padding: 20px 38px 20px 2px;
+        margin-top: -30px;
+    }
+
+    .business-img .b-search.business-search form button {
+        font-size: 0;
+    }
+
+    .business-img .b-search form input {
+        padding: 0 5px;
     }
 
     .business-help {
-        padding: 60px 0 50px;
+        padding: 30px 0 50px;
     }
 
     .business-help .col-lg-3 {
@@ -1332,7 +1612,9 @@
     }
 
     .business-help .help-faqs .faqs {
-        margin-bottom: 61px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ececec;
     }
 
     .business-help .help-txt .txt-row .help-title {
@@ -1347,16 +1629,31 @@
 
     /********** business-edit-account.html ************/
     .b-edit-account .b-search {
-        padding: 30px 0;
+        padding: 30px 0 30px 2px;
+    }
+
+    .update-img span {
+        font-size: 12px;
+        line-height: 14px;
     }
 
     .pull-bear {
         margin-bottom: 30px;
     }
 
+    .pull-bear .uploading {
+        margin-right: 18px;
+    }
+
+    .pull-bear span {
+        font-size: 24px;
+        font-family: 'raleway-b';
+    }
+
     .b-edit-account .b-search .count span {
         font-size: 12px;
         white-space: nowrap;
+        font-family: 'sans';
     }
 
     .b-edit-account .b-search .count span:first-child {
@@ -1364,7 +1661,22 @@
     }
 
     .b-edit-form {
-        padding: 144px 0 30px;
+        padding: 30px 0 30px;
+    }
+
+    .b-edit-form .profile-data .correct {
+        top: 37px;
+    }
+
+    .b-edit-form .profile-data .change-pass {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .b-edit-form .profile-data .input {
+        border-bottom-color: #ececec;
+        font-size: 12px;
+        line-height: 20px;
     }
 
     .b-edit-form .profile-data .form-btns {
@@ -1373,11 +1685,16 @@
 
     .b-edit-form .profile-data .form-btns .log-btn {
         height: 40px;
-        padding: 0;
+        padding: 0 !important;
     }
 
     .b-edit-form .profile-data .form-btns .log-btn:nth-child(1) {
         margin-right: 10px;
+    }
+
+    .b-edit-form .profile-data .form-btns .log-btn:nth-child(1) img {
+        width: 17px;
+        height: 16px;
     }
 
     .b-edit-form .profile-data .form-btns .log-btn:nth-child(2) {
@@ -1385,6 +1702,14 @@
     }
 
     /********** business-user.html ************/
+    .business-user .power-modasti {
+        padding: 30px 0;
+    }
+
+    .business-user .power-modasti .title {
+        margin-bottom: 30px;
+    }
+
     .business-user .power-modasti .title div {
         width: 100%;
     }
@@ -1394,6 +1719,10 @@
         line-height: 24px;
     }
 
+    .business-user .weird-shape.about::before {
+        width: 80%;
+    }
+
     .business-user .weird-header .weird-shape::before {
         bottom: -6px;
         left: -6px;
@@ -1401,6 +1730,9 @@
 
     .business-user .weird-header .main-tit.about {
         margin-top: -20px;
+        font-size: 46px;
+        font-family: 'raleway-b';
+        line-height: 54px;
     }
 
     .business-user .weird-header {
@@ -1413,6 +1745,7 @@
 
     .business-user .business-us {
         padding: 88px 0 30px;
+        margin-bottom: 30px;
     }
 
     .business-user .business-us .title div {
@@ -1421,6 +1754,11 @@
 
     .business-user .business-us .register-now {
         margin-bottom: 30px;
+        font-size: 12px;
+    }
+
+    .business-user .business-us .business-us-txt p {
+        font-size: 14px;
     }
 
     /********** coupon.html ************/
@@ -1430,10 +1768,26 @@
         margin-bottom: 29px;
     }
 
+    .coupon .b-search .coupon-tit-desc {
+        display: block;
+    }
+
+    .coupon .b-search .coupon-desc {
+        margin-bottom: 30px;
+        font-size: 14px;
+        max-width: 100%;
+    }
+
     .coupon .coupon-date {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .coupon .b-search .coupon-code,
+    .coupon .coupon-date p {
+        font-size: 12px !important;
+        font-family: 'sans' !important;
     }
 
     .coupon .b-search .coupon-date p:nth-child(1) {
@@ -1445,15 +1799,25 @@
         height: 60px;
         margin-top: 31px;
         justify-content: space-between;
-        padding: 0 24px;
+        padding: 0 24px !important;
     }
 
     .coupon .b-search .log-btn span {
         display: block !important;
+        font-size: 12px;
     }
 
     .table {
         border: 0 !important;
+    }
+
+    .coupon-table {
+        padding: 30px 0 30px;
+    }
+
+    .coupon-table .container {
+        padding: 0;
+        max-width: 100%;
     }
 
     .coupon-table table thead tr th {
@@ -1462,16 +1826,24 @@
         border-left: 0;
         border-right: 0;
         border-bottom: 1px solid #ECECEC !important;
+        padding-right: 100px;
     }
 
     .coupon-table table tbody tr td {
         border-top: 0;
         border-left: 0;
         border-right: 0;
+        padding-right: 100px;
     }
 
     .coupon-table table tbody tr td p {
         font-size: 12px;
+        font-family: 'sans';
+    }
+
+    .coupon-table table tbody tr:last-child td {
+        border-bottom: 0;
+        padding-bottom: 0;
     }
 
     /********** new-coupon.html ************/
@@ -1498,10 +1870,40 @@
 
     .coupon-form .new-coupon-title {
         margin-bottom: 30px;
+        font-family: 'raleway-b';
+    }
+
+    .coupon-form .profile-data .input {
+        font-size: 12px;
     }
 
     .coupon-form .add-coupon {
         justify-content: flex-start;
+    }
+
+    .coupon-form .add-coupon .log-btn {
+        width: 40px;
+        padding: 0 !important;
+    }
+    
+    .coupon-form .add-coupon .log-btn img {
+        width: 17px !important;
+    }
+
+    .coupon-form .profile-data .col-lg-6:nth-child(2) {
+        order: 1;
+    }
+
+    .new-coupon-table {
+        padding: 30px 0 !important;
+    }
+
+    .coupon-table.new-coupon-table table thead tr th {
+        padding: 20px 20px 20px 35px;
+    }
+
+    .coupon-table.new-coupon-table table tbody tr td {
+        padding: 30px 100px 30px 35px;
     }
 
     /********** newsfeed ****************/
@@ -1526,7 +1928,7 @@
     }
 
     .news-box.shared-box .shared-b {
-        padding-bottom: 20px;
+        padding: 20px;
         margin-bottom: 20px;
     }
 
@@ -1534,8 +1936,43 @@
         font-size: 14px;
     }
 
-    .newsfeed .news-box .icons::before {
+    .newsfeed .news-box.newsfeed-box .icons::before {
         display: none;
+    }
+
+    /******* profile-data-change-password.html ***********/
+    .profile-data.change-pass .input {
+        font-size: 12px;
+    }
+
+    .profile-data.m-user-account .correct,
+    .profile-data.change-pass .correct {
+        top: 36px;
+    }
+
+    .profile-data.m-user-account .log-btn,
+    .profile-data.change-pass .log-btn {
+        padding: 0 !important;
+    }
+
+    .profile-data.m-user-account .label .custom-checkbox {
+        width: 33%;
+        margin-bottom: 18px;
+    }
+
+    .profile-data.m-user-account .drop-mnu.size-mnu {
+        padding-bottom: 2px;
+    }
+
+    .profile-data.m-user-account .change-pass {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .profile-data.m-user-account .input,
+	.profile-data.m-user-account .input::placeholder{
+        font-size: 12px;
+        font-family: 'raleway' !important;
     }
 }
 
@@ -1565,18 +2002,123 @@
         max-width: none;
     }
 
-    .log-forms .social {
+    /* .log-forms .social {
         margin: 0;
+    } */
+
+    .reset-password .form-btn {
+        max-width: none;
+        justify-content: flex-start;
+    }
+
+    .reset-password .form-btn .log-btn {
+        width: 255px !important;
+        padding: 22px 24px !important;
+        height: 60px !important;
+        justify-content: space-between;
+    }
+
+    .reset-password .form-btn .log-btn[type=reset] {
+        margin-right: 30px;
+    }
+
+    .reset-password .form-btn .log-btn span {
+        display: block !important;
+    }
+
+    .profile-details .user-data .user-name {
+        width: 100% !important;
+        white-space: nowrap;
+    }
+
+    .box .box-img {
+        width: 255px;
+        height: 468px;
+    }
+
+    .box .box-img a {
+        width: 255px;
+        height: 468px;
+    }
+
+    .filter .box .box-img {
+        height: 468px !important;
+    }
+
+    .profile-details .user-data .user-img {
+        margin-right: 20px;
     }
 }
 
 @media (max-width: 575px) {
+    
+}
 
+@media (max-width: 375px) {
+    .business-user .weird-header .main-tit.about {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .business-user .weird-header .weird-shape::before {
+        bottom: -7px;
+        left: -7px;
+    }
 }
 
 @media (max-width: 768px) {
     .collapse-box .collapse-btn .btn-txt {
         max-width: 294px;
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-details .user-data {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 29px;
+    }
+
+    .profile-details .user-data .user-img {
+        margin-right: 20px;
+        width: 84px;
+        height: 84px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .profile-details .user-data .user-name {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .profile-details .info-row span.num {
+        font-size: 12px;
+        font-family: 'sans';
+    }
+
+    .profile-details .user-info {
+        margin-bottom: 30px;
+    }
+
+    .profile-details .user-info .bio {
+        font-size: 16px;
+    }
+
+    .profile-details .user-info p {
+        font-size: 14px;
+    }
+
+    .profile-details .stylist {
+        margin-bottom: 30px;
+    }
+
+    .profile-details .stylist span {
+        font-size: 14px;
+	    font-family: 'raleway-m';
     }
 }
 
@@ -1592,6 +2134,14 @@
         margin-left: 15px;
     }
 
+    .reset-password .log-info {
+        margin: 190px 0 190px 117px;
+    }
+
+    .confirm-msg .log-info {
+        margin: 190px 117px 190px 0px;
+    }
+
     /********** help.html ************/
     .help-head .left {
         display: flex;
@@ -1600,6 +2150,7 @@
 
     .help-head .tite {
         width: 50%;
+        line-height: 34px;
     }
 
     .help-head .left .behind-u {
@@ -1632,10 +2183,26 @@
     .b-edit-form .profile-data .form-btns .log-btn:nth-child(2) {
         margin-left: 10px;
     }
+
+    .weird-header .weird-shape {
+        height: 580px !important;
+    }
 }
 
 @media (max-width: 922px) {
     .reset-password .form-btn .log-btn[type='reset'] {
         padding: 0;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .log-forms .log-form .correct,
+    .log-forms .log-form .email .wrong {
+        top: 5px;
+    }
+
+    .email .wrong img {
+        margin-right: 3px;
     }
 }
