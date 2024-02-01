@@ -22,9 +22,9 @@
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "gulp build",
 		"predeploy": "gulp build",
-		"deploy": "gh-pages -d dist",
-		"build": "gulp build"
+		"deploy": "npm run build && gh-pages -d dist"
 	},
 	"repository": {
 		"type": "git",
